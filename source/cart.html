@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+    <section class="cart-section">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item home">
+            <a href="/">
+              <p>Головна</p>
+              <svg width='20' height='20'>
+                <use href='img/sprite/sprite.svg#home'></use>
+              </svg>
+            </a>
+          </li>
+          <li class="breadcrumbs__item" aria-current="page">
+            <p>кошик</p>
+          </li>
+        </ul>
+
+        <div class="cart-section__title title">Кошик</div>
+
+        <div class="cart-section__box">
+          <div class="cart-section__orders">
+            <ul class="card-list">
+              <li class="card-list__item add">
+                <div class="card card--order mode">
+                  <div class="card__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/catalog/Apps-Classic.webp'>
+                      <img width='125' height='141' src='img/catalog/Apps-Classic.png' alt='image'>
+                    </picture>
+                  </div>
+
+                  <div class="card__box">
+                    <span class="card__title">APPS™</span>
+                    <span class="card__pretitle">Класичний солодкий</span>
+                    <span class="card__info">Пляшка: <b>0,5 л</b></span>
+                    <span class="card__count">
+                      <svg width='12' height='28'>
+                        <use href='img/sprite/sprite.svg#my3'></use>
+                      </svg>
+                      х4
+                    </span>
+                  </div>
+
+                  <div class="product-btns">
+                    <button type='button' class="product-btns__minus">
+                      <svg width='20' height='20'>
+                        <use href='img/sprite/sprite.svg#minus'></use>
+                      </svg>
+                    </button>
+                    <input type="number" name="product_quantity_2" value="0" class="product-btns__quantity"
+                      data-quantity="1"></input>
+                    <button type='button' class="product-btns__plus">
+                      <svg width='20' height='20'>
+                        <use href='img/sprite/sprite.svg#plus'></use>
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div class="card__inner">
+                    <span class="card__price">720<i>₴</i></span>
+                  </div>
+
+                  <button class="card__btn">
+                    <svg width='28' height='28'>
+                      <use href='img/sprite/sprite.svg#close'></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <li class="card-list__item add">
+                <div class="card card--order mode">
+                  <div class="card__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/catalog/Apps-Classic.webp'>
+                      <img width='125' height='141' src='img/catalog/Apps-Classic.png' alt='image'>
+                    </picture>
+                  </div>
+
+                  <div class="card__box">
+                    <span class="card__title">APPS™</span>
+                    <span class="card__pretitle">Класичний солодкий</span>
+                    <span class="card__info">Пляшка: <b>0,5 л</b></span>
+                    <span class="card__count">
+                      <svg width='12' height='28'>
+                        <use href='img/sprite/sprite.svg#my3'></use>
+                      </svg>
+                      х4
+                    </span>
+                  </div>
+
+                  <div class="product-btns">
+                    <button type='button' class="product-btns__minus">
+                      <svg width='20' height='20'>
+                        <use href='img/sprite/sprite.svg#minus'></use>
+                      </svg>
+                    </button>
+                    <input type="number" name="product_quantity_2" value="0" class="product-btns__quantity"
+                      data-quantity="1"></input>
+                    <button type='button' class="product-btns__plus">
+                      <svg width='20' height='20'>
+                        <use href='img/sprite/sprite.svg#plus'></use>
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div class="card__inner">
+                    <span class="card__price">720<i>₴</i></span>
+                  </div>
+
+                  <button class="card__btn">
+                    <svg width='28' height='28'>
+                      <use href='img/sprite/sprite.svg#close'></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <li class="card-list__item promo">
+                <span class="card-list__discount">
+                  <svg width='35' height='35'>
+                    <use href='img/sprite/sprite.svg#chart'></use>
+                  </svg>
+                  ВИГІДНА ПРОПОЗИЦІЯ
+                </span>
+                <div class="card card--order discount">
+                  <div class="card__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/catalog/Apps-Classic.webp'>
+                      <img width='125' height='141' src='img/catalog/Apps-Classic.png' alt='image'>
+                    </picture>
+                  </div>
+
+                  <div class="card__box">
+                    <span class="card__title">APPS™</span>
+                    <span class="card__pretitle">Класичний солодкий</span>
+                    <span class="card__info">Пляшка: <b>0,5 л</b></span>
+                    <span class="card__count">
+                      <svg width='12' height='28'>
+                        <use href='img/sprite/sprite.svg#my3'></use>
+                      </svg>
+                      х4
+                    </span>
+                  </div>
+
+                  <div class="product-btns">
+                    <button type='button' class="product-btns__minus">
+                      <svg width='20' height='20'>
+                        <use href='img/sprite/sprite.svg#minus'></use>
+                      </svg>
+                    </button>
+                    <input type="number" name="product_quantity_2" value="0" class="product-btns__quantity"
+                      data-quantity="1"></input>
+                    <button type='button' class="product-btns__plus">
+                      <svg width='20' height='20'>
+                        <use href='img/sprite/sprite.svg#plus'></use>
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div class="card__inner">
+                    <span class="card__price old">40<i>₴</i></span>
+                    <span class="card__price">720<i>₴</i></span>
+                  </div>
+
+                  <button class="card__btn add">
+                    <svg width='28' height='28'>
+                      <use href='img/sprite/sprite.svg#search2'></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <li class="card-list__item info">
+                <p>Додайте до Вашого кошика додаткові товари та отримайте <b>знижку на все замовлення</b></p>
+              </li>
+              <li class="card-list__item">
+                <div class="card card--order discount">
+                  <div class="card__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/catalog/Apps-Classic.webp'>
+                      <img width='125' height='141' src='img/catalog/Apps-Classic.png' alt='image'>
+                    </picture>
+                  </div>
+
+                  <div class="card__box">
+                    <span class="card__title">APPS™</span>
+                    <span class="card__pretitle">Класичний солодкий</span>
+                    <span class="card__info">Пляшка: <b>0,5 л</b></span>
+                    <span class="card__count">
+                      <svg width='12' height='28'>
+                        <use href='img/sprite/sprite.svg#my3'></use>
+                      </svg>
+                      х4
+                    </span>
+                  </div>
+
+                  <div class="product-btns">
+                    <button type='button' class="product-btns__minus">
+                      <svg width='20' height='20'>
+                        <use href='img/sprite/sprite.svg#minus'></use>
+                      </svg>
+                    </button>
+                    <input type="number" name="product_quantity_2" value="0" class="product-btns__quantity"
+                      data-quantity="1"></input>
+                    <button type='button' class="product-btns__plus">
+                      <svg width='20' height='20'>
+                        <use href='img/sprite/sprite.svg#plus'></use>
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div class="card__inner">
+                    <span class="card__price">720<i>₴</i></span>
+                    <span class="card__discount">Знижка на замовлення</span>
+                    <span class="card__percent">40%</span>
+                  </div>
+
+                  <button class="card__btn add">
+                    <svg width='28' height='28'>
+                      <use href='img/sprite/sprite.svg#search2'></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <li class="card-list__item">
+                <div class="card card--order discount">
+                  <div class="card__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/catalog/Apps-Classic.webp'>
+                      <img width='125' height='141' src='img/catalog/Apps-Classic.png' alt='image'>
+                    </picture>
+                  </div>
+
+                  <div class="card__box">
+                    <span class="card__title">APPS™</span>
+                    <span class="card__pretitle">Класичний солодкий</span>
+                    <span class="card__info">Пляшка: <b>0,5 л</b></span>
+                    <span class="card__count">
+                      <svg width='12' height='28'>
+                        <use href='img/sprite/sprite.svg#my3'></use>
+                      </svg>
+                      х4
+                    </span>
+                  </div>
+
+                  <div class="product-btns">
+                    <button type='button' class="product-btns__minus">
+                      <svg width='20' height='20'>
+                        <use href='img/sprite/sprite.svg#minus'></use>
+                      </svg>
+                    </button>
+                    <input type="number" name="product_quantity_2" value="0" class="product-btns__quantity"
+                      data-quantity="1"></input>
+                    <button type='button' class="product-btns__plus">
+                      <svg width='20' height='20'>
+                        <use href='img/sprite/sprite.svg#plus'></use>
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div class="card__inner">
+                    <span class="card__price">720<i>₴</i></span>
+                    <span class="card__discount">Знижка на замовлення</span>
+                    <span class="card__percent">40%</span>
+                  </div>
+
+                  <button class="card__btn add">
+                    <svg width='28' height='28'>
+                      <use href='img/sprite/sprite.svg#search2'></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+            </ul>
+            <button class="white-btn">ПРОДОВЖИТИ ОФОРМЛЕННЯ</button>
+          </div>
+
+          <form class="cart-form">
+            <div class="cart-form__box">
+              <div class="cart-form__title">КОНТАКТНА ІНФОРМАЦІЯ</div>
+
+              <div class="cart-form__content">
+                <div class="cart-form__inputs">
+                  <input class="cart-form__input" name="name" type="text" placeholder="Імʼя*">
+                  <input class="cart-form__input" name="tel" type="tel" placeholder="Телефон*">
+                  <input class="cart-form__input" name="emai" type="email" placeholder="Email*">
+                  <textarea class="cart-form__textarea" name="message" placeholder="Коментар"></textarea>
+                </div>
+
+                <div class="cart-form__selects">
+                  <div class="select" data-select>
+                    <div class="select__header">
+                      <input type="hidden" class="select__input input-select" id="delivery" name="delivery" value="1">
+                      <span class="select__current" data-id="1">
+                        Доставка до відділення Нової пошти
+                      </span>
+                      <svg class="select__current-icon" width='28' height='14'>
+                        <use href='img/sprite/sprite.svg#arrow'></use>
+                      </svg>
+                    </div>
+                    <div class="select__body">
+                      <ul class="select__list">
+                        <li class="select__option" data-id="1" data-type="option">
+                          Доставка до відділення Нової пошти
+                        </li>
+                        <li class="select__option" data-id="2" data-type="option">
+                          Доставка до відділення Укр. пошти
+                        </li>
+                        <li class="select__option" data-id="3" data-type="option">
+                          Самовивiз
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="select" data-select>
+                    <div class="select__header">
+                      <input type="hidden" class="select__input input-select" id="city_order" name="city_order"
+                        value="1">
+                      <span class="select__current" data-id="1">
+                        Місто*
+                      </span>
+                      <svg class="select__current-icon" width='28' height='14'>
+                        <use href='img/sprite/sprite.svg#arrow'></use>
+                      </svg>
+                    </div>
+                    <div class="select__body">
+                      <ul class="select__list">
+                        <li class="select__option" data-id="1" data-type="option">
+                          Місто*
+                        </li>
+                        <li class="select__option" data-id="2" data-type="option">
+                          Дніпро
+                        </li>
+                        <li class="select__option" data-id="3" data-type="option">
+                          Одеса
+                        </li>
+                        <li class="select__option" data-id="4" data-type="option">
+                          Львiв
+                        </li>
+                        <li class="select__option" data-id="5" data-type="option">
+                          Харкiв
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="select" data-select>
+                    <div class="select__header">
+                      <input type="hidden" class="select__input input-select" id="department" name="department"
+                        value="1">
+                      <span class="select__current" data-id="1">
+                        Номер відділення*
+                      </span>
+                      <svg class="select__current-icon" width='28' height='14'>
+                        <use href='img/sprite/sprite.svg#arrow'></use>
+                      </svg>
+                    </div>
+                    <div class="select__body">
+                      <ul class="select__list">
+                        <li class="select__option" data-id="1" data-type="option">
+                          Номер відділення*
+                        </li>
+                        <li class="select__option" data-id="2" data-type="option">
+                          Відділення № 45 місто Дніпро (проспект Дмитра Якорницького, 103)
+                        </li>
+                        <li class="select__option" data-id="3" data-type="option">
+                          Відділення № 45 місто Дніпро (проспект О. Поля, 78)
+                        </li>
+                        <li class="select__option" data-id="4" data-type="option">
+                          Відділення № 45 місто Дніпро (проспект О. Поля, 78)
+                        </li>
+                        <li class="select__option" data-id="5" data-type="option">
+                          Відділення № 45 місто Дніпро (проспект Дмитра Якорницького, 103)
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="select" data-select>
+                    <div class="select__header">
+                      <input type="hidden" class="select__input input-select" id="pay" name="pay"
+                        value="1">
+                      <span class="select__current" data-id="1">
+                        Карткою Visa/ MasterCard
+                      </span>
+                      <svg class="select__current-icon" width='28' height='14'>
+                        <use href='img/sprite/sprite.svg#arrow'></use>
+                      </svg>
+                    </div>
+                    <div class="select__body">
+                      <ul class="select__list">
+                        <li class="select__option" data-id="1" data-type="option">
+                          Карткою Visa/ MasterCard
+                        </li>
+                        <li class="select__option" data-id="2" data-type="option">
+                          MasterCard
+                        </li>
+                        <li class="select__option" data-id="3" data-type="option">
+                          Visa
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="black-btn">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
+          </form>
+
+          <div class="cart-section__aside">
+            <a class="cart-section__download white-btn" href="#" download="">ЗАВАНТАЖИТИ КП</a>
+
+            <div class="cart-section__totals">
+              <ul class="cart-section__review">
+                <li class="cart-section__review-row">
+                  <p>У кошику 2 товарів</p>
+                  <span class="total">240 грн.</span>
+                </li>
+                <li class="cart-section__review-row">
+                  <p>Знижка %</p>
+                  <span class="sale-total">20 грн.</span>
+                </li>
+              </ul>
+
+              <div class="cart-section__subtotal">
+                <p>ДО СПЛАТИ</p>
+                <span>220 грн.</span>
+              </div>
+
+              <div class="cart-section__alert">
+                <svg width='28' height='28'>
+                  <use href='img/sprite/sprite.svg#mark'></use>
+                </svg>
+                <p>Сума мінімального замовлення <span>500 грн</span>.</p>
+              </div>
+            </div>
+
+            <a class="cart-section__back" href="#">
+              ПОВЕРНУТИСЬ ДО ПОКУПОК
+              <svg width='14' height='18'>
+                <use href='img/sprite/sprite.svg#arrow-back'></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+
+  <script defer src="js/main.js"></script>
+</body>
+
+
+</html>

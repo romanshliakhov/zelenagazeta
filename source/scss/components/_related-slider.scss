@@ -1,0 +1,145 @@
+.related-slider {
+  position: relative;
+  width: 100%;
+  background-color: var(--bg-e);
+  border-radius: 25px;
+  display: flex;
+
+  @include for-tablet{
+    padding-bottom: 40px;
+  }
+
+  @include tablet{
+    padding: 40px 0;
+  }
+
+  @include mobile{
+    width: calc(100% + (var(--container-offset) * 2));
+    margin-left: calc(var(--container-offset) * -1);
+    border-radius: 0;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 0 20px;
+    max-width: 100vw;
+  }
+
+  .swiper-container {
+    width: 100%;
+
+  }
+
+  .swiper-slide {
+    transition: opacity 2s ease-in-out;
+  }
+
+  .catalog-card {
+    display: grid;
+    grid-template-columns: 270px auto;
+    grid-template-rows: 1fr;
+
+    @media (max-width: (1300px)) {
+      @include for-laptop{
+        grid-template-columns: 250px auto;
+      }
+    }
+
+    @include laptop{
+      @include for-tablet{
+        column-gap: 1px;
+      }
+    }
+
+    @include for-tablet{
+      grid-template-rows: 1fr;
+      align-items: flex-end;
+    }
+
+    @include laptop{
+      @include for-tablet{
+        grid-template-columns: 200px auto
+      }
+    }
+
+    @include small-tablet{
+      grid-template-columns: clamp(120px, 26.042vw, 200px) auto;
+    }
+
+    &__title{
+      font-size: 20px;
+    }
+
+    &__series{
+      font-size: 20px;
+    }
+
+    &__details{
+      gap: 0;
+    }
+
+    &__price-current{
+      @media (min-width: (501px)) {
+        font-size: 35px;
+      }
+    }
+
+    @include mobile{
+      gap: clamp(10px, 1.1628vw, 20px) 1px;
+    }
+  }
+
+  .catalog-card__image {
+    grid-row: span 2;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    height: clamp(180px, 21.042vw, 404px);
+
+    @include laptop{
+      @include for-tablet{
+        height: clamp(240px, 21.042vw, 404px); 
+      }
+    }
+
+    @include small-tablet{
+      max-height: clamp(180px, 39.583vw, 304px);
+    }
+
+    img,
+    picture {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .catalog-card__info {
+    max-width: 320px;
+   
+    @include laptop{
+      @include for-tablet{
+        padding-right: 45px;
+      }
+    }
+  }
+
+  .swiper-pagination {
+    z-index: 5;
+    cursor: pointer;
+
+    &-active {
+      background-color: var(--bg-a);
+    }
+
+    @include for-mobile {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @include mobile{
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}

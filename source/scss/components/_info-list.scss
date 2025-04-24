@@ -1,0 +1,39 @@
+.info-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+
+    @include tablet{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile{
+        grid-template-columns: 100%;
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+        &:nth-child(1), &:nth-child(2){
+            grid-column: initial;
+        }
+
+
+        .main-link{
+            align-self: center;
+            justify-self: center;
+
+            @include tablet{
+                margin-top: 30px;
+            }
+        }
+
+        @include for-mobile{
+            grid-column: span 2;
+        }
+    }
+}

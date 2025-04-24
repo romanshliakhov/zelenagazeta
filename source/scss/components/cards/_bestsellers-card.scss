@@ -1,0 +1,202 @@
+.bestsellers-card{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: clamp(10px, 1.1628vw, 20px);
+
+    @media (max-width: (600px)) {
+       width: 220px;
+    }
+
+    &__image{
+        position: relative;
+        width: 100%;
+        height: clamp(137px, 17.1512vw, 295px);
+        border: 2px solid var(--br-a);
+        border-radius: 15px;
+        display: flex;
+        padding: 0 clamp(8px, 1.1628vw, 20px) clamp(8px, 1.1628vw, 20px);
+        align-items: flex-end;
+        justify-content: center;
+
+        img,picture{
+            max-height: clamp(189px, 26.3372vw, 453px);
+            min-height: clamp(189px, 19.0116vw, 327px);
+            height: auto;
+            width: auto;
+            transition: all .3s;
+        }
+
+        margin-top: clamp(60px, 10.3488vw, 178px);
+
+        &:hover{
+            svg,img{
+                transform: scale(1.03);
+            }
+        }
+    }
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        gap: clamp(10px, 1.1628vw, 20px);
+        height: 100%;
+
+        @include mobile{
+            gap: 20px;
+        }
+    }
+
+    &__wrapp{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        height: 57px;
+
+        @include mobile{
+            gap: 1px;
+            height: 50px;
+        }
+    }
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        gap: clamp(10px, 1.1628vw, 20px);
+        gap: 10px;
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        margin-bottom: 7px;
+
+        @include mobile{
+            margin-bottom: 0;
+        }
+    }
+
+    .white-btn{
+        height: clamp(33px, 3.7209vw, 64px);
+        flex-shrink: 0;
+
+        @include mobile{
+            margin-top: -10px;
+        }
+    }
+
+
+    &__price{
+        display: flex;
+        gap: clamp(15px, 1.1628vw, 20px);
+        flex-grow: 1;
+        margin-top: 3px;
+
+        height: 28px;
+        white-space: nowrap;
+    }
+
+    &__value{
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: clamp(25px, 2.0349vw, 35px);
+        line-height: 74%;
+        color: var(--cl-b);
+        height: fit-content;
+
+        b,i{
+            font-style: normal;
+            font-weight: 500;
+            font-size: clamp(20px, 1.7442vw, 30px);
+        }
+
+        @include tablet{
+            line-height: 104%;
+        }
+
+        &.mode{
+            font-size: clamp(20px, 1.4535vw, 25px);
+            line-height: 104%;
+            color: rgba(255, 255, 255, 0.5);
+            position: relative;
+            z-index: 1;
+            margin-top: calc(clamp(1px, .1744vw, 3px) * -1);
+
+            b{
+                font-size: clamp(20px, 1.4535vw, 25px);
+            }
+
+            &::before{
+                position: absolute;
+                content: '';
+                background: var(--bg-c);
+                width: 100%;
+                height: 1px;
+                left: 0;
+                transform: translateY(-50%);
+                top: 50%;
+                z-index: 2;
+                pointer-events: none;
+            }
+
+            @include tablet{
+                margin-top: 1px;
+            }
+        }
+    }
+
+    &__title{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: clamp(19px, 1.3953vw, 24px);
+        line-height: 108%;
+        color: var(--cl-a);
+
+        height: 26px;
+        white-space: nowrap;
+
+        @include tablet{
+            line-height: 137%;
+        }
+    }
+
+    &__pretitle{
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: clamp(23px, 1.3953vw, 24px);
+        line-height: 108%;
+        color: var(--cl-c);
+        padding-right: 20%;
+        margin: -10px 0 0;
+        transition: all .4s;
+
+        @include tablet{
+            line-height: 113%;
+        }
+
+        @include for-mobile{
+            height: 25px;
+            white-space: nowrap;
+        }
+
+        @include mobile{
+            height: 52px;
+            max-width: 95%;
+            white-space: normal;
+        }
+
+        &:hover{
+            color: var(--cl-a);
+        }
+    }
+
+    &__text{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: clamp(20px, 1.3953vw, 24px);
+        line-height: 108%;
+        color: var(--cl-c);
+
+        @include tablet{
+            line-height: 130%;
+        }
+    }
+}

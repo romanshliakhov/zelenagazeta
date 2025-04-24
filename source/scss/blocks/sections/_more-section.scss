@@ -1,0 +1,47 @@
+.more-section{
+    margin-bottom: clamp(100px, 8.7209vw, 150px);
+    overflow: hidden;
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(30px, 5.407vw, 93px);
+        padding: 20px;
+        background: var(--bg-d);
+        border-radius: 25px;
+
+        .main-link{
+            @include for-mobile{
+                align-self: flex-end;
+            }
+        }
+
+        .editor{
+            max-width: clamp(500px,48.2558vw, 830px);
+            max-height: clamp(92px, 6.2791vw, 108px);
+            overflow: hidden;
+        
+            p{
+                @include mobile{
+                    line-height: 135%;
+                }
+            }
+
+            @include mobile{
+                max-height: 136px;
+            }
+
+            @media (max-width: (494px)) {
+                max-height: 190px;
+            }
+
+            @media (max-width: (412px)) {
+                max-height: 213px;
+            }
+
+            @media (max-width: (412px)) {
+                max-height: 243px;
+            }
+        }
+    }
+}

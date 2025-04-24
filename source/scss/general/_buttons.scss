@@ -1,0 +1,123 @@
+.white-btn {
+  transition: all 0.4s;
+  padding: 9px clamp(9px, 1.7442vw, 30px);
+  height: clamp(33px, 3.7209vw, 64px);
+  border-radius: 10px;
+  background: var(--bg-a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 10px;
+  width: fit-content;
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: clamp(13px, 1.3953vw, 24px);
+  color: var(--cl-c);
+
+  img,
+  svg {
+    pointer-events: none;
+    display: flex;
+    width: 20px;
+    aspect-ratio: 1;
+  }
+
+  svg {
+    fill: none;
+  }
+
+  &:hover {
+    background: var(--bg-b);
+    color: var(--cl-a);
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    pointer-events: none;
+  }
+}
+
+.black-btn {
+  transition: all 0.4s;
+  padding: 9px clamp(9px, 1.7442vw, 30px);
+  height: clamp(33px, 3.7209vw, 64px);
+  border-radius: 10px;
+  background: var(--bg-b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 10px;
+  width: fit-content;
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: clamp(13px, 1.3953vw, 24px);
+  color: var(--cl-a);
+
+  img,
+  svg {
+    pointer-events: none;
+    display: flex;
+    width: 20px;
+    aspect-ratio: 1;
+  }
+
+  svg {
+    fill: none;
+  }
+
+  &:hover {
+    background: var(--bg-a);
+    color: var(--cl-b);
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    pointer-events: none;
+  }
+}
+
+.swiper-pagination{
+  display: flex;
+  flex-direction: column;
+  gap: clamp(5px, 1.4535vw, 25px);
+  align-items: center;
+
+  &-bullet{
+    display: flex;
+    width: clamp(15px, 1.4535vw, 25px);
+    height: clamp(15px, 1.4535vw, 25px);
+    border-radius: 50%;
+    background-color: var(--bg-h);
+    transition: all .3s;
+
+    &-active{
+      background-color: var(--bg-a);
+    }
+  }
+}
+
+.filter-btn{
+  width: 25px;
+  height: 25px;
+  display: flex;
+  transition: all .3s;
+
+  svg,img{
+    transition: all .2s;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover{
+    &:not(.active){
+      transform: scale(1.05);
+    }
+  }
+
+  &.active{
+    height: 40px;
+    width: 40px;
+  }
+}

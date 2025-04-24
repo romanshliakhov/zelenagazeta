@@ -1,0 +1,39 @@
+.share {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @include mobile {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  p {
+    font-size: clamp(20px, 3.418vw, 35px);
+    line-height: 100%;
+    font-weight: 400;
+    color: var(--cl-m);
+    text-transform: uppercase;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    svg {
+      transition: all .3s;
+      fill: transparent;
+    }
+
+   
+  }
+
+  &__link{
+    &:hover{
+      svg{
+        transform: scale(1.1);
+      }
+    }
+  }
+}

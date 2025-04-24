@@ -1,0 +1,42 @@
+@import "../blocks/header.scss";
+@import "../blocks/mobile-menu.scss";
+@import "../blocks/modal.scss";
+@import "../blocks/footer.scss";
+
+// Main page
+@import "../blocks/sections/info-section.scss";
+@import "../blocks/sections/more-section.scss";
+@import "../blocks/sections/marque-section.scss";
+@import "../blocks/sections/about-section.scss";
+@import "../blocks/sections/hero-section.scss";
+@import "../blocks/sections/bestsellers-section.scss";
+@import "../blocks/sections/articles-section.scss";
+@import "../blocks/sections/cabinet-section.scss";
+@import "../blocks/sections/error-section.scss";
+
+// Catalog page
+@import "../blocks/sections/catalog-section.scss";
+
+// Single Product page
+@import "../blocks/sections/product-section.scss";
+
+// Thank You page
+@import "../blocks/sections/thanks-section.scss";
+
+// Blog page
+@import "../blocks/sections/blog-section.scss";
+
+// Post page
+@import "../blocks/sections/post-section.scss";
+
+// Sample pages
+@import "../blocks/sections/block-section.scss";
+
+// Questions & answers page
+@import "../blocks/sections/faq-section.scss";
+
+// Contacts page
+@import "../blocks/sections/contacts-section.scss";
+
+// Contacts page
+@import "../blocks/sections/cart-section.scss";

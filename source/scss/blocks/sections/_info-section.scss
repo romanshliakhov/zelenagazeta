@@ -1,0 +1,15 @@
+.info-section{
+  margin-bottom: clamp(50px, 8.7209vw, 150px);
+
+  &__box{
+    display: flex;
+    flex-direction: column;
+    gap: clamp(30px, 2.907vw, 50px);
+  }
+
+  @include mobile{
+      .title{
+          display: none;
+      }
+  }
+}

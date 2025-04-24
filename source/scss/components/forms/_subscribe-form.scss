@@ -1,0 +1,73 @@
+.subscribe-form {
+  height: 100%;
+  padding: 20px;
+  border-radius: 25px;
+  background-color: var(--bg-a);
+
+  &__image {
+    display: flex;
+    margin-bottom: 30px;
+
+    picture,
+    img {
+      width: 100%;
+      border-radius: 25px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: clamp(34px, 4.07vw, 70px);
+    line-height: 100%;
+    font-weight: 400;
+  }
+
+  &__input {
+    padding: clamp(10px, 1.337vw, 23px) clamp(20px, 1.57vw, 27px);
+    border: 1px solid var(--br-b);
+    font-family: var(--font-family);
+    font-size: clamp(14px, 1.047vw, 18px);
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--cl-b);
+
+    &::placeholder {
+      color: rgba(5, 5, 5, 0.75);
+    }
+  }
+
+  &__btn {
+    display: block;
+    margin-top: clamp(10px, 1.163vw, 20px);
+    width: 100%;
+    padding: clamp(20px, 1.744vw, 30px) 0;
+    border-radius: 10px;
+    font-family: var(--font-family);
+    font-size: clamp(20px, 2.326vw, 40px);
+    line-height: 100%;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .3s;
+
+    @include  for-small-tablet{
+      background-color: var(--bg-m);
+      color: var(--cl-c);
+
+      &:hover{
+        background: var(--bg-b);
+        color: var(--cl-a);
+      }
+    }
+
+    @include  small-tablet{
+      background: var(--bg-b);
+      color: var(--cl-a);
+
+      &:hover{
+        background-color: var(--bg-m);
+        color: var(--cl-c);
+      }
+    }
+  }
+}

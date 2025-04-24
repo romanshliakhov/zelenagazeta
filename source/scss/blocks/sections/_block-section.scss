@@ -1,0 +1,267 @@
+.block-section {
+  margin-bottom: clamp(100px, 8.7209vw, 150px);
+
+  &__top{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 50px;
+
+    @include mobile{
+      padding-top: 10px;
+    }
+  }
+
+  video{
+    width: 100%;
+    height: clamp(450px, 41.7442vw, 718px);
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    object-fit: cover;
+  }
+
+  &__subtitle{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp(35px, 3.4884vw, 60px);
+    color: var(--cl-m);
+    text-transform: uppercase;
+
+    @include mobile{
+      line-height: 77%;
+    }
+  }
+
+  &__item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px 20px;
+
+    &:nth-child(even){
+      @include for-tablet{
+        .block-section__image{
+          order: -1;
+        }
+      }
+    }
+
+    @include tablet{
+      grid-template-columns: 100%;
+    }
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    gap: clamp(50px, 5.814vw, 100px);
+  }
+
+  &__inner{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  &__download{
+    display: flex;
+    align-items: flex-end;
+    width: fit-content;
+    justify-self: end;
+    margin-left: auto;
+    gap: clamp(20px, 2.907vw, 50px);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: clamp(18px, 1.3953vw, 24px);
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--cl-b);
+    margin-bottom: 100px;
+
+    svg,img{
+      flex-shrink: 0;
+      transition: all .3s;
+      width: clamp(80px, 7.2674vw, 125px);
+      height: clamp(80px, 7.2674vw, 125px);
+    }
+
+    &:hover{
+      svg,img{
+        transform: scale(1.02);
+      }
+    }
+
+    @include mobile{
+      margin-left: 0;
+      justify-self: start;
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__info{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 77%;
+    text-transform: uppercase;
+    color: var(--cl-m);
+
+    @include mobile{
+      font-size: clamp(20px, 2.0349vw, 35px);
+    }
+  }
+
+  &__title{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: clamp(35px, 5.814vw, 100px);
+    color: var(--cl-m);
+
+    @include small-tablet{
+      font-family: var(--font-family);
+      font-weight: 400;
+      line-height: 101%;
+    }
+  }
+
+  &__image{
+    width: 100%;
+    height: clamp(250px, 27.4419vw, 472px);
+    border-radius: 50px;
+    overflow: hidden;
+
+    @include tablet{
+      height: clamp(250px, 46.094vw, 472px);
+    }
+
+    img,picture{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__label{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: clamp(18px, 1.3953vw, 24px);
+    line-height: 112%;
+    color: var(--cl-b);
+    z-index: 3;
+
+    @include for-small-tablet{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translateY(-100%);
+    }
+
+    @include small-tablet{
+      margin-top: -50px;
+      text-align: end;
+    }
+  }
+
+  &__content {
+    position: relative;
+
+    .alert-icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      svg {
+        width: clamp(69px, 7.579vw, 144px);
+        height: clamp(61px, 6.737vw, 128px);
+      }
+    }
+
+    h1 {
+      margin-bottom: clamp(30px, 4.883vw, 50px);
+      font-family: var(--second-family);
+      font-size: clamp(35px, 5.208vw, 100px);
+      line-height: 100%;
+      font-weight: 700;
+      color: var(--cl-m);
+      text-transform: uppercase;
+      width:  calc(100% - 15px - clamp(80px, 7.2674vw, 125px));
+
+      @include small-tablet{
+        font-family: var(--font-family);
+        font-weight: 400;
+        line-height: 101%;
+
+        @media (min-width: (535px)) {
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    h2 {
+      margin: clamp(30px, 4.883vw, 50px) 0 30px;
+      font-size: clamp(24px, 3.488vw, 60px);
+      line-height: 108%;
+      font-weight: 400;
+      color: var(--cl-m);
+
+      @include small-tablet{
+        line-height: 105%;
+      }
+
+      a {
+        font-weight: 500;
+      }
+    }
+
+    h3{
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: clamp(24px, 2.0349vw, 35px);
+      text-transform: uppercase;
+      color: var(--cl-m);
+      margin-bottom: 30px;
+      
+      @include mobile{
+        line-height: 101%;
+      }
+    }
+
+    p {
+      max-width: 850px;
+      width: 100%;
+      font-size: clamp(22px, 2.344vw, 24px);
+      line-height: 112%;
+
+      @include mobile{
+        line-height: 120%;
+      }
+    }
+
+    p + p {
+      margin-top: 20px;
+
+      @include mobile{
+        margin-top: 10px;
+      }
+    }
+
+    p + h2 {
+      @include mobile{
+        margin-top: 50px;
+      }
+    }
+  }
+
+  &--mode{
+    h2 {
+      margin: clamp(30px, 4.883vw, 50px) 0;
+    }
+
+    p + p {
+      @include mobile{
+        margin-top: 20px;
+      }
+    }
+  }
+}

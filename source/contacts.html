@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+    <section class="contacts-section">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item home">
+            <a href="/">
+              <p>Головна</p>
+              <svg width='20' height='20'>
+                <use href='img/sprite/sprite.svg#home'></use>
+              </svg>
+            </a>
+          </li>
+          <li class="breadcrumbs__item" aria-current="page"><p>КОНТАКТИ</p></li>
+        </ul>
+
+        <div class="contacts-section__wrapp">
+          <h1 class="title">КОНТАКТИ</h1>
+
+          <div class="contacts-section__box">
+            <div class="contacts-section__info">
+              <div class="contacts-section__info-top">
+                <span class="contacts-section__info-title">MAIN OFFICE</span>
+
+                <a class="contacts-section__info-location" href="https://maps.app.goo.gl/VtFFwLbQw5x9h9dz6">
+                  On map
+                  <svg width='20' height='20'>
+                    <use href='img/sprite/sprite.svg#location'></use>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="contacts-section__info-details">
+                <p class="contacts-section__info-address">Sportyvna sq., 3, Kyiv, 01033</p>
+                <a class="contacts-section__info-tel" href="tel:+380445029900">+380445029900</a>
+              </div>
+            </div>
+
+            <div class="contacts-section__map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.2108155564915!2d30.51978277733572!3d50.43717378831861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cefe179f3511%3A0xfdfefac78a7d7bd1!2z0KHQv9C-0YDRgtC40LLQvdCw0Y8g0L_Quy4sIDMsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1732406932193!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="contacts-section__inner">
+              <h2 class="title">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
+
+              <ul class="contacts-section__list">
+                <li class="contacts-section__item">
+                  <p>FOR MEDIA</p>
+                  <a href="mailto:INFO@NEWPRODUCTS.COM"  class="contacts-section__link">INFO@NEWPRODUCTS.COM</a>
+                </li>
+                <li class="contacts-section__item">
+                  <p>NEW BREW</p>
+                  <a href="tel:0800504760"  class="contacts-section__link">0 800 50 47 60</a>
+                </li>
+                <li class="contacts-section__item">
+                  <p>NEW PRODUCTS</p>
+                  <a href="tel:0800501060"  class="contacts-section__link">0 800 50 10 60</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contacts-section__form">
+              <span class="contacts-section__icon">
+                <svg width='140' height='140'>
+                  <use href='img/sprite/sprite.svg#contact-us'></use>
+                </svg>
+              </span>
+
+              <form class="contact-form">
+                <div class="contact-form__box">
+                  <input class="contact-form__input" name="name" type="text" placeholder="Імʼя*" required>
+                  <input class="contact-form__input" name="surname" type="text" placeholder="Прізвище*" required>
+                  <input class="contact-form__input" name="tel" type="tel" placeholder="Номер телефону*" required>
+                  <input class="contact-form__input" name="emai" type="email" placeholder="Email*" required>
+                  <textarea class="contact-form__textarea" name="message" placeholder="Повідомлення" required></textarea>
+                </div>
+
+                <button class="contact-form__submit">ВІДПРАВИТИ</button>
+              </form>
+
+              <p class="contacts-section__form-agreement">By clicking on the "SEND" button, you agree to the Privacy Policy of the New Products Group of Companies</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+
+  <script defer src="js/main.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+    <section class="block-section">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item home">
+            <a href="/">
+              <p>Головна</p>
+              <svg width='20' height='20'>
+                <use href='img/sprite/sprite.svg#home'></use>
+              </svg>
+            </a>
+          </li>
+          <li class="breadcrumbs__item" aria-current="page"><p>About us</p></li>
+        </ul>
+
+        <div class="block-section__top">
+          <span class="block-section__info">ПРО НАС</span>
+          <h1 class="block-section__title">"NEW PRODUCTS" — A EUROPEAN COMPANY 
+            WITH DYNAMIC DEVELOPMENT THAT SETS TRENDS 
+            IN THE FOOD AND BEVERAGE MARKET.</h1>
+            <span class="block-section__label">Video about company</span>
+        </div>
+
+        <video width='1720' height='718' controls>
+          <source src="./img/sample.mp4" type="video/mp4">
+        </video>
+
+        <a class="block-section__download" href="#" download="">
+          Complete information about the company
+          <svg width='125' height='125'>
+            <use href='img/sprite/sprite.svg#download'></use>
+          </svg>
+        </a>
+
+        <div class="block-section__inner">
+          <span class="block-section__subtitle">ВИРОБНИЦТВО</span>
+
+          <ul class="block-section__list">
+            <li class="block-section__item">
+              <div class="block-section__content">
+                <h3>EVERY YEAR THE COMPANY INVESTS IN UPGRADING AND EXPANDING PRODUCTION CAPACITIES</h3>
+      
+                <p>The uncompromising quality of the Сompany’s products is primarily determined by water, which serves as its basis. For the production of beverages, New Products Group uses only artesian water from local springs, characterized by optimal mineral composition for daily consumption. The highest quality of the artesian water encouraged the Company to launch the bottling line of drinking water PRYRODNE DZERELO™.</p>
+                <p>The modern equipment installed at the Company’s production facility allows us to produce the widest range of packaging and beverages that meet all world quality and safety standards. High-speed bottling lines are operating at the plant, which allows for enterprise operation modernization.</p>
+              </div>
+              <div class="block-section__image">
+                <picture>
+                  <source type='image/webp' srcset='img/index/production-big.webp'>
+                  <img width='850' height='472' src='img/index/production-big.png' alt='image'>
+                </picture>
+              </div>
+            </li>
+            <li class="block-section__item">
+              <div class="block-section__content">
+                <h3>EVERY YEAR THE COMPANY INVESTS IN UPGRADING AND EXPANDING PRODUCTION CAPACITIES</h3>
+      
+                <p>The uncompromising quality of the Сompany’s products is primarily determined by water, which serves as its basis. For the production of beverages, New Products Group uses only artesian water from local springs, characterized by optimal mineral composition for daily consumption. The highest quality of the artesian water encouraged the Company to launch the bottling line of drinking water PRYRODNE DZERELO™.</p>
+              </div>
+              <div class="block-section__image">
+                <picture>
+                  <source type='image/webp' srcset='img/index/production-big.webp'>
+                  <img width='850' height='472' src='img/index/production-big.png' alt='image'>
+                </picture>
+              </div>
+            </li>
+            <li class="block-section__item">
+              <div class="block-section__content">
+                <p>The history of New Products Group's beverage production began with the construction of a modern plant in Zhashkiv— a small town on the border of the Kyiv and Cherkasy Regions of Ukraine. The enterprise, which has become the "heart" of the Сompany and the center of production of Ukrainian drinks of the highest quality that meet the strictest international standards, was built in Zhashkiv for a reason.</p>
+              </div>
+              <div class="block-section__image">
+                <picture>
+                  <source type='image/webp' srcset='img/index/production-big.webp'>
+                  <img width='850' height='472' src='img/index/production-big.png' alt='image'>
+                </picture>
+              </div>
+            </li>
+            <li class="block-section__item">
+              <div class="block-section__content">
+                <h3>EVERY YEAR THE COMPANY INVESTS IN UPGRADING AND EXPANDING PRODUCTION CAPACITIES</h3>
+      
+                <p>The uncompromising quality of the Сompany’s products is primarily determined by water, which serves as its basis. For the production of beverages, New Products Group uses only artesian water from local springs, characterized by optimal mineral composition for daily consumption. The highest quality of the artesian water encouraged the Company to launch the bottling line of drinking water PRYRODNE DZERELO™.</p>
+                <p>The modern equipment installed at the Company’s production facility allows us to produce the widest range of packaging and beverages that meet all world quality and safety standards. High-speed bottling lines are operating at the plant, which allows for enterprise operation modernization.</p>
+              </div>
+              <div class="block-section__image">
+                <picture>
+                  <source type='image/webp' srcset='img/index/production-big.webp'>
+                  <img width='850' height='472' src='img/index/production-big.png' alt='image'>
+                </picture>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+
+  <script defer src="js/main.js"></script>
+</body>
+
+
+</html>

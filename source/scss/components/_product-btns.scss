@@ -1,0 +1,72 @@
+.product-btns{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding: 10px clamp(10px, 1.1628vw, 20px) 9px;
+    border: 2px solid var(--br-a);
+    border-radius: 15px;
+    width: 100%;
+    justify-content: space-between;
+    max-width: clamp(120px, 8.4884vw, 146px);
+    height: clamp(40px, 2.907vw, 50px);
+    align-self: center;
+    justify-self: end;
+
+    &__plus{
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        color: var(--cl-b);
+
+        svg{
+            color: var(--cl-b);
+            transition: all .3s;
+            width: 100%;
+            height: auto;
+        }
+
+        &:hover{
+            svg{
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    &__minus{
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        color: var(--cl-b);
+
+        svg{
+            transition: all .3s;
+            width: 100%;
+            height: auto;
+        }
+
+        &:hover{
+            svg{
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    &__quantity{
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: clamp(20px, 2.0349vw, 35px);
+        line-height: 74%;
+        color: var(--cl-m);
+        text-align: center;
+    }
+
+    @include mobile{
+        max-width: clamp(102px, 25.347vw, 146px);
+    }
+}

@@ -1,0 +1,43 @@
+[data-btn-modal] {
+  svg {
+    pointer-events: none;
+  }
+}
+
+.modal {
+  margin: auto;
+  transform: scale(.8);
+  display: none;
+
+  &.active {
+    transform: scale(1);
+  }
+
+  .close {
+    position: absolute;
+    top: clamp(20px, 4.883vw, 50px);
+    right: clamp(20px, 4.883vw, 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    transition: all .3s;
+    grid-gap: 5px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: clamp(18px, 1.3889vw, 20px);
+    line-height: 120%;
+    text-align: center;
+    color: var(--cl-a);
+
+    &:hover{
+      color: var(--cl-d);
+    }
+  }
+
+  .close svg {
+    pointer-events: none;
+    width: 40px;
+    height: 40px;
+  }
+}
