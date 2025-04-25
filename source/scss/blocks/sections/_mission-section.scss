@@ -1,0 +1,40 @@
+.mission-section {
+    margin-bottom: 150px;
+
+    &__wrapp {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+
+        li {
+            min-height: 315px;
+            padding: 24px;
+            background-color: #083F08;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            span {
+                position: relative;
+                display: block;
+                font-size: 24px;
+                line-height: 150%;
+                font-weight: 500;
+                color: #fff;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 160%;
+                font-weight: 300;
+                color: #fff;
+            }
+        }
+    }
+}

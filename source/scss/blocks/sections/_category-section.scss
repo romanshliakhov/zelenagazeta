@@ -1,0 +1,20 @@
+.category-section {
+    margin-bottom: 150px;
+
+    &__wrapp {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px 8px;
+    }
+}

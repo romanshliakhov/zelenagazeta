@@ -1,0 +1,16 @@
+.insta-section {
+    margin-bottom: 150px;
+
+    &__wrapp {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+}

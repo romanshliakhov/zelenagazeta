@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="Ua">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+    <section class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__items">
+          <li class="breadcrumbs__item home">
+            <a href="/">
+              <p>Головна</p>
+            </a>
+          </li>
+          <li class="breadcrumbs__item home">
+            <a href="#">
+              <p>Новини</p>
+            </a>
+          </li>
+          <li class="breadcrumbs__item" aria-current="page">
+            <p>Марія Шевченко</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="author-section">
+      <div class="container">
+        <div class="author-section__wrapp">
+          <aside class="author-section__aside">
+            aside
+          </aside>
+
+          <div class="author-section__box">
+            <div class="author-section__top">
+              <span class="author-section__counter">12 дописів</span>
+
+              <div class="sorting">
+                <button class="sorting__btn sort-new">За найновішими</button>
+                <button class="sorting__btn sort-popular">За популярними</button>
+              </div>
+            </div>
+
+            <ul class="author-section__items">
+              <li>
+                <a class="article-card" href="#">
+                  <div class="article-card__thumbnails">
+                    <picture>
+                      <source type='image/webp' srcset='img/articles/article1.webp'>
+                      <img width='602' height='331' src='img/articles/article1.png' alt='article1'>
+                    </picture>
+                  </div>
+  
+                  <div class="article-card__info">
+                    <div class="article-card__top">
+                      <span class="article-card__tag">
+                        <svg width='12' height='12'>
+                          <use href='img/sprite/sprite.svg#tag'></use>
+                        </svg>
+                        <p>культурне</p>
+                      </span>
+  
+                      <div class="article-card__details">
+                        <div class="article-card__views">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#eye'></use>
+                          </svg>
+                          <p>14</p>
+                        </div>
+  
+                        <div class="article-card__author">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#avatar'></use>
+                          </svg>
+                          <p>Марія Шевченко</p>
+                        </div>
+  
+                        <time class="article-card__pubtime" datetime="24.10.2025">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#time'></use>
+                          </svg>
+                          24.10.2024
+                        </time>
+                      </div>
+                    </div>
+  
+                    <div class="article-card__bottom">
+                      <div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+  
+                      <span>
+                        <svg width='44' height='44'>
+                          <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+  
+              <li>
+                <a class="article-card" href="#">
+                  <div class="article-card__thumbnails">
+                    <picture>
+                      <source type='image/webp' srcset='img/articles/article1.webp'>
+                      <img width='602' height='331' src='img/articles/article1.png' alt='article1'>
+                    </picture>
+                  </div>
+  
+                  <div class="article-card__info">
+                    <div class="article-card__top">
+                      <span class="article-card__tag">
+                        <svg width='12' height='12'>
+                          <use href='img/sprite/sprite.svg#tag'></use>
+                        </svg>
+                        <p>культурне</p>
+                      </span>
+  
+                      <div class="article-card__details">
+                        <div class="article-card__views">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#eye'></use>
+                          </svg>
+                          <p>14</p>
+                        </div>
+  
+                        <div class="article-card__author">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#avatar'></use>
+                          </svg>
+                          <p>Марія Шевченко</p>
+                        </div>
+  
+                        <time class="article-card__pubtime" datetime="24.10.2025">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#time'></use>
+                          </svg>
+                          24.10.2024
+                        </time>
+                      </div>
+                    </div>
+  
+                    <div class="article-card__bottom">
+                      <div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+  
+                      <span>
+                        <svg width='44' height='44'>
+                          <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+  
+              <li>
+                <a class="article-card" href="#">
+                  <div class="article-card__thumbnails">
+                    <picture>
+                      <source type='image/webp' srcset='img/articles/article1.webp'>
+                      <img width='602' height='331' src='img/articles/article1.png' alt='article1'>
+                    </picture>
+                  </div>
+  
+                  <div class="article-card__info">
+                    <div class="article-card__top">
+                      <span class="article-card__tag">
+                        <svg width='12' height='12'>
+                          <use href='img/sprite/sprite.svg#tag'></use>
+                        </svg>
+                        <p>культурне</p>
+                      </span>
+  
+                      <div class="article-card__details">
+                        <div class="article-card__views">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#eye'></use>
+                          </svg>
+                          <p>14</p>
+                        </div>
+  
+                        <div class="article-card__author">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#avatar'></use>
+                          </svg>
+                          <p>Марія Шевченко</p>
+                        </div>
+  
+                        <time class="article-card__pubtime" datetime="24.10.2025">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#time'></use>
+                          </svg>
+                          24.10.2024
+                        </time>
+                      </div>
+                    </div>
+  
+                    <div class="article-card__bottom">
+                      <div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+  
+                      <span>
+                        <svg width='44' height='44'>
+                          <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+  
+              <li>
+                <a class="article-card" href="#">
+                  <div class="article-card__thumbnails">
+                    <picture>
+                      <source type='image/webp' srcset='img/articles/article1.webp'>
+                      <img width='602' height='331' src='img/articles/article1.png' alt='article1'>
+                    </picture>
+                  </div>
+  
+                  <div class="article-card__info">
+                    <div class="article-card__top">
+                      <span class="article-card__tag">
+                        <svg width='12' height='12'>
+                          <use href='img/sprite/sprite.svg#tag'></use>
+                        </svg>
+                        <p>культурне</p>
+                      </span>
+  
+                      <div class="article-card__details">
+                        <div class="article-card__views">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#eye'></use>
+                          </svg>
+                          <p>14</p>
+                        </div>
+  
+                        <div class="article-card__author">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#avatar'></use>
+                          </svg>
+                          <p>Марія Шевченко</p>
+                        </div>
+  
+                        <time class="article-card__pubtime" datetime="24.10.2025">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#time'></use>
+                          </svg>
+                          24.10.2024
+                        </time>
+                      </div>
+                    </div>
+  
+                    <div class="article-card__bottom">
+                      <div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+  
+                      <span>
+                        <svg width='44' height='44'>
+                          <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+  
+              <li>
+                <a class="article-card" href="#">
+                  <div class="article-card__thumbnails">
+                    <picture>
+                      <source type='image/webp' srcset='img/articles/article1.webp'>
+                      <img width='602' height='331' src='img/articles/article1.png' alt='article1'>
+                    </picture>
+                  </div>
+  
+                  <div class="article-card__info">
+                    <div class="article-card__top">
+                      <span class="article-card__tag">
+                        <svg width='12' height='12'>
+                          <use href='img/sprite/sprite.svg#tag'></use>
+                        </svg>
+                        <p>культурне</p>
+                      </span>
+  
+                      <div class="article-card__details">
+                        <div class="article-card__views">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#eye'></use>
+                          </svg>
+                          <p>14</p>
+                        </div>
+  
+                        <div class="article-card__author">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#avatar'></use>
+                          </svg>
+                          <p>Марія Шевченко</p>
+                        </div>
+  
+                        <time class="article-card__pubtime" datetime="24.10.2025">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#time'></use>
+                          </svg>
+                          24.10.2024
+                        </time>
+                      </div>
+                    </div>
+  
+                    <div class="article-card__bottom">
+                      <div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+  
+                      <span>
+                        <svg width='44' height='44'>
+                          <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+  
+              <li>
+                <a class="article-card" href="#">
+                  <div class="article-card__thumbnails">
+                    <picture>
+                      <source type='image/webp' srcset='img/articles/article1.webp'>
+                      <img width='602' height='331' src='img/articles/article1.png' alt='article1'>
+                    </picture>
+                  </div>
+  
+                  <div class="article-card__info">
+                    <div class="article-card__top">
+                      <span class="article-card__tag">
+                        <svg width='12' height='12'>
+                          <use href='img/sprite/sprite.svg#tag'></use>
+                        </svg>
+                        <p>культурне</p>
+                      </span>
+  
+                      <div class="article-card__details">
+                        <div class="article-card__views">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#eye'></use>
+                          </svg>
+                          <p>14</p>
+                        </div>
+  
+                        <div class="article-card__author">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#avatar'></use>
+                          </svg>
+                          <p>Марія Шевченко</p>
+                        </div>
+  
+                        <time class="article-card__pubtime" datetime="24.10.2025">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#time'></use>
+                          </svg>
+                          24.10.2024
+                        </time>
+                      </div>
+                    </div>
+  
+                    <div class="article-card__bottom">
+                      <div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+  
+                      <span>
+                        <svg width='44' height='44'>
+                          <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a class="article-card" href="#">
+                  <div class="article-card__thumbnails">
+                    <picture>
+                      <source type='image/webp' srcset='img/articles/article1.webp'>
+                      <img width='602' height='331' src='img/articles/article1.png' alt='article1'>
+                    </picture>
+                  </div>
+  
+                  <div class="article-card__info">
+                    <div class="article-card__top">
+                      <span class="article-card__tag">
+                        <svg width='12' height='12'>
+                          <use href='img/sprite/sprite.svg#tag'></use>
+                        </svg>
+                        <p>культурне</p>
+                      </span>
+  
+                      <div class="article-card__details">
+                        <div class="article-card__views">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#eye'></use>
+                          </svg>
+                          <p>14</p>
+                        </div>
+  
+                        <div class="article-card__author">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#avatar'></use>
+                          </svg>
+                          <p>Марія Шевченко</p>
+                        </div>
+  
+                        <time class="article-card__pubtime" datetime="24.10.2025">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#time'></use>
+                          </svg>
+                          24.10.2024
+                        </time>
+                      </div>
+                    </div>
+  
+                    <div class="article-card__bottom">
+                      <div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+  
+                      <span>
+                        <svg width='44' height='44'>
+                          <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+  
+              <li>
+                <a class="article-card" href="#">
+                  <div class="article-card__thumbnails">
+                    <picture>
+                      <source type='image/webp' srcset='img/articles/article1.webp'>
+                      <img width='602' height='331' src='img/articles/article1.png' alt='article1'>
+                    </picture>
+                  </div>
+  
+                  <div class="article-card__info">
+                    <div class="article-card__top">
+                      <span class="article-card__tag">
+                        <svg width='12' height='12'>
+                          <use href='img/sprite/sprite.svg#tag'></use>
+                        </svg>
+                        <p>культурне</p>
+                      </span>
+  
+                      <div class="article-card__details">
+                        <div class="article-card__views">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#eye'></use>
+                          </svg>
+                          <p>14</p>
+                        </div>
+  
+                        <div class="article-card__author">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#avatar'></use>
+                          </svg>
+                          <p>Марія Шевченко</p>
+                        </div>
+  
+                        <time class="article-card__pubtime" datetime="24.10.2025">
+                          <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#time'></use>
+                          </svg>
+                          24.10.2024
+                        </time>
+                      </div>
+                    </div>
+  
+                    <div class="article-card__bottom">
+                      <div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+  
+                      <span>
+                        <svg width='44' height='44'>
+                          <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+            <button class="more-button">Показати ще</button>
+
+            <div class="pagination">
+              <a class="pagination__nav prev" href="#">
+                <svg width='40' height='40'>
+                  <use href='img/sprite/sprite.svg#arrow-left'></use>
+                </svg>
+              </a>
+
+              <ul class="pagination__list">
+                <li class="pagination__list-item">
+                  <a class="pagination__list-link active" href="#">1</a>
+                </li>
+                <li class="pagination__list-item">
+                  <a class="pagination__list-link" href="#">2</a>
+                </li>
+                <li class="pagination__list-item">
+                  <a class="pagination__list-link" href="#">3</a>
+                </li>
+                <li class="pagination__list-item">
+                  <span class="pagination__list-link">...</span>
+                </li>
+                <li class="pagination__list-item">
+                  <a class="pagination__list-link" href="#">13</a>
+                </li>
+              </ul>
+              
+              <a class="pagination__nav next" href="#">
+                <svg width='40' height='40'>
+                  <use href='img/sprite/sprite.svg#arrow-right'></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe-section">
+      <div class="container">
+        <div class="subscribe-section__wrapp">
+          <div class="subscribe-section__bg">
+            <picture>
+              <source type='image/webp' srcset='img/index/form-bg.webp'>
+              <img width='1280' height='441' src='img/index/form-bg.png' alt='subsribe form'>
+            </picture>
+          </div>
+
+          <form class="form">
+            <div class="form__top">
+              <div class="form__title h2">Підписуйся на новини!</div>
+              <p class="form__text">Отримуй корисне і цікаве!</p>
+            </div>
+
+            <div class="form__box subscribe">
+              <label class="form__label">
+                <input class="form__input" type="email" name="email" placeholder="Введіть e-mail">
+              </label>
+              <button class="form__submit">Підписатись</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+
+  <script defer src="js/main.js"></script>
+</body>
+
+
+</html>

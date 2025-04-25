@@ -1,12 +1,11 @@
 :root {
   // --------------- default global variables ---------------
   --body-bg: #CBCBCB;
-  --body-bg-product: #FAE1A0;
   --body-font-size: 16px;
-  --content-width: 1720px;
+  --content-width: 1280px;
   --content-width-mode: 1920px;
   --content-width-mini: 952px;
-  --container-offset: clamp(25px, 2.907vw, 50px);
+  --container-offset: clamp(16px, 4.167vw, 80px);
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // --------------- default scroll variables ---------------
@@ -36,24 +35,21 @@
 
   // --------------- default font-family variables ---------------
 
-  --font-family: "HelveticaNeueCyr", sans-serif; // var(--font-family);
-  --second-family: "BebasNeue", sans-serif; // var(--second-family);
-  --third-family: "Inter", sans-serif; // var(--third-family);
-  --font3:  "RoundedMplus1c", sans-serif; // var(--font3);
+  --font-family: "e-Ukraine", sans-serif; // var(--font-family);
 
   // --------------- default text color variables ---------------
   --cl-a: #ffffff; // var(--cl-a);
   --cl-b: #000000; // var(--cl-b);
-  --cl-c:   #1e0606; // var(--cl-c);
+  --cl-c: #1e0606; // var(--cl-c);
   --cl-d: #7FFF92; // var(--cl-d);
-  --cl-e:  #211C29; // var(--cl-e);
+  --cl-e: #211C29; // var(--cl-e);
   --cl-f: #3e3749; // var(--cl-f);
   --cl-g: #41394d; // var(--cl-g);
   --cl-h: #695b80; // var(--cl-h);
-  --cl-j:  #2d2d2d; // var(--cl-j);
-  --cl-k:  #c0c0c0; // var(--cl-k);
-  --cl-l:  #8a8591; // var(--cl-l);
-  --cl-m:  #050505; // var(--cl-m);
+  --cl-j: #2d2d2d; // var(--cl-j);
+  --cl-k: #c0c0c0; // var(--cl-k);
+  --cl-l: #8a8591; // var(--cl-l);
+  --cl-m: #050505; // var(--cl-m);
 
   // --------------- default background color variables ---------------
   --bg-a: #ffffff; // var(--bg-a);
@@ -61,7 +57,7 @@
   --bg-c: #050505; // var(--bg-c);
   --bg-d: #d8d3cf; // var(--bg-d);
   --bg-e: #CBCBCB; // var(--bg-e);
-  --bg-f:  #7d7d7d; // var(--bg-f);
+  --bg-f: #7d7d7d; // var(--bg-f);
   --bg-g: #dbdcae; // var(--bg-g);
   --bg-h: #FAE1A0; // var(--bg-h);
   --bg-j: #4d4d4d; // var(--bg-j);

@@ -1,60 +1,41 @@
-.about-section{
-    margin-bottom: clamp(100px, 8.7209vw, 150px);
-
-    &__box{
-      display: flex;
-      flex-direction: column;
-      grid-gap: clamp(30px, 2.907vw, 50px);
+.about-section {
+    margin-bottom: 150px;
+    
+    &__wrapp {
+        position: relative;
+        padding: 100px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    &__inner{
-      display: flex;
-      flex-direction: column;
+    &__bg {
+        display: flex;
+        position: absolute;
+        inset: 0;
+        z-index: -1;
 
-      @include tablet{
-        gap: 30px;
-      }
-    }
-
-    &__text{
-      font-family: var(--font-family);
-      font-weight: 400;
-      font-size: clamp(25px, 3.4884vw, 60px);
-      line-height: 122%;
-      color: var(--cl-c);
-
-      @include for-tablet{
-          align-self: flex-end;
-          text-align: right;
-      }
-
-      @include for-small-tablet{
-          max-width: Min(74.7093vw, 1285px);
-      }
-
-      @include tablet{
-          line-height: 108%;
-      }
-    }
-
-    &__info{
-
-        font-family: var(--font-family);
-        font-weight: 400;
-        font-size: clamp(22px, 1.3953vw, 24px);
-        line-height: 112%;
-        color: var(--cl-c);
-
-        @include for-tablet{
-            max-width: clamp(550px, 49.4186vw, 850px);
-
-            br{
-                display: none;
-            }
+        picture,
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
+    }
 
-        @include tablet{
-            line-height: 123%;
-        }
+    &__info {
+        max-width: 732px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 160%;
+        font-weight: 500;
+        color: #083F08;
     }
 }

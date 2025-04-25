@@ -1,0 +1,16 @@
+.tags-section {
+    margin-bottom: 150px;
+    
+    &__wrapp {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 16px 24px;
+    }
+}

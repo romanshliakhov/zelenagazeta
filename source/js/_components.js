@@ -12,3 +12,7 @@ import './components/sliders.js';
 import './components/search.js';
 import './components/hiddenText.js';
 
+import './components/fancybox.js';
+
+
+
