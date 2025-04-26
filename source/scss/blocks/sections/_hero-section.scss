@@ -1,20 +1,37 @@
 .hero-section {
   padding-top: 32px;
-  margin-bottom: 150px;
+  margin-bottom: clamp(80px, 10.417vw, 150px);
 
   &__posts {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    gap: 7px 40px;
-    align-items: stretch;
-    
-    li:first-child {
-      grid-row: span 3;
-      
-      .article-card__thumbnails {
-        width: 100%;
-        height: auto;
+
+    @include for-mini-tablet {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      align-items: stretch;
+      gap: 7px clamp(24px, 2.778vw, 40px);
+
+      li:first-child {
+        grid-row: span 3;
+        
+        .article-card__thumbnails {
+          flex-grow: 1;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    @include mini-tablet {
+      grid-template-columns: 100%;
+      li:first-child {
+        margin-bottom: 24px;
+        
+        .article-card__thumbnails {
+          flex-grow: 1;
+          width: 100%;
+          height: auto;
+        }
       }
     }
   }

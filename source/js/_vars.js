@@ -8,11 +8,12 @@ export default {
   header: document.querySelector('header'),
   footer: document.querySelector('footer'),
 
-  marqueSliders: document.querySelectorAll('.marque-slider'),
-  bestSliders: document.querySelectorAll('.bestsellers-slider'),
-  articlesSlider: document.querySelector('.articles-slider'),
-  heroSlider: document.querySelector('.hero-slider'),
-  relatedSlider: document.querySelector('.related-slider'),
+  videosSliders: document.querySelectorAll('.videos-section__wrapp'),
+  // articlesSlider: document.querySelector('.articles-slider'),
+  // heroSlider: document.querySelector('.hero-slider'),
+  // relatedSlider: document.querySelector('.related-slider'),
+
+
   dataHidden: document.querySelectorAll("[data-clip]"),
   search: document.querySelectorAll("[data-search]"),
 

@@ -1,10 +1,10 @@
 .identity-section {
     position: relative;
-    margin-bottom: 150px;
+    margin-bottom: clamp(80px, 10.417vw, 150px);
 
     &__wrapp {
         position: relative;
-        padding: 81px;
+        padding: clamp(62px, 5.625vw, 81px) 0;
     }
 
     &__bg {
@@ -23,12 +23,24 @@
     &__box {
         display: flex;
         align-items: center;
-        gap: 64px;
+        gap: clamp(40px, 4.444vw, 4.444vw);
+
+        @include tablet {
+            flex-direction: column-reverse;
+        }
     }
 
     &__image {
         flex-shrink: 0;
-        width: 365px;
+        width: clamp(275px, 47.526vw, 365px);
+        height: clamp(242px, 42.057vw, 323px);
+
+        picture,
+        img,
+        svg {
+            width: 100%;
+            height: 100%;
+        }
     }
 
     &__info {
@@ -42,7 +54,7 @@
     }
 
     &__text {
-        font-size: 24px;
+        font-size: clamp(16px, 1.667vw, 24px);
         line-height: 140%;
         font-weight: 700;
         color: #083F08;

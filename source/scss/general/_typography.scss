@@ -21,11 +21,16 @@ h1,
 h2,
 .h2 {
   font-family: var(--font-family);
-  font-size: 40px;
+  font-size: clamp(24px, 3.906vw, 40px);
   line-height: 140%;
   font-weight: 500;
   color: #083F08;
   font-variant-numeric: lining-nums proportional-nums;
   text-overflow: ellipsis;
   overflow: hidden;
+
+  svg {
+    width: clamp(24px, 3.906vw, 40px);
+    height: clamp(24px, 3.906vw, 40px);
+  }
 }

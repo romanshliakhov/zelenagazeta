@@ -1,9 +1,9 @@
 .subscribe-section {
-    margin-bottom: 150px;
+    margin-bottom: clamp(80px, 10.417vw, 150px);
     
     &__wrapp {
         position: relative;
-        padding: 100px 0;
+        padding: clamp(30px, 9.766vw, 100px) 0;
         display: flex;
         align-items: center;
         justify-content: center;

@@ -5,7 +5,6 @@
     &__poster {
         position: relative;
         width: 100%;
-        height: 231px;
         overflow: hidden;
     
         picture,
@@ -27,10 +26,17 @@
 
     &__info {
         position: relative;
-        padding: 22px 24px 30px;
         display: flex;
         flex-direction: column;
         gap: 36px;
+
+        @include for-small-tablet {
+          padding: 22px clamp(12px, 2.344vw, 24px) 30px;
+        }
+
+        @include small-tablet {
+          padding: 22px 0 30px;
+        }
     
         &::before {
           content: '';
@@ -46,7 +52,7 @@
     }
 
     &__title {
-        font-size: 18px;
+        font-size: clamp(16px, 2.344vw, 18px);
         line-height: 160%;
         font-weight: 500;
         color: #083F08;

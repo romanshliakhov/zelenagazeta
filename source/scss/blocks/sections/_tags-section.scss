@@ -1,5 +1,5 @@
 .tags-section {
-    margin-bottom: 150px;
+    margin-bottom: clamp(80px, 10.417vw, 150px);
     
     &__wrapp {
         display: flex;
@@ -11,6 +11,6 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        gap: 16px 24px;
+        gap: clamp(8px, 1.563vw, 16px) clamp(8px, 2.344vw, 24px);
     }
 }

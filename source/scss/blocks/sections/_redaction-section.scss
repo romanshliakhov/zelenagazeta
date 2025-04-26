@@ -1,14 +1,32 @@
 .redaction-section {
-    margin-bottom: 150px;
+    margin-bottom: clamp(80px, 10.417vw, 150px);
+
+    @include tablet {
+        .container {
+            padding: 0;
+        }
+    }
 
     &__post {
         display: flex;
         align-items: stretch;
 
+        @include tablet {
+            flex-direction: column;
+        }
+
         &-image {
             display: flex;
-            flex-shrink: 0;
-            width: 602px;
+            width: 100%;
+
+            picture,
+            img {
+                width: 100%;
+            }
+
+            @include for-tablet {
+                max-width: 602px;
+            }    
         }
 
         &-info {
@@ -18,7 +36,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            gap: 85px;
+            gap: clamp(24px, 8.301vw, 85px);
         }
 
         &-top {
@@ -26,7 +44,7 @@
             align-items: flex-start;
             justify-content: space-between;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 17px 10px;
         }
 
         &-heading {
@@ -55,17 +73,25 @@
             max-width: 555px;
             display: flex;
             flex-direction: column;
-            gap: 16px;
+            gap: clamp(8px, 1.563vw, 16px);
         }
 
         &-controls {
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            @include tablet {
+                align-items: flex-start;
+            }
         }
 
         &-link {
             display: none;
+
+            @include tablet {
+                display: flex;
+            }
         }
 
         &-tag {
@@ -78,14 +104,14 @@
         }
 
         &-title {
-            font-size: 18px;
+            font-size: clamp(16px, 1.758vw, 18px);
             line-height: 160%;
             font-weight: 500;
             color: #fff;
         }
 
         &-excerpt {
-            font-size: 16px;
+            font-size: clamp(14px, 1.563vw, 16px);
             line-height: 160%;
             font-weight: 500;
             color: rgba(255, 255, 255, 0.70);
