@@ -8,7 +8,7 @@
         gap: clamp(24px, 2.778vw, 40px);
 
         @include for-tablet {
-            grid-template-columns: clamp(300px, 26.528vw, 382px) 1fr;
+            grid-template-columns: 29% 71%;
             align-items: flex-start;
         }
 
@@ -18,9 +18,12 @@
     }
 
     &__aside {
-        padding: 16px;
+        padding: 16px 16px 40px;
         background-color: #E5EEE5;
         border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
 
         @include for-tablet {
             position: sticky;
@@ -28,7 +31,7 @@
         }
     }
 
-    &__nav {
+    &__categories {
         display: flex;
         flex-direction: column;
         gap: 12px;
@@ -37,21 +40,78 @@
             padding: 12px;
             display: flex;
             align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+
+            svg {
+                flex-shrink: 0;
+            }
+
+            span {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 16px;
+                line-height: normal;
+                font-weight: 500;
+                color: #083F08;
+            }
+        }
+    }
+
+    &__subсategories {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        a {
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+
+            svg {
+                flex-shrink: 0;
+            }
+
+            span {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 16px;
+                line-height: normal;
+                font-weight: 500;
+                color: #083F08;
+            }
+        }
+    }
+
+    &__category-active {
+        padding: 12px;
+        background-color: #fff;
+        border-radius: 8px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        svg {
+            flex-shrink: 0;
+        }
+
+        span {
+            display: flex;
+            align-items: center;
             gap: 8px;
             font-size: 16px;
             line-height: normal;
             font-weight: 500;
             color: #083F08;
-
-            svg {
-                flex-shrink: 0;
-            }
         }
     }
 
     &__box {
-        max-width: 860px;
-        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -68,6 +128,7 @@
     &__top {
         width: 100%;
         display: flex;
+        align-items: flex-start;
         justify-content: space-between;
         gap: 16px;
     }
@@ -124,6 +185,12 @@
 
         .swiper-slide {
             width: fit-content;
+        }
+
+        .tag {
+            padding: 10px 16px;
+            font-size: 14px;
+            line-height: 150%;
         }
     }
 

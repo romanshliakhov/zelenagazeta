@@ -37,5 +37,119 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
+
+        @include for-tablet {
+            position: sticky;
+            top: calc(var(--header-height) + 20px);
+        }
+
+        &-box {
+            padding: 16px 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            background-color: #E5EEE5;
+            border-radius: 16px;
+        }
+
+        &-tags {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 12px;
+
+            .tag {
+                gap: 0;
+                padding: 0;
+                background-color: transparent;
+                font-size: 12px;
+                line-height: normal;
+                font-weight: 400;
+                text-transform: lowercase;
+            }
+        }
+
+        &-details {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            span {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+
+                font-size: 12px;
+                line-height: normal;
+                font-weight: 300;
+                color: #083F08;
+            }
+        }
+
+        &-bottom {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        &-share {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        &-heading {
+            font-size: 16px;
+            line-height: 160%;
+            font-weight: 500;
+            color: #083F08;
+        }
+
+        &-btns {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+    }
+
+    &__author {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &-avatar {
+            display: flex;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+    
+            picture,
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        &-name {
+            font-size: 16px;
+            line-height: 160%;
+            font-weight: 500;
+            color: #1E1E1E;
+        }
+
+        &-role {
+            font-size: 12px;
+            line-height: normal;
+            font-weight: 300;
+            color: #1E1E1E;
+        }
     }
 }

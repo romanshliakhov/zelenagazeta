@@ -1,0 +1,26 @@
+.sorting {
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #E5EEE5;
+    border-radius: 68px;
+
+    &__btn {
+        padding: 8px 6px;
+        border-radius: 999px;
+        font-size: 12px;
+        line-height: normal;
+        font-weight: 300;
+        transition: all 0.2s ease;
+
+        &.active {
+            background-color: #E5EEE5;
+        }
+
+        &:hover,
+        &:active {
+            background-color: #E5EEE5;
+        }
+    }
+}

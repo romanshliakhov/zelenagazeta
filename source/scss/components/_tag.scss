@@ -10,4 +10,8 @@
     line-height: normal;
     font-weight: 500;
     color: #083F08;
+
+    &.active {
+        background-color: #F1D9D4;
+    }
 }
