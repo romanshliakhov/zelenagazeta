@@ -1,17 +1,146 @@
 <header class="header fixed-block">
   <div class="container">
-    <div class="header__box">
-      <a href="/" class="logo">
-        <img width='299' height='120' src='img/sprite/logo.svg' alt='image'>
-      </a>
+    <div class="header__wrapp">
+      <div class="header__top">
+        <div class="header__top-left">
+          <button class="burger">
+            <svg class="burger__open" width='32' height='32'>
+              <use href='img/sprite/sprite.svg#burger-open'></use>
+            </svg>
+    
+            <svg class="burger__close" width='32' height='32'>
+              <use href='img/sprite/sprite.svg#burger-close'></use>
+            </svg>
+          </button>
 
-      <div class="header__inner">
+          <div class="header__swither">
+            <label>
+              <input type="radio" name="color-theme">
+              <span>
+                <svg class="dark-theme" width='32' height='32'>
+                  <use href='img/sprite/sprite.svg#dark'></use>
+                </svg>
+              </span>
+            </label>
+            <label>
+              <input type="radio" name="color-theme">
+              <span>
+                <svg class="light-theme" width='32' height='32'>
+                  <use href='img/sprite/sprite.svg#light'></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+        </div>
 
+        <div class="header__controls">
+          <div class="header__search">
+            <div class="header__search-trigger">
+              <svg width='32' height='32'>
+                <use href='img/sprite/sprite.svg#search'></use>
+              </svg>
+            </div>
+          </div>
+
+          <a class="header__link" href="#">
+            <svg width='22' height='22'>
+              <use href='img/sprite/sprite.svg#medicine'></use>
+            </svg>
+            Зелена медицина
+            <svg width='22' height='22'>
+              <use href='img/sprite/sprite.svg#arrow-agile'></use>
+            </svg>
+          </a>
+
+          <div class="lang">
+            UA
+            <svg width='24' height='24'>
+              <use href='img/sprite/sprite.svg#arrow-down'></use>
+            </svg>
+          </div>
+        </div>
       </div>
 
-      <button class="burger">
-        <span class="burger__line"></span>
-      </button>
+      <div class="header__box">
+        <a href="/" class="header__logo">
+          <svg width='1280' height='142'>
+            <use href='img/sprite/sprite.svg#footer-logo'></use>
+          </svg>
+        </a>
+
+        <div class="header__divider">
+          <svg width='1280' height='8'>
+            <use href='img/sprite/sprite.svg#full-line'></use>
+          </svg>
+        </div>
+      </div>
+
+      <nav class="header__nav">
+        <ul class="menu">
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-link" href="#">
+              Новини 
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#arrow-down'></use>
+              </svg>
+            </a>
+
+            <ul class="sub-menu">
+              <li>
+                <a href="#">Психологія відносин</a>
+              </li>
+              <li>
+                <a href="#">Секс</a>
+              </li>
+              <li>
+                <a href="#">Арт-терапія та мантричні практики</a>
+              </li>
+              <li>
+                <a href="#">Реальні історії людей</a>
+              </li>
+              <li>
+                <a href="#">Психологія змін</a>
+              </li>
+              <li>
+                <a href="#">Вікова психологія</a>
+              </li>
+              <li>
+                <a href="#">Психологія в роботі</a>
+              </li>
+              <li>
+                <a href="#">Робота зі стресом</a>
+              </li>
+              <li>
+                <a href="#">Самооцінка та прийняття себе</a>
+              </li>
+              <li>
+                <a href="#">Емоційний інтелект</a>
+              </li>
+              <li>
+                <a href="#">Ментальне здоров’я</a>
+              </li>
+              <li>
+                <a href="#">ПТСР та психологія травми</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">Медичне</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">Життєве</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">Культурне</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">Законне</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">Експертне</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </div>
 </header>
@@ -19,7 +148,7 @@
 <div class="mobile">
   <div class="container">
     <div class="mobile__box">
-
+      aside menu
     </div>
   </div>
 </div>

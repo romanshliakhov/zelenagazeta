@@ -4,24 +4,15 @@
   position: fixed;
   z-index: 95;
   top: 0;
-  // padding: clamp(15px, 1.1628vw, 20px) 0;
-  background: var(--bg-b);
+  background: var(--bg-a);
   transition: all 0.3s, padding-right 0s;
 
-
   &.sticky {
-    padding: clamp(15px, 1.7442vw, 30px) 0;
-
-    @include tablet {
-      padding: clamp(15px, 1.7442vw, 30px) 0;
-    }
-
-    .logo {
-      @include for-tablet{
-        width: clamp(130px, 10.3488vw, 178px);
-        height: clamp(52px, 4.0698vw, 70px);
-     
-      }
+    .header__nav {
+      opacity: 0;
+      visibility: hidden;
+      height: 0;
+      padding: 0;
     }
   }
 
@@ -30,44 +21,93 @@
     transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
   }
 
-  &__box {
-    display: grid;
-    position: relative;
-    z-index: 2;
-    align-items: center;
-
-    @include for-laptop {
-      justify-content: space-between;
-      grid-gap: clamp(25px, 5.814vw, 100px);
-    }
-
-    @include laptop {
-      grid-gap: clamp(25px, 2.907vw, 50px);
-    }
-
-    @include for-tablet {
-      grid-template-columns: auto 1fr auto;
-    }
-
-    @include tablet {
-      grid-template-columns: auto 1fr auto;
-    }
-
-    @include laptop {
-      .transparent-btn {
-        padding: 16px clamp(20px, 1.7361vw, 25px);
-      }
-    }
-  }
-
-
   .burger {
     justify-self: end;
 
     @include burger;
   }
 
-  .logo{
-    transition: 0.3s ease;
+  &__top {
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    &-left {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+  }
+
+  &__switcher {
+    display: flex;
+  }
+
+  &__controls {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__search {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    &-trigger {
+      display: flex;
+      cursor: pointer;
+    }
+  }
+
+  &__link {
+    height: 38px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background-color: #C3E9C7;
+    border-radius: 37px;
+  }
+
+   &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__nav {
+    padding: 28px 0 16px;
+    transition: all 0.3s ease;
+
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .menu-item {
+      position: relative;
+    }
+
+    .sub-menu {
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .menu-link {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      font-size: 20px;
+      line-height: normal;
+      font-weight: 400;
+      text-transform: lowercase;
+    }
   }
 }
