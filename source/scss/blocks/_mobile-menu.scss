@@ -1,16 +1,16 @@
 .mobile {
   position: fixed;
-  top: var(--header-height);
-  right: 0;
-  width: 100%;
-  height: fit-content;
-  background: var(--bg-b);
-  z-index: 90;
+  // top: var(--header-height);
+  top: var(--header-top);
+  left: 0;
+  width: fit-content;
+  height: calc(100svh - var(--header-top));
+  background: #E5EEE5;
+  z-index: 30;
   overflow: hidden;
   transition: 0.3s ease;
-  transform: translateY(-150%);
-  padding: clamp(20px, 2.0349vw, 35px) 0 clamp(30px, 2.6163vw, 45px);
-  border-radius: 0 0 25px 25px;
+  transform: translateX(-150%);
+  padding: 40px 24px 60px 80px;
 
   @include tablet{
     height: calc(100% - var(--header-height));
@@ -20,7 +20,7 @@
 
   &.active {
     display: flex;
-    transform: translateY(0);
+    transform: translateX(0);
 
     @include  tablet {
       overflow-y: auto;
@@ -29,179 +29,27 @@
 
   &__box {
     width: 100%;
-
-    @include for-laptop{
-      grid-template-columns: 1fr 1.28fr;
-      grid-gap: 30px clamp(30px, 10.9884vw, 189px);
-    }
-
-    @include laptop{
-      grid-gap: 30px 50px;
-
-      @include for-small-tablet{
-        grid-template-columns: minmax(300px,1fr) 1.1fr;
-      }
-    }
-
-    @include for-small-tablet{
-      display: grid;
-    }
-
-    @include tablet{
-      @include for-small-tablet{
-        padding-bottom: 45px;
-      }
-    }
-
-    @include small-tablet{
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    }
-  }
-
-  .search-wrapper{
-    gap: 12.5px;
-    width: 100%;
-    padding: 30px clamp(20px, 1.7442vw, 30px);
-    background: var(--bg-b);
-    border: 1px solid var(--br-a);
-    &::before{
-      display: none;
-    }
-
-    &__title{
-      color: var(--cl-a);
-    }
-
-    &__pretitle{
-      color: var(--cl-a);
-    }
-
-    &__price{
-      color: var(--cl-a);
-    }
-
-    &__link{
-      color: var(--cl-a);
-
-      &:hover{
-        svg{
-          color: var(--bg-g);
-        }
-      }
-    }
-
-    @include for-small-tablet{
-      display: none;
-      position: relative;
-      top: 0;
-      opacity: 1;
-      visibility: visible;
-    }
-
-    @include small-tablet{
-      height: fit-content;
-      transform: none;
-      position: static;
-      opacity: 1;
-      visibility: visible;
-    }
-  }
-
-  .header__search{
     display: flex;
     flex-direction: column;
-    width: 100%;
-
-    &.active{
-      .search-form{
-        &__input{
-          border-radius: 15px 15px 0 0;
-        }
-      }
-    }
-
-    &.result{
-      .search-form{
-        &__input{
-          color: rgba(255, 255, 255, 0.5);
-          background: transparent;
-        }
-      }
-    }
-
-    .search-form{
-      width: 100%;
-
-      &__label{
-        border: none;
-      }
-
-      &__input{
-        color: var(--cl-a);
-        padding: clamp(15px, 1.7442vw, 30px) clamp(62px, 5vw, 86px) clamp(15px, 1.7442vw, 30px) clamp(20px, 1.7442vw, 30px);
-        background: var(--bg-j);
-        border: 1px solid var(--br-a);
-        height: clamp(51px, 4.7093vw, 81px);
-        font-weight: 400;
-
-        &::placeholder{
-          font-weight: 400;
-          color: var(--cl-a);
-          opacity: 0.5;
-        }
-
-        @include for-small-tablet{
-          border-radius: 15px 15px 0 0;
-         }
-   
-         @include small-tablet{
-           border-radius: 15px;
-         }
-      }
-
-      &__btn{
-        width: clamp(32px, 2.6744vw, 46px);
-        height: clamp(32px, 2.6744vw, 46px);
-        top: 50%;
-        transform: translateY(-50%);
-        right: clamp(20px, 1.7442vw, 30px);
-        z-index: 5;
-      }
-    }
-
-    .search-wrapper{
-      @include for-small-tablet{
-        display: flex;
-      }
-      @include small-tablet{
-        display: none;
-      }
-    }
-
-    @include small-tablet{
-      height: fit-content;
-    }
+    justify-content: space-between;
   }
- 
-  .footer__nav{
-   
-    &-item{
-      gap: clamp(12px, 1.1628vw, 20px);
-      padding: 12px 0 clamp(10px, 1.27vw, 13px);
-    }
 
-    &-extended{
-      grid-template-columns: clamp(100px, 9.593vw, 165px) 1fr;
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 
-      li{
-        padding: 8px 0 clamp(10px, 1.27vw, 13px);
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 63px;
+
+      span {
+        display: flex;
+        align-items: center;
+        gap: 8px;
       }
-    }
-
-    @include small-tablet{
-      padding-bottom: 77px;
     }
   }
 }

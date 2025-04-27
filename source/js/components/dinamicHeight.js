@@ -1,7 +1,7 @@
 import vars from '../_vars.js';
 import {elementHeight, removeCustomClass, addCustomClass} from '../functions/customFunctions.js';
 
-const {header} = vars;
+const {header, headerTop} = vars;
 
 let lastScroll = 0;
 const defaultOffset = 40;
@@ -30,4 +30,5 @@ document.addEventListener("DOMContentLoaded", function () {
     stickyHeaderFunction(320);
 
     elementHeight(header, 'header-height');
+    elementHeight(headerTop, 'header-top');
 });
