@@ -2,90 +2,13 @@
   padding-top: 12px;
 
   &__items {
-    margin: clamp(20px, 4.883vw, 50px) 0 clamp(50px, 9.766vw, 100px);
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     grid-gap: 6px 10px;
-  
-      li{
-        display: flex;
-        align-items: center;
-        grid-gap: 10px;
-  
-        &:not(:last-child){
-          &::before{
-            content: '';
-            order: 2;
-            display: flex;
-            background-color: var(--bg-a);
-            width: 2px;
-            height: clamp(14px, 1.758vw, 18px);
-            aspect-ratio: 1;
-            position: relative;
-            transform: rotate(24deg);
-          }
-        }
-  
-        &:last-child{
-          display: flex;
-          max-width: 100%;
-          p{
-            display: inline-block;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
-            width: 100%;
-          }
-        }
-  
-        p {
-          font-size: clamp(14px, 1.758vw, 18px);
-          line-height: 150%;
-          font-weight: 400;
-          text-transform: uppercase;
-        }
-  
-        a{
-          font-size: clamp(14px, 1.758vw, 18px);
-          line-height: 150%;
-          font-weight: 400;
-          color: var(--cl-a);
-          text-transform: uppercase;
-          transition: all .3s;
-  
-          p {
-            color: currentColor;
-          }
-  
-          svg {
-            fill: currentColor;
-          }
-        }
-  
-        &.home {
-          a {
-            @include for-mobile {
-              p {
-                display: block;
-              }
-  
-              svg {
-                display: none;
-              }
-            }
-  
-            @include mobile {
-              p {
-                display: none;
-              }
-  
-              svg {
-                display: flex;
-              }
-            }
-          }
-        }
-      }
+  }
+
+  &__item {
+    position: relative;
   }
 }

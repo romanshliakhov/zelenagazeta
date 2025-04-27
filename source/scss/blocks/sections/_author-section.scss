@@ -1,0 +1,59 @@
+.author-section {
+    padding-top: 32px;
+    margin-bottom: clamp(80px, 10.417vw, 150px);
+
+    &__wrapp {
+        position: relative;
+        display: grid;
+        gap: clamp(24px, 2.778vw, 40px);
+
+        @include for-tablet {
+            grid-template-columns: clamp(300px, 26.528vw, 382px) 1fr;
+            align-items: flex-start;
+        }
+
+        @include tablet {
+            grid-template-columns: 100%;
+        }
+    }
+
+    &__aside {
+        padding: 16px;
+        background-color: #E5EEE5;
+        border-radius: 16px;
+
+        @include for-tablet {
+            position: sticky;
+            top: calc(var(--header-height) + 20px);
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(32px, 2.778vw, 40px);
+    }
+
+    &__top {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    &__items {
+        width: 100%;
+        display: grid;
+        gap: 40px 16px;
+
+        @include for-small-tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include small-tablet {
+            grid-template-columns: 100%;
+        }
+    }
+}

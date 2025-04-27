@@ -1,0 +1,48 @@
+.team-card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__avatar {
+        display: flex;
+
+        picture,
+        img {
+            width: 100%;
+        }
+    }
+
+    &__info {
+        position: relative;
+        padding-bottom: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background-image: var(--line);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__name {
+        font-size: 18px;
+        line-height: 160%;
+        font-weight: 500;
+        color: #083F08;
+    }
+
+    &__role {
+        font-size: 14px;
+        line-height: 122%;
+        font-weight: 300;
+        color: #083F08;
+    }
+}

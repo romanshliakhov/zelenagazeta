@@ -2,6 +2,7 @@
 @import "../components/main-components/search-form.scss";
 @import "../components/main-components/breadcrumbs.scss";
 @import "../components/main-components/pagination.scss";
+@import "../components/main-components/socials.scss";
 @import "../components/main-components/share.scss";
 
 // ----------------- BLOCK COMPONENTS -----------------
@@ -24,6 +25,10 @@
 // ----------------- CARD COMPONENTS -----------------
 @import "../components/cards/article-card.scss";
 @import "../components/cards/video-card.scss";
+@import "../components/cards/discovery-card.scss";
+@import "../components/cards/team-card.scss";
+@import "../components/cards/value-card.scss";
+@import "../components/cards/author-card.scss";
 
 // ----------------- FORMS COMPONENTS -----------------
 @import "../components/forms/form.scss";

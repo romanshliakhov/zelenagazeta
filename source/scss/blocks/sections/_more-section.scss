@@ -1,0 +1,34 @@
+.more-section {
+    margin-bottom: clamp(80px, 10.417vw, 150px);
+
+    &__wrapp {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include small-tablet {
+            display: contents;
+        }
+    }
+
+    &__controls {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        @include small-tablet {
+            order: 1;
+            justify-content: space-between;
+        }
+    }
+
+    &__items {
+        width: 100%;
+    }
+}

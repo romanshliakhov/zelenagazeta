@@ -9,6 +9,10 @@ export default {
   footer: document.querySelector('footer'),
 
   videosSliders: document.querySelectorAll('.videos-section__wrapp'),
+  discoverySliders: document.querySelectorAll('.discovery-section__slider'),
+  categoriesSliders: document.querySelectorAll('.category-section__wrapp'),
+  moreArticlesSliders: document.querySelectorAll('.more-section__wrapp'),
+  tagsSliders: document.querySelectorAll('.listing-section__tags'),
   // articlesSlider: document.querySelector('.articles-slider'),
   // heroSlider: document.querySelector('.hero-slider'),
   // relatedSlider: document.querySelector('.related-slider'),

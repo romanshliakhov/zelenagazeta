@@ -8,29 +8,64 @@
   <main>
     <section class="breadcrumbs">
       <div class="container">
-        <ul class="breadcrumbs__items">
-          <li class="breadcrumbs__item home">
-            <a href="/">
-              <p>Головна</p>
-            </a>
-          </li>
-          <li class="breadcrumbs__item home">
-            <a href="#">
-              <p>Новини</p>
-            </a>
-          </li>
-          <li class="breadcrumbs__item" aria-current="page">
-            <p>Марія Шевченко</p>
-          </li>
-        </ul>
+          <ul class="breadcrumbs__items">
+              <li class="breadcrumbs__item home">
+                  <a href="/">Головна</a>
+              </li>
+
+              <li class="breadcrumbs__item">
+                <a href="#">Новини</a>
+              </li>
+
+              <li class="breadcrumbs__item current" aria-current="page">
+                  <span>Марія Шевченко</span>
+              </li>
+          </ul>
       </div>
-    </section>
+  </section>
 
     <section class="author-section">
       <div class="container">
         <div class="author-section__wrapp">
           <aside class="author-section__aside">
-            aside
+            <div class="author">
+              <div class="author__box">
+                <div class="author__avatar">
+                  <picture>
+                    <source type='image/webp' srcset='img/author/maria.webp'>
+                    <img width='80' height='80' src='img/author/maria.png' alt='Марія Шевченко'>
+                  </picture>
+                </div>
+
+                <div class="author__info">
+                  <span class="author__name">Марія Шевченко</span>
+                  <p class="author__role">Фітнес-тренер</p>
+                </div>
+              </div>
+
+              <ul class="author__details">
+                <li>
+                  <span>Учасник з:</span>
+                  <p>18.03.2024</p>
+                </li>
+
+                <li>
+                  <span>Всього дописів:</span>
+                  <p>23</p>
+                </li>
+
+                <li>
+                  <span>Вподобань:</span>
+                  <p>58</p>
+                </li>
+              </ul>
+
+              <ul class="author__socials socials">
+                <li>telegram</li>
+                <li>instagram</li>
+                <li>facebook</li>
+              </ul>
+            </div>
           </aside>
 
           <div class="author-section__box">

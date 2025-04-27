@@ -16,12 +16,23 @@
 @import "../blocks/sections/insta-section.scss";
 @import "../blocks/sections/text-section.scss";
 
-// About us
+// Listing page
+@import "../blocks/sections/listing-section.scss";
+
+// Article page
+@import "../blocks/sections/article-section.scss";
+@import "../blocks/sections/more-section.scss";
+ 
+// About us page
 @import "../blocks/sections/about-section.scss";
 @import "../blocks/sections/values-section.scss";
 @import "../blocks/sections/mission-section.scss";
+@import "../blocks/sections/team-section.scss";
 
-// 404
+// Author page
+@import "../blocks/sections/author-section.scss";
+
+// 404 page
 @import "../blocks/sections/error-section.scss";
 
 

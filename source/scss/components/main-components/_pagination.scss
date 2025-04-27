@@ -1,13 +1,7 @@
 .pagination {
-  margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  @include for-mobile{
-    justify-content: center;
-    gap: 50px;
-  }
 
   &__list {
     display: flex;
@@ -48,10 +42,6 @@
       width: clamp(29px, 3.418vw, 35px);
       height: clamp(26px, 3.223vw, 33px);
       transition: all 0.1s;
-    }
-
-    &.prev {
-      transform: rotate(180deg);
     }
 
     &:hover,

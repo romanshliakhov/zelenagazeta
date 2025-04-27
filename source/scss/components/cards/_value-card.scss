@@ -1,0 +1,40 @@
+.value-card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__box {
+        position: relative;
+    }
+
+    &__image {
+        display: flex;
+
+        picture,
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__title {
+        position: relative;
+        padding-bottom: 14px;
+        font-size: clamp(16px, 1.758vw, 18px);
+        line-height: 160%;
+        font-weight: 500;
+        color: #083F08;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background-image: var(--line);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}

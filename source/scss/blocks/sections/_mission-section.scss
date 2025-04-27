@@ -9,21 +9,38 @@
 
     &__items {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
         gap: 8px;
 
+        @include for-laptop {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @include laptop {
+            @include for-mobile {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @include mobile {
+            grid-template-columns: 100%;
+        }
+
         li {
-            min-height: 315px;
             padding: 24px;
             background-color: #083F08;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            gap: 60px;
+
+            @include for-mobile {
+                min-height: clamp(280px, 25.403vw, 315px);
+            }
 
             span {
                 position: relative;
                 display: block;
-                font-size: 24px;
+                font-size: clamp(18px, 2.344vw, 24px);
                 line-height: 150%;
                 font-weight: 500;
                 color: #fff;

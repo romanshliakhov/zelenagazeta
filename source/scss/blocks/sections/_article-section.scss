@@ -1,0 +1,41 @@
+.article-section {
+    padding-top: 32px;
+    margin-bottom: clamp(80px, 10.417vw, 150px);
+
+    &__wrapp {
+        position: relative;
+        display: grid;
+        gap: clamp(24px, 2.778vw, 40px);
+
+        @include for-tablet {
+            grid-template-columns: 1fr 440px;
+            align-items: flex-start;
+        }
+
+        @include tablet {
+            grid-template-columns: 100%;
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__thumbnails {
+        display: flex;
+    }
+
+    &__aside {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}

@@ -9,7 +9,14 @@
 
     &__items {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
         gap: 32px 8px;
+
+        @include for-small-tablet {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include small-tablet {
+            grid-template-columns: 100%;
+        }
     }
 }
