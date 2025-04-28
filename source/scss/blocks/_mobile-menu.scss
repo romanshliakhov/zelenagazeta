@@ -12,16 +12,16 @@
   padding: 40px 24px 60px 80px;
 
   @include tablet{
-    padding: 40px var(--container-offset) 60px;
+    padding: clamp(24px, 3.906vw, 40px) var(--container-offset) clamp(24px, 5.859vw, 60px);
   }
 
   &.active {
     display: flex;
     transform: translateX(0);
 
-    @include  tablet {
-      overflow-y: auto;
-    }
+    // @include  tablet {
+    //   overflow-y: auto;
+    // }
 
     @include small-tablet{
       width: 100vw;
@@ -33,12 +33,38 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 40px;
   }
 
   &__menu {
     display: flex;
     flex-direction: column;
     gap: 40px;
+
+    &::-webkit-scrollbar {
+      width: 2px;
+      cursor: pointer;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--scrollbar-thumb);
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background-color: var(--scrollbar-track);
+    }
+    
+    &::-webkit-scrollbar-button {
+        display: none;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    @include  tablet {
+      overflow-y: auto;
+    }
 
     a {
       display: flex;
@@ -58,6 +84,56 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+    }
+
+    &-details {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    &-page {
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background-color: #C3E9C7;
+      border-radius: 37px;
+      font-size: 14px;
+      line-height: 160%;
+      font-weight: 300;
+      color: #083F08;
+    }
+
+    &-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-lang {
+      padding: 4px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #fff;
+      border-radius: 68px;
+
+      a {
+        padding: 8px 30px;
+        font-size: 12px;
+        line-height: normal;
+        font-weight: 500;
+        color: #083F08;
+        border-radius: 999px;
+        text-transform: uppercase;
+
+        &.active {
+          background-color: #083F08;
+          color: #fff;
+        }
+      }
     }
   }
 }

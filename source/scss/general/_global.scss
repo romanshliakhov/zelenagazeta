@@ -270,12 +270,8 @@ select:-webkit-autofill:focus {
 
 * {
   &::-webkit-scrollbar {
-    width: 6px;
+    width: 2px;
     cursor: pointer;
-
-    @include small-tablet {
-      display: none;
-    }
   }
 
   &::-webkit-scrollbar-thumb {
