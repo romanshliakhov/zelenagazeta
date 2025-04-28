@@ -1,5 +1,5 @@
 .error-section{
-    padding: 40px 0;
+    padding: clamp(16px, 3.906vw, 40px) 0;
     flex-grow: 1;
     display: flex;
     align-items: center;
@@ -8,7 +8,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 120px;
+        gap: 0 clamp(16px, 6.25vw, 120px);
+
+        @include small-tablet {
+            flex-direction: column;
+        }
     }
 
     &__image {
@@ -17,7 +21,8 @@
         justify-content: center;
 
         svg{
-            height: clamp(190px, 39.2442vw, 675px);
+            width: clamp(328px, 34.375vw, 495px);
+            height: clamp(224px, 23.819vw, 343px);
         }
     }
 
@@ -30,14 +35,14 @@
     }
 
     &__title {
-        font-size: 90px;
+        font-size: clamp(80px, 6.25vw, 90px);
         line-height: 140%;
         font-weight: 500;
         color: #232323;
     }
 
     &__subtitle {
-        font-size: 32px;
+        font-size: clamp(24px, 2.222vw, 32px);
         line-height: 140%;
         font-weight: 500;
         color: #232323;
@@ -48,5 +53,21 @@
         line-height: 140%;
         font-weight: 500;
         color: #232323;
+    }
+
+    &__link {
+        margin-top: 12px;
+        height: 43px;
+        max-width: 343px;
+        width: 100%;
+        background-color: #083F08;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        line-height: normal;
+        font-weight: 500;
+        color: #fff;
+        text-align: center;
     }
 }

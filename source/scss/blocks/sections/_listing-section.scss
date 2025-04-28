@@ -27,7 +27,7 @@
 
         @include for-tablet {
             position: sticky;
-            top: calc(var(--header-height) + 20px);
+            top: calc(var(--header-height) - 60px);
         }
     }
 

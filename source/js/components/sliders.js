@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }  
 
-  if(categoriesSliders) {
+  if (categoriesSliders) {
     let categoriesSwipers = [];
     
     function initCategoriesSliders() {
@@ -204,7 +204,6 @@ document.addEventListener("DOMContentLoaded", function () {
         watchOverflow: true,
         observer: true,
         observeParents: true,
-        loop: true,
   
         navigation: {
           nextEl: nextBtn,
