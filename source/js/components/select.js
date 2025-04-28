@@ -1,6 +1,4 @@
-import {addCustomClass, toggleCustomClass, removeCustomClass, removeClassInArray } from "../functions/customFunctions";
-import {disableScroll} from "../functions/disable-scroll";
-import {enableScroll} from "../functions/enable-scroll";
+import {addCustomClass, toggleCustomClass, removeCustomClass } from "../functions/customFunctions";
 
 const closeSelect = function (selectBody, select , className = "active") {
   selectBody.style.height = 0;
@@ -8,7 +6,7 @@ const closeSelect = function (selectBody, select , className = "active") {
 };
 
 const openSelect = function (selectBody, select , className = "active") {
-  selectBody.style.height = "auto";
+  selectBody.style.height = "fit-content";
   addCustomClass(select, className);
 };
 
@@ -48,12 +46,10 @@ if (select.length) {
         selectCurrent.innerHTML = innerSelect;
         selectInput.setAttribute("value", e.target.getAttribute("data-id"));
         selectCurrent.setAttribute("data-id", e.target.getAttribute("data-id"));
-        addCustomClass(item, "checked");
       }
 
-      removeClassInArray(items, 'active');
       items.forEach(function (item) {item.style.display = "flex"});
-      item.classList.contains('sort-select') ? addCustomClass(currentItem, 'active') : '';
+      currentItem.style.display = "none";
 
       if (isSelectOpen) {
         closeSelect(selectBody, item);
@@ -70,4 +66,3 @@ if (select.length) {
     });
   });
 }
-

@@ -58,11 +58,31 @@
             </svg>
           </a>
 
-          <div class="lang">
-            UA
-            <svg width='24' height='24'>
-              <use href='img/sprite/sprite.svg#arrow-down'></use>
-            </svg>
+          <div class="lang select" data-select>
+            <div class="select__header">
+              <input type="hidden" class="select__input input-select" id="lang" name="lang" value="1">
+              <span class="select__current" data-id="1">
+                UA
+              </span>
+              <svg class="select__current-icon" width='24' height='24'>
+                <use href='img/sprite/sprite.svg#arrow-down'></use>
+              </svg>
+
+            </div>
+
+            <div class="select__body">
+              <ul class="select__list">
+                <li class="select__option" data-id="1" data-type="option">
+                  UA
+                </li>
+                <li class="select__option" data-id="2" data-type="option">
+                  EN
+                </li>
+                <li class="select__option" data-id="3" data-type="option">
+                  RU
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

@@ -8,7 +8,8 @@
   transition: all 0.3s, padding-right 0s;
 
   &.sticky {
-    .header__nav {
+    .header__nav,
+    .header__box {
       opacity: 0;
       visibility: hidden;
       height: 0;
@@ -111,6 +112,14 @@
     
     svg {
       height: clamp(41px, 9.861vw, 142px);
+    }
+  }
+
+  &__divider {
+    width: fit-content;
+
+    svg {
+      width: 100%;
     }
   }
 
