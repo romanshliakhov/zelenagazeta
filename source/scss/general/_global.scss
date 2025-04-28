@@ -270,7 +270,7 @@ select:-webkit-autofill:focus {
 
 * {
   &::-webkit-scrollbar {
-    width: Max(8px, 8px);
+    width: 6px;
     cursor: pointer;
 
     @include small-tablet {

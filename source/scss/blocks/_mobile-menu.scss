@@ -1,6 +1,5 @@
 .mobile {
   position: fixed;
-  // top: var(--header-height);
   top: var(--header-top);
   left: 0;
   width: fit-content;
@@ -13,9 +12,7 @@
   padding: 40px 24px 60px 80px;
 
   @include tablet{
-    height: calc(100% - var(--header-height));
-    border-radius: 0;
-    padding-bottom: 0;
+    padding: 40px var(--container-offset) 60px;
   }
 
   &.active {

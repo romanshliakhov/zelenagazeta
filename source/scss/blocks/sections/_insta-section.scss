@@ -9,8 +9,29 @@
 
     &__top {
         display: flex;
+        gap: 32px 16px;
+
+        @include for-tablet {
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @include tablet {
+            flex-direction: column;
+        }
+    }
+
+    &__link {
+        flex-shrink: 0;
+        width: fit-content;
+        padding: 12px 40px;
+        background-color: #083F08;
+        display: flex;
         align-items: center;
-        justify-content: space-between;
-        gap: 10px;
+        gap: 6px;
+        font-size: 16px;
+        line-height: normal;
+        font-weight: 500;
+        color: #fff;
     }
 }

@@ -90,9 +90,21 @@
     transition: all 0.3s ease;
   }
 
+  &__logo {
+    display: flex;
+    
+    svg {
+      height: clamp(41px, 9.861vw, 142px);
+    }
+  }
+
   &__nav {
     padding: 28px 0 16px;
     transition: all 0.3s ease;
+
+    @include tablet{
+      display: none;
+    }
 
     .menu {
       display: flex;

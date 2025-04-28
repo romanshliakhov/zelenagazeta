@@ -1,3 +1,79 @@
 .text-section {
     padding: 32px;
+
+    &__wrapp {
+        position: relative;
+        max-height: 190px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            height: 40px;
+            width: 100%;
+            background: linear-gradient(0deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+        }
+    }
+
+    &__box {
+        max-height: 190px;
+        overflow-y: scroll;
+        padding-bottom: 40px;
+        padding-right: clamp(16px, 2.344vw, 24px);
+
+        &::-webkit-scrollbar {
+            width: 2px;
+            cursor: pointer;
+          }
+        
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--scrollbar-thumb);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        &::-webkit-scrollbar-track {
+            background-color: var(--scrollbar-track);
+        }
+        
+        &::-webkit-scrollbar-button {
+            display: none;
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+        & > h3:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+            margin: 40px 0 24px;
+            font-size: clamp(18px, 2.344vw, 24px);
+            line-height: 140%;
+            font-weight: 700;
+            color: #083F08;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 160%;
+            font-weight: 300;
+            color: #083F08;
+        }
+
+        p + p {
+            margin-top: 16px;
+        }
+
+        ul {
+            li {
+                list-style-type: disc;
+                list-style-position: inside;
+                font-size: 16px;
+                line-height: 160%;
+                font-weight: 300;
+                color: #083F08;
+            }
+        }
+    }
 }
