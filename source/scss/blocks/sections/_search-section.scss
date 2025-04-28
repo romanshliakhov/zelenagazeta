@@ -1,0 +1,112 @@
+.search-section {
+    margin-bottom: 32px;
+    padding: 80px 0;
+
+    &__wrapp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px clamp(16px, 2.857vw, 40px);
+
+        @include tablet {
+            flex-direction: column;
+        }
+    }
+
+    &__image {
+        display: flex;
+        flex-shrink: 0;
+    }
+
+    &__box {
+        max-width: 800px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__result {
+        font-size: clamp(18px, 2.286vw, 32px);
+        line-height: 140%;
+        font-weight: 500;
+        color: #232323;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        li {
+            list-style-type: disc;
+            list-style-position: inside;
+            font-size: 16px;
+            line-height: normal;
+            font-weight: 300;
+            color: #232323;
+        }
+    }
+
+    &__details {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        @include tablet {
+            margin: 0 auto;
+            flex-direction: column;
+        }
+    }
+
+    &__proposals {
+        padding: 12px 16px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background-color: #F5F6F5;
+        border-radius: 4px;
+
+        svg {
+            flex-shrink: 0;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 125%;
+            font-weight: 300;
+        }
+
+        a {
+            font-size: 16px;
+            line-height: 125%;
+            font-weight: 700;
+            color: #232323;
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+            text-decoration-skip-ink: none;
+            text-decoration-thickness: auto;
+            text-underline-offset: auto;
+        }
+    }
+
+    &__link {
+        height: 43px;
+        max-width: 343px;
+        width: 100%;
+        background-color: #083F08;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        line-height: normal;
+        font-weight: 500;
+        color: #fff;
+        text-align: center;
+
+        @include tablet {
+            max-width: 100%;
+        }
+    }
+}
