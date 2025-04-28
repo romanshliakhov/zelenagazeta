@@ -22,6 +22,10 @@
     @include  tablet {
       overflow-y: auto;
     }
+
+    @include small-tablet{
+      width: 100vw;
+    }
   }
 
   &__box {
