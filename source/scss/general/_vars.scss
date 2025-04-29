@@ -1,10 +1,19 @@
 :root {
-    // --------------- default font-family variables ---------------
+  // --------------- default font-family variables ---------------
 
-    --font-family: "e-Ukraine", sans-serif; // var(--font-family);
-    
+  --font-family: "e-Ukraine", sans-serif; // var(--font-family);
+
+  // --------------- default JS variables ---------------
+  --header-height: 160px;
+  --header-top: 62px;
+
+  @include small-tablet {
+    --header-height: 82px;
+    --header-top: 56px;
+  }
+
   // --------------- default global variables ---------------
-  --body-bg: #CBCBCB;
+  --body-bg: #fff;
   --body-font-size: 16px;
   --content-width: 1280px;
   --content-width-mode: 1920px;
@@ -17,28 +26,6 @@
   --scrollbar-track: #DCDEDA;
   --scrollbar-track-hover: transparent;
   --overlay-bg: rgba(0, 0, 0, 0.5);
-
-    // --------------- default JS variables ---------------
-    --header-height: 160px;
-
-    @include desktop{
-      --header-height: 134px;
-    }
-
-    @include laptop{
-      --header-height: 115px;
-    }
-
-    @include tablet{
-      --header-height: 82px;
-    }
-
-    --header-top: 62px;
-
-    @include small-tablet {
-      --header-top: 56px;
-    }
-
 
   // --------------- default text color variables ---------------
   --cl-a: #ffffff; // var(--cl-a);
@@ -79,4 +66,29 @@
   --br-h: #000000; // var(--br-h);
 }
 
+body[data-theme="dark"] {
+  --body-bg: #1B1B1B;
+
+  // --------------- default scroll variables ---------------
+  --scrollbar-thumb: #083F08;
+  --scrollbar-track: #DCDEDA;
+  --overlay-bg: rgba(0, 0, 0, 0.5);
+
+  // --------------- default text color variables ---------------
+  --cl-a: #e0e0e0;
+  --cl-b: #ffffff;
+  --cl-c: #cccccc;
+  --cl-d: #7FFF92;
+  --cl-e: #2b2b2b;
+
+  // --------------- default background color variables ---------------
+  --bg-a: #1e1e1e;
+  --bg-b: #121212;
+  --bg-c: #0a0a0a;
+  --bg-d: #2d2d2d;
+
+  // --------------- default border color variable ---------------
+  --br-a: #333333;
+  --br-b: #555555;
+}
 
