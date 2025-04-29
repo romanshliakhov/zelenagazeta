@@ -1,11 +1,15 @@
 <div class="overlay fixed-block" data-overlay>
     <div class="modal" data-popup="contact">
         <div class="modal__box">
-          <button class="modal__close close">
-            <svg width='24' height='24'>
-                <use href='img/sprite/sprite.svg#burger-close'></use>
-            </svg>
-          </button>
+          <div class="modal__top">
+            <div class="modal__title">Є питання? Напишіть нам</div>
+  
+            <button class="modal__close close">
+              <svg width='24' height='24'>
+                  <use href='img/sprite/sprite.svg#burger-close'></use>
+              </svg>
+            </button>
+          </div>
 
           <form class="form">
             <div class="form__box">
@@ -16,7 +20,7 @@
                     <textarea class="form__textarea" name="textarea" placeholder="Текст повідомлення"></textarea>
                 </label>
 
-                <button class="form__submit" data-btn-modal="success">Надіслати</button>
+                <button class="form__submit" data-btn-inner="success">Надіслати</button>
             </div>
         </form>
         </div>
