@@ -91,19 +91,55 @@
   &__nav {
     display: flex;
     flex-direction: column;
-    gap: 32px;
 
-    & > span {
+    @include for-mobile {
+      gap: 32px;
+    }
+
+    & > button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       font-size: 16px;
       line-height: 160%;
       font-weight: 500;
       color: #083F08;
+
+      svg {
+        transition: all 0.3s ease;
+      }
+
+      &.active {
+        svg {
+          transform: scale(-1);
+        }
+      }
+
+      @include for-mobile {
+        pointer-events: none;
+
+        svg {
+          display: none;
+        }
+      }
     }
 
     ul {
       display: flex;
       flex-direction: column;
       gap: 16px;
+      transition: all 0.3s ease;
+
+      @include for-mobile {
+        overflow: visible;
+        max-height: initial;
+      }
+
+      @include mobile {
+        &.active {
+          padding-top: 32px;
+        }
+      }
 
       a {
         font-size: 12px;

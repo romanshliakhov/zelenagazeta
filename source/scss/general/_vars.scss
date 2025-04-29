@@ -1,4 +1,8 @@
 :root {
+    // --------------- default font-family variables ---------------
+
+    --font-family: "e-Ukraine", sans-serif; // var(--font-family);
+    
   // --------------- default global variables ---------------
   --body-bg: #CBCBCB;
   --body-font-size: 16px;
@@ -35,10 +39,6 @@
       --header-top: 56px;
     }
 
-
-  // --------------- default font-family variables ---------------
-
-  --font-family: "e-Ukraine", sans-serif; // var(--font-family);
 
   // --------------- default text color variables ---------------
   --cl-a: #ffffff; // var(--cl-a);

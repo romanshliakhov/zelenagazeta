@@ -1,3 +1,4 @@
+import './components/colorTheme.js';
 import './components/dinamicHeight.js';
 import './components/modals.js';
 import './components/acc.js';
