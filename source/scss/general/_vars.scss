@@ -30,40 +30,22 @@
   // --------------- default text color variables ---------------
   --cl-a: #ffffff; // var(--cl-a);
   --cl-b: #000000; // var(--cl-b);
-  --cl-c: #1e0606; // var(--cl-c);
-  --cl-d: #7FFF92; // var(--cl-d);
-  --cl-e: #211C29; // var(--cl-e);
-  --cl-f: #3e3749; // var(--cl-f);
-  --cl-g: #41394d; // var(--cl-g);
-  --cl-h: #695b80; // var(--cl-h);
-  --cl-j: #2d2d2d; // var(--cl-j);
-  --cl-k: #c0c0c0; // var(--cl-k);
-  --cl-l: #8a8591; // var(--cl-l);
-  --cl-m: #050505; // var(--cl-m);
+  --cl-c: #083F08; // var(--cl-c);
+  --cl-d: #2F2F2F; // var(--cl-d);
 
-  // --------------- default background color variables ---------------
-  --bg-a: #ffffff; // var(--bg-a);
-  --bg-b: #000000; // var(--bg-b);
-  --bg-c: #050505; // var(--bg-c);
-  --bg-d: #d8d3cf; // var(--bg-d);
-  --bg-e: #CBCBCB; // var(--bg-e);
-  --bg-f: #7d7d7d; // var(--bg-f);
-  --bg-g: #dbdcae; // var(--bg-g);
-  --bg-h: #FAE1A0; // var(--bg-h);
-  --bg-j: #4d4d4d; // var(--bg-j);
-  --bg-k: #dbdbdb; // var(--bg-k);
-  --bg-l: #dbdcae; // var(--bg-l);
-  --bg-m: #eed9be; // var(--bg-m);
+  --cl-e: #C2C8C2; // var(--cl-e);
 
-  // --------------- default border color variable ---------------
-  --br-a: #fff; // var(--br-a);
-  --br-b: #000; // var(--br-b);
-  --br-c: #211C29; // var(--br-c);
-  --br-d: #B9FF66; // var(--br-d);
-  --br-e: #cfffd6; // var(--br-e);
-  --br-f: #41394d; // var(--br-f);
-  --br-g: #413b53; // var(--br-g);
-  --br-h: #000000; // var(--br-h);
+  --cl-f: #6A826A; // var(--cl-f);
+  --cl-g: #4D4D4D; // var(--cl-g);
+  --cl-h: #C3E9C7; // var(--cl-h);
+  --cl-i: #F8EDEB; // var(--cl-i);
+  --cl-j: #1E1E1E; // var(--cl-j);
+  --cl-k: #E5EEE5; // var(--cl-k);
+  --cl-l: #9CB29C; // var(--cl-l);
+  --cl-m: #F1D9D4; // var(--cl-m);
+  --cl-n: #EBC8C2; // var(--cl-n);
+
+
 }
 
 body[data-theme="dark"] {
@@ -75,20 +57,13 @@ body[data-theme="dark"] {
   --overlay-bg: rgba(0, 0, 0, 0.5);
 
   // --------------- default text color variables ---------------
-  --cl-a: #e0e0e0;
-  --cl-b: #ffffff;
-  --cl-c: #cccccc;
-  --cl-d: #7FFF92;
-  --cl-e: #2b2b2b;
+  --cl-a: #000000; // var(--cl-a);
+  --cl-b: #ffffff; // var(--cl-b);
+  --cl-c: #2F2F2F; // var(--cl-c);
+  --cl-e: #C2C8C2; // var(--cl-e);
+  --cl-f: #4D4D4D; // var(--cl-f);
+  --cl-g: #083F08; // var(--cl-g);
 
-  // --------------- default background color variables ---------------
-  --bg-a: #1e1e1e;
-  --bg-b: #121212;
-  --bg-c: #0a0a0a;
-  --bg-d: #2d2d2d;
 
-  // --------------- default border color variable ---------------
-  --br-a: #333333;
-  --br-b: #555555;
 }
 

@@ -130,7 +130,11 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-        gap: 16px;
+        gap: 24px 16px;
+
+        @include small-tablet {
+            flex-direction: column;
+        }
     }
 
     &__summary {
@@ -138,11 +142,34 @@
         flex-direction: column;
         gap: 8px;
 
-        &-title {
-            font-size: 24px;
-            line-height: 140%;
-            font-weight: 700;
-            color: #083F08;
+        &-list {
+            display: flex;
+            align-items: center;
+            gap: 21px;
+
+            li {
+                position: relative;
+                font-size: 24px;
+                line-height: 140%;
+                font-weight: 700;
+                color: #083F08;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: -13px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 5px;
+                    height: 5px;
+                    background-color: #838383;
+                    border-radius: 50%;
+                }
+
+                &:first-child::before {
+                    display: none;
+                }
+            }
         }
 
         &-posts {

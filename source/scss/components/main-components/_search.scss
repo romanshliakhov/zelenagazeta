@@ -1,0 +1,22 @@
+.search {
+    display: flex;
+
+    &__trigger {
+        display: flex;
+        cursor: pointer;
+
+        svg {
+            stroke: var(--cl-d);
+        }
+    }
+}
+
+body[data-theme="dark"] {
+    .search {    
+        &__trigger {
+            svg {
+                stroke: var(--cl-b);
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.logo {
+    display: flex;
+
+    .light-logo {
+        display: flex;
+    }
+
+    .dark-logo {
+        display: none;
+    }
+}
+
+body[data-theme="dark"] {
+    .logo {    
+        .light-logo {
+            display: none;
+        }
+    
+        .dark-logo {
+            display: flex;
+        }
+    }
+}

@@ -22,6 +22,7 @@
   svg {
     flex-shrink: 0;
     transition: 0.2s ease;
+    stroke: var(--cl-d);
   }
 
   &.active {
@@ -35,6 +36,14 @@
       opacity: 1;
       visibility: visible;
       z-index: 2;
+    }
+  }
+}
+
+body[data-theme="dark"] {
+  .burger {
+    svg {
+      stroke: var(--cl-b);
     }
   }
 }
