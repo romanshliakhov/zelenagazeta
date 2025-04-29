@@ -1,15 +1,16 @@
 .modal {
   position: relative;
-  flex-direction: column;
-  align-items: center;
-  grid-gap: clamp(30px, 4.883vw, 50px);
+  // flex-direction: column;
+  // align-items: center;
+  // grid-gap: clamp(30px, 4.883vw, 50px);
   border-radius: 25px;
   z-index: 1;
-  max-width: 691px;
-  padding: clamp(20px, 4.883vw, 50px);
+  max-width: fit-content;
+  padding: 24px;
   width: 92vw;
-  box-shadow: 0 -4px 74px -8px rgba(12, 12, 13, 0.4);
-  background: var(--bg-d);
+  background: #FFF;
+  border-radius: 4px;
+  border: 1px solid #083F08;
 
   &__box {
     width: 100%;
@@ -18,107 +19,17 @@
     gap: 30px;
   }
 
-  &__order {
+  &__top {
     display: flex;
-    align-items: center;
-    gap: 20px;
-
-    @media (max-width: (600px)) {
-      gap: 40px;
-    }
-
-    .card__image {
-      height: clamp(116px, 15.137vw, 155px);
-      width: clamp(116px, 15.137vw, 155px);
-      margin-top: clamp(25px, 3.32vw, 34px);
-      border: 2px solid var(--br-a);
-      border-radius: 15px;
-      padding: 0 17px 7px;
-      align-items: flex-end;
-
-      picture,
-      img {
-        height: clamp(131px, 18.457vw, 189px);
-        width: auto;
-        object-fit: cover;
-      }
-    }
-
-    &-box {
-      display: flex;
-      flex-direction: column;
-
-      @media (max-width: (600px)) {
-        .card__pretitle {
-          font-size: 20px;
-          font-weight: 500;
-        }
-
-        .card__info {
-          font-size: 20px;
-          font-weight: 400;
-          margin-bottom: 0;
-        }
-      }
-    }
+    align-items: flex-start;
+    justify-content: space-between;
   }
 
-  &__choose {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-
-    & > span {
-      font-family: var(--font-family);
-      font-weight: 500;
-      font-size: clamp(20px, 2.344vw, 24px);
-      line-height: 112%;
-      color: var(--cl-m);
-    }
-
-    .product-card {
-      padding: 10px 0;
-      border: none;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    }
-
-    .product-card__discount {
-      position: relative;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-weight: 500;
-      font-size: clamp(15px, 2.083vw, 30px);
-      line-height: 87%;
-      color: rgba(255, 255, 255, 0.5);
-
-      i {
-        font-size: clamp(13px, 1.736vw, 25px);
-      }
-
-      &::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 100%;
-        height: 1px;
-        background-color: #000;
-      }
-    }
-
-    @media (max-width: (600px)) {
-      .product-card__price {
-        margin-left: 0;
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 5px;
-      }
-
-      .product-card__currency {
-        width: 100%;
-      }
-   }
+  &__title {
+    font-size: 24px;
+    line-height: 140%;
+    font-weight: 500;
+    color: #083F08;
   }
 
   &__btn {

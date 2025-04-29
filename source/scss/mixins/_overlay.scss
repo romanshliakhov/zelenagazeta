@@ -19,6 +19,7 @@
   transition-timing-function: cubic-bezier(.25,.1,.25,1);
   pointer-events: none;
   backdrop-filter: blur(3px);
+
   @include  mobile {
     padding: 10px 0 !important;
   }
@@ -35,7 +36,7 @@
     pointer-events: initial;
 
     &.mode {
-      z-index: 100;
+      z-index: 50;
     }
   }
 }

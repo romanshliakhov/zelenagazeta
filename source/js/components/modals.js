@@ -3,7 +3,7 @@ import { enableScroll } from "../functions/enable-scroll.js";
 import { addCustomClass, removeCustomClass, removeClassInArray, fadeIn, fadeOut } from "../functions/customFunctions.js";
 
 class ModalManager {
-  constructor({activeMode = '', fadeInTimeout, fadeOutTimeout }) {
+  constructor({ activeMode = '', fadeInTimeout = 200, fadeOutTimeout = 200 }) {
     this.overlay = document.querySelector('[data-overlay]');
     this.modalsButton = document.querySelectorAll("[data-btn-modal]");
     this.innerButtonModal = document.querySelectorAll("[data-btn-inner]");
@@ -18,23 +18,25 @@ class ModalManager {
     this.bindEvents();
   }
 
-
   bindEvents() {
     this.overlay.addEventListener("click", (e) => this.overlayClickHandler(e));
-    this.modalsButton.forEach(btn => {
-      btn.addEventListener("click", (e) => this.buttonClickHandler(e, "data-btn-modal"));
-    });
-    this.innerButtonModal.forEach(btn => {
-      btn.addEventListener("click", (e) => this.innerButtonClickHandler(e));
-    });
+    this.modalsButton.forEach(btn =>
+      btn.addEventListener("click", (e) => this.buttonClickHandler(e, "data-btn-modal"))
+    );
+    this.innerButtonModal.forEach(btn =>
+      btn.addEventListener("click", (e) => this.innerButtonClickHandler(e))
+    );
   }
 
-  closeModal() {
-    removeCustomClass(this.overlay, this.activeMode);
-    removeCustomClass(this.overlay, this.activeClass);
-    removeClassInArray(this.modals, this.activeClass);
-    this.modals.forEach(modal => fadeOut(modal, this.timeOut));
-    enableScroll();
+  findAttribute(element, attributeName) {
+    let target = element;
+    while (target && target !== document) {
+      if (target.hasAttribute(attributeName)) {
+        return target.getAttribute(attributeName);
+      }
+      target = target.parentNode;
+    }
+    return null;
   }
 
   buttonClickHandler(e, buttonAttribute) {
@@ -50,7 +52,16 @@ class ModalManager {
 
     this.mobileMenu && removeCustomClass(this.mobileMenu, this.activeClass);
     this.burger && removeClassInArray(this.burger, this.activeClass);
-    removeClassInArray(this.modals, this.activeClass);
+
+    // Закрыть активную модалку, если она есть (но не текущую)
+    const activeModal = Array.from(this.modals).find(
+      m => m.classList.contains(this.activeClass) && m !== modal
+    );
+    if (activeModal) {
+      fadeOut(activeModal, this.timeOut);
+      removeCustomClass(activeModal, this.activeClass);
+    }
+
     addCustomClass(this.overlay, this.activeClass);
     addCustomClass(this.overlay, this.activeMode);
     addCustomClass(modal, this.activeClass);
@@ -58,6 +69,14 @@ class ModalManager {
     disableScroll();
 
     this.innerButton = modal.querySelector('.close');
+  }
+
+  closeModal() {
+    removeCustomClass(this.overlay, this.activeMode);
+    removeCustomClass(this.overlay, this.activeClass);
+    removeClassInArray(this.modals, this.activeClass);
+    this.modals.forEach(modal => fadeOut(modal, this.timeOut));
+    enableScroll();
   }
 
   overlayClickHandler(e) {
@@ -68,37 +87,40 @@ class ModalManager {
 
   innerButtonClickHandler(e) {
     e.preventDefault();
-    enableScroll();
-    const prevId = this.findAttribute(e.target.closest('[data-popup]'), 'data-popup');
-    if (!prevId) return;
 
-    const currentModalId = e.target.getAttribute("data-btn-inner");
+    const current = e.currentTarget;
+    const prevModal = current.closest('[data-popup]');
+    const prevId = this.findAttribute(prevModal, 'data-popup');
+    const currentModalId = current.getAttribute("data-btn-inner");
     const currentModal = this.overlay.querySelector(`[data-popup="${currentModalId}"]`);
-    removeClassInArray(this.modals, this.activeClass);
-    addCustomClass(this.overlay, this.activeClass);
-    fadeOut(document.querySelector(`[data-popup="${prevId}"]`), 0);
-    fadeIn(currentModal, this.timeIn);
-    addCustomClass(currentModal, this.activeClass);
-    disableScroll();
-    this.innerButton = currentModal.querySelector('.close');
-  }
 
-  findAttribute(element, attributeName) {
-    let target = element;
-    while (target && target !== document) {
-      if (target.hasAttribute(attributeName)) {
-        return target.getAttribute(attributeName);
+    if (!prevId || !currentModal) return;
+
+    // Закрыть предыдущую модалку
+    fadeOut(prevModal, this.timeOut);
+    removeCustomClass(prevModal, this.activeClass);
+
+    // Убедиться, что другие тоже не активны
+    this.modals.forEach(modal => {
+      if (modal !== currentModal) {
+        removeCustomClass(modal, this.activeClass);
+        modal.style.display = 'none';
       }
-      target = target.parentNode;
-    }
-    return null;
+    });
+
+    // Показать новую модалку
+    fadeIn(currentModal, this.timeIn, 'flex');
+    addCustomClass(currentModal, this.activeClass);
+    addCustomClass(this.overlay, this.activeClass);
+    disableScroll();
+
+    this.innerButton = currentModal.querySelector('.close');
   }
 }
 
 export default ModalManager;
 
+// Инициализация
 document.addEventListener("DOMContentLoaded", () => {
-  const modalManager = new ModalManager({
-      activeMode: 'mode'
-  });
+  new ModalManager({ activeMode: 'mode' });
 });

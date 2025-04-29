@@ -28,7 +28,7 @@
             width: 100%;
             padding: 12px 0;
             cursor: pointer;
-            border-top: 1px solid #EBC8C2;
+            border-bottom: 1px solid #EBC8C2;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -38,8 +38,8 @@
             letter-spacing: 0.2px;
             color: #232323;
 
-            &:first-child {
-                border-top: none;
+            &:last-child {
+                border-bottom: none;
             }
         }
     }
