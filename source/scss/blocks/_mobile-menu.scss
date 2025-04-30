@@ -18,10 +18,13 @@
   &.active {
     display: flex;
     transform: translateX(0);
-    overflow: visible;
 
     @include small-tablet{
       width: 100vw;
+    }
+
+    @include for-small-tablet{
+      overflow: visible;
     }
   }
 
@@ -36,7 +39,7 @@
   &__menu {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: clamp(12px, 5.208vw, 40px);
     overflow-y: auto;
 
     &::-webkit-scrollbar {
@@ -62,13 +65,17 @@
 
     @include  tablet {
       overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
 
     .menu-item {
       display: grid;
       grid-template-columns: 1fr 24px;
       align-items: center;
-      gap: 40px;
+      gap: 0 40px;
     }
 
     .menu-link {
@@ -82,6 +89,8 @@
     }
 
     .menu-button {
+      width: 24px;
+      height: 24px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -91,31 +100,114 @@
       }
     }
 
-    .sub-menu {
-      position: absolute;
-      left: 0;
-      top: 0;
-      transform: translateX(-150%);
-      background-color: #F3F8F3;
-      width: max-content;
-      max-height: 100svh !important;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      z-index: -1;
+    .menu-item-has-children {
+      @include small-tablet {
+        &.active {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          padding: 5px 0;
+          z-index: 2;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start;
 
-      &.active {
-        overflow: visible;
-        left: 100%;
-        padding: 40px;
-        transform: translateX(0);
-        overflow-y: auto;
-        z-index: 1;
+          .menu-link {
+            width: 100%;
+            padding: 12px 12px 12px 40px;
+            justify-content: flex-end;
+            background-color: #fff;
+            border-top: 1px solid #DCDEDA;
+            border-bottom: 1px solid #DCDEDA;
+          }
+
+          .menu-button {
+            position: absolute;
+            left: 12px;
+            top: 20px;
+
+            svg {
+              transform: scale(-1);
+            }
+          }
+        }
+      }
+    }
+
+    .sub-menu {
+      @include  tablet {
+        @include for-small-tablet{
+          width: 100vw;
+        }
       }
 
-      @include  tablet {
-        width: 100vw;
+      @include for-small-tablet {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateX(-150%);
+        background-color: #F3F8F3;
+        width: max-content;
+        max-height: 100svh !important;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        z-index: -1;
+  
+        &.active {
+          overflow: visible;
+          left: 100%;
+          padding: 40px;
+          transform: translateX(0);
+          overflow-y: auto;
+          z-index: 1;
+        }
+      }
+
+      @include small-tablet {
+        background-color: #F3F8F3;
+        opacity: 0;
+        visibility: hidden;
+        overflow-y: hidden;
+        display: none;
+
+        &.active {
+          padding: 24px 16px;
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          flex-grow: 1;
+          max-height: 100% !important;
+          height: calc(100% - 40px);
+          overflow-y: auto;
+          opacity: 1;
+          visibility: visible;
+          margin-right: 4px;
+
+          &::-webkit-scrollbar {
+            width: 2px;
+            cursor: pointer;
+          }
+        
+          &::-webkit-scrollbar-thumb {
+              background-color: var(--scrollbar-thumb);
+              cursor: pointer;
+              transition: all 0.2s;
+          }
+          
+          &::-webkit-scrollbar-track {
+              background-color: var(--scrollbar-track);
+          }
+          
+          &::-webkit-scrollbar-button {
+              display: none;
+              background-color: transparent;
+              box-shadow: none;
+          }
+        }
       }
     }
 
@@ -232,6 +324,22 @@ body[data-theme="dark"] {
 
       .sub-menu {
         background-color: #262626;
+
+        @include small-tablet {
+          &.active {
+            margin-right: 4px;
+          }
+        }
+      }
+
+      .menu-item-has-children.active {
+        @include small-tablet {
+          .menu-link {
+            background-color: #1E1E1E;
+            border-top: 1px solid #6D6D6D;
+            border-bottom: 1px solid #6D6D6D;
+          }
+        }
       }
 
       &-lang {
