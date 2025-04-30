@@ -12,5 +12,9 @@
         align-items: center;
         flex-wrap: wrap;
         gap: clamp(8px, 1.563vw, 16px) clamp(8px, 2.344vw, 24px);
+
+        li.hidden {
+            display: none;
+        }
     }
 }

@@ -1,4 +1,5 @@
 import './components/dinamicHeight.js';
+import './components/hideTags.js';
 import './components/modals.js';
 import './components/copy.js';
 import './components/acc.js';

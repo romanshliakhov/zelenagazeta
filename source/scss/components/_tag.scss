@@ -11,6 +11,10 @@
     font-weight: 500;
     color: var(--cl-c);
 
+    &--more {
+        cursor: pointer;
+    }
+
     svg {
         stroke: var(--cl-c);
     }
