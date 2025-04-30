@@ -383,99 +383,258 @@
 
 <div class="mobile">
   <div class="mobile__box">
-    <ul class="mobile__menu">
-      <li>
-        <a href="#">
-          <span>
-            <svg width='24' height='24'>
-              <use href='img/sprite/sprite.svg#list'></use>
-            </svg>
-            Усі
-          </span>
+    <ul class="mobile__menu menu" data-single='true' data-accordion-init>
+      <li class="menu-item">
+        <a class="menu-link" href="#">
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#list'></use>
+          </svg>
+          Усі
         </a>
       </li>
-      <li>
-        <a href="/listing-category.html">
-          <span>
-            <svg width='24' height='24'>
-              <use href='img/sprite/sprite.svg#heart'></use>
-            </svg>
-            Турбота про себе
-          </span>
-
+      <li class="menu-item menu-item-has-children">
+        <a class="menu-link" href="/listing-category.html">
           <svg width='24' height='24'>
-            <use href='img/sprite/sprite.svg#agile-right'></use>
+            <use href='img/sprite/sprite.svg#heart'></use>
           </svg>
+          Турбота про себе
         </a>
-      </li>
-      <li>
-        <a href="#">
-          <span>
-            <svg width='24' height='24'>
-              <use href='img/sprite/sprite.svg#leaf'></use>
-            </svg>
-            Психологія
-          </span>
-
-          <svg width='24' height='24'>
+        <button class="menu-button" data-id='1'>
+          <svg width='16' height='16'>
             <use href='img/sprite/sprite.svg#agile-right'></use>
           </svg>
+        </button>
+
+        <ul class="sub-menu" data-content='1'>
+          <li>
+            <a href="/listing-subcategory.html">Усі</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Психологія відносин</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Секс</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Реальні історії людей</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Психологія змін</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Вікова психологія</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Психологія в роботі</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Робота зі стресом</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Самооцінка та прийняття себе</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Емоційний інтелект</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Ментальне здоров’я</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">ПТСР та психологія травми</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item menu-item-has-children">
+        <a class="menu-link" href="/listing-category.html">
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#leaf'></use>
+          </svg>
+          Психологія
         </a>
-      </li>
-      <li>
-        <a href="#">
-          <span>
-            <svg width='24' height='24'>
-              <use href='img/sprite/sprite.svg#doctor'></use>
-            </svg>
-            Здоров’я
-          </span>
 
-          <svg width='24' height='24'>
+        <button class="menu-button" data-id='2'>
+          <svg width='16' height='16'>
             <use href='img/sprite/sprite.svg#agile-right'></use>
           </svg>
+        </button>
+
+        <ul class="sub-menu" data-content='2'>
+          <li>
+            <a href="/listing-subcategory.html">Усі</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Психологія відносин</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Секс</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Реальні історії людей</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item menu-item-has-children">
+        <a class="menu-link" href="/listing-category.html">
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#doctor'></use>
+          </svg>
+          Здоров’я
         </a>
-      </li>
-      <li>
-        <a href="#">
-          <span>                  
-            <svg width='24' height='24'>
-              <use href='img/sprite/sprite.svg#style'></use>
-            </svg>
-            Стиль життя
-          </span>
 
-          <svg width='24' height='24'>
+        <button class="menu-button" data-id='3'>
+          <svg width='16' height='16'>
             <use href='img/sprite/sprite.svg#agile-right'></use>
           </svg>
+        </button>
+
+        <ul class="sub-menu" data-content='3'>
+          <li>
+            <a href="/listing-subcategory.html">Усі</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Психологія відносин</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Секс</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Реальні історії людей</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Психологія змін</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Вікова психологія</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Психологія в роботі</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Робота зі стресом</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Самооцінка та прийняття себе</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Емоційний інтелект</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item menu-item-has-children">
+        <a class="menu-link" href="/listing-category.html">
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#style'></use>
+          </svg>
+          Стиль життя
         </a>
-      </li>
-      <li>
-        <a href="#">
-          <span>
-            <svg width='24' height='24'>
-              <use href='img/sprite/sprite.svg#bulb'></use>
-            </svg>
-            Зелена медицина
-          </span>
 
-          <svg width='24' height='24'>
+        <button class="menu-button" data-id='4'>
+          <svg width='16' height='16'>
             <use href='img/sprite/sprite.svg#agile-right'></use>
           </svg>
+        </button>
+
+        <ul class="sub-menu" data-content='4'>
+          <li>
+            <a href="/listing-subcategory.html">Усі</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Психологія відносин</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Секс</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Робота зі стресом</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Самооцінка та прийняття себе</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Емоційний інтелект</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Ментальне здоров’я</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">ПТСР та психологія травми</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item menu-item-has-children">
+        <a class="menu-link" href="/listing-category.html">
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#bulb'></use>
+          </svg>
+          Зелена медицина
         </a>
-      </li>
-      <li>
-        <a href="#">
-          <span>
-            <svg width='24' height='24'>
-              <use href='img/sprite/sprite.svg#news'></use>
-            </svg>
-            Новини
-          </span>
 
-          <svg width='24' height='24'>
+        <button class="menu-button" data-id='5'>
+          <svg width='16' height='16'>
             <use href='img/sprite/sprite.svg#agile-right'></use>
           </svg>
+        </button>
+
+        <ul class="sub-menu" data-content='5'>
+          <li>
+            <a href="/listing-subcategory.html">Усі</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Психологія відносин</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Секс</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Реальні історії людей</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Психологія змін</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Вікова психологія</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Психологія в роботі</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Робота зі стресом</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Самооцінка та прийняття себе</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Емоційний інтелект</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Ментальне здоров’я</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">ПТСР та психологія травми</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link" href="#">
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#news'></use>
+          </svg>
+          Новини
         </a>
       </li>
     </ul>

@@ -5,7 +5,7 @@
   z-index: 35;
   top: 0;
   background: var(--body-bg);
-  transition: all 0.3s, padding-right 0s;
+  transition: padding-right 0s;
 
   &.sticky {
     .header__nav,
@@ -256,6 +256,7 @@ body[data-theme="dark"] {
   .header {    
     &__link {
       background-color: var(--cl-d);
+      color: var(--cl-g);
       
       & > svg:last-of-type {
         stroke: var(--cl-g);
