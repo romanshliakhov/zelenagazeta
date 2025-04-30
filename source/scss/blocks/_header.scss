@@ -10,10 +10,7 @@
   &.sticky {
     .header__nav,
     .header__box {
-      opacity: 0;
-      visibility: hidden;
-      height: 0;
-      padding: 0;
+      display: none;
     }
   }
 

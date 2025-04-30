@@ -17,7 +17,9 @@
         z-index: -1;
 
         picture,
-        img {
+        img,
+        svg {
+            stroke: var(--cl-i);
             width: 100%;
             height: 100%;
             object-fit: contain;
@@ -37,6 +39,18 @@
         font-size: clamp(14px, 1.758vw, 18px);
         line-height: 160%;
         font-weight: 500;
-        color: #083F08;
+        color: var(--cl-c);
+    }
+}
+
+body[data-theme="dark"] {
+    .about-section__bg {
+        svg {
+            stroke: var(--cl-s);
+        }
+    }
+
+    .about-section__text {
+        color:  var(--cl-b);
     }
 }
