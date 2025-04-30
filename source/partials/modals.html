@@ -1,5 +1,5 @@
 <div class="overlay fixed-block" data-overlay>
-    <div class="modal" data-popup="contact">
+    <div class="modal modal--contact" data-popup="contact">
         <div class="modal__box">
           <div class="modal__top">
             <div class="modal__title">Є питання? Напишіть нам</div>
@@ -26,7 +26,7 @@
         </div>
     </div>
 
-    <div class="modal" data-popup="success">
+    <div class="modal modal--success" data-popup="success">
       <div class="modal__box">
         <div class="modal__top">
           <div class="modal__title">
@@ -44,7 +44,7 @@
       </div>
     </div>
 
-    <div class="modal" data-popup="share">
+    <div class="modal modal--share" data-popup="share">
       <div class="modal__box">
         <div class="modal__top">
           <div class="modal__title">
@@ -82,8 +82,54 @@
           </li>
         </ul>
 
-        <div class="modal__share">
-          https://zelenagazeta/
+        <form class="share-form">
+          <label class="share-form__label">
+            <span class="share-form__link" data-value="https://zelenagazeta/">https://zelenagazeta/</span>
+          </label>
+          
+          <button class="share-form__btn copy">
+            <svg width='24' height='24'>
+              <use href='img/sprite/sprite.svg#copy'></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal modal--alert" data-popup="age-alert">
+      <div class="modal__box">
+        <div class="modal__title">
+          Вам вже виповнилось 18 років?
+        </div>
+
+        <div class="modal__icon">
+          <svg width='123' height='109'>
+            <use href='img/sprite/sprite.svg#paper-logo'></use>
+          </svg>
+        </div>
+
+        <div class="modal__btns">
+          <div class="btn-cancel">Ні</div>
+          <div class="btn-success close">Так</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal--alert" data-popup="snake-alert">
+      <div class="modal__box">
+        <div class="modal__title">
+          Ви лікар?
+        </div>
+
+        <div class="modal__icon">
+          <svg width='123' height='109'>
+            <use href='img/sprite/sprite.svg#snake'></use>
+          </svg>
+        </div>
+
+        <div class="modal__btns">
+          <div class="btn-cancel">Ні</div>
+          <div class="btn-success close">Так</div>
         </div>
       </div>
     </div>

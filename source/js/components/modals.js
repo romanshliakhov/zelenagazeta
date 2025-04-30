@@ -124,3 +124,20 @@ export default ModalManager;
 document.addEventListener("DOMContentLoaded", () => {
   new ModalManager({ activeMode: 'mode' });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modalManager = new ModalManager({ activeMode: 'mode' });
+
+  if (!localStorage.getItem('modalShown')) {
+    localStorage.setItem('modalShown', 'true');
+
+    setTimeout(() => {
+      const startPopupBtn = document.querySelector('.starting-popup');
+      if (startPopupBtn) {
+        startPopupBtn.click();
+      }
+    }, 100);
+  }
+});
+  

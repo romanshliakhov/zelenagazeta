@@ -75,6 +75,34 @@
   color: var(--cl-c);
 }
 
+.btn-cancel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 43px;
+  background-color: var(--cl-h);
+  color: var(--cl-c);
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-success {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 43px;
+  background-color: var(--cl-c);
+  color: var(--cl-a);
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 500;
+  cursor: pointer;
+}
+
 body[data-theme="dark"] {
   .swiper-button {
     svg {
@@ -105,5 +133,15 @@ body[data-theme="dark"] {
   .btn-share {
     background-color: var(--cl-d);
     color: var(--cl-g);
+  }
+
+  .btn-cancel {
+    background-color: var(--cl-d);
+    color: var(--cl-g);
+  }
+
+  .btn-success {
+    background-color: var(--cl-n);
+    color: var(--cl-b);
   }
 }

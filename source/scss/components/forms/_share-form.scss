@@ -1,0 +1,42 @@
+.share-form {
+    border: 1px solid #DCDEDA;
+    background: var(--cl-a);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+
+    &__link {
+        max-width: 230px;
+        font-size: 16px;
+        line-height: 160%;
+        font-weight: 300;
+        color: var(--cl-j);
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+
+    &__btn {
+        svg {
+            stroke: var(--cl-c);
+        }
+    }
+}
+
+body[data-theme="dark"] {
+    .share-form {
+        border: 1px solid var(--cl-b); 
+
+        &__link {
+            color: var(--cl-b); 
+        }
+
+        &__btn {
+            svg {
+                stroke: var(--cl-b);
+            }
+        }
+    }
+}

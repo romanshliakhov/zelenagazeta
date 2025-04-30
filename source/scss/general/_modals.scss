@@ -17,5 +17,14 @@
     pointer-events: none;
     width: 32px;
     height: 32px;
+    stroke: var(--cl-c);
+  }
+}
+
+body[data-theme="dark"] {
+  .modal {
+    .close svg {
+      stroke: var(--cl-b);
+    }
   }
 }

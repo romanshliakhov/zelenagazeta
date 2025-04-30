@@ -84,6 +84,10 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      svg {
+        stroke: var(--cl-c);
+      }
     }
 
     &-details {
@@ -160,6 +164,10 @@ body[data-theme="dark"] {
 
       &-link {
         color: var(--cl-b);
+
+        svg {
+          stroke: var(--cl-b);
+        }
       }
 
       &-page {

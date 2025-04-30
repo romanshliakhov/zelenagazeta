@@ -345,32 +345,29 @@
 
     <section class="subscribe-section">
         <div class="container">
-            <div class="subscribe-section__wrapp">
-                <div class="subscribe-section__bg">
-                    <picture>
-                        <source type='image/webp' srcset='img/index/form-bg.webp'>
-                        <img width='1280' height='441' src='img/index/form-bg.png' alt='subsribe form'>
-                    </picture>
-                </div>
-
-                <form class="form">
-                    <div class="form__top">
-                        <div class="form__title h2">Є питання? Напишіть нам</div>
-                    </div>
-
-                    <div class="form__box">
-                        <label class="form__label">
-                            <input class="form__input" type="email" name="email" placeholder="Введіть e-mail">
-                        </label>
-                        <label>
-                            <textarea class="form__textarea" name="textarea" placeholder="Текст повідомлення"></textarea>
-                        </label>
-                        <button class="form__submit">Надіслати</button>
-                    </div>
-                </form>
+          <div class="subscribe-section__wrapp">
+            <div class="subscribe-section__bg">
+              <svg class="pink-decor-desk" width='1217' height='248'>
+                <use href='img/sprite/sprite.svg#pink-decor'></use>
+              </svg>
             </div>
+  
+            <form class="form">
+              <div class="form__top">
+                <div class="form__title h2">Підписуйся на новини!</div>
+                <p class="form__text">Отримуй корисне і цікаве!</p>
+              </div>
+  
+              <div class="form__box subscribe">
+                <label class="form__label">
+                  <input class="form__input" type="email" name="email" placeholder="Введіть e-mail">
+                </label>
+                <button class="form__submit">Підписатись</button>
+              </div>
+            </form>
+          </div>
         </div>
-    </section>
+      </section>
   </main>
 
   @include('partials/footer.html')

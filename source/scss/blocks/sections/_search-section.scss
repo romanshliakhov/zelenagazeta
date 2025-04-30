@@ -16,6 +16,10 @@
     &__image {
         display: flex;
         flex-shrink: 0;
+
+        svg {
+            stroke: var(--cl-d);
+        }
     }
 
     &__box {
@@ -30,7 +34,7 @@
         font-size: clamp(18px, 2.286vw, 32px);
         line-height: 140%;
         font-weight: 500;
-        color: #232323;
+        color: var(--cl-s);
     }
 
     &__info {
@@ -44,12 +48,11 @@
             font-size: 16px;
             line-height: normal;
             font-weight: 300;
-            color: #232323;
+            color: var(--cl-s);
         }
     }
 
     &__details {
-        width: fit-content;
         display: flex;
         align-items: center;
         gap: 16px;
@@ -65,11 +68,12 @@
         display: flex;
         align-items: center;
         gap: 12px;
-        background-color: #F5F6F5;
+        background-color: var(--cl-k);
         border-radius: 4px;
 
         svg {
             flex-shrink: 0;
+            stroke: var(--cl-f);
         }
 
         p {
@@ -82,7 +86,7 @@
             font-size: 16px;
             line-height: 125%;
             font-weight: 700;
-            color: #232323;
+            color: var(--cl-s);
             text-decoration-line: underline;
             text-decoration-style: solid;
             text-decoration-skip-ink: none;
@@ -95,18 +99,55 @@
         height: 43px;
         max-width: 343px;
         width: 100%;
-        background-color: #083F08;
+        background-color: var(--cl-c);
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 16px;
         line-height: normal;
         font-weight: 500;
-        color: #fff;
+        color: var(--cl-a);
         text-align: center;
 
         @include tablet {
             max-width: 100%;
+        }
+    }
+}
+
+body[data-theme="dark"] {
+    .search-section {
+        &__image {
+            svg {
+                stroke: var(--cl-d);
+            }
+        }
+
+        &__info {
+            li {
+                color: var(--cl-b);
+            }
+        }
+
+        &__proposals {
+            background-color: var(--cl-h);
+
+            svg {
+                stroke: var(--cl-d);
+            }
+
+            p {
+                color: var(--cl-b); 
+            }
+
+            a {
+                color: var(--cl-b); 
+            }
+        }
+
+        &__link {
+            background-color: var(--cl-n);
+            color: var(--cl-b);
         }
     }
 }

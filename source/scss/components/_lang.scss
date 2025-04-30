@@ -65,6 +65,14 @@ body[data-theme="dark"] {
 
         .select__list {
             background-color: var(--cl-f);
+
+            li {
+                border-bottom: 1px solid var(--cl-b);
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
         }
     }
 }

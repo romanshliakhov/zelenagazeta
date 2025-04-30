@@ -25,8 +25,8 @@
             inset: 0;
             z-index: -1;
     
-            picture,
-            img {
+            svg {
+                stroke: var(--cl-i);
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
@@ -65,6 +65,14 @@
             @include small-tablet {
                 justify-content: space-between;
             }
+        }
+    }
+}
+
+body[data-theme="dark"] {
+    .discovery-section__slider-bg {
+        svg {
+            stroke: var(--cl-s);
         }
     }
 }

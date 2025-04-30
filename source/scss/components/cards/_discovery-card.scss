@@ -15,7 +15,7 @@
         font-size: clamp(16px, 3.125vw, 32px);
         line-height: 140%;
         font-weight: 500;
-        color: #000;
+        color: var(--cl-b);
         text-align: center;
     }
 
@@ -38,6 +38,10 @@
 
 
 body[data-theme="dark"] {
+    .discovery-card__text {
+        color: var(--cl-b);
+    }
+
     .discovery-card__link {
         color: var(--cl-g);
         background-color: var(--cl-d);
