@@ -23,7 +23,7 @@
         font-size: clamp(16px, 1.758vw, 18px);
         line-height: 160%;
         font-weight: 500;
-        color: #083F08;
+        color: var(--cl-c);
 
         &::before {
             content: '';
@@ -35,6 +35,14 @@
             background-image: var(--line);
             background-position: center;
             background-repeat: no-repeat;
+        }
+    }
+}
+
+body[data-theme="dark"] {
+    .value-card {    
+        &__title {
+            color: var(--cl-l);
         }
     }
 }

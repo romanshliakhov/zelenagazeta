@@ -4,8 +4,15 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    border: 1px solid #E5EEE5;
+    border: 1px solid var(--cl-k);
     border-radius: 68px;
+
+    @include mobile {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
 
     &__btn {
         padding: 8px 6px;
@@ -16,12 +23,39 @@
         transition: all 0.2s ease;
 
         &.active {
-            background-color: #E5EEE5;
+            background-color: var(--cl-k);
         }
 
         &:hover,
         &:active {
-            background-color: #E5EEE5;
+            background-color: var(--cl-k);
+        }
+
+        @include mobile {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+body[data-theme="dark"] {
+    .sorting {    
+        border: 1px solid var(--cl-f);
+        background-color: var(--cl-f);
+
+        &__btn {
+            color: var(--cl-b);
+
+            &.active {
+                background-color: var(--cl-o);
+            }
+    
+            &:hover,
+            &:active {
+                background-color: var(--cl-o);
+            }
         }
     }
 }

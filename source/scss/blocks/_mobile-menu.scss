@@ -73,6 +73,10 @@
         align-items: center;
         gap: 8px;
       }
+
+      svg {
+        stroke: var(--cl-c);
+      }
     }
 
     &-link {
@@ -163,6 +167,12 @@ body[data-theme="dark"] {
 
         svg {
           stroke: var(--cl-g);
+        }
+      }
+
+      a {
+        svg {
+          stroke: var(--cl-b);
         }
       }
 

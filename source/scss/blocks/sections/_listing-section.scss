@@ -19,7 +19,7 @@
 
     &__aside {
         padding: 16px 16px 40px;
-        background-color: #E5EEE5;
+        background-color: var(--cl-k);
         border-radius: 16px;
         display: flex;
         flex-direction: column;
@@ -44,6 +44,7 @@
             gap: 8px;
 
             svg {
+                stroke: var(--cl-c);
                 flex-shrink: 0;
             }
 
@@ -54,7 +55,7 @@
                 font-size: 16px;
                 line-height: normal;
                 font-weight: 500;
-                color: #083F08;
+                color: var(--cl-c);
             }
         }
     }
@@ -72,6 +73,7 @@
             gap: 8px;
 
             svg {
+                stroke: var(--cl-c);
                 flex-shrink: 0;
             }
 
@@ -82,14 +84,14 @@
                 font-size: 16px;
                 line-height: normal;
                 font-weight: 500;
-                color: #083F08;
+                color: var(--cl-c);
             }
         }
     }
 
     &__category-active {
         padding: 12px;
-        background-color: #fff;
+        background-color: var(--cl-a);
         border-radius: 8px;
 
         display: flex;
@@ -97,6 +99,7 @@
         justify-content: space-between;
 
         svg {
+            stroke: var(--cl-c);
             flex-shrink: 0;
         }
 
@@ -107,7 +110,7 @@
             font-size: 16px;
             line-height: normal;
             font-weight: 500;
-            color: #083F08;
+            color:  var(--cl-c);
         }
     }
 
@@ -145,14 +148,19 @@
         &-list {
             display: flex;
             align-items: center;
-            gap: 21px;
+            gap: 10px 21px;
+
+            @include desktop {
+                flex-direction: column;
+                align-items: flex-start;
+            }
 
             li {
                 position: relative;
                 font-size: 24px;
                 line-height: 140%;
                 font-weight: 700;
-                color: #083F08;
+                color: var(--cl-c);
 
                 &::before {
                     content: '';
@@ -162,7 +170,7 @@
                     transform: translateY(-50%);
                     width: 5px;
                     height: 5px;
-                    background-color: #838383;
+                    background-color: var(--cl-q);
                     border-radius: 50%;
                 }
 
@@ -176,7 +184,7 @@
             font-size: 16px;
             line-height: 160%;
             font-weight: 500;
-            color: #6D6D6D;
+            color: var(--cl-r);
         }
     }
 
@@ -197,7 +205,7 @@
             font-size: 16px;
             line-height: 150%;
             font-weight: 500;
-            color: #1E1E1E;
+            color: var(--cl-j);
         }
 
         &-controls {
@@ -232,6 +240,72 @@
 
         @include small-tablet {
             grid-template-columns: 100%;
+        }
+    }
+}
+
+body[data-theme="dark"] {
+    .listing-section {
+        &__aside {
+            background-color: var(--cl-h);
+        }
+
+        &__categories {
+            a {
+                svg {
+                    stroke: var(--cl-d);
+                }
+                
+                span {
+                    color: var(--cl-b);
+
+                    svg {
+                        stroke: var(--cl-b);
+                    }
+                }
+            }
+        }
+
+        &__subсategories {
+            a {
+                svg {
+                    stroke: var(--cl-d);
+                }
+                
+                span {
+                    color: var(--cl-b);
+
+                    svg {
+                        stroke: var(--cl-b);
+                    }
+                }
+            }
+        }
+
+        &__category-active {
+            background-color: var(--cl-f);
+
+            svg {
+                stroke: var(--cl-b);
+            }
+
+            span {
+                color: var(--cl-b);
+            }
+        }
+
+        &__summary {
+            &-list li {
+                color: var(--cl-b);
+            }
+
+            &-posts {
+                color: var(--cl-e);
+            }
+        }
+
+        &__tags-heading {
+            color: var(--cl-p);
         }
     }
 }

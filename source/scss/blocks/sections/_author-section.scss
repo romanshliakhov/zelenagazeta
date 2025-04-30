@@ -19,7 +19,7 @@
 
     &__aside {
         padding: 16px;
-        background-color: #E5EEE5;
+        background-color: var(--cl-k);
         border-radius: 16px;
 
         @include for-tablet {
@@ -41,6 +41,18 @@
         align-items: center;
         justify-content: space-between;
         gap: 16px;
+
+        @include small-tablet {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__counter {
+        font-size: 24px;
+        line-height: 140%;
+        font-weight: 700;
+        color: var(--cl-c);
     }
 
     &__items {
@@ -54,6 +66,18 @@
 
         @include small-tablet {
             grid-template-columns: 100%;
+        }
+    }
+}
+
+body[data-theme="dark"] {
+    .author-section {
+        &__aside {
+            background-color: var(--cl-r);
+        }
+
+        &__counter {
+            color: var(--cl-b);
         }
     }
 }

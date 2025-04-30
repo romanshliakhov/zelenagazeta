@@ -33,14 +33,14 @@
         font-size: 16px;
         line-height: 160%;
         font-weight: 500;
-        color: #1E1E1E;
+        color: var(--cl-j);
     }
 
     &__role {
         font-size: 12px;
         line-height: normal;
         font-weight: 300;
-        color: #1E1E1E;
+        color: var(--cl-j);
     }
 
     &__details {
@@ -52,6 +52,26 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+        }
+    }
+}
+
+body[data-theme="dark"] {
+    .author {
+        &__name {
+            color:  var(--cl-b);
+        }
+
+        &__role {
+            color:  var(--cl-b);
+        }
+
+        &__details {
+            color:  var(--cl-b);
+        }
+
+        .socials svg {
+            stroke: var(--cl-d);
         }
     }
 }

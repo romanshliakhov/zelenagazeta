@@ -29,7 +29,9 @@
   }
 
   &-disabled {
-    color: var(--cl-o);
+    svg {
+      color: var(--cl-r);
+    }
   }
 }
 
@@ -40,8 +42,11 @@
   align-items: center;
   justify-content: center;
   height: 43px;
-  background-color: #083F08;
-  color: #fff;
+  background-color: var(--cl-c);
+  color: var(--cl-a);
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 500;
 }
 
 .btn-like {
@@ -51,8 +56,12 @@
   justify-content: center;
   gap: 6px;
   height: 46px;
-  background-color: #083F08;
-  color: #fff;
+  background-color: var(--cl-c);
+  color: var(--cl-a);
+
+  svg {
+    stroke: var(--cl-a);
+  }
 }
 
 .btn-share {
@@ -62,8 +71,8 @@
   justify-content: center;
   gap: 6px;
   height: 46px;
-  background-color: #C3E9C7;
-  color: #083F08;
+  background-color: var(--cl-h);
+  color: var(--cl-c);
 }
 
 body[data-theme="dark"] {
@@ -71,5 +80,30 @@ body[data-theme="dark"] {
     svg {
       stroke: var(--cl-l);
     }
+
+    &-disabled {
+      svg {
+        stroke: var(--cl-o);
+      }
+    }
+  }
+
+  .more-button {
+    background-color: var(--cl-n);
+    color: var(--cl-b);
+  }
+
+  .btn-like {
+    background-color: var(--cl-n);
+    color: var(--cl-b);
+
+    svg {
+      stroke: var(--cl-b);
+    }
+  }
+
+  .btn-share {
+    background-color: var(--cl-d);
+    color: var(--cl-g);
   }
 }

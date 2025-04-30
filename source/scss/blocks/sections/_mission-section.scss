@@ -27,7 +27,7 @@
 
         li {
             padding: 24px;
-            background-color: #083F08;
+            background-color: var(--cl-c);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -43,15 +43,29 @@
                 font-size: clamp(18px, 2.344vw, 24px);
                 line-height: 150%;
                 font-weight: 500;
-                color: #fff;
+                color: var(--cl-a);
             }
 
             p {
                 font-size: 16px;
                 line-height: 160%;
                 font-weight: 300;
-                color: #fff;
+                color: var(--cl-a);
             }
+        }
+    }
+}
+
+body[data-theme="dark"] {
+    .mission-section li {
+        background-color: var(--cl-s);
+
+        span {
+            color: var(--cl-b);
+        }
+
+        p {
+            color: var(--cl-b);
         }
     }
 }

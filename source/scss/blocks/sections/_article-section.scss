@@ -48,7 +48,7 @@
             display: flex;
             flex-direction: column;
             gap: 24px;
-            background-color: #E5EEE5;
+            background-color: var(--cl-k);
             border-radius: 16px;
         }
 
@@ -61,7 +61,7 @@
             .tag {
                 gap: 0;
                 padding: 0;
-                background-color: transparent;
+                background-color: transparent !important;
                 font-size: 12px;
                 line-height: normal;
                 font-weight: 400;
@@ -82,7 +82,11 @@
                 font-size: 12px;
                 line-height: normal;
                 font-weight: 300;
-                color: #083F08;
+                color: var(--cl-c);
+
+                svg {
+                    stroke: var(--cl-f);
+                }
             }
         }
 
@@ -103,7 +107,7 @@
             font-size: 16px;
             line-height: 160%;
             font-weight: 500;
-            color: #083F08;
+            color: var(--cl-c);
         }
 
         &-btns {
@@ -142,14 +146,54 @@
             font-size: 16px;
             line-height: 160%;
             font-weight: 500;
-            color: #1E1E1E;
+            color: var(--cl-j);
         }
 
         &-role {
             font-size: 12px;
             line-height: normal;
             font-weight: 300;
-            color: #1E1E1E;
+            color: var(--cl-j);
+        }
+    }
+}
+
+body[data-theme="dark"] {
+    .article-section {
+        &__aside-box {
+            background-color: var(--cl-r);
+        }
+
+        &__aside-tags {
+            .tag {
+                color: var(--cl-b) !important;
+
+                svg {
+                    stroke: var(--cl-b) !important;
+                }
+            }
+        }
+
+        &__author-name {
+            color: var(--cl-b);
+        }
+
+        &__author-role {
+            color: var(--cl-b);
+        }
+
+        &__aside-heading {
+            color: var(--cl-b);
+        }
+
+        &__aside-details {
+            span {
+                color: var(--cl-b);
+            }
+
+            svg {
+                stroke: var(--cl-q);
+            }
         }
     }
 }

@@ -36,13 +36,25 @@
         font-size: 18px;
         line-height: 160%;
         font-weight: 500;
-        color: #083F08;
+        color: var(--cl-c);
     }
 
     &__role {
         font-size: 14px;
         line-height: 122%;
         font-weight: 300;
-        color: #083F08;
+        color: var(--cl-c);
+    }
+}
+
+body[data-theme="dark"] {
+    .team-card {
+        &__name {
+            color: var(--cl-l);
+        }
+
+        &__role {
+            color: var(--cl-l);
+        }
     }
 }

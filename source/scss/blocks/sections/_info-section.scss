@@ -19,7 +19,7 @@
 
     &__aside {
         padding: clamp(16px, 2.344vw, 24px) 16px;
-        background-color: #E5EEE5;
+        background-color: var(--cl-k);
         border-radius: 16px;
 
         @include for-tablet {
@@ -42,7 +42,11 @@
             font-size: 16px;
             line-height: normal;
             font-weight: 500;
-            color: #083F08;
+            color: var(--cl-c);
+
+            svg {
+                stroke: var(--cl-c);
+            }
         }
     }
 
@@ -56,14 +60,14 @@
             font-size: clamp(18px, 2.344vw, 24px);
             line-height: 140%;
             font-weight: 700;
-            color: #083F08;
+            color: var(--cl-c);
         }
 
         p {
             font-size: 16px;
             line-height: 160%;
             font-weight: 300;
-            color: #083F08;
+            color: var(--cl-c);
         }
 
         ul {
@@ -73,7 +77,39 @@
                 font-size: 16px;
                 line-height: 160%;
                 font-weight: 300;
-                color: #083F08;
+                color: var(--cl-c);
+            }
+        }
+    }
+}
+
+body[data-theme="dark"] {
+    .info-section {
+        &__aside {
+            background-color: var(--cl-h);
+        }
+
+        &__pages {
+            a {
+                color: var(--cl-b);
+
+                svg {
+                    stroke: var(--cl-b);
+                }
+            }
+        }
+
+        &__box {
+            h3 {
+                color: var(--cl-b);
+            }
+
+            p {
+                color: var(--cl-b);
+            }
+
+            ul li {
+                color: var(--cl-b);
             }
         }
     }

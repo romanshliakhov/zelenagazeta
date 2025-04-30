@@ -59,6 +59,7 @@
         font-size: 18px;
         line-height: 160%;
         font-weight: 500;
+        color: var(--cl-c);
 
         &::before {
             content: '';
@@ -84,7 +85,15 @@
             font-size: 16px;
             line-height: normal;
             font-weight: 500;
-            color: #083F08;
+            color: var(--cl-c);
+        }
+    }
+}
+
+body[data-theme="dark"] {
+    .team-section {
+        &__text {
+            color: var(--cl-b);
         }
     }
 }
