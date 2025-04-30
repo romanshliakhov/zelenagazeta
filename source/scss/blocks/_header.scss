@@ -175,7 +175,7 @@
       display: flex;
       flex-direction: column;
       gap: 16px;
-      background-color: #E5EEE5;
+      background-color: var(--cl-k);
       border-radius: 4px; 
       transition: 0.3s ease;
 
@@ -196,7 +196,7 @@
         font-size: 12px;
         line-height: normal;
         font-weight: 400;
-        color: #083F08;
+        color: var(--cl-c);
       }
     }
 
@@ -210,6 +210,7 @@
       text-transform: lowercase;
 
       svg {
+        stroke: var(--cl-f);
         transition: 0.2s ease;
       }
     }
@@ -257,9 +258,30 @@
 body[data-theme="dark"] {
   .header {    
     &__link {
+      background-color: var(--cl-d);
+      
       & > svg:last-of-type {
         stroke: var(--cl-g);
       }
     }
+
+    &__nav {
+      .sub-menu {
+        background-color: var(--cl-h);
+
+        a {
+          color: var(--cl-i);
+        }
+      }
+      
+      .menu-link {
+        color: var(--cl-b);
+        
+        svg {
+          stroke: var(--cl-d);
+        }
+      }
+    }
+
   }
 }

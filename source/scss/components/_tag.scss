@@ -4,14 +4,33 @@
     display: flex;
     align-items: center;
     gap: 4px;
-    background-color: #F8EDEB;
+    background-color: var(--cl-i);
     border-radius: 36px;
     font-size: clamp(14px, 1.563vw, 16px);
     line-height: normal;
     font-weight: 500;
-    color: #083F08;
+    color: var(--cl-c);
+
+    svg {
+        stroke: var(--cl-c);
+    }
 
     &.active {
-        background-color: #F1D9D4;
+        background-color: var(--cl-m);
+    }
+}
+
+body[data-theme="dark"] {
+    .tag {
+        background-color: var(--cl-h);
+        color: var(--cl-d);
+
+        svg {
+            stroke: var(--cl-d);
+        }
+
+        &.active {
+            background-color: var(--cl-h);
+        }
     }
 }

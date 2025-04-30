@@ -5,5 +5,17 @@
 
     li {
         display: flex;
+
+        svg {
+            stroke: var(--cl-c);
+        }
+    }
+}
+
+body[data-theme="dark"] {
+    .socials {
+        svg {
+            stroke: var(--cl-l);
+        }
     }
 }

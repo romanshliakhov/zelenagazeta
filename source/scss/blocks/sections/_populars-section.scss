@@ -22,6 +22,10 @@
         align-items: center;
         gap: 8px;
 
+        svg {
+            stroke: var(--cl-c);
+        }
+
         @include small-tablet {
             order: 1;
             margin: 0 auto;
@@ -91,21 +95,61 @@
                     }
                 }
 
+                .article-card__bottom {
+                    svg {
+                        stroke: var(--cl-a);
+                    }
+                }
+
                 .article-card__tag {
-                    color: #fff;
+                    color: var(--cl-a);
                 }
 
                 .article-card__details {
-                    color: #fff;
+                    color: var(--cl-a);
                 }
 
                 .article-card__title {
-                    color: #fff;
+                    color: var(--cl-a);
                 }
 
                 .article-card__excerpt {
-                    color: #fff;
+                    color: var(--cl-a);
                 }
+            }
+        }
+    }
+}
+
+body[data-theme="dark"] {
+    .populars-section {
+        &__link {
+            color: var(--cl-m);
+
+            svg {
+                stroke: var(--cl-m);
+            }
+        }
+
+        .article-card__tag {
+            color: var(--cl-b);
+        }
+
+        .article-card__details {
+            color: var(--cl-b);
+        }
+
+        .article-card__title {
+            color: var(--cl-b);
+        }
+
+        .article-card__excerpt {
+            color: var(--cl-b);
+        }
+
+        .article-card__bottom {
+            svg {
+                stroke:  var(--cl-b);
             }
         }
     }

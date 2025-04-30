@@ -50,14 +50,14 @@
     }
 
     &__title {
-        color: #083F08;
+        color: var(--cl-c);
     }
 
     &__text {
         font-size: clamp(16px, 1.667vw, 24px);
         line-height: 140%;
         font-weight: 700;
-        color: #083F08;
+        color: var(--cl-c);
     }
 
     &__link {
@@ -67,6 +67,30 @@
         font-size: 16px;
         line-height: 150%;
         font-weight: 500;
-        color: #083F08;
+        color: var(--cl-c);
+
+        svg {
+            stroke: var(--cl-c);
+        }
+    }
+}
+
+body[data-theme="dark"] {
+    .identity-section {
+        &__title {
+            color: var(--cl-l);
+        }
+
+        &__text {
+            color: var(--cl-b);
+        }
+
+        &__link {
+            color: var(--cl-m);
+
+            svg {
+                stroke: var(--cl-m);
+            }
+        }
     }
 }

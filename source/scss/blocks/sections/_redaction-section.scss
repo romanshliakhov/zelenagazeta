@@ -32,7 +32,7 @@
         &-info {
             flex-grow: 1;
             padding: 20px;
-            background-color: #083F08;
+            background-color: var(--cl-c);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -48,7 +48,7 @@
         }
 
         &-heading {
-            color: #fff;
+            color: var(--cl-a);
         }
 
         &-details {
@@ -60,13 +60,17 @@
         &-views,
         &-author,
         &-pubtime {
-          width: fit-content;
-          display: flex;
-          align-items: center;
-          font-size: 12px;
-          line-height: normal;
-          font-weight: 300;
-          color: #fff;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            line-height: normal;
+            font-weight: 300;
+            color: var(--cl-a);
+
+            svg {
+                stroke: var(--cl-f);
+            }
         }
 
         &-box {
@@ -101,13 +105,17 @@
             line-height: normal;
             text-transform: lowercase;
             color: rgba(255, 255, 255, 0.70);
+
+            svg {
+                stroke: rgba(255, 255, 255, 0.70);
+            }
         }
 
         &-title {
             font-size: clamp(16px, 1.758vw, 18px);
             line-height: 160%;
             font-weight: 500;
-            color: #fff;
+            color: var(--cl-a);
         }
 
         &-excerpt {
@@ -115,6 +123,42 @@
             line-height: 160%;
             font-weight: 500;
             color: rgba(255, 255, 255, 0.70);
+        }
+    }
+}
+
+body[data-theme="dark"] {
+    .redaction-section {
+        &__post {
+            &-info {
+                background-color: var(--cl-n);
+            }
+
+            &-views,
+            &-author,
+            &-pubtime {
+                color: var(--cl-b);
+    
+                svg {
+                    stroke: var(--cl-b);
+                }
+            }
+
+            &-tag {
+                color: rgba(255, 255, 255, 0.70);
+
+                svg {
+                    stroke: rgba(255, 255, 255, 0.70);
+                }
+            }
+
+            &-title {
+                color: var(--cl-b);
+            }
+
+            &-excerpt {
+                color: rgba(255, 255, 255, 0.70);
+            }
         }
     }
 }

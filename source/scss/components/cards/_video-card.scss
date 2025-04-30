@@ -27,7 +27,7 @@
   &__info {
     position: relative;
     display: flex;
-    flex-direction: column;
+    align-items: flex-start;
     gap: 36px;
 
     @include for-small-tablet {
@@ -36,6 +36,11 @@
 
     @include small-tablet {
       padding: 22px 0 30px;
+    }
+
+    svg {
+      flex-shrink: 0;
+      stroke: var(--cl-c);
     }
 
     &::before {
@@ -55,10 +60,21 @@
     font-size: clamp(16px, 2.344vw, 18px);
     line-height: 160%;
     font-weight: 500;
-    color: #083F08;
+    color: var(--cl-c);
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+  }
+}
+
+body[data-theme="dark"] {
+  .video-card__info {
+    svg {
+      stroke: var(--cl-l);
+    }
+  }
+  .video-card__title {
+    color: var(--cl-l);
   }
 }

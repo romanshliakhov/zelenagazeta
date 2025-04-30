@@ -1,4 +1,4 @@
-.swiper-pagination{
+.swiper-pagination {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -8,11 +8,11 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #A6A6A6;
+    background-color: var(--cl-o);
     transition: all .3s;
 
     &-active{
-      background-color: #072F07;
+      background-color: var(--cl-p);
     }
   }
 }
@@ -24,8 +24,12 @@
   align-items: center;
   justify-content: center;
 
+  svg {
+    stroke: var(--cl-c);
+  }
+
   &-disabled {
-    color: #A6A6A6;
+    color: var(--cl-o);
   }
 }
 
@@ -39,7 +43,6 @@
   background-color: #083F08;
   color: #fff;
 }
-
 
 .btn-like {
   width: 100%;
@@ -61,4 +64,12 @@
   height: 46px;
   background-color: #C3E9C7;
   color: #083F08;
+}
+
+body[data-theme="dark"] {
+  .swiper-button {
+    svg {
+      stroke: var(--cl-l);
+    }
+  }
 }

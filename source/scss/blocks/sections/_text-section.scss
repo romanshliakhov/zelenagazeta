@@ -12,6 +12,7 @@
             height: 40px;
             width: 100%;
             background: linear-gradient(0deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+            transition: background 0.3s;
         }
     }
 
@@ -51,14 +52,14 @@
             font-size: clamp(18px, 2.344vw, 24px);
             line-height: 140%;
             font-weight: 700;
-            color: #083F08;
+            color: var(--cl-c);
         }
 
         p {
             font-size: 16px;
             line-height: 160%;
             font-weight: 300;
-            color: #083F08;
+            color: var(--cl-c);
         }
 
         p + p {
@@ -72,7 +73,25 @@
                 font-size: 16px;
                 line-height: 160%;
                 font-weight: 300;
-                color: #083F08;
+                color: var(--cl-c);
+            }
+        }
+    }
+}
+
+body[data-theme="dark"] {
+    .text-section {
+        &__wrapp::before {
+            background: linear-gradient(0deg, #1B1B1B 0%, rgba(27, 27, 27, 0.00) 100%);
+        }
+
+        &__box {
+            h3 {
+                color: var(--cl-l);
+            }
+
+            p {
+                color: var(--cl-l);
             }
         }
     }

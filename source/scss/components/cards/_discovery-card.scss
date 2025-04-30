@@ -18,4 +18,32 @@
         color: #000;
         text-align: center;
     }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 12px 40px;
+        background-color: var(--cl-c);
+        font-size: 16px;
+        line-height: normal;
+        font-weight: 500;
+        color: var(--cl-a);
+
+        svg {
+            stroke: var(--cl-a);
+        }
+    }
+}
+
+
+body[data-theme="dark"] {
+    .discovery-card__link {
+        color: var(--cl-g);
+        background-color: var(--cl-d);
+
+        svg {
+            stroke: var(--cl-g);
+        }
+    }
 }

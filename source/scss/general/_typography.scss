@@ -1,26 +1,16 @@
-.logo{
-  // width: clamp(130px, 17.3837vw, 299px);
-  // height: clamp(52px, 6.9767vw, 120px);
-  display: flex;
-
-  svg,img{
-    width: 100%;
-    height: auto;
-  }
-}
-
 h1,
 .h1 {
   font-family: var(--font-family);
   font-size: clamp(24px, 3.906vw, 40px);
   line-height: 140%;
   font-weight: 500;
-  color: #083F08;
+  color: var(--cl-c);
   font-variant-numeric: lining-nums proportional-nums;
   text-overflow: ellipsis;
   overflow: hidden;
 
   svg {
+    stroke: var(--cl-c);
     width: clamp(24px, 3.906vw, 40px);
     height: clamp(24px, 3.906vw, 40px);
   }
@@ -32,13 +22,34 @@ h2,
   font-size: clamp(24px, 3.906vw, 40px);
   line-height: 140%;
   font-weight: 500;
-  color: #083F08;
+  color: var(--cl-c);
   font-variant-numeric: lining-nums proportional-nums;
   text-overflow: ellipsis;
   overflow: hidden;
 
   svg {
+    stroke: var(--cl-c);
     width: clamp(24px, 3.906vw, 40px);
     height: clamp(24px, 3.906vw, 40px);
+  }
+}
+
+body[data-theme="dark"] {
+  h1,
+  .h1 {
+    color: var(--cl-l);
+
+    svg {
+      stroke: var(--cl-l);
+    }
+  }
+
+  h2,
+  .h2 {
+    color: var(--cl-l);
+
+    svg {
+      stroke: var(--cl-l);
+    }
   }
 }

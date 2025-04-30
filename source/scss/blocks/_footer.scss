@@ -38,7 +38,7 @@
       font-size: 18px;
       line-height: 160%;
       font-weight: 500;
-      color: #083F08;
+      color: var(--cl-c);
     }
   }
 
@@ -102,9 +102,10 @@
       font-size: 16px;
       line-height: 160%;
       font-weight: 500;
-      color: #083F08;
+      color: var(--cl-c);
 
       svg {
+        stroke: var(--cl-c);
         transition: all 0.3s ease;
       }
 
@@ -144,7 +145,7 @@
         font-size: 12px;
         line-height: normal;
         font-weight: 300;
-        color: #1E1E1E;
+        color: var(--cl-j);
       }
     }
   }
@@ -180,7 +181,7 @@
       font-size: 12px;
       line-height: normal;
       font-weight: 300;
-      color: #083F08;
+      color: var(--cl-c);
     }
   }
 
@@ -190,10 +191,42 @@
     display: flex;
     align-items: center;
     gap: 9px;
-    background-color: #C3E9C7;
+    background-color: var(--cl-h);
     font-size: 16px;
     line-height: normal;
     font-weight: 500;
-    color: #083F08;
+    color: var(--cl-c);
+  }
+}
+
+
+body[data-theme="dark"] {
+  .footer {
+    &__socials-heading {
+      color: var(--cl-l);
+    }
+
+    &__nav {
+      & > button {
+        color: var(--cl-l);
+
+        svg {
+          stroke: var(--cl-l);
+        }
+      }
+
+      ul a {
+        color: var(--cl-b);
+      }
+    }
+
+    &__info a {
+      color: var(--cl-l);
+    }
+
+    &__contacts {
+      background-color: var(--cl-d);
+      color: var(--cl-c);
+    }
   }
 }
