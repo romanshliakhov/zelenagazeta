@@ -1,7 +1,7 @@
 import './components/dinamicHeight.js';
-import './components/hideTags.js';
 import './components/modals.js';
 import './components/copy.js';
+import './components/cookies.js';
 import './components/acc.js';
 import './components/mobile-menu.js';
 import './components/tabs.js';
