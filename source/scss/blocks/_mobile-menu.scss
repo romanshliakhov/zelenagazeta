@@ -98,6 +98,12 @@
       svg {
         stroke: var(--cl-c);
       }
+
+      // add new styles start
+      @include  for-tablet {
+        pointer-events: none;
+      }
+      // add new styles end
     }
 
     .menu-item-has-children {
@@ -134,6 +140,23 @@
           }
         }
       }
+
+      // add new styles start
+      @include  for-tablet {
+        transition: all 0.4s ease;
+
+        &:hover {
+          .sub-menu {
+            overflow: visible;
+            left: 100%;
+            padding: 40px;
+            transform: translateX(0);
+            overflow-y: auto;
+            z-index: 1;
+          }
+        }
+      }
+      // add new styles end
     }
 
     .sub-menu {
