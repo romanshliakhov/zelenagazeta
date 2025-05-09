@@ -661,15 +661,33 @@
     </ul>
 
     <div class="mobile__menu-details">
-      <a class="mobile__menu-link" href="/about.html">
-        <span>
-          Про нас
-        </span>
+      <ul class="mobile__menu menu" data-single='true' data-accordion-init>
+        <li class="menu-item menu-item-has-children">
+          <a class="menu-link" href="#">
+            Про нас
+          </a>
+          <button class="menu-button" data-id='1'>
+            <svg width='16' height='16'>
+              <use href='img/sprite/sprite.svg#agile-right'></use>
+            </svg>
+          </button>
   
-        <svg width='24' height='24'>
-          <use href='img/sprite/sprite.svg#agile-right'></use>
-        </svg>
-      </a>
+          <ul class="sub-menu" data-content='1'>
+            <li>
+              <a href="/privacy-policy.html">Політика приватності</a>
+            </li>
+            <li>
+              <a href="/rules-policy.html">Правила використання</a>
+            </li>
+            <li>
+              <a href="/public-offer.html">Публічна оферта</a>
+            </li>
+            <li>
+              <a href="/edditorial-policy.html">Редакційна політика</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
 
       <a href="/medicine.html" class="mobile__menu-page">
         <svg width='22' height='22'>
