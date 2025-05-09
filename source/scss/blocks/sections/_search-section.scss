@@ -11,6 +11,12 @@
         @include tablet {
             flex-direction: column;
         }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
     }
 
     &__image {

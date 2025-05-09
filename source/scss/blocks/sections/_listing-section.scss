@@ -112,6 +112,10 @@
                 }
             }
         }
+
+        .sub-menu {
+            display: none;
+        }
     }
 
     &__subсategories {
@@ -316,27 +320,40 @@
                 padding: 12px 16px;
                 border-radius: 8px;
                 background-color: var(--cl-k);
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
 
-                & > svg {
-                    stroke: #1E1E1E;
+                & > div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+
+                    span {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        color: var(--cl-c);
+
+                        svg {
+                            stroke: currentColor;
+                        }
+                    }
+
+                    & > svg {
+                        stroke: #1E1E1E;
+                    }
                 }
 
                 & > span {
-                    display: flex;
-                    align-items: center;
-                    gap: 8px;
+                    padding-left: 35px;
                     font-size: 16px;
                     font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;
-                    color: var(--cl-c);
-
-                    svg {
-                        stroke: currentColor;
-                    }
+                    font-weight: 300;
+                    line-height: 160%;
+                    color: var(--cl-r);
                 }
             }
         }

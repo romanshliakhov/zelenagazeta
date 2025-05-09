@@ -33,6 +33,19 @@
 
     &.questions {
       max-width: 100%;
+
+      & > p:first-of-type {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          width: 100%;
+        }
+
+        .wpcf7-form-control-wrap {
+          width: 100%;
+        }
+      }
     }
   }
 
