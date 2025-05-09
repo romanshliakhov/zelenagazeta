@@ -5,6 +5,17 @@
 
     &__box {
         position: relative;
+        overflow: hidden;
+    
+        @include for-tablet {
+            &:hover {
+                .value-card__text {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0);
+                }
+            }
+        }
     }
 
     &__image {
@@ -37,12 +48,38 @@
             background-repeat: no-repeat;
         }
     }
+
+    &__text {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        padding: 24px 15px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.59) 0%, rgba(241, 241, 241, 0.59) 100%);
+        backdrop-filter: blur(16.5px);
+        font-size: clamp(14px, 2.083vw, 16px);
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%;
+        color: var(--cl-g);
+        transition: all 0.3s ease;
+
+        @include for-tablet {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(100%);
+        }
+    }
 }
 
 body[data-theme="dark"] {
     .value-card {    
         &__title {
             color: var(--cl-l);
+        }
+
+        &__text {
+            color: var(--cl-b);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.59) 0%, rgba(0, 0, 0, 0.59) 100%);
         }
     }
 }

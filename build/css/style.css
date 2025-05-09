@@ -217,7 +217,8 @@ body[data-theme=dark] .h2 svg {
 }
 
 :root {
-  --line: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='556' height='8' viewBox='0 0 556 8' fill='none'%3E%3Cpath d='M1 6.17592C127.629 1.42366 244.958 8.94913 372.107 1.42366C408.911 -0.754639 446.975 6.17593 483.771 6.17593C495.471 6.17593 509.268 6.17595 521.76 6.17595C532.642 6.17594 543.783 7 555 7' stroke='%236A826A' stroke-linecap='round'/%3E%3C/svg%3E") ;
+  --line: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='556' height='8' viewBox='0 0 556 8' fill='none'%3E%3Cpath d='M1 6.17592C127.629 1.42366 244.958 8.94913 372.107 1.42366C408.911 -0.754639 446.975 6.17593 483.771 6.17593C495.471 6.17593 509.268 6.17595 521.76 6.17595C532.642 6.17594 543.783 7 555 7' stroke='%236A826A' stroke-linecap='round'/%3E%3C/svg%3E");
+  --missions-line: url("data:image/svg+xml,%3Csvg width='221' height='8' viewBox='0 0 221 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 6.17592C51.0571 1.42366 97.4382 8.94913 147.701 1.42366C162.25 -0.754639 177.297 6.17593 191.843 6.17593C196.468 6.17593 201.922 6.17595 206.86 6.17595C211.162 6.17594 215.566 7 220 7' stroke='%23C3E9C7' stroke-linecap='round'/%3E%3C/svg%3E");
 }
 
 [data-btn-modal] svg {
@@ -3889,6 +3890,16 @@ body[data-theme=dark] .team-card__role {
 }
 .value-card__box {
   position: relative;
+  overflow: hidden;
+}
+@media (min-width: 1025px) {
+  .value-card__box:hover .value-card__text {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
 .value-card__image {
   display: -webkit-box;
@@ -3919,9 +3930,40 @@ body[data-theme=dark] .team-card__role {
   background-position: center;
   background-repeat: no-repeat;
 }
+.value-card__text {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 24px 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.59)), to(rgba(241, 241, 241, 0.59)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.59) 0%, rgba(241, 241, 241, 0.59) 100%);
+  -webkit-backdrop-filter: blur(16.5px);
+  backdrop-filter: blur(16.5px);
+  font-size: clamp(14px, 2.083vw, 16px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+  color: var(--cl-g);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+@media (min-width: 1025px) {
+  .value-card__text {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+}
 
 body[data-theme=dark] .value-card__title {
   color: var(--cl-l);
+}
+body[data-theme=dark] .value-card__text {
+  color: var(--cl-b);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.59)), to(rgba(0, 0, 0, 0.59)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.59) 0%, rgba(0, 0, 0, 0.59) 100%);
 }
 
 .author {
@@ -4062,6 +4104,9 @@ body[data-theme=dark] .author .socials svg {
 }
 .form__box.subscribe {
   max-width: 434px;
+}
+.form__box.questions {
+  max-width: 100%;
 }
 .form__label {
   position: relative;
@@ -5401,6 +5446,14 @@ body[data-theme=dark] .modal .socials a svg {
   line-height: normal;
   font-weight: 500;
   color: var(--cl-c);
+}
+@media (max-width: 576px) {
+  .footer__contacts {
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
 }
 
 body[data-theme=dark] .footer__socials-heading {
@@ -7855,11 +7908,25 @@ body[data-theme=dark] .about-section__text {
 }
 .mission-section__items li span {
   position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: block;
   font-size: clamp(18px, 2.344vw, 24px);
   line-height: 150%;
   font-weight: 500;
   color: var(--cl-a);
+}
+.mission-section__items li span::before {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  width: 100%;
+  left: 0;
+  height: 8px;
+  background-image: var(--missions-line);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .mission-section__items li p {
   font-size: 16px;

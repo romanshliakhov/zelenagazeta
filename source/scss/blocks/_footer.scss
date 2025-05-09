@@ -196,6 +196,11 @@
     line-height: normal;
     font-weight: 500;
     color: var(--cl-c);
+
+    @include mobile {
+      width: 100%;
+      justify-content: center;
+    }
   }
 }
 

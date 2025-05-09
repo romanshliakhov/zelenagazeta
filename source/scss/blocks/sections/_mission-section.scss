@@ -39,11 +39,24 @@
 
             span {
                 position: relative;
+                width: fit-content;
                 display: block;
                 font-size: clamp(18px, 2.344vw, 24px);
                 line-height: 150%;
                 font-weight: 500;
                 color: var(--cl-a);
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: -18px;
+                    width: 100%;
+                    left: 0;
+                    height: 8px;
+                    background-image: var(--missions-line);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
             }
 
             p {

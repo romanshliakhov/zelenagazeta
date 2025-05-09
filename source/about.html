@@ -55,6 +55,9 @@
                                       <img width='100' height='100' src='img/index/value1.png' alt=''>
                                     </picture>
                                 </div>
+                                <div class="value-card__text">
+                                    Ми подаємо лише перевірену інформацію, яка ґрунтується на наукових дослідженнях, офіційних джерелах та думках експертів. Жодних припущень, маніпуляцій чи псевдонаукових теорій – лише факти.
+                                </div>
                             </div>
 
                             <div class="value-card__title">Чесність і доказовість</div>
@@ -70,6 +73,9 @@
                                       <img width='100' height='100' src='img/index/value2.png' alt=''>
                                     </picture>
                                 </div>
+                                <div class="value-card__text">
+                                    Ми не поширюємо міфи, не піддаємося маніпуляціям і дбаємо про те, щоб наш контент відповідав найвищим стандартам якості та достовірності.
+                                </div>
                             </div>
 
                             <div class="value-card__title">Відповідальність</div>
@@ -84,6 +90,9 @@
                                       <source type='image/webp' srcset='img/index/value3.webp'>
                                       <img width='100' height='100' src='img/index/value3.png' alt=''>
                                     </picture>
+                                </div>
+                                <div class="value-card__text">
+                                    Інформація про здоров’я має бути зрозумілою для всіх. Ми пояснюємо складні медичні теми простою мовою, без зайвої термінології, щоб кожен міг легко застосувати знання у повсякденному житті.
                                 </div>
                             </div>
 
@@ -212,7 +221,7 @@
 
                 <ul class="mission-section__items">
                     <li>
-                        <span>Об’єктивність</span>
+                        <span>Об’єктивність </span>
                         <p>Подаємо лише перевірені факти без маніпуляцій, спираємося на наукові дослідження та експертні думки</p>
                     </li>
 
@@ -348,20 +357,32 @@
                 <use href='img/sprite/sprite.svg#pink-decor'></use>
               </svg>
             </div>
-  
+
             <form class="form">
-              <div class="form__top">
-                <div class="form__title h2">Підписуйся на новини!</div>
-                <p class="form__text">Отримуй корисне і цікаве!</p>
-              </div>
-  
-              <div class="form__box subscribe">
-                <label class="form__label">
-                  <input class="form__input" type="email" name="email" placeholder="Введіть e-mail">
-                </label>
-                <button class="form__submit">Підписатись</button>
-              </div>
+                <div class="form__top">
+                    <div class="form__title h2">Є питання? Напишіть нам</div>
+                </div>
+
+                <div class="form__box questions">
+                    <label class="form__label">
+                        <input class="form__input" type="email" name="email" placeholder="Введіть e-mail">
+                    </label>
+                    <label>
+                        <textarea class="form__textarea" name="textarea" placeholder="Текст повідомлення"></textarea>
+                    </label>
+    
+                    <button class="form__submit" data-btn-inner="success">Надіслати</button>
+                </div>
             </form>
+
+            <!-- thanks block start-->
+            <!-- <div class="thanks">
+                <div class="form__top">
+                    <div class="form__title h2">Дякуємо! Повідомлення надіслано успішно!</div>
+                    <p class="form__text">Ми обов’язково з вами звʼяжемось!</p>
+                </div>
+            </div> -->
+            <!-- thanks block end-->
           </div>
         </div>
       </section>
