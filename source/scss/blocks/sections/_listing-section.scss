@@ -112,9 +112,11 @@
                 }
             }
         }
-
-        .sub-menu {
-            display: none;
+        
+        @include tablet {
+            .sub-menu {
+                display: none;
+            }
         }
     }
 
@@ -234,6 +236,16 @@
 
                 &:first-child::before {
                     display: none;
+                }
+
+                @include mobile {
+                    &::before {
+                        display: none;
+                    }
+
+                    &:not(:last-child) {
+                        display: none;
+                    }
                 }
             }
         }
@@ -426,6 +438,32 @@ body[data-theme="dark"] {
 
         &__tags-heading {
             color: var(--cl-p);
+        }
+
+        &__mobile {    
+            @include mobile {
+                & > span {
+                    color: var(--cl-p);
+                }
+    
+                &-cat {
+                    background-color: var(--cl-h);
+    
+                    & > div {    
+                        span {
+                            color: var(--cl-b);
+                        }
+    
+                        & > svg {
+                            stroke: var(--cl-b);
+                        }
+                    }
+    
+                    & > span {
+                        color: var(--cl-b);
+                    }
+                }
+            }
         }
     }
 }

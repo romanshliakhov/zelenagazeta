@@ -283,6 +283,10 @@
       display: flex;
       flex-direction: column;
       gap: 24px;
+
+      @include  for-tablet {
+        padding-right: 24px;
+      }
     }
 
     &-page {
