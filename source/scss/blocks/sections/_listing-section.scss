@@ -1,6 +1,7 @@
 .listing-section {
     padding-top: 32px;
     margin-bottom: clamp(80px, 10.417vw, 150px);
+    overflow: hidden;
 
     &__wrapp {
         position: relative;
@@ -28,6 +29,7 @@
         @include for-tablet {
             position: sticky;
             top: var(--header-top);
+            z-index: 5;
         }
     }
 
@@ -36,12 +38,22 @@
         flex-direction: column;
         gap: 12px;
 
+        @include for-tablet {
+            li:hover {
+                .sub-menu {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+
         a {
             padding: 12px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 8px;
+            cursor: pointer;
 
             svg {
                 stroke: var(--cl-c);
@@ -56,6 +68,43 @@
                 line-height: normal;
                 font-weight: 500;
                 color: var(--cl-c);
+                cursor: pointer;
+            }
+        }
+
+        .sub-menu {
+            padding: 16px;
+            width: max-content;
+            height: max-content;
+            min-height: 100%;
+      
+            opacity: 0;
+            visibility: hidden;
+      
+            position: absolute;
+            left: calc(100% + 10px);
+            top: 0;
+      
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            background-color: var(--cl-k);
+            border-radius: 16px;
+            transition: 0.3s ease;
+            z-index: 5;
+
+            &::before {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 90%;
+                right: 0;
+                content: "";
+                background: transparent;
+                display: flex;
+                top: 0;
+                transform: translateX(-100%);
+                z-index: -1;
             }
         }
     }
@@ -263,6 +312,10 @@ body[data-theme="dark"] {
                         stroke: var(--cl-b);
                     }
                 }
+            }
+
+            .sub-menu {
+                background-color: var(--cl-h);
             }
         }
 
