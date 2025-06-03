@@ -1,18 +1,19 @@
 const radios = document.querySelectorAll('input[name="color-theme"]');
-const body = document.body;
+const html = document.documentElement;
 
-// Загружаем сохранённую тему
+// Устанавливаем тему при загрузке
 const savedTheme = localStorage.getItem('color-theme');
 if (savedTheme) {
-  body.setAttribute('data-theme', savedTheme);
-  document.querySelector(`input[value="${savedTheme}"]`).checked = true;
+  html.setAttribute('data-theme', savedTheme);
+  const radio = document.querySelector(`input[name="color-theme"][value="${savedTheme}"]`);
+  if (radio) radio.checked = true;
 }
 
 // При смене темы
 radios.forEach(radio => {
   radio.addEventListener('change', () => {
     const selectedTheme = radio.value;
-    body.setAttribute('data-theme', selectedTheme);
+    html.setAttribute('data-theme', selectedTheme);
     localStorage.setItem('color-theme', selectedTheme);
   });
 });

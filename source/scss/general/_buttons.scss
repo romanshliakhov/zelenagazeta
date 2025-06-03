@@ -103,7 +103,7 @@
   cursor: pointer;
 }
 
-body[data-theme="dark"] {
+html[data-theme="dark"] {
   .swiper-button {
     svg {
       stroke: var(--cl-l);

@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="Ua">
 <head>
+  <script>
+  (function () {
+    try {
+      const theme = localStorage.getItem('color-theme');
+      if (theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+      }
+    } catch (e) {}
+  })();
+</script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="Description" content="Зелена Газета">
@@ -17,7 +28,7 @@
 </head>
 
 
-<body data-theme="light">
+<body>
   <header class="header fixed-block">
   <div class="container">
     <div class="header__wrapp">
@@ -53,6 +64,11 @@
                 </svg>
               </span>
             </label>
+          </div>
+
+          <div class="header__logo-sticky logo">
+            <img class="light-logo" width='341' height='38' src="../img/index/gazeta-white.svg" alt="Зелена газета">
+            <img class="dark-logo" width='341' height='38' src="../img/index/gazeta-black.svg" alt="Зелена газета">
           </div>
         </div>
 
@@ -106,12 +122,14 @@
 
       <div class="header__box">
         <a href="/" class="header__logo logo">
-          <svg class="light-logo" width='1280' height='142'>
+          <img class="light-logo" width='1280' height='142' src="../img/index/gazeta-white.svg" alt="Зелена газета">
+          <img class="dark-logo" width='1280' height='142' src="../img/index/gazeta-black.svg" alt="Зелена газета">
+          <!-- <svg class="light-logo" width='1280' height='142'>
             <use href='img/sprite/sprite.svg#full-paper-dark'></use>
           </svg>
           <svg class="dark-logo" width='1280' height='142'>
             <use href='img/sprite/sprite.svg#full-paper-white'></use>
-          </svg>
+          </svg> -->
         </a>
 
         <div class="header__divider">
@@ -363,12 +381,8 @@
     <div class="container">
       <div class="header__mobile-box">
         <a href="/" class="header__mobile-logo logo">
-          <svg class="light-logo" width='225' height='28'>
-            <use href='img/sprite/sprite.svg#full-paper-dark'></use>
-          </svg>
-          <svg class="dark-logo" width='225' height='28'>
-            <use href='img/sprite/sprite.svg#full-paper-white'></use>
-          </svg>
+          <img class="light-logo" width='225' height='28' src="../img/index/gazeta-white.svg" alt="Зелена газета">
+          <img class="dark-logo" width='225' height='28' src="../img/index/gazeta-black.svg" alt="Зелена газета">
         </a>
 
         <div class="header__mobile-controls">
@@ -1598,12 +1612,8 @@
       </div>
 
       <a href="/" class="footer__logo logo">
-        <svg class="light-logo" width='1280' height='142'>
-          <use href='img/sprite/sprite.svg#full-paper-dark'></use>
-        </svg>
-        <svg class="dark-logo" width='1280' height='142'>
-          <use href='img/sprite/sprite.svg#full-paper-white'></use>
-        </svg>
+        <img class="light-logo" width='1280' height='142' src="../img/index/gazeta-white.svg" alt="Зелена газета">
+        <img class="dark-logo" width='1280' height='142' src="../img/index/gazeta-black.svg" alt="Зелена газета">
       </a>
 
       <div class="footer__navs" data-default="1" data-single='true' data-accordion-init>
@@ -2053,12 +2063,8 @@
       <div class="modal__cats">
         <div class="modal__cats-top">
           <a href="/" class="header__mobile-logo logo">
-            <svg class="light-logo" width='225' height='28'>
-              <use href='img/sprite/sprite.svg#full-paper-dark'></use>
-            </svg>
-            <svg class="dark-logo" width='225' height='28'>
-              <use href='img/sprite/sprite.svg#full-paper-white'></use>
-            </svg>
+            <img class="light-logo" width='1280' height='142' src="../img/index/gazeta-white.svg" alt="Зелена газета">
+            <img class="dark-logo" width='1280' height='142' src="../img/index/gazeta-black.svg" alt="Зелена газета">
           </a>
 
           <button class="modal__close close">

@@ -70,7 +70,7 @@
     }
 }
 
-body[data-theme="dark"] {
+html[data-theme="dark"] {
     .author-section {
         &__aside {
             background-color: var(--cl-r);

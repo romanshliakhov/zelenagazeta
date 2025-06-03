@@ -71,7 +71,7 @@
     }
 }
 
-body[data-theme="dark"] {
+html[data-theme="dark"] {
     .value-card {    
         &__title {
             color: var(--cl-l);

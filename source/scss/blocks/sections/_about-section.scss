@@ -43,7 +43,7 @@
     }
 }
 
-body[data-theme="dark"] {
+html[data-theme="dark"] {
     .about-section__bg {
         svg {
             stroke: var(--cl-s);

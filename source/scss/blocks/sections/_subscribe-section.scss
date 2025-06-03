@@ -31,7 +31,7 @@
     }
 }
 
-body[data-theme="dark"] {
+html[data-theme="dark"] {
     .subscribe-section__bg {
         svg {
             stroke: var(--cl-s);

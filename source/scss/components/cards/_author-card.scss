@@ -56,7 +56,7 @@
     }
 }
 
-body[data-theme="dark"] {
+html[data-theme="dark"] {
     .author {
         &__name {
             color:  var(--cl-b);

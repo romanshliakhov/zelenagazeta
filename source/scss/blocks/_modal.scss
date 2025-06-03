@@ -90,7 +90,7 @@
   }
 }
 
-body[data-theme="dark"] {
+html[data-theme="dark"] {
   .modal {
     background-color: var(--cl-t);
 

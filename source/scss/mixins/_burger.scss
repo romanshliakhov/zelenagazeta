@@ -40,7 +40,7 @@
   }
 }
 
-body[data-theme="dark"] {
+html[data-theme="dark"] {
   .burger {
     svg {
       stroke: var(--cl-b);

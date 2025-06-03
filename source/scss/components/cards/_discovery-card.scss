@@ -37,7 +37,7 @@
 }
 
 
-body[data-theme="dark"] {
+html[data-theme="dark"] {
     .discovery-card__text {
         color: var(--cl-b);
     }

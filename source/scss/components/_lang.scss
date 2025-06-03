@@ -49,7 +49,7 @@
     }
 }
 
-body[data-theme="dark"] {
+html[data-theme="dark"] {
     .lang {    
         .select__header {
             background-color: var(--cl-f);

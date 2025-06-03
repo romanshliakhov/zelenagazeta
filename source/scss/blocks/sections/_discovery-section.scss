@@ -69,7 +69,7 @@
     }
 }
 
-body[data-theme="dark"] {
+html[data-theme="dark"] {
     .discovery-section__slider-bg {
         svg {
             stroke: var(--cl-s);

@@ -12,7 +12,7 @@
     }
 }
 
-body[data-theme="dark"] {
+html[data-theme="dark"] {
     .socials {
         svg {
             stroke: var(--cl-l);

@@ -34,7 +34,7 @@ h2,
   }
 }
 
-body[data-theme="dark"] {
+html[data-theme="dark"] {
   h1,
   .h1 {
     color: var(--cl-l);

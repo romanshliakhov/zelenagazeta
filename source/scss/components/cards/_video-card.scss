@@ -68,7 +68,7 @@
   }
 }
 
-body[data-theme="dark"] {
+html[data-theme="dark"] {
   .video-card__info {
     svg {
       stroke: var(--cl-l);

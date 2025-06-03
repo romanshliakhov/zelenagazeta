@@ -1,4 +1,15 @@
 <head>
+  <script>
+  (function () {
+    try {
+      const theme = localStorage.getItem('color-theme');
+      if (theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+      }
+    } catch (e) {}
+  })();
+</script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="Description" content="Зелена Газета">

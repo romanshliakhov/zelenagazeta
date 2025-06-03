@@ -90,7 +90,7 @@
     }
 }
 
-body[data-theme="dark"] {
+html[data-theme="dark"] {
     .team-section {
         &__text {
             color: var(--cl-b);

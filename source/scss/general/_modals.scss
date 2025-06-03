@@ -21,7 +21,7 @@
   }
 }
 
-body[data-theme="dark"] {
+html[data-theme="dark"] {
   .modal {
     .close svg {
       stroke: var(--cl-b);

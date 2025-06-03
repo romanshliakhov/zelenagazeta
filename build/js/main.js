@@ -266,20 +266,21 @@ document.addEventListener("DOMContentLoaded", function () {
 /***/ (function() {
 
 const radios = document.querySelectorAll('input[name="color-theme"]');
-const body = document.body;
+const html = document.documentElement;
 
-// Загружаем сохранённую тему
+// Устанавливаем тему при загрузке
 const savedTheme = localStorage.getItem('color-theme');
 if (savedTheme) {
-  body.setAttribute('data-theme', savedTheme);
-  document.querySelector(`input[value="${savedTheme}"]`).checked = true;
+  html.setAttribute('data-theme', savedTheme);
+  const radio = document.querySelector(`input[name="color-theme"][value="${savedTheme}"]`);
+  if (radio) radio.checked = true;
 }
 
 // При смене темы
 radios.forEach(radio => {
   radio.addEventListener('change', () => {
     const selectedTheme = radio.value;
-    body.setAttribute('data-theme', selectedTheme);
+    html.setAttribute('data-theme', selectedTheme);
     localStorage.setItem('color-theme', selectedTheme);
   });
 });
@@ -298,24 +299,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const applyBtn = cookiesBlock.querySelector(".cookies__apply");
   const cancelBtn = cookiesBlock.querySelector(".cookies__cancel");
   const cookiesAccepted = localStorage.getItem("cookiesConsent");
+
+  // Только если пользователь не согласился — показываем
   if (!cookiesAccepted) {
-    cookiesBlock.style.display = "block";
-  } else {
-    cookiesBlock.style.display = "none";
+    cookiesBlock.classList.add("visible");
   }
-  const closeCookiesBlock = consent => {
-    cookiesBlock.style.opacity = "0";
-    cookiesBlock.style.pointerEvents = "none";
-    setTimeout(() => {
-      cookiesBlock.style.display = "none";
-    }, 300);
-    localStorage.setItem("cookiesConsent", consent);
+  const closeCookiesBlock = () => {
+    cookiesBlock.classList.remove("visible");
   };
   if (applyBtn) {
-    applyBtn.addEventListener("click", () => closeCookiesBlock("accepted"));
+    applyBtn.addEventListener("click", () => {
+      localStorage.setItem("cookiesConsent", "accepted");
+      closeCookiesBlock();
+    });
   }
   if (cancelBtn) {
-    cancelBtn.addEventListener("click", () => closeCookiesBlock("rejected"));
+    cancelBtn.addEventListener("click", () => {
+      closeCookiesBlock(); // ничего не сохраняем
+    });
   }
 });
 
@@ -434,7 +435,9 @@ const {
   filterBtn
 } = _vars_js__WEBPACK_IMPORTED_MODULE_2__["default"];
 const mobileMenuHandler = function (overlay, mobileMenu, burger) {
+  if (!overlay || !mobileMenu || !burger.length) return;
   burger.forEach(btn => {
+    if (!btn) return;
     btn.addEventListener("click", function (e) {
       e.preventDefault();
       (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.toggleCustomClass)(mobileMenu, activeClass);
@@ -451,6 +454,7 @@ const mobileMenuHandler = function (overlay, mobileMenu, burger) {
   });
 };
 const hideMenuHandler = function (overlay, mobileMenu, burger) {
+  if (!overlay || !mobileMenu || !burger.length) return;
   (0,_functions_enable_scroll_js__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
   (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.removeCustomClass)(mobileMenu, activeClass);
   (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.removeClassInArray)(burger, activeClass);
@@ -464,24 +468,30 @@ const hideMenuHandler = function (overlay, mobileMenu, burger) {
   }
 };
 document.addEventListener("DOMContentLoaded", function () {
-  if (overlay) {
+  if (overlay && mobileMenu && burger.length) {
     mobileMenuHandler(overlay, mobileMenu, burger);
     overlay.addEventListener("click", function (e) {
       if (e.target.classList.contains("overlay")) {
         hideMenuHandler(overlay, mobileMenu, burger);
       }
     });
+    const menuLinks = mobileMenu.querySelectorAll("a");
+    if (menuLinks.length) {
+      menuLinks.forEach(function (item) {
+        item.addEventListener("click", function () {
+          hideMenuHandler(overlay, mobileMenu, burger);
+        });
+      });
+    }
+    const modalTriggers = document.querySelectorAll("[data-modal]");
+    if (modalTriggers.length) {
+      modalTriggers.forEach(function (item) {
+        item.addEventListener("click", function () {
+          hideMenuHandler(overlay, mobileMenu, burger);
+        });
+      });
+    }
   }
-  mobileMenu.querySelectorAll("a").forEach(function (item) {
-    item.addEventListener("click", function () {
-      hideMenuHandler(overlay, mobileMenu, burger);
-    });
-  });
-  document.querySelectorAll("[data-modal]").forEach(function (item) {
-    item.addEventListener("click", function () {
-      hideMenuHandler(overlay, mobileMenu, burger);
-    });
-  });
   if (filterBtn && filterAside) {
     filterBtn.addEventListener("click", function (e) {
       e.stopPropagation();

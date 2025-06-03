@@ -47,7 +47,7 @@
     }
 }
 
-body[data-theme="dark"] {
+html[data-theme="dark"] {
     .team-card {
         &__name {
             color: var(--cl-l);

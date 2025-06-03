@@ -24,7 +24,7 @@
     }
 }
 
-body[data-theme="dark"] {
+html[data-theme="dark"] {
     .tag {
         background-color: var(--cl-h);
         color: var(--cl-d);

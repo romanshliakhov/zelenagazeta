@@ -83,7 +83,7 @@
     }
 }
 
-body[data-theme="dark"] {
+html[data-theme="dark"] {
     .info-section {
         &__aside {
             background-color: var(--cl-h);

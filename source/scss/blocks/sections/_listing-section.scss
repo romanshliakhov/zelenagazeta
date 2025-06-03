@@ -372,7 +372,7 @@
     }
 }
 
-body[data-theme="dark"] {
+html[data-theme="dark"] {
     .listing-section {
         &__aside {
             background-color: var(--cl-h);

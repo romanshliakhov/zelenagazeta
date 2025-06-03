@@ -5,6 +5,19 @@ html {
   // scroll-behavior: smooth;
   will-change: font-size;
   font-size: var(--rem-function);
+
+  &[data-theme="dark"] {
+    .dark-theme {
+      z-index: -1 !important;
+      opacity: 0 !important;
+      visibility: hidden !important;
+    }
+
+    .light-theme {
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+  }
 }
 
 body {
@@ -24,19 +37,6 @@ body {
   display: flex;
   flex-direction: column;
   // transition: background 0.3s, color 0.3s;
-
-  &[data-theme="dark"] {
-    .dark-theme {
-      z-index: -1 !important;
-      opacity: 0 !important;
-      visibility: hidden !important;
-    }
-
-    .light-theme {
-      opacity: 1 !important;
-      visibility: visible !important;
-    }
-  }
 
   -webkit-text-size-adjust: 100%;
   // for text resize
