@@ -11425,9 +11425,6 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	__webpack_require__("./source/js/_components.js");
 /******/ 	__webpack_require__("./source/js/_vars.js");
 /******/ 	__webpack_require__("./source/js/main.js");
-/******/ 	__webpack_require__("./source/js/functions/customFunctions.js");
-/******/ 	__webpack_require__("./source/js/functions/disable-scroll.js");
-/******/ 	__webpack_require__("./source/js/functions/enable-scroll.js");
 /******/ 	__webpack_require__("./source/js/components/acc.js");
 /******/ 	__webpack_require__("./source/js/components/anchor.js");
 /******/ 	__webpack_require__("./source/js/components/colorTheme.js");
@@ -11441,7 +11438,10 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	__webpack_require__("./source/js/components/search.js");
 /******/ 	__webpack_require__("./source/js/components/select.js");
 /******/ 	__webpack_require__("./source/js/components/sliders.js");
-/******/ 	var __webpack_exports__ = __webpack_require__("./source/js/components/tabs.js");
+/******/ 	__webpack_require__("./source/js/components/tabs.js");
+/******/ 	__webpack_require__("./source/js/functions/customFunctions.js");
+/******/ 	__webpack_require__("./source/js/functions/disable-scroll.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./source/js/functions/enable-scroll.js");
 /******/ 	
 /******/ })()
 ;
