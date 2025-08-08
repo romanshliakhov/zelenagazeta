@@ -12,10 +12,8 @@ export default {
   discoverySliders: document.querySelectorAll('.discovery-section__slider'),
   categoriesSliders: document.querySelectorAll('.category-section__wrapp'),
   moreArticlesSliders: document.querySelectorAll('.more-section__wrapp'),
+  podcastsSliders: document.querySelectorAll('.listing-section__populars'),
   tagsSliders: document.querySelectorAll('.listing-section__tags'),
-  // articlesSlider: document.querySelector('.articles-slider'),
-  // heroSlider: document.querySelector('.hero-slider'),
-  // relatedSlider: document.querySelector('.related-slider'),
 
 
   dataHidden: document.querySelectorAll("[data-clip]"),

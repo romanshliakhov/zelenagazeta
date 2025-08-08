@@ -3,7 +3,7 @@ import vars from "../_vars.js";
 import { Navigation, Pagination } from "swiper/modules";
 
 document.addEventListener("DOMContentLoaded", function () {
-  const { videosSliders, categoriesSliders, discoverySliders, moreArticlesSliders, tagsSliders } = vars;
+  const { videosSliders, categoriesSliders, discoverySliders, moreArticlesSliders, tagsSliders, podcastsSliders } = vars;
 
   if (videosSliders) {
     videosSliders.forEach(function (slider) {
@@ -208,6 +208,45 @@ document.addEventListener("DOMContentLoaded", function () {
         navigation: {
           nextEl: nextBtn,
           prevEl: prevBtn,
+        },
+      });
+    });
+  }  
+
+  if (podcastsSliders) {
+    podcastsSliders.forEach(function (slider) {
+      const container = slider.querySelector(".swiper-container");
+      const nextBtn = slider.querySelector(".swiper-button.next");
+      const prevBtn = slider.querySelector(".swiper-button.prev");
+  
+      const podcastsSliderSwiper = new Swiper(container, {
+        modules: [Navigation, Pagination],
+        spaceBetween: 20,
+        slidesPerView: 3,
+        speed: 1400,
+        watchOverflow: true,
+        observer: true,
+        observeParents: true,
+        loop: true,
+  
+        navigation: {
+          nextEl: nextBtn,
+          prevEl: prevBtn,
+        },
+  
+        breakpoints: {
+          320: {
+            spaceBetween: 10,
+            slidesPerView: 1,
+          },
+          768: {
+            spaceBetween: 20,
+            slidesPerView: 2,
+          },
+          1024: {
+            spaceBetween: 20,
+            slidesPerView: 3,
+          },
         },
       });
     });

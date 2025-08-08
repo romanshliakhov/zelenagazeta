@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="Ua">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+    <section class="breadcrumbs">
+      <div class="container">
+          <ul class="breadcrumbs__items">
+              <li class="breadcrumbs__item home">
+                  <a href="/">Головна</a>
+              </li>
+
+              <li class="breadcrumbs__item">
+                <a href="#">Подскасти</a>
+              </li>
+
+              <li class="breadcrumbs__item current" aria-current="page">
+                  <span>Марія Шевченко</span>
+              </li>
+          </ul>
+      </div>
+  </section>
+
+    <section class="author-section">
+      <div class="container">
+        <div class="author-section__wrapp">
+          <aside class="author-section__aside">
+            <div class="author">
+              <div class="author__box">
+                <div class="author__avatar">
+                  <picture>
+                    <source type='image/webp' srcset='img/author/maria.webp'>
+                    <img width='80' height='80' src='img/author/maria.png' alt='Марія Шевченко'>
+                  </picture>
+                </div>
+
+                <div class="author__info">
+                  <span class="author__name">Марія Шевченко</span>
+                  <p class="author__role">Фітнес-тренер</p>
+                </div>
+              </div>
+
+              <ul class="author__details">
+                <li>
+                  <span>Учасник з:</span>
+                  <p>18.03.2024</p>
+                </li>
+
+                <li>
+                  <span>Всього подкастів:</span>
+                  <p>23</p>
+                </li>
+
+                <li>
+                  <span>Вподобань:</span>
+                  <p>58</p>
+                </li>
+              </ul>
+
+              <ul class="socials">
+                <li>
+                  <a href="#">
+                    <svg width='48' height='48'>
+                      <use href='img/sprite/sprite.svg#telegram'></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg width='48' height='48'>
+                      <use href='img/sprite/sprite.svg#instagram'></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg width='48' height='48'>
+                      <use href='img/sprite/sprite.svg#facebook'></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+
+          <div class="author-section__box">
+            <div class="author-section__top">
+              <span class="author-section__counter">12 подскастів</span>
+
+              <div class="sorting">
+                <button class="sorting__btn active sort-new">За найновішими</button>
+                <button class="sorting__btn sort-popular">За популярними</button>
+              </div>
+            </div>
+
+            <ul class="author-section__podcasts">
+              <li>
+                <div class="podcast-card">
+                  <div class="podcast-card__box">
+                    <div class="podcast-card__thumbnails">
+                      <svg width='42' height='78'>
+                        <use href='img/sprite/sprite.svg#podcast-left'></use>
+                      </svg>
+                      <picture>
+                        <source type='image/webp' srcset='img/podcasts/podcast-preview.webp'>
+                        <img width='174' height='96' src='img/podcasts/podcast-preview.png' alt='podcast1'>
+                      </picture>
+                      <svg width='42' height='78'>
+                        <use href='img/sprite/sprite.svg#podcast-right'></use>
+                      </svg>
+                    </div>
+
+                    <div class="podcast-card__info">
+                      <div class="podcast-card__top">
+                        <span class="podcast-card__tag">
+                          <svg width='12' height='12'>
+                            <use href='img/sprite/sprite.svg#tag'></use>
+                          </svg>
+                          <p>культурне</p>
+                        </span>
+
+                        <div class="podcast-card__labels">
+                          <span>
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#music-player'></use>
+                            </svg>
+                          </span>
+                          <span>
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#video-player'></use>
+                            </svg>
+                          </span>
+                        </div>
+    
+                        <div class="podcast-card__details">
+                          <div class="podcast-card__views">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#eye'></use>
+                            </svg>
+                            <p>14</p>
+                          </div>
+    
+                          <div class="podcast-card__author">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#avatar'></use>
+                            </svg>
+                            <p>Марія Шевченко</p>
+                          </div>
+    
+                          <time class="podcast-card__pubtime" datetime="24.10.2025">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#time'></use>
+                            </svg>
+                            24.10.2025
+                          </time>
+                        </div>
+                      </div>
+
+                      <a class="podcast-card__title" href="/podcast.html">Тіло. Думка. Планета.Тіло. Думка. Планета.Тіло. Думка. Планета.Тіло. Думка. Планета.</a>
+                    </div>
+                  </div>
+
+                  <div class="podcast-card__excerpt">
+                    Цей подкаст — про взаємозв’язок: наше тіло, наше мислення і наш світ. Як маленькі практики турботи про себе і природу можуть     змінити якість життя — щиро, без догматів.Цей подкаст — про взаємозв’язок: наше тіло, наше мислення і наш світ. Як маленькі практики турботи про себе і природу можуть змінити якість життя — щиро, без догматів.
+                  </div>
+
+                  <div class="podcast-card__bottom">
+                    <button class="podcast-play">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#headset'></use>
+                      </svg>
+                      Слухати
+                    </button>
+                  </div>
+
+                  <div class="podcast-card__divider">
+                    <svg width='910' height='10'>
+                      <use href='img/sprite/sprite.svg#podcast-divider'></use>
+                    </svg>
+                  </div>
+                </div>
+              </li>
+  
+              <li>
+                <div class="podcast-card">
+                  <div class="podcast-card__box">
+                    <div class="podcast-card__thumbnails">
+                      <svg width='42' height='78'>
+                        <use href='img/sprite/sprite.svg#podcast-left'></use>
+                      </svg>
+                      <picture>
+                        <source type='image/webp' srcset='img/podcasts/podcast-preview.webp'>
+                        <img width='174' height='96' src='img/podcasts/podcast-preview.png' alt='podcast1'>
+                      </picture>
+                      <svg width='42' height='78'>
+                        <use href='img/sprite/sprite.svg#podcast-right'></use>
+                      </svg>
+                    </div>
+
+                    <div class="podcast-card__info">
+                      <div class="podcast-card__top">
+                        <span class="podcast-card__tag">
+                          <svg width='12' height='12'>
+                            <use href='img/sprite/sprite.svg#tag'></use>
+                          </svg>
+                          <p>культурне</p>
+                        </span>
+
+                        <div class="podcast-card__labels">
+                          <span>
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#music-player'></use>
+                            </svg>
+                          </span>
+                          <span>
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#video-player'></use>
+                            </svg>
+                          </span>
+                        </div>
+    
+                        <div class="podcast-card__details">
+                          <div class="podcast-card__views">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#eye'></use>
+                            </svg>
+                            <p>14</p>
+                          </div>
+    
+                          <div class="podcast-card__author">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#avatar'></use>
+                            </svg>
+                            <p>Марія Шевченко</p>
+                          </div>
+    
+                          <time class="podcast-card__pubtime" datetime="24.10.2025">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#time'></use>
+                            </svg>
+                            24.10.2025
+                          </time>
+                        </div>
+                      </div>
+
+                      <a class="podcast-card__title" href="/podcast.html">Тіло. Думка. Планета.Тіло. Думка. Планета.Тіло. Думка. Планета.Тіло. Думка. Планета.</a>
+                    </div>
+                  </div>
+
+                  <div class="podcast-card__excerpt">
+                    Цей подкаст — про взаємозв’язок: наше тіло, наше мислення і наш світ. Як маленькі практики турботи про себе і природу можуть     змінити якість життя — щиро, без догматів.Цей подкаст — про взаємозв’язок: наше тіло, наше мислення і наш світ. Як маленькі практики турботи про себе і природу можуть змінити якість життя — щиро, без догматів.
+                  </div>
+
+                  <div class="podcast-card__bottom">
+                    <button class="podcast-play">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#headset'></use>
+                      </svg>
+                      Слухати
+                    </button>
+                  </div>
+
+                  <div class="podcast-card__divider">
+                    <svg width='910' height='10'>
+                      <use href='img/sprite/sprite.svg#podcast-divider'></use>
+                    </svg>
+                  </div>
+                </div>
+              </li>
+  
+              <li>
+                <div class="podcast-card">
+                  <div class="podcast-card__box">
+                    <div class="podcast-card__thumbnails">
+                      <svg width='42' height='78'>
+                        <use href='img/sprite/sprite.svg#podcast-left'></use>
+                      </svg>
+                      <picture>
+                        <source type='image/webp' srcset='img/podcasts/podcast-preview.webp'>
+                        <img width='174' height='96' src='img/podcasts/podcast-preview.png' alt='podcast1'>
+                      </picture>
+                      <svg width='42' height='78'>
+                        <use href='img/sprite/sprite.svg#podcast-right'></use>
+                      </svg>
+                    </div>
+
+                    <div class="podcast-card__info">
+                      <div class="podcast-card__top">
+                        <span class="podcast-card__tag">
+                          <svg width='12' height='12'>
+                            <use href='img/sprite/sprite.svg#tag'></use>
+                          </svg>
+                          <p>культурне</p>
+                        </span>
+
+                        <div class="podcast-card__labels">
+                          <span>
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#music-player'></use>
+                            </svg>
+                          </span>
+                          <span>
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#video-player'></use>
+                            </svg>
+                          </span>
+                        </div>
+    
+                        <div class="podcast-card__details">
+                          <div class="podcast-card__views">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#eye'></use>
+                            </svg>
+                            <p>14</p>
+                          </div>
+    
+                          <div class="podcast-card__author">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#avatar'></use>
+                            </svg>
+                            <p>Марія Шевченко</p>
+                          </div>
+    
+                          <time class="podcast-card__pubtime" datetime="24.10.2025">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#time'></use>
+                            </svg>
+                            24.10.2025
+                          </time>
+                        </div>
+                      </div>
+
+                      <a class="podcast-card__title" href="/podcast.html">Тіло. Думка. Планета.Тіло. Думка. Планета.Тіло. Думка. Планета.Тіло. Думка. Планета.</a>
+                    </div>
+                  </div>
+
+                  <div class="podcast-card__excerpt">
+                    Цей подкаст — про взаємозв’язок: наше тіло, наше мислення і наш світ. Як маленькі практики турботи про себе і природу можуть     змінити якість життя — щиро, без догматів.Цей подкаст — про взаємозв’язок: наше тіло, наше мислення і наш світ. Як маленькі практики турботи про себе і природу можуть змінити якість життя — щиро, без догматів.
+                  </div>
+
+                  <div class="podcast-card__bottom">
+                    <button class="podcast-play">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#headset'></use>
+                      </svg>
+                      Слухати
+                    </button>
+                  </div>
+
+                  <div class="podcast-card__divider">
+                    <svg width='910' height='10'>
+                      <use href='img/sprite/sprite.svg#podcast-divider'></use>
+                    </svg>
+                  </div>
+                </div>
+              </li>
+  
+              <li>
+                <div class="podcast-card">
+                  <div class="podcast-card__box">
+                    <div class="podcast-card__thumbnails">
+                      <svg width='42' height='78'>
+                        <use href='img/sprite/sprite.svg#podcast-left'></use>
+                      </svg>
+                      <picture>
+                        <source type='image/webp' srcset='img/podcasts/podcast-preview.webp'>
+                        <img width='174' height='96' src='img/podcasts/podcast-preview.png' alt='podcast1'>
+                      </picture>
+                      <svg width='42' height='78'>
+                        <use href='img/sprite/sprite.svg#podcast-right'></use>
+                      </svg>
+                    </div>
+
+                    <div class="podcast-card__info">
+                      <div class="podcast-card__top">
+                        <span class="podcast-card__tag">
+                          <svg width='12' height='12'>
+                            <use href='img/sprite/sprite.svg#tag'></use>
+                          </svg>
+                          <p>культурне</p>
+                        </span>
+
+                        <div class="podcast-card__labels">
+                          <span>
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#music-player'></use>
+                            </svg>
+                          </span>
+                          <span>
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#video-player'></use>
+                            </svg>
+                          </span>
+                        </div>
+    
+                        <div class="podcast-card__details">
+                          <div class="podcast-card__views">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#eye'></use>
+                            </svg>
+                            <p>14</p>
+                          </div>
+    
+                          <div class="podcast-card__author">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#avatar'></use>
+                            </svg>
+                            <p>Марія Шевченко</p>
+                          </div>
+    
+                          <time class="podcast-card__pubtime" datetime="24.10.2025">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#time'></use>
+                            </svg>
+                            24.10.2025
+                          </time>
+                        </div>
+                      </div>
+
+                      <a class="podcast-card__title" href="/podcast.html">Тіло. Думка. Планета.Тіло. Думка. Планета.Тіло. Думка. Планета.Тіло. Думка. Планета.</a>
+                    </div>
+                  </div>
+
+                  <div class="podcast-card__excerpt">
+                    Цей подкаст — про взаємозв’язок: наше тіло, наше мислення і наш світ. Як маленькі практики турботи про себе і природу можуть     змінити якість життя — щиро, без догматів.Цей подкаст — про взаємозв’язок: наше тіло, наше мислення і наш світ. Як маленькі практики турботи про себе і природу можуть змінити якість життя — щиро, без догматів.
+                  </div>
+
+                  <div class="podcast-card__bottom">
+                    <button class="podcast-play">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#headset'></use>
+                      </svg>
+                      Слухати
+                    </button>
+                  </div>
+
+                  <div class="podcast-card__divider">
+                    <svg width='910' height='10'>
+                      <use href='img/sprite/sprite.svg#podcast-divider'></use>
+                    </svg>
+                  </div>
+                </div>
+              </li>
+  
+              <li>
+                <div class="podcast-card">
+                  <div class="podcast-card__box">
+                    <div class="podcast-card__thumbnails">
+                      <svg width='42' height='78'>
+                        <use href='img/sprite/sprite.svg#podcast-left'></use>
+                      </svg>
+                      <picture>
+                        <source type='image/webp' srcset='img/podcasts/podcast-preview.webp'>
+                        <img width='174' height='96' src='img/podcasts/podcast-preview.png' alt='podcast1'>
+                      </picture>
+                      <svg width='42' height='78'>
+                        <use href='img/sprite/sprite.svg#podcast-right'></use>
+                      </svg>
+                    </div>
+
+                    <div class="podcast-card__info">
+                      <div class="podcast-card__top">
+                        <span class="podcast-card__tag">
+                          <svg width='12' height='12'>
+                            <use href='img/sprite/sprite.svg#tag'></use>
+                          </svg>
+                          <p>культурне</p>
+                        </span>
+
+                        <div class="podcast-card__labels">
+                          <span>
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#music-player'></use>
+                            </svg>
+                          </span>
+                          <span>
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#video-player'></use>
+                            </svg>
+                          </span>
+                        </div>
+    
+                        <div class="podcast-card__details">
+                          <div class="podcast-card__views">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#eye'></use>
+                            </svg>
+                            <p>14</p>
+                          </div>
+    
+                          <div class="podcast-card__author">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#avatar'></use>
+                            </svg>
+                            <p>Марія Шевченко</p>
+                          </div>
+    
+                          <time class="podcast-card__pubtime" datetime="24.10.2025">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#time'></use>
+                            </svg>
+                            24.10.2025
+                          </time>
+                        </div>
+                      </div>
+
+                      <a class="podcast-card__title" href="/podcast.html">Тіло. Думка. Планета.Тіло. Думка. Планета.Тіло. Думка. Планета.Тіло. Думка. Планета.</a>
+                    </div>
+                  </div>
+
+                  <div class="podcast-card__excerpt">
+                    Цей подкаст — про взаємозв’язок: наше тіло, наше мислення і наш світ. Як маленькі практики турботи про себе і природу можуть     змінити якість життя — щиро, без догматів.Цей подкаст — про взаємозв’язок: наше тіло, наше мислення і наш світ. Як маленькі практики турботи про себе і природу можуть змінити якість життя — щиро, без догматів.
+                  </div>
+
+                  <div class="podcast-card__bottom">
+                    <button class="podcast-play">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#headset'></use>
+                      </svg>
+                      Слухати
+                    </button>
+                  </div>
+
+                  <div class="podcast-card__divider">
+                    <svg width='910' height='10'>
+                      <use href='img/sprite/sprite.svg#podcast-divider'></use>
+                    </svg>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <button class="more-button">Показати ще</button>
+
+            <div class="pagination">
+              <a class="pagination__nav prev" href="#">
+                <svg width='40' height='40'>
+                  <use href='img/sprite/sprite.svg#arrow-left'></use>
+                </svg>
+              </a>
+
+              <ul class="pagination__list">
+                <li class="pagination__list-item">
+                  <a class="pagination__list-link active" href="#">1</a>
+                </li>
+                <li class="pagination__list-item">
+                  <a class="pagination__list-link" href="#">2</a>
+                </li>
+                <li class="pagination__list-item">
+                  <a class="pagination__list-link" href="#">3</a>
+                </li>
+                <li class="pagination__list-item">
+                  <span class="pagination__list-link">...</span>
+                </li>
+                <li class="pagination__list-item">
+                  <a class="pagination__list-link" href="#">13</a>
+                </li>
+              </ul>
+              
+              <a class="pagination__nav next" href="#">
+                <svg width='40' height='40'>
+                  <use href='img/sprite/sprite.svg#arrow-right'></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe-section">
+      <div class="container">
+        <div class="subscribe-section__wrapp">
+          <div class="subscribe-section__bg">
+            <svg class="pink-decor-desk" width='1217' height='248'>
+              <use href='img/sprite/sprite.svg#pink-decor'></use>
+            </svg>
+          </div>
+
+          <form class="form">
+            <div class="form__top">
+              <div class="form__title h2">Підписуйся на новини!</div>
+              <p class="form__text">Отримуй корисне і цікаве!</p>
+            </div>
+
+            <div class="form__box subscribe">
+              <label class="form__label">
+                <input class="form__input" type="email" name="email" placeholder="Введіть e-mail">
+              </label>
+              <button class="form__submit">Підписатись</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+
+  <script defer src="js/main.js"></script>
+</body>
+
+
+</html>

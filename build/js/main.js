@@ -40,6 +40,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_sliders_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/sliders.js */ "./source/js/components/sliders.js");
 /* harmony import */ var _components_anchor_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/anchor.js */ "./source/js/components/anchor.js");
 /* harmony import */ var _components_fancybox_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/fancybox.js */ "./source/js/components/fancybox.js");
+/* harmony import */ var _components_modalStartingPodcasts_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/modalStartingPodcasts.js */ "./source/js/components/modalStartingPodcasts.js");
+/* harmony import */ var _components_modalStartingPodcasts_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_components_modalStartingPodcasts_js__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _components_videoPlayer_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/videoPlayer.js */ "./source/js/components/videoPlayer.js");
+/* harmony import */ var _components_videoPlayer_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_components_videoPlayer_js__WEBPACK_IMPORTED_MODULE_12__);
 
 
 
@@ -51,6 +55,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // import './components/search.js';
+
+
 
 
 /***/ }),
@@ -76,11 +82,8 @@ __webpack_require__.r(__webpack_exports__);
   discoverySliders: document.querySelectorAll('.discovery-section__slider'),
   categoriesSliders: document.querySelectorAll('.category-section__wrapp'),
   moreArticlesSliders: document.querySelectorAll('.more-section__wrapp'),
+  podcastsSliders: document.querySelectorAll('.listing-section__populars'),
   tagsSliders: document.querySelectorAll('.listing-section__tags'),
-  // articlesSlider: document.querySelector('.articles-slider'),
-  // heroSlider: document.querySelector('.hero-slider'),
-  // relatedSlider: document.querySelector('.related-slider'),
-
   dataHidden: document.querySelectorAll("[data-clip]"),
   search: document.querySelectorAll("[data-search]"),
   mainForms: document.querySelectorAll('.main-form'),
@@ -509,13 +512,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /***/ }),
 
-/***/ "./source/js/components/modalStartingAlert.js":
-/*!****************************************************!*\
-  !*** ./source/js/components/modalStartingAlert.js ***!
-  \****************************************************/
+/***/ "./source/js/components/modalStartingPodcasts.js":
+/*!*******************************************************!*\
+  !*** ./source/js/components/modalStartingPodcasts.js ***!
+  \*******************************************************/
 /***/ (function() {
 
-
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    const startPopupPodcast = document.querySelector('.starting-podcasts');
+    if (startPopupPodcast) {
+      startPopupPodcast.click();
+    }
+  }, 100);
+});
 
 /***/ }),
 
@@ -803,7 +813,8 @@ document.addEventListener("DOMContentLoaded", function () {
     categoriesSliders,
     discoverySliders,
     moreArticlesSliders,
-    tagsSliders
+    tagsSliders,
+    podcastsSliders
   } = _vars_js__WEBPACK_IMPORTED_MODULE_1__["default"];
   if (videosSliders) {
     videosSliders.forEach(function (slider) {
@@ -993,6 +1004,41 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
+  if (podcastsSliders) {
+    podcastsSliders.forEach(function (slider) {
+      const container = slider.querySelector(".swiper-container");
+      const nextBtn = slider.querySelector(".swiper-button.next");
+      const prevBtn = slider.querySelector(".swiper-button.prev");
+      const podcastsSliderSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](container, {
+        modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_2__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_2__.Pagination],
+        spaceBetween: 20,
+        slidesPerView: 3,
+        speed: 1400,
+        watchOverflow: true,
+        observer: true,
+        observeParents: true,
+        loop: true,
+        navigation: {
+          nextEl: nextBtn,
+          prevEl: prevBtn
+        },
+        breakpoints: {
+          320: {
+            spaceBetween: 10,
+            slidesPerView: 1
+          },
+          768: {
+            spaceBetween: 20,
+            slidesPerView: 2
+          },
+          1024: {
+            spaceBetween: 20,
+            slidesPerView: 3
+          }
+        }
+      });
+    });
+  }
 });
 
 /***/ }),
@@ -1045,6 +1091,30 @@ const tabsFunction = function (tabsDataInitArray, tabsNavAttr, tabsContentAttr) 
 document.addEventListener("DOMContentLoaded", function () {
   tabsFunction(document.querySelectorAll("[data-tabs-parrent]"), "data-tab", "data-tab-content");
 });
+
+/***/ }),
+
+/***/ "./source/js/components/videoPlayer.js":
+/*!*********************************************!*\
+  !*** ./source/js/components/videoPlayer.js ***!
+  \*********************************************/
+/***/ (function() {
+
+const videoBox = document.querySelector('.article-section__video');
+if (videoBox) {
+  const poster = videoBox.querySelector('.article-section__video-poster');
+  const btnPlay = videoBox.querySelector('.article-section__video-controls');
+  const videoPlayer = videoBox.querySelector('.article-section__video-player');
+  const iframe = videoBox.querySelector('.article-section__video-player iframe');
+  const originalSrc = iframe.getAttribute('src');
+  btnPlay.addEventListener('click', () => {
+    const newSrc = originalSrc.includes('?') ? `${originalSrc}&autoplay=1` : `${originalSrc}?autoplay=1`;
+    iframe.setAttribute('src', newSrc);
+    videoPlayer.classList.add('active');
+    poster.classList.add('active');
+    btnPlay.classList.add('active');
+  });
+}
 
 /***/ }),
 
@@ -11425,6 +11495,9 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	__webpack_require__("./source/js/_components.js");
 /******/ 	__webpack_require__("./source/js/_vars.js");
 /******/ 	__webpack_require__("./source/js/main.js");
+/******/ 	__webpack_require__("./source/js/functions/customFunctions.js");
+/******/ 	__webpack_require__("./source/js/functions/disable-scroll.js");
+/******/ 	__webpack_require__("./source/js/functions/enable-scroll.js");
 /******/ 	__webpack_require__("./source/js/components/acc.js");
 /******/ 	__webpack_require__("./source/js/components/anchor.js");
 /******/ 	__webpack_require__("./source/js/components/colorTheme.js");
@@ -11433,15 +11506,13 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	__webpack_require__("./source/js/components/dinamicHeight.js");
 /******/ 	__webpack_require__("./source/js/components/fancybox.js");
 /******/ 	__webpack_require__("./source/js/components/mobile-menu.js");
-/******/ 	__webpack_require__("./source/js/components/modalStartingAlert.js");
+/******/ 	__webpack_require__("./source/js/components/modalStartingPodcasts.js");
 /******/ 	__webpack_require__("./source/js/components/modals.js");
 /******/ 	__webpack_require__("./source/js/components/search.js");
 /******/ 	__webpack_require__("./source/js/components/select.js");
 /******/ 	__webpack_require__("./source/js/components/sliders.js");
 /******/ 	__webpack_require__("./source/js/components/tabs.js");
-/******/ 	__webpack_require__("./source/js/functions/customFunctions.js");
-/******/ 	__webpack_require__("./source/js/functions/disable-scroll.js");
-/******/ 	var __webpack_exports__ = __webpack_require__("./source/js/functions/enable-scroll.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./source/js/components/videoPlayer.js");
 /******/ 	
 /******/ })()
 ;

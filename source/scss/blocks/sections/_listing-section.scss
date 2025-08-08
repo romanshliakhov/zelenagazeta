@@ -370,6 +370,97 @@
             }
         }
     }
+
+    &__inner {
+        margin-bottom: clamp(32px, 7.813vw, 80px);
+        position: relative;
+        display: grid;
+        gap: clamp(24px, 2.778vw, 40px);
+
+        @include for-tablet {
+            grid-template-columns: 29% 71%;
+            align-items: flex-start;
+        }
+
+        @include tablet {
+            grid-template-columns: 100%;
+        }
+    }
+
+    &__info {
+        h1 {
+            margin-bottom: 16px;
+            font-size: clamp(24px, 3.125vw, 32px);
+            line-height: 150%;
+            font-weight: 500;
+            color: var(--cl-c);
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 160%;
+            font-weight: 300;
+            color: var(--cl-c);
+        }
+
+        p + p {
+            margin-top: 30px;
+        }
+    }
+
+    &__populars {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        &-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-heading {
+            font-size: 18px;
+            line-height: 160%;
+            font-weight: 500;
+            color: var(--cl-c);
+        }
+
+        &-controls {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        &-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(32px, 2.778vw, 40px);
+        }
+    }
+
+    &__podcasts {
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+    }
+}
+
+#popular-podcasts {
+    .podcast-card__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .podcast-card__info {
+        gap: 12px;
+    }
+
+    .podcast-card__top {
+        flex-wrap: wrap;
+    }
 }
 
 html[data-theme="dark"] {
@@ -464,6 +555,16 @@ html[data-theme="dark"] {
                     }
                 }
             }
+        }
+
+        &__info {
+            p {
+                color: var(--cl-b);
+            }
+        }
+
+        &__populars-heading {
+            color: var(--cl-b);
         }
     }
 }

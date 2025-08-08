@@ -83,6 +83,22 @@
       @include  for-tablet {
         padding-right: 24px;
       }
+
+      &.label-new::after {
+        content: 'New';
+        position: absolute;
+        left: 0;
+        top: -10px;
+        transform: rotate(-15deg);
+        padding: 4px;
+        background-color: #C3E9C7;
+        border-radius: 5px;
+        font-size: 10px;
+        line-height: 100%;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #083F08;
+      }
     }
 
     .menu-link {

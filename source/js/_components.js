@@ -10,6 +10,8 @@ import './components/sliders.js';
 import './components/anchor.js';
 // import './components/search.js';
 import './components/fancybox.js';
+import './components/modalStartingPodcasts.js';
+import './components/videoPlayer.js';
 
 
 

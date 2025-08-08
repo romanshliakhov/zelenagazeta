@@ -68,6 +68,12 @@
             grid-template-columns: 100%;
         }
     }
+
+    &__podcasts {
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+    }
 }
 
 html[data-theme="dark"] {
