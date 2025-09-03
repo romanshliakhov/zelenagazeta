@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="Ua">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+    <section class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__items">
+          <li class="breadcrumbs__item home">
+              <a href="/">Головна</a>
+          </li>
+
+          <li class="breadcrumbs__item current" aria-current="page">
+              <span>Наша редакція</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="redactions-section">
+      <div class="container">
+        <div class="redactions-section__wrapp">
+          <aside class="redactions-section__aside">
+            <h1 class="redactions-section__title">Наша редакція</h1>
+
+            <ul class="redactions-section__pages">
+              <li>
+                <a href="/redaction-team.html">
+                  <span>
+                    Редакційна команда
+                  </span>                
+                </a>
+              </li>
+              <li>
+                <a href="/cheacking.html">
+                  <span>
+                    Фактчекінг і прозорість
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="/membership.html" class="active">
+                  <span>
+                    Стати нашим експертом
+                  </span>
+
+                  <svg width="8" height="8" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00026 5.21845C6.45179 4.44422 4.95317 5.5858 4.18283 6.97241C3.96298 7.36814 4.09145 8.05156 4.41211 8.33659C7.33421 10.934 6.59147 5.4248 5.82215 5.4248C4.44459 5.4248 4.41802 6.44552 4.90505 7.64877C5.35869 8.76951 7.00522 8.60297 6.96852 7.28193C6.9508 6.6441 6.42552 6.13844 6.09728 5.63115C5.79854 5.16947 5.33297 7.68823 5.31774 8.01561C5.27544 8.92514 6.14313 8.94095 6.14313 8.10732" stroke-width="8" stroke-linecap="round"/>
+                  </svg>    
+                </a>
+              </li>
+            </ul>
+          </aside>
+
+          <div class="redactions-section__box">
+            <h3>Стати нашим експертом</h3>
+            <p>
+              Ми створюємо простір, де читачі та слухачі отримують достовірну й корисну інформацію про велнес, здоров’я та баланс у житті. Для цього нам потрібні експерти, які готові ділитися знаннями та практичним досвідом.
+            </p>
+
+            <h3>Кого ми шукаємо</h3>
+            <p>
+              <ul>
+                <li>лікарів, нутриціологів, психологів, тренерів та інших фахівців у сфері здоров’я і велнесу;</li>
+                <li>практиків, які мають підтверджений досвід роботи та готові розповідати про реальні кейси;</li>
+                <li>спікерів для подкастів та авторів для статей і колонок.</li>
+              </ul>
+            </p>
+
+            <h3>Як ви можете долучитися</h3>
+            <p>
+              <ul>
+                <li>дати експертний коментар для статті;</li>
+                <li>стати гостем у подкасті;</li>
+                <li>підготувати авторський матеріал чи блог;</li>
+                <li>виступити як консультант для спеціальних проєктів.</li>
+              </ul>
+            </p>
+
+
+            <h3>Чому це цінно</h3>
+            <p>
+              <ul>
+                <li>ваші знання допоможуть тисячам людей зробити свідомий вибір для здоров’я;</li>
+                <li>ви отримаєте видимість серед нашої аудиторії та професійне визнання;</li>
+                <li>можливість стати частиною спільноти експертів у сфері велнес.</li>
+              </ul>
+            </p>
+
+            <h3>Як подати заявку</h3>
+            <p>
+              Надішліть нам короткий опис вашої спеціалізації та досвіду через форму на сайті. Ми зв’яжемося з вами, щоб обговорити деталі співпраці.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe-section">
+      <div class="container">
+        <div class="subscribe-section__wrapp">
+          <div class="subscribe-section__bg">
+            <svg class="pink-decor-desk" width='1217' height='248'>
+              <use href='img/sprite/sprite.svg#pink-decor'></use>
+            </svg>
+          </div>
+
+          <form class="form">
+              <div class="form__top">
+                  <div class="form__title h2">Хочу стати вашим експертом!</div>
+              </div>
+
+              <div class="form__box questions">
+                  <label class="form__label">
+                      <input class="form__input" type="email" name="email" placeholder="Ваш e-mail">
+                  </label>
+                  <label>
+                      <textarea class="form__textarea" name="textarea" placeholder="Текст повідомлення"></textarea>
+                  </label>
+  
+                  <button class="form__submit" data-btn-inner="success">Надіслати</button>
+              </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+
+  <script defer src="js/main.js"></script>
+</body>
+
+
+</html>

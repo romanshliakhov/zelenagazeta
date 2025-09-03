@@ -431,4 +431,31 @@ select:-webkit-autofill:focus {
 }
 
 
+.wpcf7-response-output {
+	display: none;
+}
 
+.wpcf7-not-valid-tip {
+	font-size: 16px;
+	margin-top: 10px;
+}
+.form__box.subscribe > p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 16px;
+}
+.form__box.questions p {
+	label + label {
+		margin-top: 8px;
+		
+	}
+	
+	.form__submit {
+		margin-top: 8px;
+	}
+}

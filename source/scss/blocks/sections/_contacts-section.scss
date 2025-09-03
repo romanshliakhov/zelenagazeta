@@ -1,0 +1,134 @@
+.contacts-section {
+    padding-top: 32px;
+    margin-bottom: clamp(80px, 10.417vw, 150px);
+
+    &__wrapp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(24px, 3.125vw, 32px);
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+    }
+
+    &__items {
+        width: 100%;
+        display: grid;
+        gap: 24px;
+
+        @include for-tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include tablet {
+            grid-template-columns: 100%;
+        }
+    }
+
+    &__item {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: clamp(60px, 6.25vw, 64px);
+        background-color: var(--cl-c);
+
+        &-heading {
+            position: relative;
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 8px;
+            font-size: clamp(18px, 2.344vw, 24px);
+            line-height: 140%;
+            text-transform: uppercase;
+            color: var(--cl-a);
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -18px;
+                width: 100%;
+                left: 0;
+                height: 12px;
+                background-image: var(--missions-line);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+
+        &-links {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            & > li {
+                display: flex;
+                gap: 10px;
+
+                @include for-mobile {
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                }
+
+                @include mobile {
+                    flex-direction: column;
+                }
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 160%;
+                    color: var(--cl-a);
+
+                    svg {
+                        stroke: var(--cl-h);
+                    }
+                }
+
+                a {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 160%;
+                    color: var(--cl-a);
+                }
+            }
+        }
+    }
+}
+
+html[data-theme="dark"] {
+    .contacts-section {
+        &__item {
+            background-color: var(--cl-s);
+            
+            &-heading {
+                color: var(--cl-b);
+            }
+
+            &-links {
+                & > li {
+                    span {
+                        color: var(--cl-b);
+
+                        svg {
+                            stroke: var(--cl-d);
+                        }
+                    }
+
+                    a {
+                        color: var(--cl-b);
+                    }
+                }
+            }
+        }
+    }
+}

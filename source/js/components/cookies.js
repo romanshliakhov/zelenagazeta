@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (applyBtn) {
     applyBtn.addEventListener("click", () => {
+      console.log('clicked')
       localStorage.setItem("cookiesConsent", "accepted");
       closeCookiesBlock();
     });
