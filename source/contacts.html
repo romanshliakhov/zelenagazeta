@@ -91,13 +91,35 @@
 
               <div class="form__box questions">
                   <label class="form__label">
-                      <input class="form__input" type="text" name="name" placeholder="Ім’я">
+                      <input class="form__input" name="name" type="text" placeholder="Ім’я" required>
                   </label>
                   <label class="form__label">
-                      <input class="form__input" type="email" name="email" placeholder="Ваш e-mail">
+                      <input class="form__input" name="email" type="email" placeholder="Ваш e-mail" required>
                   </label>
+                  <div class="form__select select" data-select>
+                    <div class="select__header">
+                      <input type="hidden" class="select__input" id="contact-theme" name="contact-theme" value="" required>
+                      <span class="select__current" data-id="">
+                        <span class="placeholder">Тема</span>
+                      </span>
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#arrow-down'></use>
+                      </svg>
+                    </div>
+
+                    <div class="select__body">
+                      <ul class="select__list">
+                        <li class="select__option" data-id="1" data-type="option">
+                          Реклама 
+                        </li>
+                        <li class="select__option" data-id="2" data-type="option">
+                          Сотрудничество
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                   <label>
-                      <textarea class="form__textarea" name="textarea" placeholder="Текст повідомлення"></textarea>
+                      <textarea class="form__textarea" name="textarea" placeholder="Текст повідомлення" required></textarea>
                   </label>
   
                   <button class="form__submit" data-btn-inner="success">Надіслати</button>

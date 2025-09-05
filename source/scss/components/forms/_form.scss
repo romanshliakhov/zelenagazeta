@@ -108,8 +108,67 @@
     transition: all 0.4s;
 
     &:hover {
-      background-color: var(--bg-a);
-      color: var(--cl-b);;
+      background-color: var(--cl-c);
+      color: var(--cl-a);
+    }
+  }
+
+  &__select {
+    width: 100%;
+
+    .select__header {
+      padding: 10px 20px;
+      border: 1px solid #DCDEDA;
+      background-color: #fff;
+
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      svg {
+          stroke: var(--cl-d);
+      }
+    }
+
+    .select__current {
+      width: 100%;
+      font-family: var(--font-family);
+      font-size: 16px;
+      line-height: 150%;
+      font-weight: 300;
+
+      .placeholder {
+        font-family: var(--font-family);
+        font-size: 16px;
+        line-height: 150%;
+        font-weight: 300;
+        color: #6D6D6D;
+      }
+    }
+
+    .select__list {
+        border: 1px solid #DCDEDA;
+        background-color: var(--cl-h);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        li {
+          width: 100%;
+          padding: 10px 20px;
+          cursor: pointer;
+          font-family: var(--font-family);
+          font-size: 16px;
+          line-height: 150%;
+          font-weight: 300;
+          background-color: transparent;
+
+          &:hover {
+            background-color: var(--cl-c);
+            color: var(--cl-a);
+          }
+        }
     }
   }
 }
@@ -118,6 +177,30 @@ html[data-theme="dark"] {
   .form {
     background-color: var(--cl-t);
     border: 1px solid var(--cl-s);
+
+    &__select {
+      .select__header {
+        background-color: #1B1B1B;
+        border: 1px solid #6D6D6D;
+      }
+
+      .select__current {
+        color: #fff;
+      }
+
+      .select__list {
+        color: #fff;
+
+        li:hover {
+          background-color: var(--cl-d);
+          color: var(--cl-g);
+        }
+      }
+
+      .placeholder {
+        color: #F1F0EB;
+      }
+    }
 
     &__title {
       color: var(--cl-b);
@@ -149,6 +232,7 @@ html[data-theme="dark"] {
 
     &__submit {
       background-color: #313A31;
+      color: #F1F0EB;
     }
   }
 }

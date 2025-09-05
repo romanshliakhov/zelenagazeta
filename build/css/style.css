@@ -4545,13 +4545,89 @@ html[data-theme=dark] .podcast-card__divider svg {
   transition: all 0.4s;
 }
 .form__submit:hover {
-  background-color: var(--bg-a);
-  color: var(--cl-b);
+  background-color: var(--cl-c);
+  color: var(--cl-a);
+}
+.form__select {
+  width: 100%;
+}
+.form__select .select__header {
+  padding: 10px 20px;
+  border: 1px solid #DCDEDA;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 6px;
+}
+.form__select .select__header svg {
+  stroke: var(--cl-d);
+}
+.form__select .select__current {
+  width: 100%;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 300;
+}
+.form__select .select__current .placeholder {
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 300;
+  color: #6D6D6D;
+}
+.form__select .select__list {
+  border: 1px solid #DCDEDA;
+  background-color: var(--cl-h);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+}
+.form__select .select__list li {
+  width: 100%;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 300;
+  background-color: transparent;
+}
+.form__select .select__list li:hover {
+  background-color: var(--cl-c);
+  color: var(--cl-a);
 }
 
 html[data-theme=dark] .form {
   background-color: var(--cl-t);
   border: 1px solid var(--cl-s);
+}
+html[data-theme=dark] .form__select .select__header {
+  background-color: #1B1B1B;
+  border: 1px solid #6D6D6D;
+}
+html[data-theme=dark] .form__select .select__current {
+  color: #fff;
+}
+html[data-theme=dark] .form__select .select__list {
+  color: #fff;
+}
+html[data-theme=dark] .form__select .select__list li:hover {
+  background-color: var(--cl-d);
+  color: var(--cl-g);
+}
+html[data-theme=dark] .form__select .placeholder {
+  color: #F1F0EB;
 }
 html[data-theme=dark] .form__title {
   color: var(--cl-b);
@@ -4601,6 +4677,7 @@ html[data-theme=dark] .form__textarea::placeholder {
 }
 html[data-theme=dark] .form__submit {
   background-color: #313A31;
+  color: #F1F0EB;
 }
 
 .share-form {
