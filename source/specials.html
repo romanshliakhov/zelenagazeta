@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="Ua">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+    <section class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__items">
+          <li class="breadcrumbs__item home">
+              <a href="/">Головна</a>
+          </li>
+
+          <li class="breadcrumbs__item current" aria-current="page">
+              <span>Спецпроєкти</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="specials-section">
+      <div class="container">
+        <h1 class="specials-section__title">Спецпроєкти</h1>
+
+        <div class="specials-section__latest special-card">
+          <a class="special-card__thumbnails" href="#">
+            <picture>
+              <source type='image/webp' media='(max-width: 768px)' srcset='img/specials/pic1-mob.webp'>
+              <source media='(max-width: 768px)' srcset='img/specials/pic1-mob.png'>
+              <source type='image/webp' srcset='img/specials/pic1-desk.webp'>
+              <img width='620' height='350' src='img/specials/pic1-desk.png' alt='specials 1'>
+            </picture>
+          </a>
+
+          <div class="special-card__info">
+            <div class="special-card__top">
+              <span class="special-card__tag">
+                <svg width='12' height='12'>
+                  <use href='img/sprite/sprite.svg#tag'></use>
+                </svg>
+                <p>мистецтво</p>
+              </span>
+
+              <div class="special-card__details">
+                <div class="special-card__views">
+                  <svg width='16' height='16'>
+                    <use href='img/sprite/sprite.svg#eye'></use>
+                  </svg>
+                  <p>14</p>
+                </div>
+
+                <a class="special-card__author" href="#">
+                  <svg width='16' height='16'>
+                    <use href='img/sprite/sprite.svg#avatar'></use>
+                  </svg>
+                  <p>Марія Шевченко</p>
+                </a>
+
+                <time class="special-card__pubtime" datetime="24.10.2025">
+                  <svg width='16' height='16'>
+                    <use href='img/sprite/sprite.svg#time'></use>
+                  </svg>
+                  24.10.2024
+                </time>
+              </div>
+            </div>
+
+            <div class="special-card__box">
+              <a class="special-card__title" href="#">Дослідження виявило,що предки могли походити з Китаю</a>
+
+              <p class="special-card__descr">
+                Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. 
+              </p>
+            </div>
+
+            <a class="special-card__link" href="#">
+              <p>Читати</p>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.34093 13.6023C6.71934 12.2291 9.19022 10.9222 11.4618 9.38464C12.1682 8.9067 15.016 7.48072 14.8985 7.61269" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.5382 11.2193C14.491 11.2909 15.0693 8.86664 15.1869 8.29631C15.2934 7.78 16.1054 7.31316 15.8418 6.85651C15.7837 6.75586 14.29 6.96378 14.1997 6.95509C12.6189 6.80143 11.2059 6.67386 9.61373 6.73634C9.50368 6.74038 9.39303 6.72162 9.28307 6.71437" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="specials-section__slogan">
+          <p>Спецпроєкти - це місце де зібрано найцікавіше та найважливіше, поринь у світ цікавості </p>
+        </div>
+
+        <div class="specials-section__tags listing-section__tags">
+          <div class="listing-section__tags-top">
+            <span class="listing-section__tags-heading">Категорії спецпроєктів</span>
+
+            <div class="listing-section__tags-controls">
+              <button class='swiper-button prev'>
+                <svg width='40' height='40'>
+                  <use href='img/sprite/sprite.svg#arrow-left'></use>
+                </svg>
+              </button>
+  
+              <button class='swiper-button next'>
+                <svg width='40' height='40'>
+                  <use href='img/sprite/sprite.svg#arrow-right'></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="listing-section__tags-slider">
+            <div class='swiper-container'>
+              <ul class="listing-section__tags-items swiper-wrapper">
+                <li class="swiper-slide">
+                  <a class="tag active" href="#">
+                    <p>Усі</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a class="tag" href="#">
+                    <p>Освіта</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a class="tag" href="#">
+                    <p>Мистецтво</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a class="tag" href="#">
+                    <p>Баланс</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a class="tag" href="#">
+                    <p>Тренування</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a class="tag" href="#">
+                    <p>Здоров’я</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a class="tag" href="#">
+                    <p>Освіта</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a class="tag" href="#">
+                    <p>Мистецтво</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a class="tag" href="#">
+                    <p>Баланс</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a class="tag" href="#">
+                    <p>Тренування</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a class="tag" href="#">
+                    <p>Здоров’я</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a class="tag" href="#">
+                    <p>Освіта</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a class="tag" href="#">
+                    <p>Мистецтво</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a class="tag" href="#">
+                    <p>Баланс</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a class="tag" href="#">
+                    <p>Тренування</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a class="tag" href="#">
+                    <p>Здоров’я</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="specials-section__sorting sorting">
+            <button class="sorting__btn active sort-new">За найновішими</button>
+            <button class="sorting__btn sort-popular">За популярними</button>
+          </div>
+        </div>
+
+        <div class="specials-section__box">
+          <ul class="specials-section__items">
+            <li>
+              <div class="special-card">
+                <a class="special-card__thumbnails" href="#">
+                  <picture>
+                    <source type='image/webp' media='(max-width: 575px)' srcset='img/specials/pic1-mob.webp'>
+                    <source media='(max-width: 575px)' srcset='img/specials/pic1-mob.png'>
+                    <source type='image/webp' srcset='img/specials/pic1-desk.webp'>
+                    <img width='620' height='350' src='img/specials/pic1-desk.png' alt='specials 1'>
+                  </picture>
+                </a>
+
+                <div class="special-card__info">
+                  <div class="special-card__top">
+                    <span class="special-card__tag">
+                      <svg width='12' height='12'>
+                        <use href='img/sprite/sprite.svg#tag'></use>
+                      </svg>
+                      <p>мистецтво</p>
+                    </span>
+
+                    <div class="special-card__details">
+                      <div class="special-card__views">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#eye'></use>
+                        </svg>
+                        <p>14</p>
+                      </div>
+
+                      <a class="special-card__author" href="#">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#avatar'></use>
+                        </svg>
+                        <p>Марія Шевченко</p>
+                      </a>
+
+                      <time class="special-card__pubtime" datetime="24.10.2025">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#time'></use>
+                        </svg>
+                        24.10.2024
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="special-card__box">
+                    <a class="special-card__title" href="#">Дослідження виявило,що предки могли походити з Китаю</a>
+
+                    <p class="special-card__descr">
+                      Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. 
+                    </p>
+                  </div>
+
+                  <a class="special-card__link" href="#">
+                    <p>Читати</p>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.34093 13.6023C6.71934 12.2291 9.19022 10.9222 11.4618 9.38464C12.1682 8.9067 15.016 7.48072 14.8985 7.61269" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.5382 11.2193C14.491 11.2909 15.0693 8.86664 15.1869 8.29631C15.2934 7.78 16.1054 7.31316 15.8418 6.85651C15.7837 6.75586 14.29 6.96378 14.1997 6.95509C12.6189 6.80143 11.2059 6.67386 9.61373 6.73634C9.50368 6.74038 9.39303 6.72162 9.28307 6.71437" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="special-card">
+                <a class="special-card__thumbnails" href="#">
+                  <picture>
+                    <source type='image/webp' media='(max-width: 575px)' srcset='img/specials/pic1-mob.webp'>
+                    <source media='(max-width: 575px)' srcset='img/specials/pic1-mob.png'>
+                    <source type='image/webp' srcset='img/specials/pic1-desk.webp'>
+                    <img width='620' height='350' src='img/specials/pic1-desk.png' alt='specials 1'>
+                  </picture>
+                </a>
+
+                <div class="special-card__info">
+                  <div class="special-card__top">
+                    <span class="special-card__tag">
+                      <svg width='12' height='12'>
+                        <use href='img/sprite/sprite.svg#tag'></use>
+                      </svg>
+                      <p>мистецтво</p>
+                    </span>
+
+                    <div class="special-card__details">
+                      <div class="special-card__views">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#eye'></use>
+                        </svg>
+                        <p>14</p>
+                      </div>
+
+                      <a class="special-card__author" href="#">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#avatar'></use>
+                        </svg>
+                        <p>Марія Шевченко</p>
+                      </a>
+
+                      <time class="special-card__pubtime" datetime="24.10.2025">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#time'></use>
+                        </svg>
+                        24.10.2024
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="special-card__box">
+                    <a class="special-card__title" href="#">Дослідження виявило,що предки могли походити з Китаю</a>
+
+                    <p class="special-card__descr">
+                      Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. 
+                    </p>
+                  </div>
+
+                  <a class="special-card__link" href="#">
+                    <p>Читати</p>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.34093 13.6023C6.71934 12.2291 9.19022 10.9222 11.4618 9.38464C12.1682 8.9067 15.016 7.48072 14.8985 7.61269" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.5382 11.2193C14.491 11.2909 15.0693 8.86664 15.1869 8.29631C15.2934 7.78 16.1054 7.31316 15.8418 6.85651C15.7837 6.75586 14.29 6.96378 14.1997 6.95509C12.6189 6.80143 11.2059 6.67386 9.61373 6.73634C9.50368 6.74038 9.39303 6.72162 9.28307 6.71437" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="special-card">
+                <a class="special-card__thumbnails" href="#">
+                  <picture>
+                    <source type='image/webp' media='(max-width: 575px)' srcset='img/specials/pic1-mob.webp'>
+                    <source media='(max-width: 575px)' srcset='img/specials/pic1-mob.png'>
+                    <source type='image/webp' srcset='img/specials/pic1-desk.webp'>
+                    <img width='620' height='350' src='img/specials/pic1-desk.png' alt='specials 1'>
+                  </picture>
+                </a>
+
+                <div class="special-card__info">
+                  <div class="special-card__top">
+                    <span class="special-card__tag">
+                      <svg width='12' height='12'>
+                        <use href='img/sprite/sprite.svg#tag'></use>
+                      </svg>
+                      <p>мистецтво</p>
+                    </span>
+
+                    <div class="special-card__details">
+                      <div class="special-card__views">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#eye'></use>
+                        </svg>
+                        <p>14</p>
+                      </div>
+
+                      <a class="special-card__author" href="#">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#avatar'></use>
+                        </svg>
+                        <p>Марія Шевченко</p>
+                      </a>
+
+                      <time class="special-card__pubtime" datetime="24.10.2025">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#time'></use>
+                        </svg>
+                        24.10.2024
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="special-card__box">
+                    <a class="special-card__title" href="#">Дослідження виявило,що предки могли походити з Китаю</a>
+
+                    <p class="special-card__descr">
+                      Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. 
+                    </p>
+                  </div>
+
+                  <a class="special-card__link" href="#">
+                    <p>Читати</p>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.34093 13.6023C6.71934 12.2291 9.19022 10.9222 11.4618 9.38464C12.1682 8.9067 15.016 7.48072 14.8985 7.61269" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.5382 11.2193C14.491 11.2909 15.0693 8.86664 15.1869 8.29631C15.2934 7.78 16.1054 7.31316 15.8418 6.85651C15.7837 6.75586 14.29 6.96378 14.1997 6.95509C12.6189 6.80143 11.2059 6.67386 9.61373 6.73634C9.50368 6.74038 9.39303 6.72162 9.28307 6.71437" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="special-card">
+                <a class="special-card__thumbnails" href="#">
+                  <picture>
+                    <source type='image/webp' media='(max-width: 575px)' srcset='img/specials/pic1-mob.webp'>
+                    <source media='(max-width: 575px)' srcset='img/specials/pic1-mob.png'>
+                    <source type='image/webp' srcset='img/specials/pic1-desk.webp'>
+                    <img width='620' height='350' src='img/specials/pic1-desk.png' alt='specials 1'>
+                  </picture>
+                </a>
+
+                <div class="special-card__info">
+                  <div class="special-card__top">
+                    <span class="special-card__tag">
+                      <svg width='12' height='12'>
+                        <use href='img/sprite/sprite.svg#tag'></use>
+                      </svg>
+                      <p>мистецтво</p>
+                    </span>
+
+                    <div class="special-card__details">
+                      <div class="special-card__views">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#eye'></use>
+                        </svg>
+                        <p>14</p>
+                      </div>
+
+                      <a class="special-card__author" href="#">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#avatar'></use>
+                        </svg>
+                        <p>Марія Шевченко</p>
+                      </a>
+
+                      <time class="special-card__pubtime" datetime="24.10.2025">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#time'></use>
+                        </svg>
+                        24.10.2024
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="special-card__box">
+                    <a class="special-card__title" href="#">Дослідження виявило,що предки могли походити з Китаю</a>
+
+                    <p class="special-card__descr">
+                      Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. 
+                    </p>
+                  </div>
+
+                  <a class="special-card__link" href="#">
+                    <p>Читати</p>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.34093 13.6023C6.71934 12.2291 9.19022 10.9222 11.4618 9.38464C12.1682 8.9067 15.016 7.48072 14.8985 7.61269" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.5382 11.2193C14.491 11.2909 15.0693 8.86664 15.1869 8.29631C15.2934 7.78 16.1054 7.31316 15.8418 6.85651C15.7837 6.75586 14.29 6.96378 14.1997 6.95509C12.6189 6.80143 11.2059 6.67386 9.61373 6.73634C9.50368 6.74038 9.39303 6.72162 9.28307 6.71437" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="special-card">
+                <a class="special-card__thumbnails" href="#">
+                  <picture>
+                    <source type='image/webp' media='(max-width: 575px)' srcset='img/specials/pic1-mob.webp'>
+                    <source media='(max-width: 575px)' srcset='img/specials/pic1-mob.png'>
+                    <source type='image/webp' srcset='img/specials/pic1-desk.webp'>
+                    <img width='620' height='350' src='img/specials/pic1-desk.png' alt='specials 1'>
+                  </picture>
+                </a>
+
+                <div class="special-card__info">
+                  <div class="special-card__top">
+                    <span class="special-card__tag">
+                      <svg width='12' height='12'>
+                        <use href='img/sprite/sprite.svg#tag'></use>
+                      </svg>
+                      <p>мистецтво</p>
+                    </span>
+
+                    <div class="special-card__details">
+                      <div class="special-card__views">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#eye'></use>
+                        </svg>
+                        <p>14</p>
+                      </div>
+
+                      <a class="special-card__author" href="#">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#avatar'></use>
+                        </svg>
+                        <p>Марія Шевченко</p>
+                      </a>
+
+                      <time class="special-card__pubtime" datetime="24.10.2025">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#time'></use>
+                        </svg>
+                        24.10.2024
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="special-card__box">
+                    <a class="special-card__title" href="#">Дослідження виявило,що предки могли походити з Китаю</a>
+
+                    <p class="special-card__descr">
+                      Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. 
+                    </p>
+                  </div>
+
+                  <a class="special-card__link" href="#">
+                    <p>Читати</p>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.34093 13.6023C6.71934 12.2291 9.19022 10.9222 11.4618 9.38464C12.1682 8.9067 15.016 7.48072 14.8985 7.61269" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.5382 11.2193C14.491 11.2909 15.0693 8.86664 15.1869 8.29631C15.2934 7.78 16.1054 7.31316 15.8418 6.85651C15.7837 6.75586 14.29 6.96378 14.1997 6.95509C12.6189 6.80143 11.2059 6.67386 9.61373 6.73634C9.50368 6.74038 9.39303 6.72162 9.28307 6.71437" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="special-card">
+                <a class="special-card__thumbnails" href="#">
+                  <picture>
+                    <source type='image/webp' media='(max-width: 575px)' srcset='img/specials/pic1-mob.webp'>
+                    <source media='(max-width: 575px)' srcset='img/specials/pic1-mob.png'>
+                    <source type='image/webp' srcset='img/specials/pic1-desk.webp'>
+                    <img width='620' height='350' src='img/specials/pic1-desk.png' alt='specials 1'>
+                  </picture>
+                </a>
+
+                <div class="special-card__info">
+                  <div class="special-card__top">
+                    <span class="special-card__tag">
+                      <svg width='12' height='12'>
+                        <use href='img/sprite/sprite.svg#tag'></use>
+                      </svg>
+                      <p>мистецтво</p>
+                    </span>
+
+                    <div class="special-card__details">
+                      <div class="special-card__views">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#eye'></use>
+                        </svg>
+                        <p>14</p>
+                      </div>
+
+                      <a class="special-card__author" href="#">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#avatar'></use>
+                        </svg>
+                        <p>Марія Шевченко</p>
+                      </a>
+
+                      <time class="special-card__pubtime" datetime="24.10.2025">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#time'></use>
+                        </svg>
+                        24.10.2024
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="special-card__box">
+                    <a class="special-card__title" href="#">Дослідження виявило,що предки могли походити з Китаю</a>
+
+                    <p class="special-card__descr">
+                      Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. 
+                    </p>
+                  </div>
+
+                  <a class="special-card__link" href="#">
+                    <p>Читати</p>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.34093 13.6023C6.71934 12.2291 9.19022 10.9222 11.4618 9.38464C12.1682 8.9067 15.016 7.48072 14.8985 7.61269" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.5382 11.2193C14.491 11.2909 15.0693 8.86664 15.1869 8.29631C15.2934 7.78 16.1054 7.31316 15.8418 6.85651C15.7837 6.75586 14.29 6.96378 14.1997 6.95509C12.6189 6.80143 11.2059 6.67386 9.61373 6.73634C9.50368 6.74038 9.39303 6.72162 9.28307 6.71437" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="special-card">
+                <a class="special-card__thumbnails" href="#">
+                  <picture>
+                    <source type='image/webp' media='(max-width: 575px)' srcset='img/specials/pic1-mob.webp'>
+                    <source media='(max-width: 575px)' srcset='img/specials/pic1-mob.png'>
+                    <source type='image/webp' srcset='img/specials/pic1-desk.webp'>
+                    <img width='620' height='350' src='img/specials/pic1-desk.png' alt='specials 1'>
+                  </picture>
+                </a>
+
+                <div class="special-card__info">
+                  <div class="special-card__top">
+                    <span class="special-card__tag">
+                      <svg width='12' height='12'>
+                        <use href='img/sprite/sprite.svg#tag'></use>
+                      </svg>
+                      <p>мистецтво</p>
+                    </span>
+
+                    <div class="special-card__details">
+                      <div class="special-card__views">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#eye'></use>
+                        </svg>
+                        <p>14</p>
+                      </div>
+
+                      <a class="special-card__author" href="#">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#avatar'></use>
+                        </svg>
+                        <p>Марія Шевченко</p>
+                      </a>
+
+                      <time class="special-card__pubtime" datetime="24.10.2025">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#time'></use>
+                        </svg>
+                        24.10.2024
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="special-card__box">
+                    <a class="special-card__title" href="#">Дослідження виявило,що предки могли походити з Китаю</a>
+
+                    <p class="special-card__descr">
+                      Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. 
+                    </p>
+                  </div>
+
+                  <a class="special-card__link" href="#">
+                    <p>Читати</p>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.34093 13.6023C6.71934 12.2291 9.19022 10.9222 11.4618 9.38464C12.1682 8.9067 15.016 7.48072 14.8985 7.61269" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.5382 11.2193C14.491 11.2909 15.0693 8.86664 15.1869 8.29631C15.2934 7.78 16.1054 7.31316 15.8418 6.85651C15.7837 6.75586 14.29 6.96378 14.1997 6.95509C12.6189 6.80143 11.2059 6.67386 9.61373 6.73634C9.50368 6.74038 9.39303 6.72162 9.28307 6.71437" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="special-card">
+                <a class="special-card__thumbnails" href="#">
+                  <picture>
+                    <source type='image/webp' media='(max-width: 575px)' srcset='img/specials/pic1-mob.webp'>
+                    <source media='(max-width: 575px)' srcset='img/specials/pic1-mob.png'>
+                    <source type='image/webp' srcset='img/specials/pic1-desk.webp'>
+                    <img width='620' height='350' src='img/specials/pic1-desk.png' alt='specials 1'>
+                  </picture>
+                </a>
+
+                <div class="special-card__info">
+                  <div class="special-card__top">
+                    <span class="special-card__tag">
+                      <svg width='12' height='12'>
+                        <use href='img/sprite/sprite.svg#tag'></use>
+                      </svg>
+                      <p>мистецтво</p>
+                    </span>
+
+                    <div class="special-card__details">
+                      <div class="special-card__views">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#eye'></use>
+                        </svg>
+                        <p>14</p>
+                      </div>
+
+                      <a class="special-card__author" href="#">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#avatar'></use>
+                        </svg>
+                        <p>Марія Шевченко</p>
+                      </a>
+
+                      <time class="special-card__pubtime" datetime="24.10.2025">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#time'></use>
+                        </svg>
+                        24.10.2024
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="special-card__box">
+                    <a class="special-card__title" href="#">Дослідження виявило,що предки могли походити з Китаю</a>
+
+                    <p class="special-card__descr">
+                      Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. 
+                    </p>
+                  </div>
+
+                  <a class="special-card__link" href="#">
+                    <p>Читати</p>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.34093 13.6023C6.71934 12.2291 9.19022 10.9222 11.4618 9.38464C12.1682 8.9067 15.016 7.48072 14.8985 7.61269" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.5382 11.2193C14.491 11.2909 15.0693 8.86664 15.1869 8.29631C15.2934 7.78 16.1054 7.31316 15.8418 6.85651C15.7837 6.75586 14.29 6.96378 14.1997 6.95509C12.6189 6.80143 11.2059 6.67386 9.61373 6.73634C9.50368 6.74038 9.39303 6.72162 9.28307 6.71437" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="populars-block" style="background-image: url('./img/specials/populars-bg.png')">
+              <div class="container">
+                <div class="populars-block__wrapp">
+                  <span class="populars-block__title">Популярне</span>
+
+                  <ul class="populars-block__items">
+                    <li>
+                      <div class="special-card">
+                        <a class="special-card__thumbnails" href="#">
+                          <picture>
+                            <source type='image/webp' media='(max-width: 1024px)' srcset='img/specials/pic1-mob.webp'>
+                            <source media='(max-width: 1024px)' srcset='img/specials/pic1-mob.png'>
+                            <source type='image/webp' srcset='img/specials/pic1-desk.webp'>
+                            <img width='620' height='350' src='img/specials/pic1-desk.png' alt='specials 1'>
+                          </picture>
+                        </a>
+
+                        <div class="special-card__info">
+                          <div class="special-card__top">
+                            <span class="special-card__tag">
+                              <svg width='12' height='12'>
+                                <use href='img/sprite/sprite.svg#tag'></use>
+                              </svg>
+                              <p>мистецтво</p>
+                            </span>
+
+                            <div class="special-card__details">
+                              <div class="special-card__views">
+                                <svg width='16' height='16'>
+                                  <use href='img/sprite/sprite.svg#eye'></use>
+                                </svg>
+                                <p>14</p>
+                              </div>
+
+                              <a class="special-card__author" href="#">
+                                <svg width='16' height='16'>
+                                  <use href='img/sprite/sprite.svg#avatar'></use>
+                                </svg>
+                                <p>Марія Шевченко</p>
+                              </a>
+
+                              <time class="special-card__pubtime" datetime="24.10.2025">
+                                <svg width='16' height='16'>
+                                  <use href='img/sprite/sprite.svg#time'></use>
+                                </svg>
+                                24.10.2024
+                              </time>
+                            </div>
+                          </div>
+
+                          <div class="special-card__box">
+                            <a class="special-card__title" href="#">
+                              <p>Дослідження виявило,що предки могли походити з Китаю</p>
+                              <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.34093 13.6023C6.71934 12.2291 9.19022 10.9222 11.4618 9.38464C12.1682 8.9067 15.016 7.48072 14.8985 7.61269" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.5382 11.2193C14.491 11.2909 15.0693 8.86664 15.1869 8.29631C15.2934 7.78 16.1054 7.31316 15.8418 6.85651C15.7837 6.75586 14.29 6.96378 14.1997 6.95509C12.6189 6.80143 11.2059 6.67386 9.61373 6.73634C9.50368 6.74038 9.39303 6.72162 9.28307 6.71437" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </a>
+
+                            <p class="special-card__descr">
+                              Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. 
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="special-card">
+                        <a class="special-card__thumbnails" href="#">
+                          <picture>
+                            <source type='image/webp' media='(max-width: 1024px)' srcset='img/specials/pic1-mob.webp'>
+                            <source media='(max-width: 1024px)' srcset='img/specials/pic1-mob.png'>
+                            <source type='image/webp' srcset='img/specials/pic1-desk.webp'>
+                            <img width='620' height='350' src='img/specials/pic1-desk.png' alt='specials 1'>
+                          </picture>
+                        </a>
+
+                        <div class="special-card__info">
+                          <div class="special-card__top">
+                            <span class="special-card__tag">
+                              <svg width='12' height='12'>
+                                <use href='img/sprite/sprite.svg#tag'></use>
+                              </svg>
+                              <p>мистецтво</p>
+                            </span>
+
+                            <div class="special-card__details">
+                              <div class="special-card__views">
+                                <svg width='16' height='16'>
+                                  <use href='img/sprite/sprite.svg#eye'></use>
+                                </svg>
+                                <p>14</p>
+                              </div>
+
+                              <a class="special-card__author" href="#">
+                                <svg width='16' height='16'>
+                                  <use href='img/sprite/sprite.svg#avatar'></use>
+                                </svg>
+                                <p>Марія Шевченко</p>
+                              </a>
+
+                              <time class="special-card__pubtime" datetime="24.10.2025">
+                                <svg width='16' height='16'>
+                                  <use href='img/sprite/sprite.svg#time'></use>
+                                </svg>
+                                24.10.2024
+                              </time>
+                            </div>
+                          </div>
+
+                          <div class="special-card__box">
+                            <a class="special-card__title" href="#">
+                              <p>Дослідження виявило,що предки могли походити з Китаю</p>
+                              <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.34093 13.6023C6.71934 12.2291 9.19022 10.9222 11.4618 9.38464C12.1682 8.9067 15.016 7.48072 14.8985 7.61269" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.5382 11.2193C14.491 11.2909 15.0693 8.86664 15.1869 8.29631C15.2934 7.78 16.1054 7.31316 15.8418 6.85651C15.7837 6.75586 14.29 6.96378 14.1997 6.95509C12.6189 6.80143 11.2059 6.67386 9.61373 6.73634C9.50368 6.74038 9.39303 6.72162 9.28307 6.71437" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </a>
+
+                            <p class="special-card__descr">
+                              Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. 
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="special-card">
+                        <a class="special-card__thumbnails" href="#">
+                          <picture>
+                            <source type='image/webp' media='(max-width: 767px)' srcset='img/specials/pic1-mob.webp'>
+                            <source media='(max-width: 767px)' srcset='img/specials/pic1-mob.png'>
+                            <source type='image/webp' srcset='img/specials/pic1-desk.webp'>
+                            <img width='620' height='350' src='img/specials/pic1-desk.png' alt='specials 1'>
+                          </picture>
+                        </a>
+
+                        <div class="special-card__info">
+                          <div class="special-card__top">
+                            <span class="special-card__tag">
+                              <svg width='12' height='12'>
+                                <use href='img/sprite/sprite.svg#tag'></use>
+                              </svg>
+                              <p>мистецтво</p>
+                            </span>
+
+                            <div class="special-card__details">
+                              <div class="special-card__views">
+                                <svg width='16' height='16'>
+                                  <use href='img/sprite/sprite.svg#eye'></use>
+                                </svg>
+                                <p>14</p>
+                              </div>
+
+                              <a class="special-card__author" href="#">
+                                <svg width='16' height='16'>
+                                  <use href='img/sprite/sprite.svg#avatar'></use>
+                                </svg>
+                                <p>Марія Шевченко</p>
+                              </a>
+
+                              <time class="special-card__pubtime" datetime="24.10.2025">
+                                <svg width='16' height='16'>
+                                  <use href='img/sprite/sprite.svg#time'></use>
+                                </svg>
+                                24.10.2024
+                              </time>
+                            </div>
+                          </div>
+
+                          <div class="special-card__box">
+                            <a class="special-card__title" href="#">Дослідження виявило,що предки могли походити з Китаю</a>
+
+                            <p class="special-card__descr">
+                              Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. 
+                            </p>
+                          </div>
+
+                          <a class="special-card__link" href="#">
+                            <p>Читати</p>
+                            <svg width='20' height='20'>
+                              <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="special-card">
+                <a class="special-card__thumbnails" href="#">
+                  <picture>
+                    <source type='image/webp' media='(max-width: 575px)' srcset='img/specials/pic1-mob.webp'>
+                    <source media='(max-width: 575px)' srcset='img/specials/pic1-mob.png'>
+                    <source type='image/webp' srcset='img/specials/pic1-desk.webp'>
+                    <img width='620' height='350' src='img/specials/pic1-desk.png' alt='specials 1'>
+                  </picture>
+                </a>
+
+                <div class="special-card__info">
+                  <div class="special-card__top">
+                    <span class="special-card__tag">
+                      <svg width='12' height='12'>
+                        <use href='img/sprite/sprite.svg#tag'></use>
+                      </svg>
+                      <p>мистецтво</p>
+                    </span>
+
+                    <div class="special-card__details">
+                      <div class="special-card__views">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#eye'></use>
+                        </svg>
+                        <p>14</p>
+                      </div>
+
+                      <a class="special-card__author" href="#">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#avatar'></use>
+                        </svg>
+                        <p>Марія Шевченко</p>
+                      </a>
+
+                      <time class="special-card__pubtime" datetime="24.10.2025">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#time'></use>
+                        </svg>
+                        24.10.2024
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="special-card__box">
+                    <a class="special-card__title" href="#">Дослідження виявило,що предки могли походити з Китаю</a>
+
+                    <p class="special-card__descr">
+                      Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. 
+                    </p>
+                  </div>
+
+                  <a class="special-card__link" href="#">
+                    <p>Читати</p>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.34093 13.6023C6.71934 12.2291 9.19022 10.9222 11.4618 9.38464C12.1682 8.9067 15.016 7.48072 14.8985 7.61269" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.5382 11.2193C14.491 11.2909 15.0693 8.86664 15.1869 8.29631C15.2934 7.78 16.1054 7.31316 15.8418 6.85651C15.7837 6.75586 14.29 6.96378 14.1997 6.95509C12.6189 6.80143 11.2059 6.67386 9.61373 6.73634C9.50368 6.74038 9.39303 6.72162 9.28307 6.71437" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="special-card">
+                <a class="special-card__thumbnails" href="#">
+                  <picture>
+                    <source type='image/webp' media='(max-width: 575px)' srcset='img/specials/pic1-mob.webp'>
+                    <source media='(max-width: 575px)' srcset='img/specials/pic1-mob.png'>
+                    <source type='image/webp' srcset='img/specials/pic1-desk.webp'>
+                    <img width='620' height='350' src='img/specials/pic1-desk.png' alt='specials 1'>
+                  </picture>
+                </a>
+
+                <div class="special-card__info">
+                  <div class="special-card__top">
+                    <span class="special-card__tag">
+                      <svg width='12' height='12'>
+                        <use href='img/sprite/sprite.svg#tag'></use>
+                      </svg>
+                      <p>мистецтво</p>
+                    </span>
+
+                    <div class="special-card__details">
+                      <div class="special-card__views">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#eye'></use>
+                        </svg>
+                        <p>14</p>
+                      </div>
+
+                      <a class="special-card__author" href="#">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#avatar'></use>
+                        </svg>
+                        <p>Марія Шевченко</p>
+                      </a>
+
+                      <time class="special-card__pubtime" datetime="24.10.2025">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#time'></use>
+                        </svg>
+                        24.10.2024
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="special-card__box">
+                    <a class="special-card__title" href="#">Дослідження виявило,що предки могли походити з Китаю</a>
+
+                    <p class="special-card__descr">
+                      Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. 
+                    </p>
+                  </div>
+
+                  <a class="special-card__link" href="#">
+                    <p>Читати</p>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.34093 13.6023C6.71934 12.2291 9.19022 10.9222 11.4618 9.38464C12.1682 8.9067 15.016 7.48072 14.8985 7.61269" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.5382 11.2193C14.491 11.2909 15.0693 8.86664 15.1869 8.29631C15.2934 7.78 16.1054 7.31316 15.8418 6.85651C15.7837 6.75586 14.29 6.96378 14.1997 6.95509C12.6189 6.80143 11.2059 6.67386 9.61373 6.73634C9.50368 6.74038 9.39303 6.72162 9.28307 6.71437" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="special-card">
+                <a class="special-card__thumbnails" href="#">
+                  <picture>
+                    <source type='image/webp' media='(max-width: 575px)' srcset='img/specials/pic1-mob.webp'>
+                    <source media='(max-width: 575px)' srcset='img/specials/pic1-mob.png'>
+                    <source type='image/webp' srcset='img/specials/pic1-desk.webp'>
+                    <img width='620' height='350' src='img/specials/pic1-desk.png' alt='specials 1'>
+                  </picture>
+                </a>
+
+                <div class="special-card__info">
+                  <div class="special-card__top">
+                    <span class="special-card__tag">
+                      <svg width='12' height='12'>
+                        <use href='img/sprite/sprite.svg#tag'></use>
+                      </svg>
+                      <p>мистецтво</p>
+                    </span>
+
+                    <div class="special-card__details">
+                      <div class="special-card__views">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#eye'></use>
+                        </svg>
+                        <p>14</p>
+                      </div>
+
+                      <a class="special-card__author" href="#">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#avatar'></use>
+                        </svg>
+                        <p>Марія Шевченко</p>
+                      </a>
+
+                      <time class="special-card__pubtime" datetime="24.10.2025">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#time'></use>
+                        </svg>
+                        24.10.2024
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="special-card__box">
+                    <a class="special-card__title" href="#">Дослідження виявило,що предки могли походити з Китаю</a>
+
+                    <p class="special-card__descr">
+                      Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. 
+                    </p>
+                  </div>
+
+                  <a class="special-card__link" href="#">
+                    <p>Читати</p>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.34093 13.6023C6.71934 12.2291 9.19022 10.9222 11.4618 9.38464C12.1682 8.9067 15.016 7.48072 14.8985 7.61269" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.5382 11.2193C14.491 11.2909 15.0693 8.86664 15.1869 8.29631C15.2934 7.78 16.1054 7.31316 15.8418 6.85651C15.7837 6.75586 14.29 6.96378 14.1997 6.95509C12.6189 6.80143 11.2059 6.67386 9.61373 6.73634C9.50368 6.74038 9.39303 6.72162 9.28307 6.71437" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="special-card">
+                <a class="special-card__thumbnails" href="#">
+                  <picture>
+                    <source type='image/webp' media='(max-width: 575px)' srcset='img/specials/pic1-mob.webp'>
+                    <source media='(max-width: 575px)' srcset='img/specials/pic1-mob.png'>
+                    <source type='image/webp' srcset='img/specials/pic1-desk.webp'>
+                    <img width='620' height='350' src='img/specials/pic1-desk.png' alt='specials 1'>
+                  </picture>
+                </a>
+
+                <div class="special-card__info">
+                  <div class="special-card__top">
+                    <span class="special-card__tag">
+                      <svg width='12' height='12'>
+                        <use href='img/sprite/sprite.svg#tag'></use>
+                      </svg>
+                      <p>мистецтво</p>
+                    </span>
+
+                    <div class="special-card__details">
+                      <div class="special-card__views">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#eye'></use>
+                        </svg>
+                        <p>14</p>
+                      </div>
+
+                      <a class="special-card__author" href="#">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#avatar'></use>
+                        </svg>
+                        <p>Марія Шевченко</p>
+                      </a>
+
+                      <time class="special-card__pubtime" datetime="24.10.2025">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#time'></use>
+                        </svg>
+                        24.10.2024
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="special-card__box">
+                    <a class="special-card__title" href="#">Дослідження виявило,що предки могли походити з Китаю</a>
+
+                    <p class="special-card__descr">
+                      Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. 
+                    </p>
+                  </div>
+
+                  <a class="special-card__link" href="#">
+                    <p>Читати</p>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.34093 13.6023C6.71934 12.2291 9.19022 10.9222 11.4618 9.38464C12.1682 8.9067 15.016 7.48072 14.8985 7.61269" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.5382 11.2193C14.491 11.2909 15.0693 8.86664 15.1869 8.29631C15.2934 7.78 16.1054 7.31316 15.8418 6.85651C15.7837 6.75586 14.29 6.96378 14.1997 6.95509C12.6189 6.80143 11.2059 6.67386 9.61373 6.73634C9.50368 6.74038 9.39303 6.72162 9.28307 6.71437" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="special-card">
+                <a class="special-card__thumbnails" href="#">
+                  <picture>
+                    <source type='image/webp' media='(max-width: 575px)' srcset='img/specials/pic1-mob.webp'>
+                    <source media='(max-width: 575px)' srcset='img/specials/pic1-mob.png'>
+                    <source type='image/webp' srcset='img/specials/pic1-desk.webp'>
+                    <img width='620' height='350' src='img/specials/pic1-desk.png' alt='specials 1'>
+                  </picture>
+                </a>
+
+                <div class="special-card__info">
+                  <div class="special-card__top">
+                    <span class="special-card__tag">
+                      <svg width='12' height='12'>
+                        <use href='img/sprite/sprite.svg#tag'></use>
+                      </svg>
+                      <p>мистецтво</p>
+                    </span>
+
+                    <div class="special-card__details">
+                      <div class="special-card__views">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#eye'></use>
+                        </svg>
+                        <p>14</p>
+                      </div>
+
+                      <a class="special-card__author" href="#">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#avatar'></use>
+                        </svg>
+                        <p>Марія Шевченко</p>
+                      </a>
+
+                      <time class="special-card__pubtime" datetime="24.10.2025">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#time'></use>
+                        </svg>
+                        24.10.2024
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="special-card__box">
+                    <a class="special-card__title" href="#">Дослідження виявило,що предки могли походити з Китаю</a>
+
+                    <p class="special-card__descr">
+                      Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. 
+                    </p>
+                  </div>
+
+                  <a class="special-card__link" href="#">
+                    <p>Читати</p>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.34093 13.6023C6.71934 12.2291 9.19022 10.9222 11.4618 9.38464C12.1682 8.9067 15.016 7.48072 14.8985 7.61269" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.5382 11.2193C14.491 11.2909 15.0693 8.86664 15.1869 8.29631C15.2934 7.78 16.1054 7.31316 15.8418 6.85651C15.7837 6.75586 14.29 6.96378 14.1997 6.95509C12.6189 6.80143 11.2059 6.67386 9.61373 6.73634C9.50368 6.74038 9.39303 6.72162 9.28307 6.71437" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="special-card">
+                <a class="special-card__thumbnails" href="#">
+                  <picture>
+                    <source type='image/webp' media='(max-width: 575px)' srcset='img/specials/pic1-mob.webp'>
+                    <source media='(max-width: 575px)' srcset='img/specials/pic1-mob.png'>
+                    <source type='image/webp' srcset='img/specials/pic1-desk.webp'>
+                    <img width='620' height='350' src='img/specials/pic1-desk.png' alt='specials 1'>
+                  </picture>
+                </a>
+
+                <div class="special-card__info">
+                  <div class="special-card__top">
+                    <span class="special-card__tag">
+                      <svg width='12' height='12'>
+                        <use href='img/sprite/sprite.svg#tag'></use>
+                      </svg>
+                      <p>мистецтво</p>
+                    </span>
+
+                    <div class="special-card__details">
+                      <div class="special-card__views">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#eye'></use>
+                        </svg>
+                        <p>14</p>
+                      </div>
+
+                      <a class="special-card__author" href="#">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#avatar'></use>
+                        </svg>
+                        <p>Марія Шевченко</p>
+                      </a>
+
+                      <time class="special-card__pubtime" datetime="24.10.2025">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#time'></use>
+                        </svg>
+                        24.10.2024
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="special-card__box">
+                    <a class="special-card__title" href="#">Дослідження виявило,що предки могли походити з Китаю</a>
+
+                    <p class="special-card__descr">
+                      Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. 
+                    </p>
+                  </div>
+
+                  <a class="special-card__link" href="#">
+                    <p>Читати</p>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.34093 13.6023C6.71934 12.2291 9.19022 10.9222 11.4618 9.38464C12.1682 8.9067 15.016 7.48072 14.8985 7.61269" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.5382 11.2193C14.491 11.2909 15.0693 8.86664 15.1869 8.29631C15.2934 7.78 16.1054 7.31316 15.8418 6.85651C15.7837 6.75586 14.29 6.96378 14.1997 6.95509C12.6189 6.80143 11.2059 6.67386 9.61373 6.73634C9.50368 6.74038 9.39303 6.72162 9.28307 6.71437" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="special-card">
+                <a class="special-card__thumbnails" href="#">
+                  <picture>
+                    <source type='image/webp' media='(max-width: 575px)' srcset='img/specials/pic1-mob.webp'>
+                    <source media='(max-width: 575px)' srcset='img/specials/pic1-mob.png'>
+                    <source type='image/webp' srcset='img/specials/pic1-desk.webp'>
+                    <img width='620' height='350' src='img/specials/pic1-desk.png' alt='specials 1'>
+                  </picture>
+                </a>
+
+                <div class="special-card__info">
+                  <div class="special-card__top">
+                    <span class="special-card__tag">
+                      <svg width='12' height='12'>
+                        <use href='img/sprite/sprite.svg#tag'></use>
+                      </svg>
+                      <p>мистецтво</p>
+                    </span>
+
+                    <div class="special-card__details">
+                      <div class="special-card__views">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#eye'></use>
+                        </svg>
+                        <p>14</p>
+                      </div>
+
+                      <a class="special-card__author" href="#">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#avatar'></use>
+                        </svg>
+                        <p>Марія Шевченко</p>
+                      </a>
+
+                      <time class="special-card__pubtime" datetime="24.10.2025">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#time'></use>
+                        </svg>
+                        24.10.2024
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="special-card__box">
+                    <a class="special-card__title" href="#">Дослідження виявило,що предки могли походити з Китаю</a>
+
+                    <p class="special-card__descr">
+                      Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. 
+                    </p>
+                  </div>
+
+                  <a class="special-card__link" href="#">
+                    <p>Читати</p>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.34093 13.6023C6.71934 12.2291 9.19022 10.9222 11.4618 9.38464C12.1682 8.9067 15.016 7.48072 14.8985 7.61269" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.5382 11.2193C14.491 11.2909 15.0693 8.86664 15.1869 8.29631C15.2934 7.78 16.1054 7.31316 15.8418 6.85651C15.7837 6.75586 14.29 6.96378 14.1997 6.95509C12.6189 6.80143 11.2059 6.67386 9.61373 6.73634C9.50368 6.74038 9.39303 6.72162 9.28307 6.71437" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="special-card">
+                <a class="special-card__thumbnails" href="#">
+                  <picture>
+                    <source type='image/webp' media='(max-width: 575px)' srcset='img/specials/pic1-mob.webp'>
+                    <source media='(max-width: 575px)' srcset='img/specials/pic1-mob.png'>
+                    <source type='image/webp' srcset='img/specials/pic1-desk.webp'>
+                    <img width='620' height='350' src='img/specials/pic1-desk.png' alt='specials 1'>
+                  </picture>
+                </a>
+
+                <div class="special-card__info">
+                  <div class="special-card__top">
+                    <span class="special-card__tag">
+                      <svg width='12' height='12'>
+                        <use href='img/sprite/sprite.svg#tag'></use>
+                      </svg>
+                      <p>мистецтво</p>
+                    </span>
+
+                    <div class="special-card__details">
+                      <div class="special-card__views">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#eye'></use>
+                        </svg>
+                        <p>14</p>
+                      </div>
+
+                      <a class="special-card__author" href="#">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#avatar'></use>
+                        </svg>
+                        <p>Марія Шевченко</p>
+                      </a>
+
+                      <time class="special-card__pubtime" datetime="24.10.2025">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#time'></use>
+                        </svg>
+                        24.10.2024
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="special-card__box">
+                    <a class="special-card__title" href="#">Дослідження виявило,що предки могли походити з Китаю</a>
+
+                    <p class="special-card__descr">
+                      Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. 
+                    </p>
+                  </div>
+
+                  <a class="special-card__link" href="#">
+                    <p>Читати</p>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.34093 13.6023C6.71934 12.2291 9.19022 10.9222 11.4618 9.38464C12.1682 8.9067 15.016 7.48072 14.8985 7.61269" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.5382 11.2193C14.491 11.2909 15.0693 8.86664 15.1869 8.29631C15.2934 7.78 16.1054 7.31316 15.8418 6.85651C15.7837 6.75586 14.29 6.96378 14.1997 6.95509C12.6189 6.80143 11.2059 6.67386 9.61373 6.73634C9.50368 6.74038 9.39303 6.72162 9.28307 6.71437" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="special-card">
+                <a class="special-card__thumbnails" href="#">
+                  <picture>
+                    <source type='image/webp' media='(max-width: 575px)' srcset='img/specials/pic1-mob.webp'>
+                    <source media='(max-width: 575px)' srcset='img/specials/pic1-mob.png'>
+                    <source type='image/webp' srcset='img/specials/pic1-desk.webp'>
+                    <img width='620' height='350' src='img/specials/pic1-desk.png' alt='specials 1'>
+                  </picture>
+                </a>
+
+                <div class="special-card__info">
+                  <div class="special-card__top">
+                    <span class="special-card__tag">
+                      <svg width='12' height='12'>
+                        <use href='img/sprite/sprite.svg#tag'></use>
+                      </svg>
+                      <p>мистецтво</p>
+                    </span>
+
+                    <div class="special-card__details">
+                      <div class="special-card__views">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#eye'></use>
+                        </svg>
+                        <p>14</p>
+                      </div>
+
+                      <a class="special-card__author" href="#">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#avatar'></use>
+                        </svg>
+                        <p>Марія Шевченко</p>
+                      </a>
+
+                      <time class="special-card__pubtime" datetime="24.10.2025">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#time'></use>
+                        </svg>
+                        24.10.2024
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="special-card__box">
+                    <a class="special-card__title" href="#">Дослідження виявило,що предки могли походити з Китаю</a>
+
+                    <p class="special-card__descr">
+                      Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. 
+                    </p>
+                  </div>
+
+                  <a class="special-card__link" href="#">
+                    <p>Читати</p>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.34093 13.6023C6.71934 12.2291 9.19022 10.9222 11.4618 9.38464C12.1682 8.9067 15.016 7.48072 14.8985 7.61269" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.5382 11.2193C14.491 11.2909 15.0693 8.86664 15.1869 8.29631C15.2934 7.78 16.1054 7.31316 15.8418 6.85651C15.7837 6.75586 14.29 6.96378 14.1997 6.95509C12.6189 6.80143 11.2059 6.67386 9.61373 6.73634C9.50368 6.74038 9.39303 6.72162 9.28307 6.71437" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="special-card">
+                <a class="special-card__thumbnails" href="#">
+                  <picture>
+                    <source type='image/webp' media='(max-width: 575px)' srcset='img/specials/pic1-mob.webp'>
+                    <source media='(max-width: 575px)' srcset='img/specials/pic1-mob.png'>
+                    <source type='image/webp' srcset='img/specials/pic1-desk.webp'>
+                    <img width='620' height='350' src='img/specials/pic1-desk.png' alt='specials 1'>
+                  </picture>
+                </a>
+
+                <div class="special-card__info">
+                  <div class="special-card__top">
+                    <span class="special-card__tag">
+                      <svg width='12' height='12'>
+                        <use href='img/sprite/sprite.svg#tag'></use>
+                      </svg>
+                      <p>мистецтво</p>
+                    </span>
+
+                    <div class="special-card__details">
+                      <div class="special-card__views">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#eye'></use>
+                        </svg>
+                        <p>14</p>
+                      </div>
+
+                      <a class="special-card__author" href="#">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#avatar'></use>
+                        </svg>
+                        <p>Марія Шевченко</p>
+                      </a>
+
+                      <time class="special-card__pubtime" datetime="24.10.2025">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#time'></use>
+                        </svg>
+                        24.10.2024
+                      </time>
+                    </div>
+                  </div>
+
+                  <div class="special-card__box">
+                    <a class="special-card__title" href="#">Дослідження виявило,що предки могли походити з Китаю</a>
+
+                    <p class="special-card__descr">
+                      Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. Медичний канабіс – це жвава тема для обговорення не тільки в Україні, але і по всьому світу. 
+                    </p>
+                  </div>
+
+                  <a class="special-card__link" href="#">
+                    <p>Читати</p>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.34093 13.6023C6.71934 12.2291 9.19022 10.9222 11.4618 9.38464C12.1682 8.9067 15.016 7.48072 14.8985 7.61269" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.5382 11.2193C14.491 11.2909 15.0693 8.86664 15.1869 8.29631C15.2934 7.78 16.1054 7.31316 15.8418 6.85651C15.7837 6.75586 14.29 6.96378 14.1997 6.95509C12.6189 6.80143 11.2059 6.67386 9.61373 6.73634C9.50368 6.74038 9.39303 6.72162 9.28307 6.71437" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <button class="more-button">Показати ще</button>
+
+          <div class="pagination">
+            <a class="pagination__nav prev" href="#">
+              <svg width='40' height='40'>
+                <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </a>
+
+            <ul class="pagination__list">
+              <li class="pagination__list-item">
+                <a class="pagination__list-link active" href="#">1</a>
+              </li>
+              <li class="pagination__list-item">
+                <a class="pagination__list-link" href="#">2</a>
+              </li>
+              <li class="pagination__list-item">
+                <a class="pagination__list-link" href="#">3</a>
+              </li>
+              <li class="pagination__list-item">
+                <span class="pagination__list-link">...</span>
+              </li>
+              <li class="pagination__list-item">
+                <a class="pagination__list-link" href="#">13</a>
+              </li>
+            </ul>
+            
+            <a class="pagination__nav next" href="#">
+              <svg width='40' height='40'>
+                <use href='img/sprite/sprite.svg#arrow-right'></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+
+  <script defer src="js/main.js"></script>
+</body>
+
+
+</html>

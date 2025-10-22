@@ -11,7 +11,7 @@
   transform: translateX(-150%);
 
   @include  for-tablet {
-    padding: 40px 0px 60px 80px;
+    padding: 0px 0px 0px 80px;
   }
 
   @include tablet{
@@ -37,13 +37,17 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 40px;
+
+    @include  for-tablet {
+      overflow-y: auto;
+      padding: 40px 0 60px;
+    }
   }
 
   &__menu {
     display: flex;
     flex-direction: column;
     gap: clamp(12px, 5.208vw, 40px);
-    // overflow-y: auto;
 
     &::-webkit-scrollbar {
       width: 2px;
@@ -87,9 +91,7 @@
       &.label-new .menu-link::after {
         content: 'New';
         position: absolute;
-        left: -5px;
-        top: -10px;
-        transform: rotate(-15deg);
+        right: 0;
         padding: 4px;
         background-color: #C3E9C7;
         border-radius: 5px;
@@ -106,6 +108,11 @@
       display: flex;
       align-items: center;
       gap: 8px;
+
+      @include  tablet {
+        width: fit-content;
+        padding-right: 40px;
+      }
 
       svg {
         stroke: var(--cl-c);
@@ -144,7 +151,7 @@
 
           .menu-link {
             width: 100%;
-            padding: 12px 12px 12px 40px;
+            padding: 12px 52px 12px 40px;
             justify-content: flex-end;
             background-color: #fff;
             border-top: 1px solid #DCDEDA;
@@ -152,8 +159,8 @@
 
             &::after {
               left: initial !important;
-              top: 6px !important;
-              right: 103px !important;
+              top: initial !important;
+              right: 12px !important;
             }
           }
 
