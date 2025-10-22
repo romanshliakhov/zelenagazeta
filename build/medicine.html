@@ -1,8 +1,2814 @@
-<!DOCTYPE html><html lang="Ua"><head><script>(function () {
+<!DOCTYPE html>
+<html lang="Ua">
+<head>
+  <script>
+  (function () {
     try {
       const theme = localStorage.getItem('color-theme');
       if (theme) {
         document.documentElement.setAttribute('data-theme', theme);
       }
     } catch (e) {}
-  })();</script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="Description" content="Зелена Газета"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Зелена Газета</title><link rel="preload" href="fonts/e-Ukraine-Light.woff" as="font" crossorigin="anonymous"><link rel="preload" href="fonts/e-Ukraine-Regular.woff" as="font" crossorigin="anonymous"><link rel="preload" href="fonts/e-Ukraine-Medium.woff" as="font" crossorigin="anonymous"><link rel="preload" href="fonts/e-Ukraine-Bold.woff" as="font" crossorigin="anonymous"><link rel="stylesheet" href="css/style.css"></head><body><header class="header fixed-block"><div class="container"><div class="header__wrapp"><div class="header__top"><div class="header__top-left"><button class="burger"><svg class="burger__open" width="32" height="32"><use href="img/sprite/sprite.svg#burger-open"></use></svg> <svg class="burger__close" width="32" height="32"><use href="img/sprite/sprite.svg#burger-close"></use></svg></button><div class="theme-switcher"><label class="dark-theme"><input type="radio" name="color-theme" value="dark"> <span><svg class="dark-theme" width="32" height="32"><use href="img/sprite/sprite.svg#dark"></use></svg></span></label> <label class="light-theme"><input type="radio" name="color-theme" value="light" checked="checked"> <span><svg class="light-theme" width="32" height="32"><use href="img/sprite/sprite.svg#light"></use></svg></span></label></div></div><div class="header__controls"><div class="search"><div class="search__trigger"><svg width="32" height="32"><use href="img/sprite/sprite.svg#search"></use></svg></div></div><a class="header__link" href="/"><svg width="22" height="22"><use href="img/sprite/sprite.svg#gazeta"></use></svg> Зелена газета</a><div class="lang select" data-select><div class="select__header"><input type="hidden" class="select__input" id="lang" name="lang" value="1"> <span class="select__current" data-id="1">UA </span><svg width="24" height="24"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></div><div class="select__body"><ul class="select__list"><li class="select__option" data-id="1" data-type="option">UA</li><li class="select__option" data-id="2" data-type="option">EN</li><li class="select__option" data-id="3" data-type="option">RU</li></ul></div></div></div></div><div class="header__box"><a href="/" class="header__logo logo"><svg class="light-logo" width="1280" height="142"><use href="img/sprite/sprite.svg#full-medicine-dark"></use></svg> <svg class="dark-logo" width="1280" height="142"><use href="img/sprite/sprite.svg#full-medicine-white"></use></svg></a><div class="header__divider"><svg width="1280" height="8"><use href="img/sprite/sprite.svg#full-line"></use></svg></div></div><nav class="header__nav"><ul class="menu"><li class="menu-item menu-item-has-children"><a class="menu-link" href="#">Новини <svg width="16" height="16"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></a><ul class="sub-menu"><li><a href="#">Психологія відносин</a></li><li><a href="#">Секс</a></li><li><a href="#">Арт-терапія та мантричні практики</a></li><li><a href="#">Реальні історії людей</a></li><li><a href="#">Психологія змін</a></li><li><a href="#">Вікова психологія</a></li><li><a href="#">Психологія в роботі</a></li><li><a href="#">Робота зі стресом</a></li><li><a href="#">Самооцінка та прийняття себе</a></li><li><a href="#">Емоційний інтелект</a></li><li><a href="#">Ментальне здоров’я</a></li><li><a href="#">ПТСР та психологія травми</a></li></ul></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="#">Медичне <svg width="16" height="16"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></a><ul class="sub-menu"><li><a href="#">Психологія відносин</a></li><li><a href="#">Секс</a></li><li><a href="#">Арт-терапія та мантричні практики</a></li><li><a href="#">Реальні історії людей</a></li><li><a href="#">Психологія змін</a></li><li><a href="#">Вікова психологія</a></li><li><a href="#">Психологія в роботі</a></li><li><a href="#">Робота зі стресом</a></li><li><a href="#">Самооцінка та прийняття себе</a></li><li><a href="#">Емоційний інтелект</a></li><li><a href="#">Ментальне здоров’я</a></li><li><a href="#">ПТСР та психологія травми</a></li></ul></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="#">Життєве <svg width="16" height="16"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></a><ul class="sub-menu"><li><a href="#">Реальні історії людей</a></li><li><a href="#">Психологія змін</a></li><li><a href="#">Вікова психологія</a></li><li><a href="#">Психологія в роботі</a></li><li><a href="#">Робота зі стресом</a></li><li><a href="#">Самооцінка та прийняття себе</a></li><li><a href="#">Емоційний інтелект</a></li><li><a href="#">Ментальне здоров’я</a></li><li><a href="#">ПТСР та психологія травми</a></li></ul></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="#">Культурне <svg width="16" height="16"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></a><ul class="sub-menu"><li><a href="#">Психологія відносин</a></li><li><a href="#">Секс</a></li><li><a href="#">Арт-терапія та мантричні практики</a></li><li><a href="#">Реальні історії людей</a></li><li><a href="#">Психологія змін</a></li></ul></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="#">Законне <svg width="16" height="16"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></a><ul class="sub-menu"><li><a href="#">Психологія відносин</a></li><li><a href="#">Арт-терапія та мантричні практики</a></li><li><a href="#">Реальні історії людей</a></li><li><a href="#">Психологія змін</a></li><li><a href="#">Вікова психологія</a></li></ul></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="#">Експертне <svg width="16" height="16"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></a><ul class="sub-menu"><li><a href="#">Психологія відносин</a></li><li><a href="#">Секс</a></li><li><a href="#">Арт-терапія та мантричні практики</a></li><li><a href="#">Реальні історії людей</a></li><li><a href="#">Психологія змін</a></li><li><a href="#">Вікова психологія</a></li><li><a href="#">Психологія в роботі</a></li><li><a href="#">Робота зі стресом</a></li><li><a href="#">Самооцінка та прийняття себе</a></li><li><a href="#">Емоційний інтелект</a></li><li><a href="#">Ментальне здоров’я</a></li><li><a href="#">ПТСР та психологія травми</a></li></ul></li></ul></nav></div></div><div class="header__mobile"><div class="container"><div class="header__mobile-box"><a href="/" class="header__mobile-logo logo"><svg class="light-logo" width="225" height="28"><use href="img/sprite/sprite.svg#full-medicine-dark"></use></svg> <svg class="dark-logo" width="225" height="28"><use href="img/sprite/sprite.svg#full-medicine-white"></use></svg></a><div class="header__mobile-controls"><!-- replace for  --><div class="search"><div class="search__trigger"><svg width="32" height="32"><use href="img/sprite/sprite.svg#search"></use></svg></div></div><button class="burger"><svg class="burger__open" width="32" height="32"><use href="img/sprite/sprite.svg#burger-open"></use></svg> <svg class="burger__close" width="32" height="32"><use href="img/sprite/sprite.svg#burger-close"></use></svg></button></div></div></div><div class="header__mobile-divider"><svg width="768" height="5"><use href="img/sprite/sprite.svg#full-line"></use></svg></div></div></header><div class="mobile"><div class="mobile__box"><ul class="mobile__menu"><li><a href="#"><span><svg width="24" height="24"><use href="img/sprite/sprite.svg#list"></use></svg> Усі</span></a></li><li><a href="/listing-category.html"><span><svg width="24" height="24"><use href="img/sprite/sprite.svg#heart"></use></svg> Турбота про себе </span><svg width="24" height="24"><use href="img/sprite/sprite.svg#agile-right"></use></svg></a></li><li><a href="#"><span><svg width="24" height="24"><use href="img/sprite/sprite.svg#leaf"></use></svg> Психологія </span><svg width="24" height="24"><use href="img/sprite/sprite.svg#agile-right"></use></svg></a></li><li><a href="#"><span><svg width="24" height="24"><use href="img/sprite/sprite.svg#doctor"></use></svg> Здоров’я </span><svg width="24" height="24"><use href="img/sprite/sprite.svg#agile-right"></use></svg></a></li><li><a href="#"><span><svg width="24" height="24"><use href="img/sprite/sprite.svg#style"></use></svg> Стиль життя </span><svg width="24" height="24"><use href="img/sprite/sprite.svg#agile-right"></use></svg></a></li><li><a href="#"><span><svg width="24" height="24"><use href="img/sprite/sprite.svg#bulb"></use></svg> Зелена медицина </span><svg width="24" height="24"><use href="img/sprite/sprite.svg#agile-right"></use></svg></a></li><li><a href="#"><span><svg width="24" height="24"><use href="img/sprite/sprite.svg#news"></use></svg> Новини </span><svg width="24" height="24"><use href="img/sprite/sprite.svg#agile-right"></use></svg></a></li></ul><div class="mobile__menu-details"><a class="mobile__menu-link" href="/about.html"><span>Про нас </span><svg width="24" height="24"><use href="img/sprite/sprite.svg#agile-right"></use></svg> </a><a href="/" class="mobile__menu-page"><svg width="22" height="22"><use href="img/sprite/sprite.svg#gazeta"></use></svg> Зелена газета</a><div class="mobile__menu-bottom"><ul class="mobile__menu-lang"><li><a href="#" class="active">UA</a></li><li><a href="#">EN</a></li><li><a href="#">RU</a></li></ul><div class="theme-switcher"><label class="dark-theme"><input type="radio" name="color-theme" value="dark"> <span><svg class="dark-theme" width="32" height="32"><use href="img/sprite/sprite.svg#dark"></use></svg></span></label> <label class="light-theme"><input type="radio" name="color-theme" value="light" checked="checked"> <span><svg class="light-theme" width="32" height="32"><use href="img/sprite/sprite.svg#light"></use></svg></span></label></div></div></div></div></div><main><section class="hero-section"><div class="container"><ul class="hero-section__posts"><li><a class="article-card" href="#"><div class="article-card__thumbnails"><picture><source type="image/webp" srcset="img/articles/article1.webp"><img width="602" height="331" src="img/articles/article1.png" alt="article1"></picture></div><div class="article-card__info"><div class="article-card__top"><span class="article-card__tag"><svg width="12" height="12"><use href="img/sprite/sprite.svg#tag"></use></svg><p>культурне</p></span><div class="article-card__details"><div class="article-card__views"><svg width="16" height="16"><use href="img/sprite/sprite.svg#eye"></use></svg><p>14</p></div><div class="article-card__author"><svg width="16" height="16"><use href="img/sprite/sprite.svg#avatar"></use></svg><p>Марія Шевченко</p></div><time class="article-card__pubtime" datetime="24.10.2025"><svg width="16" height="16"><use href="img/sprite/sprite.svg#time"></use></svg> 24.10.2024</time></div></div><div class="article-card__bottom"><div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div><span><svg width="44" height="44"><use href="img/sprite/sprite.svg#arrow-agile"></use></svg></span></div></div></a></li><li><a class="article-card" href="#"><div class="article-card__info"><div class="article-card__top"><span class="article-card__tag"><svg width="12" height="12"><use href="img/sprite/sprite.svg#tag"></use></svg><p>культурне</p></span><div class="article-card__details"><div class="article-card__views"><svg width="16" height="16"><use href="img/sprite/sprite.svg#eye"></use></svg><p>14</p></div><div class="article-card__author"><svg width="16" height="16"><use href="img/sprite/sprite.svg#avatar"></use></svg><p>Марія Шевченко</p></div><time class="article-card__pubtime" datetime="24.10.2025"><svg width="16" height="16"><use href="img/sprite/sprite.svg#time"></use></svg> 24.10.2024</time></div></div><div class="article-card__bottom"><div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div><span><svg width="44" height="44"><use href="img/sprite/sprite.svg#arrow-agile"></use></svg></span></div></div></a></li><li><a class="article-card" href="#"><div class="article-card__info"><div class="article-card__top"><span class="article-card__tag"><svg width="12" height="12"><use href="img/sprite/sprite.svg#tag"></use></svg><p>культурне</p></span><div class="article-card__details"><div class="article-card__views"><svg width="16" height="16"><use href="img/sprite/sprite.svg#eye"></use></svg><p>14</p></div><div class="article-card__author"><svg width="16" height="16"><use href="img/sprite/sprite.svg#avatar"></use></svg><p>Марія Шевченко</p></div><time class="article-card__pubtime" datetime="24.10.2025"><svg width="16" height="16"><use href="img/sprite/sprite.svg#time"></use></svg> 24.10.2024</time></div></div><div class="article-card__bottom"><div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div><span><svg width="44" height="44"><use href="img/sprite/sprite.svg#arrow-agile"></use></svg></span></div></div></a></li><li><a class="article-card" href="#"><div class="article-card__info"><div class="article-card__top"><span class="article-card__tag"><svg width="12" height="12"><use href="img/sprite/sprite.svg#tag"></use></svg><p>культурне</p></span><div class="article-card__details"><div class="article-card__views"><svg width="16" height="16"><use href="img/sprite/sprite.svg#eye"></use></svg><p>14</p></div><div class="article-card__author"><svg width="16" height="16"><use href="img/sprite/sprite.svg#avatar"></use></svg><p>Марія Шевченко</p></div><time class="article-card__pubtime" datetime="24.10.2025"><svg width="16" height="16"><use href="img/sprite/sprite.svg#time"></use></svg> 24.10.2024</time></div></div><div class="article-card__bottom"><div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div><span><svg width="44" height="44"><use href="img/sprite/sprite.svg#arrow-agile"></use></svg></span></div></div></a></li></ul></div></section><section class="tags-section"><div class="container"><div class="tags-section__wrapp"><h2 class="tags-section__title">Дізнайся більше про</h2><ul class="tags-section__items"><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>тривожність</p></a></li><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>дослідження</p></a></li><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>лікування птср</p></a></li><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>сдвг</p></a></li><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>рецепти</p></a></li><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>особиста думка</p></a></li><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>історія</p></a></li><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>мистецтво</p></a></li><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>подорожі</p></a></li><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>новини</p></a></li><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>гаджети</p></a></li><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>герої</p></a></li><li><span class="tag tag--more">...</span></li></ul></div></div></section><section class="populars-section"><div class="container"><div class="populars-section__wrapp"><div class="populars-section__top"><h2 class="populars-section__title">Популярні статті</h2><a class="populars-section__link" href="#">Дізнатись більше <svg width="24" height="24"><use href="img/sprite/sprite.svg#arrow-right"></use></svg></a></div><ul class="populars-section__items"><li><a class="article-card" href="#"><div class="article-card__thumbnails"><picture><source type="image/webp" srcset="img/articles/article2.webp"><img width="635" height="339" src="img/articles/article2.png" alt="article1"></picture></div><div class="article-card__info"><div class="article-card__top"><span class="article-card__tag"><svg width="12" height="12"><use href="img/sprite/sprite.svg#tag"></use></svg><p>культурне</p></span><div class="article-card__details"><div class="article-card__views"><svg width="16" height="16"><use href="img/sprite/sprite.svg#eye"></use></svg><p>14</p></div><div class="article-card__author"><svg width="16" height="16"><use href="img/sprite/sprite.svg#avatar"></use></svg><p>Марія Шевченко</p></div><time class="article-card__pubtime" datetime="24.10.2025"><svg width="16" height="16"><use href="img/sprite/sprite.svg#time"></use></svg> 24.10.2024</time></div></div><div class="article-card__bottom"><div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div><span><svg width="44" height="44"><use href="img/sprite/sprite.svg#arrow-agile"></use></svg></span></div></div></a></li><li><a class="article-card" href="#"><div class="article-card__thumbnails"><picture><source type="image/webp" srcset="img/articles/article3.webp"><img width="635" height="339" src="img/articles/article3.png" alt="article1"></picture></div><div class="article-card__info"><div class="article-card__top"><span class="article-card__tag"><svg width="12" height="12"><use href="img/sprite/sprite.svg#tag"></use></svg><p>культурне</p></span><div class="article-card__details"><div class="article-card__views"><svg width="16" height="16"><use href="img/sprite/sprite.svg#eye"></use></svg><p>14</p></div><div class="article-card__author"><svg width="16" height="16"><use href="img/sprite/sprite.svg#avatar"></use></svg><p>Марія Шевченко</p></div><time class="article-card__pubtime" datetime="24.10.2025"><svg width="16" height="16"><use href="img/sprite/sprite.svg#time"></use></svg> 24.10.2024</time></div></div><div class="article-card__bottom"><div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div><span><svg width="44" height="44"><use href="img/sprite/sprite.svg#arrow-agile"></use></svg></span></div></div></a></li><li><a class="article-card" href="#"><div class="article-card__thumbnails"><picture><source type="image/webp" srcset="img/articles/article4.webp"><img width="421" height="231" src="img/articles/article4.png" alt="article1"></picture></div><div class="article-card__info"><div class="article-card__top"><span class="article-card__tag"><svg width="12" height="12"><use href="img/sprite/sprite.svg#tag"></use></svg><p>культурне</p></span><div class="article-card__details"><div class="article-card__views"><svg width="16" height="16"><use href="img/sprite/sprite.svg#eye"></use></svg><p>14</p></div><div class="article-card__author"><svg width="16" height="16"><use href="img/sprite/sprite.svg#avatar"></use></svg><p>Марія Шевченко</p></div><time class="article-card__pubtime" datetime="24.10.2025"><svg width="16" height="16"><use href="img/sprite/sprite.svg#time"></use></svg> 24.10.2024</time></div></div><div class="article-card__bottom"><div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div><span><svg width="44" height="44"><use href="img/sprite/sprite.svg#arrow-agile"></use></svg></span></div></div></a></li><li><a class="article-card" href="#"><div class="article-card__thumbnails"><picture><source type="image/webp" srcset="img/articles/article5.webp"><img width="421" height="231" src="img/articles/article5.png" alt="article1"></picture></div><div class="article-card__info"><div class="article-card__top"><span class="article-card__tag"><svg width="12" height="12"><use href="img/sprite/sprite.svg#tag"></use></svg><p>культурне</p></span><div class="article-card__details"><div class="article-card__views"><svg width="16" height="16"><use href="img/sprite/sprite.svg#eye"></use></svg><p>14</p></div><div class="article-card__author"><svg width="16" height="16"><use href="img/sprite/sprite.svg#avatar"></use></svg><p>Марія Шевченко</p></div><time class="article-card__pubtime" datetime="24.10.2025"><svg width="16" height="16"><use href="img/sprite/sprite.svg#time"></use></svg> 24.10.2024</time></div></div><div class="article-card__bottom"><div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div><span><svg width="44" height="44"><use href="img/sprite/sprite.svg#arrow-agile"></use></svg></span></div></div></a></li><li><a class="article-card" href="#"><div class="article-card__thumbnails"><picture><source type="image/webp" srcset="img/articles/paper.webp"><img width="421" height="231" src="img/articles/paper.png" alt="article1"></picture></div><div class="article-card__info"><div class="article-card__top"><span class="article-card__tag"><svg width="12" height="12"><use href="img/sprite/sprite.svg#tag"></use></svg><p>культурне</p></span><div class="article-card__details"><div class="article-card__views"><svg width="16" height="16"><use href="img/sprite/sprite.svg#eye"></use></svg><p>14</p></div><div class="article-card__author"><svg width="16" height="16"><use href="img/sprite/sprite.svg#avatar"></use></svg><p>Марія Шевченко</p></div><time class="article-card__pubtime" datetime="24.10.2025"><svg width="16" height="16"><use href="img/sprite/sprite.svg#time"></use></svg> 24.10.2024</time></div></div><div class="article-card__bottom"><div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div><span><svg width="44" height="44"><use href="img/sprite/sprite.svg#arrow-agile"></use></svg></span><div class="article-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</div></div></div></a></li></ul></div></div></section><section class="discovery-section"><div class="container"><div class="discovery-section__wrapp"><h2 class="discovery-section__title">А ви знали що?</h2><div class="discovery-section__slider"><div class="discovery-section__slider-bg"><svg class="pink-decor-desk" width="1217" height="248"><use href="img/sprite/sprite.svg#pink-decor"></use></svg></div><div class="discovery-section__slider-box"><div class="swiper-container"><ul class="swiper-wrapper"><li class="swiper-slide"><div class="discovery-card"><div class="discovery-card__text">Нове дослідження показує, що CBD-супозиторії можуть зменшити біль на 55%!</div><a class="discovery-card__link" href="#">Дізнатись більше <svg width="24" height="24"><use href="img/sprite/sprite.svg#arrow-right"></use></svg></a></div></li><li class="swiper-slide"><div class="discovery-card"><div class="discovery-card__text">Нове дослідження показує, що CBD-супозиторії можуть зменшити біль на 55%!</div><a class="discovery-card__link" href="#">Дізнатись більше <svg width="24" height="24"><use href="img/sprite/sprite.svg#arrow-right"></use></svg></a></div></li><li class="swiper-slide"><div class="discovery-card"><div class="discovery-card__text">Нове дослідження показує, що CBD-супозиторії можуть зменшити біль на 55%!</div><a class="discovery-card__link" href="#">Дізнатись більше <svg width="24" height="24"><use href="img/sprite/sprite.svg#arrow-right"></use></svg></a></div></li></ul></div></div><div class="discovery-section__slider-controls"><button class="swiper-button prev"><svg width="40" height="40"><use href="img/sprite/sprite.svg#arrow-left"></use></svg></button><div class="swiper-pagination"></div><button class="swiper-button next"><svg width="40" height="40"><use href="img/sprite/sprite.svg#arrow-right"></use></svg></button></div></div></div></div></section><section class="identity-section"><div class="identity-section__wrapp"><div class="identity-section__white"><picture><source type="image/webp" srcset="img/index/identity-white.webp"><img width="1440" height="485" src="img/index/identity-white.png" alt="Хто ми"></picture></div><div class="identity-section__dark"><picture><source type="image/webp" srcset="img/index/identity-dark.webp"><img width="1440" height="485" src="img/index/identity-dark.png" alt="Хто ми"></picture></div><div class="container"><div class="identity-section__box"><div class="identity-section__image"><svg width="365" height="323"><use href="img/sprite/sprite.svg#paper-logo"></use></svg></div><div class="identity-section__info"><h2 class="identity-section__title h2">Хто ми?</h2><p class="identity-section__text">Зелена газета — українське медіа про велнес і лайфстайл, що надихає на здорове й усвідомлене життя. Ми ділимося сучасними підходами до саморозвитку, фізичного та ментального здоров’я, допомагаючи вам знайти баланс і гармонію.</p><a class="identity-section__link" href="/about.html">Дізнатись більше <svg width="24" height="24"><use href="img/sprite/sprite.svg#arrow-right"></use></svg></a></div></div></div></div></section><section class="videos-section"><div class="container"><div class="videos-section__wrapp"><div class="videos-section__top"><h2 class="videos-section__title">Відео</h2><div class="videos-section__controls"><button class="swiper-button prev"><svg width="40" height="40"><use href="img/sprite/sprite.svg#arrow-left"></use></svg></button><div class="swiper-pagination"></div><button class="swiper-button next"><svg width="40" height="40"><use href="img/sprite/sprite.svg#arrow-right"></use></svg></button></div></div><div class="videos-section__slider"><div class="swiper-container"><ul class="videos-section__items swiper-wrapper"><li class="swiper-slide"><a class="video-card" data-fancybox="videos" href="https://www.youtube.com/watch?v=iFrxvKPNOF8"><div class="video-card__poster"><picture><source type="image/webp" srcset="img/videos/poster1.webp"><img width="421" height="231" src="img/videos/poster1.png" alt="video 1"></picture><span class="video-card__btn"><svg width="40" height="40"><use href="img/sprite/sprite.svg#video"></use></svg></span></div><div class="video-card__info"><div class="video-card__title">Дослідження виявило,що предки могли походити з Китаю</div><svg width="44" height="44"><use href="img/sprite/sprite.svg#arrow-agile"></use></svg></div></a></li><li class="swiper-slide"><a class="video-card" data-fancybox="videos" href="https://www.youtube.com/watch?v=iFrxvKPNOF8"><div class="video-card__poster"><picture><source type="image/webp" srcset="img/videos/poster2.webp"><img width="421" height="231" src="img/videos/poster2.png" alt="video 2"></picture><span class="video-card__btn"><svg width="40" height="40"><use href="img/sprite/sprite.svg#video"></use></svg></span></div><div class="video-card__info"><div class="video-card__title">Дослідження виявило,що предки могли походити з Китаю</div><svg width="44" height="44"><use href="img/sprite/sprite.svg#arrow-agile"></use></svg></div></a></li><li class="swiper-slide"><a class="video-card" data-fancybox="videos" href="https://www.youtube.com/watch?v=iFrxvKPNOF8"><div class="video-card__poster"><picture><source type="image/webp" srcset="img/videos/poster3.webp"><img width="421" height="231" src="img/videos/poster3.png" alt="video 3"></picture><span class="video-card__btn"><svg width="40" height="40"><use href="img/sprite/sprite.svg#video"></use></svg></span></div><div class="video-card__info"><div class="video-card__title">Дослідження виявило,що предки могли походити з Китаю</div><svg width="44" height="44"><use href="img/sprite/sprite.svg#arrow-agile"></use></svg></div></a></li><li class="swiper-slide"><a class="video-card" data-fancybox="videos" href="https://www.youtube.com/watch?v=iFrxvKPNOF8"><div class="video-card__poster"><picture><source type="image/webp" srcset="img/videos/poster2.webp"><img width="421" height="231" src="img/videos/poster2.png" alt="video 2"></picture><span class="video-card__btn"><svg width="40" height="40"><use href="img/sprite/sprite.svg#video"></use></svg></span></div><div class="video-card__info"><div class="video-card__title">Дослідження виявило,що предки могли походити з Китаю</div><svg width="44" height="44"><use href="img/sprite/sprite.svg#arrow-agile"></use></svg></div></a></li><li class="swiper-slide"><a class="video-card" data-fancybox="videos" href="https://www.youtube.com/watch?v=iFrxvKPNOF8"><div class="video-card__poster"><picture><source type="image/webp" srcset="img/videos/poster3.webp"><img width="421" height="231" src="img/videos/poster3.png" alt="video 3"></picture><span class="video-card__btn"><svg width="40" height="40"><use href="img/sprite/sprite.svg#video"></use></svg></span></div><div class="video-card__info"><div class="video-card__title">Дослідження виявило,що предки могли походити з Китаю</div><svg width="44" height="44"><use href="img/sprite/sprite.svg#arrow-agile"></use></svg></div></a></li><li class="swiper-slide"><a class="video-card" data-fancybox="videos" href="https://www.youtube.com/watch?v=iFrxvKPNOF8"><div class="video-card__poster"><picture><source type="image/webp" srcset="img/videos/poster2.webp"><img width="421" height="231" src="img/videos/poster2.png" alt="video 2"></picture><span class="video-card__btn"><svg width="40" height="40"><use href="img/sprite/sprite.svg#video"></use></svg></span></div><div class="video-card__info"><div class="video-card__title">Дослідження виявило,що предки могли походити з Китаю</div><svg width="44" height="44"><use href="img/sprite/sprite.svg#arrow-agile"></use></svg></div></a></li></ul></div></div></div></div></section><section class="redaction-section"><div class="container"><div class="redaction-section__post"><div class="redaction-section__post-info"><div class="redaction-section__post-top"><span class="redaction-section__post-heading h2">Вибір редакції</span><div class="redaction-section__post-details"><div class="redaction-section__post-views"><svg width="16" height="16"><use href="img/sprite/sprite.svg#eye"></use></svg><p>14</p></div><div class="redaction-section__post-author"><svg width="16" height="16"><use href="img/sprite/sprite.svg#avatar"></use></svg><p>Марія Шевченко</p></div><time class="redaction-section__post-pubtime" datetime="24.10.2025"><svg width="16" height="16"><use href="img/sprite/sprite.svg#time"></use></svg> 24.10.2024</time></div></div><div class="redaction-section__post-box"><div class="redaction-section__post-controls"><span class="redaction-section__post-tag"><svg width="12" height="12"><use href="img/sprite/sprite.svg#tag"></use></svg><p>культурне</p></span><span class="redaction-section__post-link"><svg width="40" height="40"><use href="img/sprite/sprite.svg#arrow-agile"></use></svg></span></div><div class="redaction-section__post-title">Менший ризик аритмії: як канабіс підтримує здоров'я серця</div><p class="redaction-section__post-excerpt">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p></div></div><div class="redaction-section__post-image"><picture><source type="image/webp" srcset="img/articles/redaction.webp"><img width="602" height="331" src="img/articles/redaction.png" alt="Вибір редакції"></picture></div></div></div></section><section class="category-section"><div class="container"><div class="category-section__wrapp"><h2 class="category-section__title"><svg width="40" height="40"><use href="img/sprite/sprite.svg#tag"></use></svg><p>здоровʼя</p></h2><div class="category-section__slider"><div class="swiper-container"><ul class="category-section__items swiper-wrapper"><li class="swiper-slide"><a class="article-card" href="#"><div class="article-card__thumbnails"><picture><source type="image/webp" srcset="img/articles/article1.webp"><img width="602" height="331" src="img/articles/article1.png" alt="article1"></picture></div><div class="article-card__info"><div class="article-card__top"><span class="article-card__tag"><svg width="12" height="12"><use href="img/sprite/sprite.svg#tag"></use></svg><p>культурне</p></span><div class="article-card__details"><div class="article-card__views"><svg width="16" height="16"><use href="img/sprite/sprite.svg#eye"></use></svg><p>14</p></div><div class="article-card__author"><svg width="16" height="16"><use href="img/sprite/sprite.svg#avatar"></use></svg><p>Марія Шевченко</p></div><time class="article-card__pubtime" datetime="24.10.2025"><svg width="16" height="16"><use href="img/sprite/sprite.svg#time"></use></svg> 24.10.2024</time></div></div><div class="article-card__bottom"><div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div><span><svg width="44" height="44"><use href="img/sprite/sprite.svg#arrow-agile"></use></svg></span></div></div></a></li><li class="swiper-slide"><a class="article-card" href="#"><div class="article-card__thumbnails"><picture><source type="image/webp" srcset="img/articles/article1.webp"><img width="602" height="331" src="img/articles/article1.png" alt="article1"></picture></div><div class="article-card__info"><div class="article-card__top"><span class="article-card__tag"><svg width="12" height="12"><use href="img/sprite/sprite.svg#tag"></use></svg><p>культурне</p></span><div class="article-card__details"><div class="article-card__views"><svg width="16" height="16"><use href="img/sprite/sprite.svg#eye"></use></svg><p>14</p></div><div class="article-card__author"><svg width="16" height="16"><use href="img/sprite/sprite.svg#avatar"></use></svg><p>Марія Шевченко</p></div><time class="article-card__pubtime" datetime="24.10.2025"><svg width="16" height="16"><use href="img/sprite/sprite.svg#time"></use></svg> 24.10.2024</time></div></div><div class="article-card__bottom"><div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div><span><svg width="44" height="44"><use href="img/sprite/sprite.svg#arrow-agile"></use></svg></span></div></div></a></li><li class="swiper-slide"><a class="article-card" href="#"><div class="article-card__thumbnails"><picture><source type="image/webp" srcset="img/articles/article1.webp"><img width="602" height="331" src="img/articles/article1.png" alt="article1"></picture></div><div class="article-card__info"><div class="article-card__top"><span class="article-card__tag"><svg width="12" height="12"><use href="img/sprite/sprite.svg#tag"></use></svg><p>культурне</p></span><div class="article-card__details"><div class="article-card__views"><svg width="16" height="16"><use href="img/sprite/sprite.svg#eye"></use></svg><p>14</p></div><div class="article-card__author"><svg width="16" height="16"><use href="img/sprite/sprite.svg#avatar"></use></svg><p>Марія Шевченко</p></div><time class="article-card__pubtime" datetime="24.10.2025"><svg width="16" height="16"><use href="img/sprite/sprite.svg#time"></use></svg> 24.10.2024</time></div></div><div class="article-card__bottom"><div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div><span><svg width="44" height="44"><use href="img/sprite/sprite.svg#arrow-agile"></use></svg></span></div></div></a></li><li class="swiper-slide"><a class="article-card" href="#"><div class="article-card__thumbnails"><picture><source type="image/webp" srcset="img/articles/article1.webp"><img width="602" height="331" src="img/articles/article1.png" alt="article1"></picture></div><div class="article-card__info"><div class="article-card__top"><span class="article-card__tag"><svg width="12" height="12"><use href="img/sprite/sprite.svg#tag"></use></svg><p>культурне</p></span><div class="article-card__details"><div class="article-card__views"><svg width="16" height="16"><use href="img/sprite/sprite.svg#eye"></use></svg><p>14</p></div><div class="article-card__author"><svg width="16" height="16"><use href="img/sprite/sprite.svg#avatar"></use></svg><p>Марія Шевченко</p></div><time class="article-card__pubtime" datetime="24.10.2025"><svg width="16" height="16"><use href="img/sprite/sprite.svg#time"></use></svg> 24.10.2024</time></div></div><div class="article-card__bottom"><div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div><span><svg width="44" height="44"><use href="img/sprite/sprite.svg#arrow-agile"></use></svg></span></div></div></a></li><li class="swiper-slide"><a class="article-card" href="#"><div class="article-card__thumbnails"><picture><source type="image/webp" srcset="img/articles/article1.webp"><img width="602" height="331" src="img/articles/article1.png" alt="article1"></picture></div><div class="article-card__info"><div class="article-card__top"><span class="article-card__tag"><svg width="12" height="12"><use href="img/sprite/sprite.svg#tag"></use></svg><p>культурне</p></span><div class="article-card__details"><div class="article-card__views"><svg width="16" height="16"><use href="img/sprite/sprite.svg#eye"></use></svg><p>14</p></div><div class="article-card__author"><svg width="16" height="16"><use href="img/sprite/sprite.svg#avatar"></use></svg><p>Марія Шевченко</p></div><time class="article-card__pubtime" datetime="24.10.2025"><svg width="16" height="16"><use href="img/sprite/sprite.svg#time"></use></svg> 24.10.2024</time></div></div><div class="article-card__bottom"><div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div><span><svg width="44" height="44"><use href="img/sprite/sprite.svg#arrow-agile"></use></svg></span></div></div></a></li><li class="swiper-slide"><a class="article-card" href="#"><div class="article-card__thumbnails"><picture><source type="image/webp" srcset="img/articles/article1.webp"><img width="602" height="331" src="img/articles/article1.png" alt="article1"></picture></div><div class="article-card__info"><div class="article-card__top"><span class="article-card__tag"><svg width="12" height="12"><use href="img/sprite/sprite.svg#tag"></use></svg><p>культурне</p></span><div class="article-card__details"><div class="article-card__views"><svg width="16" height="16"><use href="img/sprite/sprite.svg#eye"></use></svg><p>14</p></div><div class="article-card__author"><svg width="16" height="16"><use href="img/sprite/sprite.svg#avatar"></use></svg><p>Марія Шевченко</p></div><time class="article-card__pubtime" datetime="24.10.2025"><svg width="16" height="16"><use href="img/sprite/sprite.svg#time"></use></svg> 24.10.2024</time></div></div><div class="article-card__bottom"><div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div><span><svg width="44" height="44"><use href="img/sprite/sprite.svg#arrow-agile"></use></svg></span></div></div></a></li></ul></div></div><div class="category-section__controls"><button class="swiper-button prev"><svg width="40" height="40"><use href="img/sprite/sprite.svg#arrow-left"></use></svg></button><div class="swiper-pagination"></div><button class="swiper-button next"><svg width="40" height="40"><use href="img/sprite/sprite.svg#arrow-right"></use></svg></button></div></div></div></section><section class="subscribe-section"><div class="container"><div class="subscribe-section__wrapp"><div class="subscribe-section__bg"><svg class="pink-decor-desk" width="1217" height="248"><use href="img/sprite/sprite.svg#pink-decor"></use></svg></div><form class="form"><div class="form__top"><div class="form__title h2">Підписуйся на новини!</div><p class="form__text">Отримуй корисне і цікаве!</p></div><div class="form__box subscribe"><label class="form__label"><input class="form__input" type="email" name="email" placeholder="Введіть e-mail"></label> <button class="form__submit">Підписатись</button></div></form></div></div></section><section class="insta-section"><div class="container"><div class="insta-section__wrapp"><div class="insta-section__top"><h2 class="insta-section__title">Останні публікації в Інстаграм</h2><a class="insta-section__link" href="#">Перейти в Інстаграм <svg width="22" height="22"><use href="img/sprite/sprite.svg#inst-icon"></use></svg></a></div><div class="insta-section__box"><div class="insta-section__left"><div class="insta-section__left-first"><picture><source type="image/webp" srcset="img/instagram/inst1.webp"><img width="461" height="562" src="img/instagram/inst1.png" alt=""></picture></div><div class="insta-section__left-second"><picture><source type="image/webp" srcset="img/instagram/inst3.webp"><img width="220" height="293" src="img/instagram/inst3.png" alt=""></picture></div></div><div class="insta-section__mid"><div class="insta-section__center"><div class="insta-section__center-first"><picture><source type="image/webp" srcset="img/instagram/inst2.webp"><img width="321" height="428" src="img/instagram/inst2.png" alt=""></picture></div><div class="insta-section__center-second"><picture><source type="image/webp" srcset="img/instagram/inst4.webp"><img width="321" height="428" src="img/instagram/inst4.png" alt=""></picture></div></div><div class="insta-section__right"><picture><source type="image/webp" srcset="img/instagram/inst5.webp"><img width="506" height="674" src="img/instagram/inst5.png" alt=""></picture></div></div></div></div></div></section><section class="text-section"><div class="container"><div class="text-section__wrapp"><div class="text-section__box"><h3>Зелена газета - новини для гармонії й духовного балансу</h3><p>Ласкаво просимо до Зелена газета, тут ви знайдете останні новини, тренди та практичні поради щодо медитації, здоров'я та велнесу. Наша мета — допомогти вам набути гармонію, зменшити стрес та підвищити якість життя.</p><p>Поглибте своє розуміння тиші та спокою</p><p>Медитація — потужний інструмент для встановлення внутрішнього балансу та психологічного здоров'я. Наші статті та провідні експерти покажуть вам, як почати та удосконалити свою практику.</p><p>Оптимізуйте своє здоров'я</p><p>Здоров'я — це більше, ніж відсутність хвороб. Це спосіб життя. Слідкуйте за останніми дослідженнями, рекомендаціями лікарів та способами покращення загального стану організму.</p><p>Все про велнес та стиль життя</p><p>Велнес поглядає на здоров'я комплексно. Ми ділимося простими та ефективними способами створити звички, що підвищують життєву енергію та гармонію.</p></div></div></div></section></main><footer class="footer"><div class="container"><div class="footer__wrapp"><div class="footer__divider"><svg width="1280" height="8"><use href="img/sprite/sprite.svg#full-line"></use></svg></div><div class="footer__socials"><span class="footer__socials-heading">Слідкуй за нами також</span><ul class="socials"><li><a href="#"><svg width="48" height="48"><use href="img/sprite/sprite.svg#telegram"></use></svg></a></li><li><a href="#"><svg width="48" height="48"><use href="img/sprite/sprite.svg#instagram"></use></svg></a></li><li><a href="#"><svg width="48" height="48"><use href="img/sprite/sprite.svg#youtube"></use></svg></a></li><li><a href="#"><svg width="48" height="48"><use href="img/sprite/sprite.svg#facebook"></use></svg></a></li></ul></div><div class="footer__divider"><svg width="1280" height="8"><use href="img/sprite/sprite.svg#full-line"></use></svg></div><a href="/" class="footer__logo logo"><svg class="light-logo" width="1280" height="142"><use href="img/sprite/sprite.svg#full-medicine-dark"></use></svg> <svg class="dark-logo" width="1280" height="142"><use href="img/sprite/sprite.svg#full-medicine-white"></use></svg></a><div class="footer__navs" data-default="1" data-single="true" data-accordion-init><div class="footer__navs-left"><div class="footer__nav"><button data-id="1">Турбота про себе <svg width="24" height="24"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></button><ul data-content="1"><li><a href="#">Краса</a></li><li><a href="#">Фітнес</a></li><li><a href="#">Схуднення та дієти</a></li><li><a href="#">Емоційна стабільність</a></li><li><a href="#">Саморозвиток</a></li></ul></div><div class="footer__nav"><button data-id="2">Новини <svg width="24" height="24"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></button><ul data-content="2"><li><a href="#">Дослідження</a></li><li><a href="#">Новини з експертами</a></li><li><a href="#">Новини пов’язані з темами проєкту</a></li><li><a href="#">Новини світу каннабісу</a></li><li><a href="#">Тренди</a></li></ul></div></div><div class="footer__nav"><button data-id="3">Психологія <svg width="24" height="24"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></button><ul data-content="3"><li><a href="#">Психологія відносин</a></li><li><a href="#">Секс</a></li><li><a href="#">Арт-терапія та мантричні практики</a></li><li><a href="#">Реальні історії людей</a></li><li><a href="#">Психологія змін</a></li><li><a href="#">Вікова психологія</a></li><li><a href="#">Психологія в роботі</a></li><li><a href="#">Робота зі стресом</a></li><li><a href="#">Самооцінка та прийняття себе</a></li><li><a href="#">Емоційний інтелект</a></li><li><a href="#">Ментальне здоров’я</a></li><li><a href="#">ПТСР та психологія травми</a></li></ul></div><div class="footer__nav"><button data-id="4">Здоров’я <svg width="24" height="24"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></button><ul data-content="4"><li><a href="#">Сезонні хвороби та їх лікування</a></li><li><a href="#">Психоделіки</a></li><li><a href="#">Словник основних Хвороб</a></li><li><a href="#">Медичний канабіс, CBD</a></li><li><a href="#">Ментальне здоров’я</a></li><li><a href="#">Жіноче здоров’я</a></li><li><a href="#">Правильне харчування</a></li><li><a href="#">Чоловіче здоров’я</a></li><li><a href="#">Схуднення</a></li><li><a href="#">Пластична хірургія</a></li><li><a href="#">Альтернативна медицина</a></li></ul></div><div class="footer__nav"><button data-id="5">Стиль життя <svg width="24" height="24"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></button><ul data-content="5"><li><a href="#">Свята та традиції</a></li><li><a href="#">Технології та стиль життя</a></li><li><a href="#">Надихаючі історії</a></li><li><a href="#">Подорожі</a></li><li><a href="#">Культура і натхнення</a></li><li><a href="#">Підприємство та лідерство</a></li><li><a href="#">Лайф-ворк баланс</a></li></ul></div><div class="footer__nav"><button data-id="6">Зелена медицина <svg width="24" height="24"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></button><ul data-content="6"><li><a href="#">Дослідження</a></li><li><a href="#">Історії успіху людей із галузі</a></li><li><a href="#">Аналітика</a></li><li><a href="#">Законодавчі зміни</a></li><li><a href="#">Медичний лайфстайл</a></li><li><a href="#">Маркетинг та бізнес</a></li><li><a href="#">Про використання психоделіків в інших країнах</a></li><li><a href="#">Новини фармації та медицини</a></li><li><a href="#">Медичний канабіс</a></li></ul></div></div><div class="footer__divider"><svg width="1280" height="8"><use href="img/sprite/sprite.svg#full-line"></use></svg></div><div class="footer__bottom"><ul class="footer__info"><li><a href="/privacy-policy.html">Політика приватності</a></li><li><a href="/rules-policy.html">Правила використання</a></li><li><a href="/public-offer.html">Публічна оферта</a></li><li><a href="/edditorial-policy.html">Редакційна політика</a></li></ul><button class="footer__contacts" data-btn-modal="contact"><svg width="20" height="20"><use href="img/sprite/sprite.svg#mail"></use></svg> Написати нам</button></div></div></div></footer><button class="starting-popup" data-btn-modal="snake-alert"></button><div class="cookies"><div class="container"><div class="cookies__wrapp"><div class="cookies__text">Ми використовуємо файли cookie щоб зробити ваше користування веб-сайтом зручнішим. Продовжуючи користуватися цим сайтом, ви погоджуєтесь із використанням файлів cookies. Дізнайтеся більше про використання cookie на сторінці</div><div class="cookies__controls" data-single="true" data-accordion-init><div class="cookies__controls-btns"><button class="cookies__apply">Прийняти</button> <button class="cookies__cancel">Відхилити</button> <button class="cookies__btn" data-id="1"><svg width="24" height="24"><use href="img/sprite/sprite.svg#settings"></use></svg></button></div><div class="cookies__settings" data-content="1"><ul><li><p>Аналітика</p><label><input type="checkbox" name="analytics"> <span></span></label></li><li><p>Уподобання</p><label><input type="checkbox" name="preferences"> <span></span></label></li><li><p>Маркетинг</p><label><input type="checkbox" name="marketing"> <span></span></label></li></ul></div></div></div></div></div><div class="overlay fixed-block" data-overlay><div class="modal modal--contact" data-popup="contact"><div class="modal__box"><div class="modal__top"><div class="modal__title">Є питання? Напишіть нам</div><button class="modal__close close"><svg width="24" height="24"><use href="img/sprite/sprite.svg#burger-close"></use></svg></button></div><form class="form"><div class="form__box"><label class="form__label"><input class="form__input" type="email" name="email" placeholder="Введіть e-mail"></label> <label><textarea class="form__textarea" name="textarea" placeholder="Текст повідомлення"></textarea></label> <button class="form__submit" data-btn-inner="success">Надіслати</button></div></form></div></div><div class="modal modal--success" data-popup="success"><div class="modal__box"><div class="modal__top"><div class="modal__title">Дякуємо! Повідомлення надіслано успішно!</div><button class="modal__close close"><svg width="24" height="24"><use href="img/sprite/sprite.svg#burger-close"></use></svg></button></div><div class="modal__text">Ми обов’язково з вами звʼяжемось!</div></div></div><div class="modal modal--share" data-popup="share"><div class="modal__box"><div class="modal__top"><div class="modal__title">Поділитись</div><button class="modal__close close"><svg width="24" height="24"><use href="img/sprite/sprite.svg#burger-close"></use></svg></button></div><ul class="socials"><li><a href="#"><svg width="48" height="48"><use href="img/sprite/sprite.svg#telegram"></use></svg></a></li><li><a href="#"><svg width="48" height="48"><use href="img/sprite/sprite.svg#instagram"></use></svg></a></li><li><a href="#"><svg width="48" height="48"><use href="img/sprite/sprite.svg#facebook"></use></svg></a></li></ul><form class="share-form"><label class="share-form__label"><span class="share-form__link" data-value="https://zelenagazeta/">https://zelenagazeta/</span></label> <button class="share-form__btn copy"><svg width="24" height="24"><use href="img/sprite/sprite.svg#copy"></use></svg></button></form></div></div><div class="modal modal--alert" data-popup="age-alert"><div class="modal__box"><div class="modal__title">Вам вже виповнилось 18 років?</div><div class="modal__icon"><svg width="123" height="109"><use href="img/sprite/sprite.svg#paper-logo"></use></svg></div><div class="modal__btns"><div class="btn-cancel">Ні</div><div class="btn-success close">Так</div></div></div></div><div class="modal modal--alert" data-popup="snake-alert"><div class="modal__box"><div class="modal__title">Ви лікар?</div><div class="modal__icon"><svg width="123" height="109"><use href="img/sprite/sprite.svg#snake"></use></svg></div><div class="modal__btns"><div class="btn-cancel">Ні</div><div class="btn-success close">Так</div></div></div></div><div class="modal modal--categories" data-popup="categories"><div class="modal__cats"><div class="modal__cats-top"><a href="/" class="header__mobile-logo logo"><img class="light-logo" width="1280" height="142" src="../img/index/gazeta-white.svg" alt="Зелена газета"> <img class="dark-logo" width="1280" height="142" src="../img/index/gazeta-black.svg" alt="Зелена газета"> </a><button class="modal__close close"><svg width="24" height="24"><use href="img/sprite/sprite.svg#burger-close"></use></svg></button></div><ul class="mobile__menu menu" data-single="true" data-accordion-init><li class="menu-item"><a class="menu-link" href="#"><svg width="24" height="24"><use href="img/sprite/sprite.svg#list"></use></svg> Усі</a></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="/listing-category.html"><svg width="24" height="24"><use href="img/sprite/sprite.svg#heart"></use></svg> Турбота про себе </a><button class="menu-button" data-id="1"><svg width="16" height="16"><use href="img/sprite/sprite.svg#agile-right"></use></svg></button><ul class="sub-menu" data-content="1"><li><a href="/listing-subcategory.html">Усі</a></li><li><a href="/listing-subcategory.html">Психологія відносин</a></li><li><a href="/listing-subcategory.html">Секс</a></li><li><a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a></li><li><a href="/listing-subcategory.html">Реальні історії людей</a></li><li><a href="/listing-subcategory.html">Психологія змін</a></li><li><a href="/listing-subcategory.html">Вікова психологія</a></li><li><a href="/listing-subcategory.html">Психологія в роботі</a></li><li><a href="/listing-subcategory.html">Робота зі стресом</a></li><li><a href="/listing-subcategory.html">Самооцінка та прийняття себе</a></li><li><a href="/listing-subcategory.html">Емоційний інтелект</a></li><li><a href="/listing-subcategory.html">Ментальне здоров’я</a></li><li><a href="/listing-subcategory.html">ПТСР та психологія травми</a></li></ul></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="/listing-category.html"><svg width="24" height="24"><use href="img/sprite/sprite.svg#leaf"></use></svg> Психологія </a><button class="menu-button" data-id="2"><svg width="16" height="16"><use href="img/sprite/sprite.svg#agile-right"></use></svg></button><ul class="sub-menu" data-content="2"><li><a href="/listing-subcategory.html">Усі</a></li><li><a href="/listing-subcategory.html">Психологія відносин</a></li><li><a href="/listing-subcategory.html">Секс</a></li><li><a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a></li><li><a href="/listing-subcategory.html">Реальні історії людей</a></li></ul></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="/listing-category.html"><svg width="24" height="24"><use href="img/sprite/sprite.svg#doctor"></use></svg> Здоров’я </a><button class="menu-button" data-id="3"><svg width="16" height="16"><use href="img/sprite/sprite.svg#agile-right"></use></svg></button><ul class="sub-menu" data-content="3"><li><a href="/listing-subcategory.html">Усі</a></li><li><a href="/listing-subcategory.html">Психологія відносин</a></li><li><a href="/listing-subcategory.html">Секс</a></li><li><a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a></li><li><a href="/listing-subcategory.html">Реальні історії людей</a></li><li><a href="/listing-subcategory.html">Психологія змін</a></li><li><a href="/listing-subcategory.html">Вікова психологія</a></li><li><a href="/listing-subcategory.html">Психологія в роботі</a></li><li><a href="/listing-subcategory.html">Робота зі стресом</a></li><li><a href="/listing-subcategory.html">Самооцінка та прийняття себе</a></li><li><a href="/listing-subcategory.html">Емоційний інтелект</a></li></ul></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="/listing-category.html"><svg width="24" height="24"><use href="img/sprite/sprite.svg#style"></use></svg> Стиль життя </a><button class="menu-button" data-id="4"><svg width="16" height="16"><use href="img/sprite/sprite.svg#agile-right"></use></svg></button><ul class="sub-menu" data-content="4"><li><a href="/listing-subcategory.html">Усі</a></li><li><a href="/listing-subcategory.html">Психологія відносин</a></li><li><a href="/listing-subcategory.html">Секс</a></li><li><a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a></li><li><a href="/listing-subcategory.html">Робота зі стресом</a></li><li><a href="/listing-subcategory.html">Самооцінка та прийняття себе</a></li><li><a href="/listing-subcategory.html">Емоційний інтелект</a></li><li><a href="/listing-subcategory.html">Ментальне здоров’я</a></li><li><a href="/listing-subcategory.html">ПТСР та психологія травми</a></li></ul></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="/listing-category.html"><svg width="24" height="24"><use href="img/sprite/sprite.svg#bulb"></use></svg> Зелена медицина </a><button class="menu-button" data-id="5"><svg width="16" height="16"><use href="img/sprite/sprite.svg#agile-right"></use></svg></button><ul class="sub-menu" data-content="5"><li><a href="/listing-subcategory.html">Усі</a></li><li><a href="/listing-subcategory.html">Психологія відносин</a></li><li><a href="/listing-subcategory.html">Секс</a></li><li><a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a></li><li><a href="/listing-subcategory.html">Реальні історії людей</a></li><li><a href="/listing-subcategory.html">Психологія змін</a></li><li><a href="/listing-subcategory.html">Вікова психологія</a></li><li><a href="/listing-subcategory.html">Психологія в роботі</a></li><li><a href="/listing-subcategory.html">Робота зі стресом</a></li><li><a href="/listing-subcategory.html">Самооцінка та прийняття себе</a></li><li><a href="/listing-subcategory.html">Емоційний інтелект</a></li><li><a href="/listing-subcategory.html">Ментальне здоров’я</a></li><li><a href="/listing-subcategory.html">ПТСР та психологія травми</a></li></ul></li><li class="menu-item"><a class="menu-link" href="#"><svg width="24" height="24"><use href="img/sprite/sprite.svg#news"></use></svg> Новини</a></li></ul></div></div><div class="modal modal--podcasts" data-popup="podcasts"><div class="modal__box"><div class="modal__title">"Зелений подкаст" вже чекає на YouTube!</div><div class="modal__descr">Дізнавайся про здоров'я та надихайся на саморозвиток разом з нами</div><div class="modal__icon"><img class="icon-white" width="276" height="161" src="img/podcasts/podcasts-white.svg" alt=""> <img class="icon-black" width="276" height="161" src="img/podcasts/podcasts-black.svg" alt=""></div><div class="modal__btns"><div class="btn-cancel close">Не зараз</div><a href="/listing-podcasts.html" class="btn-success close">До подкастів</a></div></div></div></div><script defer="defer" src="js/main.js"></script></body></html>
+  })();
+</script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="Description" content="Зелена Газета">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Зелена Газета</title>
+ 
+  <link rel="preload" href="fonts/e-Ukraine-Light.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/e-Ukraine-Regular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/e-Ukraine-Medium.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/e-Ukraine-Bold.woff" as="font" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+  <header class="header fixed-block">
+  <div class="container">
+    <div class="header__wrapp">
+      <div class="header__top">
+        <div class="header__top-left">
+          <button class="burger">
+            <svg class="burger__open" width='32' height='32'>
+              <use href='img/sprite/sprite.svg#burger-open'></use>
+            </svg>
+    
+            <svg class="burger__close" width='32' height='32'>
+              <use href='img/sprite/sprite.svg#burger-close'></use>
+            </svg>
+          </button>
+
+          <div class="theme-switcher">
+            <label class="dark-theme">
+              <input type="radio" name="color-theme" value="dark" />
+
+              <span>
+                <svg class="dark-theme" width="32" height="32">
+                  <use href="img/sprite/sprite.svg#dark"></use>
+                </svg>
+              </span>
+            </label>
+
+            <label class="light-theme">
+              <input type="radio" name="color-theme" value="light" checked />
+
+              <span>
+                <svg class="light-theme" width="32" height="32">
+                  <use href="img/sprite/sprite.svg#light"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="header__controls">
+          <div class="search">
+            <div class="search__trigger">
+              <svg width='32' height='32'>
+                <use href='img/sprite/sprite.svg#search'></use>
+              </svg>
+            </div>
+          </div>
+
+          <a class="header__link" href="/">
+            <svg width='22' height='22'>
+              <use href='img/sprite/sprite.svg#gazeta'></use>
+            </svg>
+            Зелена газета
+          </a>
+
+          <div class="lang select" data-select>
+            <div class="select__header">
+              <input type="hidden" class="select__input" id="lang" name="lang" value="1">
+              <span class="select__current" data-id="1">
+                UA
+              </span>
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#arrow-down'></use>
+              </svg>
+
+            </div>
+
+            <div class="select__body">
+              <ul class="select__list">
+                <li class="select__option" data-id="1" data-type="option">
+                  UA
+                </li>
+                <li class="select__option" data-id="2" data-type="option">
+                  EN
+                </li>
+                <li class="select__option" data-id="3" data-type="option">
+                  RU
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__box">
+        <a href="/" class="header__logo logo">
+          <svg class="light-logo" width='1280' height='142'>
+            <use href='img/sprite/sprite.svg#full-medicine-dark'></use>
+          </svg>
+          <svg class="dark-logo" width='1280' height='142'>
+            <use href='img/sprite/sprite.svg#full-medicine-white'></use>
+          </svg>
+        </a>
+
+        <div class="header__divider">
+          <svg width='1280' height='8'>
+            <use href='img/sprite/sprite.svg#full-line'></use>
+          </svg>
+        </div>
+      </div>
+
+      <nav class="header__nav">
+        <ul class="menu">
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-link" href="#">
+              Новини 
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#arrow-down'></use>
+              </svg>
+            </a>
+
+            <ul class="sub-menu">
+              <li>
+                <a href="#">Психологія відносин</a>
+              </li>
+              <li>
+                <a href="#">Секс</a>
+              </li>
+              <li>
+                <a href="#">Арт-терапія та мантричні практики</a>
+              </li>
+              <li>
+                <a href="#">Реальні історії людей</a>
+              </li>
+              <li>
+                <a href="#">Психологія змін</a>
+              </li>
+              <li>
+                <a href="#">Вікова психологія</a>
+              </li>
+              <li>
+                <a href="#">Психологія в роботі</a>
+              </li>
+              <li>
+                <a href="#">Робота зі стресом</a>
+              </li>
+              <li>
+                <a href="#">Самооцінка та прийняття себе</a>
+              </li>
+              <li>
+                <a href="#">Емоційний інтелект</a>
+              </li>
+              <li>
+                <a href="#">Ментальне здоров’я</a>
+              </li>
+              <li>
+                <a href="#">ПТСР та психологія травми</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-link" href="#">
+              Медичне
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#arrow-down'></use>
+              </svg>
+            </a>
+
+            <ul class="sub-menu">
+              <li>
+                <a href="#">Психологія відносин</a>
+              </li>
+              <li>
+                <a href="#">Секс</a>
+              </li>
+              <li>
+                <a href="#">Арт-терапія та мантричні практики</a>
+              </li>
+              <li>
+                <a href="#">Реальні історії людей</a>
+              </li>
+              <li>
+                <a href="#">Психологія змін</a>
+              </li>
+              <li>
+                <a href="#">Вікова психологія</a>
+              </li>
+              <li>
+                <a href="#">Психологія в роботі</a>
+              </li>
+              <li>
+                <a href="#">Робота зі стресом</a>
+              </li>
+              <li>
+                <a href="#">Самооцінка та прийняття себе</a>
+              </li>
+              <li>
+                <a href="#">Емоційний інтелект</a>
+              </li>
+              <li>
+                <a href="#">Ментальне здоров’я</a>
+              </li>
+              <li>
+                <a href="#">ПТСР та психологія травми</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-link" href="#">
+              Життєве
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#arrow-down'></use>
+              </svg>
+            </a>
+
+            <ul class="sub-menu">
+              <li>
+                <a href="#">Реальні історії людей</a>
+              </li>
+              <li>
+                <a href="#">Психологія змін</a>
+              </li>
+              <li>
+                <a href="#">Вікова психологія</a>
+              </li>
+              <li>
+                <a href="#">Психологія в роботі</a>
+              </li>
+              <li>
+                <a href="#">Робота зі стресом</a>
+              </li>
+              <li>
+                <a href="#">Самооцінка та прийняття себе</a>
+              </li>
+              <li>
+                <a href="#">Емоційний інтелект</a>
+              </li>
+              <li>
+                <a href="#">Ментальне здоров’я</a>
+              </li>
+              <li>
+                <a href="#">ПТСР та психологія травми</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-link" href="#">
+              Культурне
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#arrow-down'></use>
+              </svg>
+            </a>
+
+            <ul class="sub-menu">
+              <li>
+                <a href="#">Психологія відносин</a>
+              </li>
+              <li>
+                <a href="#">Секс</a>
+              </li>
+              <li>
+                <a href="#">Арт-терапія та мантричні практики</a>
+              </li>
+              <li>
+                <a href="#">Реальні історії людей</a>
+              </li>
+              <li>
+                <a href="#">Психологія змін</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-link" href="#">
+              Законне
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#arrow-down'></use>
+              </svg>
+            </a>
+
+            <ul class="sub-menu">
+              <li>
+                <a href="#">Психологія відносин</a>
+              </li>
+              <li>
+                <a href="#">Арт-терапія та мантричні практики</a>
+              </li>
+              <li>
+                <a href="#">Реальні історії людей</a>
+              </li>
+              <li>
+                <a href="#">Психологія змін</a>
+              </li>
+              <li>
+                <a href="#">Вікова психологія</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-link" href="#">
+              Експертне
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#arrow-down'></use>
+              </svg>
+            </a>
+
+            <ul class="sub-menu">
+              <li>
+                <a href="#">Психологія відносин</a>
+              </li>
+              <li>
+                <a href="#">Секс</a>
+              </li>
+              <li>
+                <a href="#">Арт-терапія та мантричні практики</a>
+              </li>
+              <li>
+                <a href="#">Реальні історії людей</a>
+              </li>
+              <li>
+                <a href="#">Психологія змін</a>
+              </li>
+              <li>
+                <a href="#">Вікова психологія</a>
+              </li>
+              <li>
+                <a href="#">Психологія в роботі</a>
+              </li>
+              <li>
+                <a href="#">Робота зі стресом</a>
+              </li>
+              <li>
+                <a href="#">Самооцінка та прийняття себе</a>
+              </li>
+              <li>
+                <a href="#">Емоційний інтелект</a>
+              </li>
+              <li>
+                <a href="#">Ментальне здоров’я</a>
+              </li>
+              <li>
+                <a href="#">ПТСР та психологія травми</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="header__mobile">
+    <div class="container">
+      <div class="header__mobile-box">
+        <a href="/" class="header__mobile-logo logo">
+          <svg class="light-logo" width='225' height='28'>
+            <use href='img/sprite/sprite.svg#full-medicine-dark'></use>
+          </svg>
+          <svg class="dark-logo" width='225' height='28'>
+            <use href='img/sprite/sprite.svg#full-medicine-white'></use>
+          </svg>
+        </a>
+
+        <div class="header__mobile-controls">
+          <!-- replace for  -->
+          <div class="search">
+            <div class="search__trigger">
+              <svg width='32' height='32'>
+                <use href='img/sprite/sprite.svg#search'></use>
+              </svg>
+            </div>
+          </div>
+
+          <button class="burger">
+            <svg class="burger__open" width='32' height='32'>
+              <use href='img/sprite/sprite.svg#burger-open'></use>
+            </svg>
+    
+            <svg class="burger__close" width='32' height='32'>
+              <use href='img/sprite/sprite.svg#burger-close'></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="header__mobile-divider">
+      <svg width='768' height='5'>
+        <use href='img/sprite/sprite.svg#full-line'></use>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<div class="mobile">
+  <div class="mobile__box">
+    <ul class="mobile__menu">
+      <li>
+        <a href="#">
+          <span>
+            <svg width='24' height='24'>
+              <use href='img/sprite/sprite.svg#list'></use>
+            </svg>
+            Усі
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="/listing-category.html">
+          <span>
+            <svg width='24' height='24'>
+              <use href='img/sprite/sprite.svg#heart'></use>
+            </svg>
+            Турбота про себе
+          </span>
+
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#agile-right'></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span>
+            <svg width='24' height='24'>
+              <use href='img/sprite/sprite.svg#leaf'></use>
+            </svg>
+            Психологія
+          </span>
+
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#agile-right'></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span>
+            <svg width='24' height='24'>
+              <use href='img/sprite/sprite.svg#doctor'></use>
+            </svg>
+            Здоров’я
+          </span>
+
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#agile-right'></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span>                  
+            <svg width='24' height='24'>
+              <use href='img/sprite/sprite.svg#style'></use>
+            </svg>
+            Стиль життя
+          </span>
+
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#agile-right'></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span>
+            <svg width='24' height='24'>
+              <use href='img/sprite/sprite.svg#bulb'></use>
+            </svg>
+            Зелена медицина
+          </span>
+
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#agile-right'></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span>
+            <svg width='24' height='24'>
+              <use href='img/sprite/sprite.svg#news'></use>
+            </svg>
+            Новини
+          </span>
+
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#agile-right'></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <div class="mobile__menu-details">
+      <a class="mobile__menu-link" href="/about.html">
+        <span>
+          Про нас
+        </span>
+  
+        <svg width='24' height='24'>
+          <use href='img/sprite/sprite.svg#agile-right'></use>
+        </svg>
+      </a>
+
+      <a href="/" class="mobile__menu-page">
+        <svg width='22' height='22'>
+          <use href='img/sprite/sprite.svg#gazeta'></use>
+        </svg>
+        Зелена газета
+      </a>
+
+      <div class="mobile__menu-bottom">
+        <ul class="mobile__menu-lang">
+          <li>
+            <a href="#" class="active">UA</a>
+          </li>
+          <li>
+            <a href="#">EN</a>
+          </li>
+          <li>
+            <a href="#">RU</a>
+          </li>
+        </ul>
+
+        <div class="theme-switcher">
+          <label class="dark-theme">
+            <input type="radio" name="color-theme" value="dark" />
+
+            <span>
+              <svg class="dark-theme" width="32" height="32">
+                <use href="img/sprite/sprite.svg#dark"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="light-theme">
+            <input type="radio" name="color-theme" value="light" checked />
+
+            <span>
+              <svg class="light-theme" width="32" height="32">
+                <use href="img/sprite/sprite.svg#light"></use>
+              </svg>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <main>
+    <section class="hero-section">
+      <div class="container">
+        <ul class="hero-section__posts">
+          <li>
+            <a class="article-card" href="#">
+              <div class="article-card__thumbnails">
+                <picture>
+                  <source type='image/webp' srcset='img/articles/article1.webp'>
+                  <img width='602' height='331' src='img/articles/article1.png' alt='article1'>
+                </picture>
+              </div>
+
+              <div class="article-card__info">
+                <div class="article-card__top">
+                  <span class="article-card__tag">
+                    <svg width='12' height='12'>
+                      <use href='img/sprite/sprite.svg#tag'></use>
+                    </svg>
+                    <p>культурне</p>
+                  </span>
+
+                  <div class="article-card__details">
+                    <div class="article-card__views">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#eye'></use>
+                      </svg>
+                      <p>14</p>
+                    </div>
+
+                    <div class="article-card__author">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#avatar'></use>
+                      </svg>
+                      <p>Марія Шевченко</p>
+                    </div>
+
+                    <time class="article-card__pubtime" datetime="24.10.2025">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#time'></use>
+                      </svg>
+                      24.10.2024
+                    </time>
+                  </div>
+                </div>
+
+                <div class="article-card__bottom">
+                  <div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+
+                  <span>
+                    <svg width='44' height='44'>
+                      <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="article-card" href="#">
+              <div class="article-card__info">
+                <div class="article-card__top">
+                  <span class="article-card__tag">
+                    <svg width='12' height='12'>
+                      <use href='img/sprite/sprite.svg#tag'></use>
+                    </svg>
+                    <p>культурне</p>
+                  </span>
+
+                  <div class="article-card__details">
+                    <div class="article-card__views">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#eye'></use>
+                      </svg>
+                      <p>14</p>
+                    </div>
+
+                    <div class="article-card__author">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#avatar'></use>
+                      </svg>
+                      <p>Марія Шевченко</p>
+                    </div>
+
+                    <time class="article-card__pubtime" datetime="24.10.2025">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#time'></use>
+                      </svg>
+                      24.10.2024
+                    </time>
+                  </div>
+                </div>
+
+                <div class="article-card__bottom">
+                  <div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+
+                  <span>
+                    <svg width='44' height='44'>
+                      <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="article-card" href="#">
+              <div class="article-card__info">
+                <div class="article-card__top">
+                  <span class="article-card__tag">
+                    <svg width='12' height='12'>
+                      <use href='img/sprite/sprite.svg#tag'></use>
+                    </svg>
+                    <p>культурне</p>
+                  </span>
+
+                  <div class="article-card__details">
+                    <div class="article-card__views">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#eye'></use>
+                      </svg>
+                      <p>14</p>
+                    </div>
+
+                    <div class="article-card__author">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#avatar'></use>
+                      </svg>
+                      <p>Марія Шевченко</p>
+                    </div>
+
+                    <time class="article-card__pubtime" datetime="24.10.2025">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#time'></use>
+                      </svg>
+                      24.10.2024
+                    </time>
+                  </div>
+                </div>
+
+                <div class="article-card__bottom">
+                  <div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+
+                  <span>
+                    <svg width='44' height='44'>
+                      <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a class="article-card" href="#">
+              <div class="article-card__info">
+                <div class="article-card__top">
+                  <span class="article-card__tag">
+                    <svg width='12' height='12'>
+                      <use href='img/sprite/sprite.svg#tag'></use>
+                    </svg>
+                    <p>культурне</p>
+                  </span>
+
+                  <div class="article-card__details">
+                    <div class="article-card__views">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#eye'></use>
+                      </svg>
+                      <p>14</p>
+                    </div>
+
+                    <div class="article-card__author">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#avatar'></use>
+                      </svg>
+                      <p>Марія Шевченко</p>
+                    </div>
+
+                    <time class="article-card__pubtime" datetime="24.10.2025">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#time'></use>
+                      </svg>
+                      24.10.2024
+                    </time>
+                  </div>
+                </div>
+
+                <div class="article-card__bottom">
+                  <div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+
+                  <span>
+                    <svg width='44' height='44'>
+                      <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="tags-section">
+      <div class="container">
+        <div class="tags-section__wrapp">
+          <h2 class="tags-section__title">Дізнайся більше про</h2>
+
+          <ul class="tags-section__items">
+            <li>
+              <a class="tag" href="#">
+                <svg width='16' height='16'>
+                  <use href='img/sprite/sprite.svg#tag'></use>
+                </svg>
+                <p>тривожність</p>
+              </a>
+            </li>
+            <li>
+              <a class="tag" href="#">
+                <svg width='16' height='16'>
+                  <use href='img/sprite/sprite.svg#tag'></use>
+                </svg>
+                <p>дослідження</p>
+              </a>
+            </li>
+            <li>
+              <a class="tag" href="#">
+                <svg width='16' height='16'>
+                  <use href='img/sprite/sprite.svg#tag'></use>
+                </svg>
+                <p>лікування птср</p>
+              </a>
+            </li>
+            <li>
+              <a class="tag" href="#">
+                <svg width='16' height='16'>
+                  <use href='img/sprite/sprite.svg#tag'></use>
+                </svg>
+                <p>сдвг</p>
+              </a>
+            </li>
+            <li>
+              <a class="tag" href="#">
+                <svg width='16' height='16'>
+                  <use href='img/sprite/sprite.svg#tag'></use>
+                </svg>
+                <p>рецепти</p>
+              </a>
+            </li>
+            <li>
+              <a class="tag" href="#">
+                <svg width='16' height='16'>
+                  <use href='img/sprite/sprite.svg#tag'></use>
+                </svg>
+                <p>особиста думка</p>
+              </a>
+            </li>
+            <li>
+              <a class="tag" href="#">
+                <svg width='16' height='16'>
+                  <use href='img/sprite/sprite.svg#tag'></use>
+                </svg>
+                <p>історія</p>
+              </a>
+            </li>
+            <li>
+              <a class="tag" href="#">
+                <svg width='16' height='16'>
+                  <use href='img/sprite/sprite.svg#tag'></use>
+                </svg>
+                <p>мистецтво</p>
+              </a>
+            </li>
+            <li>
+              <a class="tag" href="#">
+                <svg width='16' height='16'>
+                  <use href='img/sprite/sprite.svg#tag'></use>
+                </svg>
+                <p>подорожі</p>
+              </a>
+            </li>
+            <li>
+              <a class="tag" href="#">
+                <svg width='16' height='16'>
+                  <use href='img/sprite/sprite.svg#tag'></use>
+                </svg>
+                <p>новини</p>
+              </a>
+            </li>
+            <li>
+              <a class="tag" href="#">
+                <svg width='16' height='16'>
+                  <use href='img/sprite/sprite.svg#tag'></use>
+                </svg>
+                <p>гаджети</p>
+              </a>
+            </li>
+            <li>
+              <a class="tag" href="#">
+                <svg width='16' height='16'>
+                  <use href='img/sprite/sprite.svg#tag'></use>
+                </svg>
+                <p>герої</p>
+              </a>
+            </li>
+            <li>
+              <span class="tag tag--more">...</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="populars-section">
+      <div class="container">
+        <div class="populars-section__wrapp">
+          <div class="populars-section__top">
+            <h2 class="populars-section__title">Популярні статті</h2>
+
+            <a class="populars-section__link" href="#">
+              Дізнатись більше
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#arrow-right'></use>
+              </svg>
+            </a>
+          </div>
+
+          <ul class="populars-section__items">
+            <li>
+              <a class="article-card" href="#">
+                <div class="article-card__thumbnails">
+                  <picture>
+                    <source type='image/webp' srcset='img/articles/article2.webp'>
+                    <img width='635' height='339' src='img/articles/article2.png' alt='article1'>
+                  </picture>
+                </div>
+  
+                <div class="article-card__info">
+                  <div class="article-card__top">
+                    <span class="article-card__tag">
+                      <svg width='12' height='12'>
+                        <use href='img/sprite/sprite.svg#tag'></use>
+                      </svg>
+                      <p>культурне</p>
+                    </span>
+  
+                    <div class="article-card__details">
+                      <div class="article-card__views">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#eye'></use>
+                        </svg>
+                        <p>14</p>
+                      </div>
+  
+                      <div class="article-card__author">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#avatar'></use>
+                        </svg>
+                        <p>Марія Шевченко</p>
+                      </div>
+  
+                      <time class="article-card__pubtime" datetime="24.10.2025">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#time'></use>
+                        </svg>
+                        24.10.2024
+                      </time>
+                    </div>
+                  </div>
+  
+                  <div class="article-card__bottom">
+                    <div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+  
+                    <span>
+                      <svg width='44' height='44'>
+                        <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a class="article-card" href="#">
+                <div class="article-card__thumbnails">
+                  <picture>
+                    <source type='image/webp' srcset='img/articles/article3.webp'>
+                    <img width='635' height='339' src='img/articles/article3.png' alt='article1'>
+                  </picture>
+                </div>
+  
+                <div class="article-card__info">
+                  <div class="article-card__top">
+                    <span class="article-card__tag">
+                      <svg width='12' height='12'>
+                        <use href='img/sprite/sprite.svg#tag'></use>
+                      </svg>
+                      <p>культурне</p>
+                    </span>
+  
+                    <div class="article-card__details">
+                      <div class="article-card__views">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#eye'></use>
+                        </svg>
+                        <p>14</p>
+                      </div>
+  
+                      <div class="article-card__author">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#avatar'></use>
+                        </svg>
+                        <p>Марія Шевченко</p>
+                      </div>
+  
+                      <time class="article-card__pubtime" datetime="24.10.2025">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#time'></use>
+                        </svg>
+                        24.10.2024
+                      </time>
+                    </div>
+                  </div>
+  
+                  <div class="article-card__bottom">
+                    <div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+  
+                    <span>
+                      <svg width='44' height='44'>
+                        <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a class="article-card" href="#">
+                <div class="article-card__thumbnails">
+                  <picture>
+                    <source type='image/webp' srcset='img/articles/article4.webp'>
+                    <img width='421' height='231' src='img/articles/article4.png' alt='article1'>
+                  </picture>
+                </div>
+  
+                <div class="article-card__info">
+                  <div class="article-card__top">
+                    <span class="article-card__tag">
+                      <svg width='12' height='12'>
+                        <use href='img/sprite/sprite.svg#tag'></use>
+                      </svg>
+                      <p>культурне</p>
+                    </span>
+  
+                    <div class="article-card__details">
+                      <div class="article-card__views">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#eye'></use>
+                        </svg>
+                        <p>14</p>
+                      </div>
+  
+                      <div class="article-card__author">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#avatar'></use>
+                        </svg>
+                        <p>Марія Шевченко</p>
+                      </div>
+  
+                      <time class="article-card__pubtime" datetime="24.10.2025">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#time'></use>
+                        </svg>
+                        24.10.2024
+                      </time>
+                    </div>
+                  </div>
+  
+                  <div class="article-card__bottom">
+                    <div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+  
+                    <span>
+                      <svg width='44' height='44'>
+                        <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a class="article-card" href="#">
+                <div class="article-card__thumbnails">
+                  <picture>
+                    <source type='image/webp' srcset='img/articles/article5.webp'>
+                    <img width='421' height='231' src='img/articles/article5.png' alt='article1'>
+                  </picture>
+                </div>
+  
+                <div class="article-card__info">
+                  <div class="article-card__top">
+                    <span class="article-card__tag">
+                      <svg width='12' height='12'>
+                        <use href='img/sprite/sprite.svg#tag'></use>
+                      </svg>
+                      <p>культурне</p>
+                    </span>
+  
+                    <div class="article-card__details">
+                      <div class="article-card__views">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#eye'></use>
+                        </svg>
+                        <p>14</p>
+                      </div>
+  
+                      <div class="article-card__author">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#avatar'></use>
+                        </svg>
+                        <p>Марія Шевченко</p>
+                      </div>
+  
+                      <time class="article-card__pubtime" datetime="24.10.2025">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#time'></use>
+                        </svg>
+                        24.10.2024
+                      </time>
+                    </div>
+                  </div>
+  
+                  <div class="article-card__bottom">
+                    <div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+  
+                    <span>
+                      <svg width='44' height='44'>
+                        <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a class="article-card" href="#">
+                <div class="article-card__thumbnails">
+                  <picture>
+                    <source type='image/webp' srcset='img/articles/paper.webp'>
+                    <img width='421' height='231' src='img/articles/paper.png' alt='article1'>
+                  </picture>
+                </div>
+  
+                <div class="article-card__info">
+                  <div class="article-card__top">
+                    <span class="article-card__tag">
+                      <svg width='12' height='12'>
+                        <use href='img/sprite/sprite.svg#tag'></use>
+                      </svg>
+                      <p>культурне</p>
+                    </span>
+  
+                    <div class="article-card__details">
+                      <div class="article-card__views">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#eye'></use>
+                        </svg>
+                        <p>14</p>
+                      </div>
+  
+                      <div class="article-card__author">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#avatar'></use>
+                        </svg>
+                        <p>Марія Шевченко</p>
+                      </div>
+  
+                      <time class="article-card__pubtime" datetime="24.10.2025">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#time'></use>
+                        </svg>
+                        24.10.2024
+                      </time>
+                    </div>
+                  </div>
+  
+                  <div class="article-card__bottom">
+                    <div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+  
+                    <span>
+                      <svg width='44' height='44'>
+                        <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                      </svg>
+                    </span>
+
+                    <div class="article-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="discovery-section">
+      <div class="container">
+        <div class="discovery-section__wrapp">
+          <h2 class="discovery-section__title">А ви знали що?</h2>
+
+          <div class="discovery-section__slider">
+            <div class="discovery-section__slider-bg">
+              <svg class="pink-decor-desk" width='1217' height='248'>
+                <use href='img/sprite/sprite.svg#pink-decor'></use>
+              </svg>
+            </div>
+
+            <div class="discovery-section__slider-box">
+              <div class='swiper-container'>
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <div class="discovery-card">
+                      <div class="discovery-card__text">Нове дослідження показує, що CBD-супозиторії можуть зменшити біль на 55%!</div>
+
+                      <a class="discovery-card__link" href="#">
+                        Дізнатись більше
+                        <svg width='24' height='24'>
+                          <use href='img/sprite/sprite.svg#arrow-right'></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </li>
+
+                  <li class="swiper-slide">
+                    <div class="discovery-card">
+                      <div class="discovery-card__text">Нове дослідження показує, що CBD-супозиторії можуть зменшити біль на 55%!</div>
+
+                      <a class="discovery-card__link" href="#">
+                        Дізнатись більше
+                        <svg width='24' height='24'>
+                          <use href='img/sprite/sprite.svg#arrow-right'></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </li>
+
+                  <li class="swiper-slide">
+                    <div class="discovery-card">
+                      <div class="discovery-card__text">Нове дослідження показує, що CBD-супозиторії можуть зменшити біль на 55%!</div>
+
+                      <a class="discovery-card__link" href="#">
+                        Дізнатись більше
+                        <svg width='24' height='24'>
+                          <use href='img/sprite/sprite.svg#arrow-right'></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="discovery-section__slider-controls">
+              <button class='swiper-button prev'>
+                <svg width='40' height='40'>
+                  <use href='img/sprite/sprite.svg#arrow-left'></use>
+                </svg>
+              </button>
+  
+              <div class="swiper-pagination"></div>
+  
+              <button class='swiper-button next'>
+                <svg width='40' height='40'>
+                  <use href='img/sprite/sprite.svg#arrow-right'></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="identity-section">
+      <div class="identity-section__wrapp">
+        <div class="identity-section__white">
+          <picture>
+            <source type='image/webp' srcset='img/index/identity-white.webp'>
+            <img width='1440' height='485' src='img/index/identity-white.png' alt='Хто ми'>
+          </picture>
+        </div>
+
+        <div class="identity-section__dark">
+          <picture>
+            <source type='image/webp' srcset='img/index/identity-dark.webp'>
+            <img width='1440' height='485' src='img/index/identity-dark.png' alt='Хто ми'>
+          </picture>
+        </div>
+
+        <div class="container">
+          <div class="identity-section__box">
+            <div class="identity-section__image">
+              <svg width='365' height='323'>
+                <use href='img/sprite/sprite.svg#paper-logo'></use>
+              </svg>
+            </div>
+
+            <div class="identity-section__info">
+              <h2 class="identity-section__title h2">Хто ми?</h2>
+
+              <p class="identity-section__text">Зелена газета — українське медіа про велнес і лайфстайл, що надихає на здорове й усвідомлене життя. 
+                Ми ділимося сучасними підходами до саморозвитку, фізичного та ментального здоров’я, допомагаючи вам знайти баланс і гармонію.
+              </p>
+
+              <a class="identity-section__link" href="/about.html">
+                Дізнатись більше
+                <svg width='24' height='24'>
+                  <use href='img/sprite/sprite.svg#arrow-right'></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="videos-section">
+      <div class="container">
+        <div class="videos-section__wrapp">
+          <div class="videos-section__top">
+            <h2 class="videos-section__title">Відео</h2>
+
+            <div class="videos-section__controls">
+              <button class='swiper-button prev'>
+                <svg width='40' height='40'>
+                  <use href='img/sprite/sprite.svg#arrow-left'></use>
+                </svg>
+              </button>
+  
+              <div class="swiper-pagination"></div>
+  
+              <button class='swiper-button next'>
+                <svg width='40' height='40'>
+                  <use href='img/sprite/sprite.svg#arrow-right'></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="videos-section__slider">
+            <div class='swiper-container'>
+              <ul class="videos-section__items swiper-wrapper">
+                <li class='swiper-slide'>
+                  <a class="video-card" data-fancybox="videos" href="https://www.youtube.com/watch?v=iFrxvKPNOF8">
+                    <div class="video-card__poster">
+                      <picture>
+                        <source type='image/webp' srcset='img/videos/poster1.webp'>
+                        <img width='421' height='231' src='img/videos/poster1.png' alt='video 1'>
+                      </picture>
+                      <span class="video-card__btn">
+                        <svg width='40' height='40'>
+                          <use href='img/sprite/sprite.svg#video'></use>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="video-card__info">
+                      <div class="video-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+
+                      <svg width='44' height='44'>
+                        <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class='swiper-slide'>
+                  <a class="video-card" data-fancybox="videos" href="https://www.youtube.com/watch?v=iFrxvKPNOF8">
+                    <div class="video-card__poster">
+                      <picture>
+                        <source type='image/webp' srcset='img/videos/poster2.webp'>
+                        <img width='421' height='231' src='img/videos/poster2.png' alt='video 2'>
+                      </picture>
+                      <span class="video-card__btn">
+                        <svg width='40' height='40'>
+                          <use href='img/sprite/sprite.svg#video'></use>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="video-card__info">
+                      <div class="video-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+
+                      <svg width='44' height='44'>
+                        <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class='swiper-slide'>
+                  <a class="video-card" data-fancybox="videos" href="https://www.youtube.com/watch?v=iFrxvKPNOF8">
+                    <div class="video-card__poster">
+                      <picture>
+                        <source type='image/webp' srcset='img/videos/poster3.webp'>
+                        <img width='421' height='231' src='img/videos/poster3.png' alt='video 3'>
+                      </picture>
+                      <span class="video-card__btn">
+                        <svg width='40' height='40'>
+                          <use href='img/sprite/sprite.svg#video'></use>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="video-card__info">
+                      <div class="video-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+
+                      <svg width='44' height='44'>
+                        <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class='swiper-slide'>
+                  <a class="video-card" data-fancybox="videos" href="https://www.youtube.com/watch?v=iFrxvKPNOF8">
+                    <div class="video-card__poster">
+                      <picture>
+                        <source type='image/webp' srcset='img/videos/poster2.webp'>
+                        <img width='421' height='231' src='img/videos/poster2.png' alt='video 2'>
+                      </picture>
+                      <span class="video-card__btn">
+                        <svg width='40' height='40'>
+                          <use href='img/sprite/sprite.svg#video'></use>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="video-card__info">
+                      <div class="video-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+
+                      <svg width='44' height='44'>
+                        <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class='swiper-slide'>
+                  <a class="video-card" data-fancybox="videos" href="https://www.youtube.com/watch?v=iFrxvKPNOF8">
+                    <div class="video-card__poster">
+                      <picture>
+                        <source type='image/webp' srcset='img/videos/poster3.webp'>
+                        <img width='421' height='231' src='img/videos/poster3.png' alt='video 3'>
+                      </picture>
+                      <span class="video-card__btn">
+                        <svg width='40' height='40'>
+                          <use href='img/sprite/sprite.svg#video'></use>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="video-card__info">
+                      <div class="video-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+
+                      <svg width='44' height='44'>
+                        <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class='swiper-slide'>
+                  <a class="video-card" data-fancybox="videos" href="https://www.youtube.com/watch?v=iFrxvKPNOF8">
+                    <div class="video-card__poster">
+                      <picture>
+                        <source type='image/webp' srcset='img/videos/poster2.webp'>
+                        <img width='421' height='231' src='img/videos/poster2.png' alt='video 2'>
+                      </picture>
+                      <span class="video-card__btn">
+                        <svg width='40' height='40'>
+                          <use href='img/sprite/sprite.svg#video'></use>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="video-card__info">
+                      <div class="video-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+
+                      <svg width='44' height='44'>
+                        <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="redaction-section">
+      <div class="container">
+        <div class="redaction-section__post">
+          <div class="redaction-section__post-info">
+            <div class="redaction-section__post-top">
+              <span class="redaction-section__post-heading h2">Вибір редакції</span>
+
+              <div class="redaction-section__post-details">
+                <div class="redaction-section__post-views">
+                  <svg width='16' height='16'>
+                    <use href='img/sprite/sprite.svg#eye'></use>
+                  </svg>
+                  <p>14</p>
+                </div>
+
+                <div class="redaction-section__post-author">
+                  <svg width='16' height='16'>
+                    <use href='img/sprite/sprite.svg#avatar'></use>
+                  </svg>
+                  <p>Марія Шевченко</p>
+                </div>
+
+                <time class="redaction-section__post-pubtime" datetime="24.10.2025">
+                  <svg width='16' height='16'>
+                    <use href='img/sprite/sprite.svg#time'></use>
+                  </svg>
+                  24.10.2024
+                </time>
+              </div>
+            </div>
+
+            <div class="redaction-section__post-box">
+              <div class="redaction-section__post-controls">
+                <span class="redaction-section__post-tag">
+                  <svg width='12' height='12'>
+                    <use href='img/sprite/sprite.svg#tag'></use>
+                  </svg>
+                  <p>культурне</p>
+                </span>
+
+                <span class="redaction-section__post-link">
+                  <svg width='40' height='40'>
+                    <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                  </svg>
+                </span>
+              </div>
+
+              <div class="redaction-section__post-title">Менший ризик аритмії: як канабіс підтримує здоров'я серця</div>
+
+              <p class="redaction-section__post-excerpt">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+            </div>
+          </div>
+
+          <div class="redaction-section__post-image">
+            <picture>
+              <source type='image/webp' srcset='img/articles/redaction.webp'>
+              <img width='602' height='331' src='img/articles/redaction.png' alt='Вибір редакції'>
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-section">
+      <div class="container">
+        <div class="category-section__wrapp">
+          <h2 class="category-section__title">
+            <svg width='40' height='40'>
+              <use href='img/sprite/sprite.svg#tag'></use>
+            </svg>
+            <p>здоровʼя</p>
+          </h2>
+
+          <div class="category-section__slider">
+            <div class='swiper-container'>
+              <ul class="category-section__items swiper-wrapper">
+                <li class='swiper-slide'>
+                  <a class="article-card" href="#">
+                    <div class="article-card__thumbnails">
+                      <picture>
+                        <source type='image/webp' srcset='img/articles/article1.webp'>
+                        <img width='602' height='331' src='img/articles/article1.png' alt='article1'>
+                      </picture>
+                    </div>
+
+                    <div class="article-card__info">
+                      <div class="article-card__top">
+                        <span class="article-card__tag">
+                          <svg width='12' height='12'>
+                            <use href='img/sprite/sprite.svg#tag'></use>
+                          </svg>
+                          <p>культурне</p>
+                        </span>
+
+                        <div class="article-card__details">
+                          <div class="article-card__views">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#eye'></use>
+                            </svg>
+                            <p>14</p>
+                          </div>
+
+                          <div class="article-card__author">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#avatar'></use>
+                            </svg>
+                            <p>Марія Шевченко</p>
+                          </div>
+
+                          <time class="article-card__pubtime" datetime="24.10.2025">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#time'></use>
+                            </svg>
+                            24.10.2024
+                          </time>
+                        </div>
+                      </div>
+
+                      <div class="article-card__bottom">
+                        <div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+
+                        <span>
+                          <svg width='44' height='44'>
+                            <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class='swiper-slide'>
+                  <a class="article-card" href="#">
+                    <div class="article-card__thumbnails">
+                      <picture>
+                        <source type='image/webp' srcset='img/articles/article1.webp'>
+                        <img width='602' height='331' src='img/articles/article1.png' alt='article1'>
+                      </picture>
+                    </div>
+
+                    <div class="article-card__info">
+                      <div class="article-card__top">
+                        <span class="article-card__tag">
+                          <svg width='12' height='12'>
+                            <use href='img/sprite/sprite.svg#tag'></use>
+                          </svg>
+                          <p>культурне</p>
+                        </span>
+
+                        <div class="article-card__details">
+                          <div class="article-card__views">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#eye'></use>
+                            </svg>
+                            <p>14</p>
+                          </div>
+
+                          <div class="article-card__author">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#avatar'></use>
+                            </svg>
+                            <p>Марія Шевченко</p>
+                          </div>
+
+                          <time class="article-card__pubtime" datetime="24.10.2025">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#time'></use>
+                            </svg>
+                            24.10.2024
+                          </time>
+                        </div>
+                      </div>
+
+                      <div class="article-card__bottom">
+                        <div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+
+                        <span>
+                          <svg width='44' height='44'>
+                            <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class='swiper-slide'>
+                  <a class="article-card" href="#">
+                    <div class="article-card__thumbnails">
+                      <picture>
+                        <source type='image/webp' srcset='img/articles/article1.webp'>
+                        <img width='602' height='331' src='img/articles/article1.png' alt='article1'>
+                      </picture>
+                    </div>
+
+                    <div class="article-card__info">
+                      <div class="article-card__top">
+                        <span class="article-card__tag">
+                          <svg width='12' height='12'>
+                            <use href='img/sprite/sprite.svg#tag'></use>
+                          </svg>
+                          <p>культурне</p>
+                        </span>
+
+                        <div class="article-card__details">
+                          <div class="article-card__views">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#eye'></use>
+                            </svg>
+                            <p>14</p>
+                          </div>
+
+                          <div class="article-card__author">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#avatar'></use>
+                            </svg>
+                            <p>Марія Шевченко</p>
+                          </div>
+
+                          <time class="article-card__pubtime" datetime="24.10.2025">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#time'></use>
+                            </svg>
+                            24.10.2024
+                          </time>
+                        </div>
+                      </div>
+
+                      <div class="article-card__bottom">
+                        <div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+
+                        <span>
+                          <svg width='44' height='44'>
+                            <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class='swiper-slide'>
+                  <a class="article-card" href="#">
+                    <div class="article-card__thumbnails">
+                      <picture>
+                        <source type='image/webp' srcset='img/articles/article1.webp'>
+                        <img width='602' height='331' src='img/articles/article1.png' alt='article1'>
+                      </picture>
+                    </div>
+
+                    <div class="article-card__info">
+                      <div class="article-card__top">
+                        <span class="article-card__tag">
+                          <svg width='12' height='12'>
+                            <use href='img/sprite/sprite.svg#tag'></use>
+                          </svg>
+                          <p>культурне</p>
+                        </span>
+
+                        <div class="article-card__details">
+                          <div class="article-card__views">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#eye'></use>
+                            </svg>
+                            <p>14</p>
+                          </div>
+
+                          <div class="article-card__author">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#avatar'></use>
+                            </svg>
+                            <p>Марія Шевченко</p>
+                          </div>
+
+                          <time class="article-card__pubtime" datetime="24.10.2025">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#time'></use>
+                            </svg>
+                            24.10.2024
+                          </time>
+                        </div>
+                      </div>
+
+                      <div class="article-card__bottom">
+                        <div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+
+                        <span>
+                          <svg width='44' height='44'>
+                            <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class='swiper-slide'>
+                  <a class="article-card" href="#">
+                    <div class="article-card__thumbnails">
+                      <picture>
+                        <source type='image/webp' srcset='img/articles/article1.webp'>
+                        <img width='602' height='331' src='img/articles/article1.png' alt='article1'>
+                      </picture>
+                    </div>
+
+                    <div class="article-card__info">
+                      <div class="article-card__top">
+                        <span class="article-card__tag">
+                          <svg width='12' height='12'>
+                            <use href='img/sprite/sprite.svg#tag'></use>
+                          </svg>
+                          <p>культурне</p>
+                        </span>
+
+                        <div class="article-card__details">
+                          <div class="article-card__views">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#eye'></use>
+                            </svg>
+                            <p>14</p>
+                          </div>
+
+                          <div class="article-card__author">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#avatar'></use>
+                            </svg>
+                            <p>Марія Шевченко</p>
+                          </div>
+
+                          <time class="article-card__pubtime" datetime="24.10.2025">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#time'></use>
+                            </svg>
+                            24.10.2024
+                          </time>
+                        </div>
+                      </div>
+
+                      <div class="article-card__bottom">
+                        <div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+
+                        <span>
+                          <svg width='44' height='44'>
+                            <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class='swiper-slide'>
+                  <a class="article-card" href="#">
+                    <div class="article-card__thumbnails">
+                      <picture>
+                        <source type='image/webp' srcset='img/articles/article1.webp'>
+                        <img width='602' height='331' src='img/articles/article1.png' alt='article1'>
+                      </picture>
+                    </div>
+
+                    <div class="article-card__info">
+                      <div class="article-card__top">
+                        <span class="article-card__tag">
+                          <svg width='12' height='12'>
+                            <use href='img/sprite/sprite.svg#tag'></use>
+                          </svg>
+                          <p>культурне</p>
+                        </span>
+
+                        <div class="article-card__details">
+                          <div class="article-card__views">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#eye'></use>
+                            </svg>
+                            <p>14</p>
+                          </div>
+
+                          <div class="article-card__author">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#avatar'></use>
+                            </svg>
+                            <p>Марія Шевченко</p>
+                          </div>
+
+                          <time class="article-card__pubtime" datetime="24.10.2025">
+                            <svg width='16' height='16'>
+                              <use href='img/sprite/sprite.svg#time'></use>
+                            </svg>
+                            24.10.2024
+                          </time>
+                        </div>
+                      </div>
+
+                      <div class="article-card__bottom">
+                        <div class="article-card__title">Дослідження виявило,що предки могли походити з Китаю</div>
+
+                        <span>
+                          <svg width='44' height='44'>
+                            <use href='img/sprite/sprite.svg#arrow-agile'></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="category-section__controls">
+            <button class='swiper-button prev'>
+              <svg width='40' height='40'>
+                <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+
+            <div class="swiper-pagination"></div>
+
+            <button class='swiper-button next'>
+              <svg width='40' height='40'>
+                <use href='img/sprite/sprite.svg#arrow-right'></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe-section">
+      <div class="container">
+        <div class="subscribe-section__wrapp">
+          <div class="subscribe-section__bg">
+            <svg class="pink-decor-desk" width='1217' height='248'>
+              <use href='img/sprite/sprite.svg#pink-decor'></use>
+            </svg>
+          </div>
+
+          <form class="form">
+            <div class="form__top">
+              <div class="form__title h2">Підписуйся на новини!</div>
+              <p class="form__text">Отримуй корисне і цікаве!</p>
+            </div>
+
+            <div class="form__box subscribe">
+              <label class="form__label">
+                <input class="form__input" type="email" name="email" placeholder="Введіть e-mail">
+              </label>
+              <button class="form__submit">Підписатись</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="insta-section">
+      <div class="container">
+        <div class="insta-section__wrapp">
+          <div class="insta-section__top">
+            <h2 class="insta-section__title">Останні публікації в Інстаграм</h2>
+            
+            <a class="insta-section__link" href="#">
+              Перейти в Інстаграм
+              <svg width='22' height='22'>
+                <use href='img/sprite/sprite.svg#inst-icon'></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="insta-section__box">
+            <div class="insta-section__left">
+              <div class="insta-section__left-first">
+                <picture>
+                  <source type='image/webp' srcset='img/instagram/inst1.webp'>
+                  <img width='461' height='562' src='img/instagram/inst1.png' alt=''>
+                </picture>
+              </div>
+              <div class="insta-section__left-second">
+                <picture>
+                  <source type='image/webp' srcset='img/instagram/inst3.webp'>
+                  <img width='220' height='293' src='img/instagram/inst3.png' alt=''>
+                </picture>
+              </div>
+            </div>
+
+            <div class="insta-section__mid">
+              <div class="insta-section__center">
+                <div class="insta-section__center-first">
+                  <picture>
+                    <source type='image/webp' srcset='img/instagram/inst2.webp'>
+                    <img width='321' height='428' src='img/instagram/inst2.png' alt=''>
+                  </picture>
+                </div>
+
+                <div class="insta-section__center-second">
+                  <picture>
+                    <source type='image/webp' srcset='img/instagram/inst4.webp'>
+                    <img width='321' height='428' src='img/instagram/inst4.png' alt=''>
+                  </picture>
+                </div>
+              </div>
+
+              <div class="insta-section__right">
+                <picture>
+                  <source type='image/webp' srcset='img/instagram/inst5.webp'>
+                  <img width='506' height='674' src='img/instagram/inst5.png' alt=''>
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="container">
+        <div class="text-section__wrapp">
+          <div class="text-section__box">
+            <h3>Зелена газета - новини для гармонії й духовного балансу</h3> 
+
+            <p>
+              Ласкаво просимо до Зелена газета, тут ви знайдете останні новини, тренди та практичні поради щодо медитації, здоров'я та велнесу. Наша мета — допомогти вам набути гармонію, зменшити стрес та підвищити якість життя.
+            </p>
+
+            <p>Поглибте своє розуміння тиші та спокою</p>
+
+            <p>
+              Медитація — потужний інструмент для встановлення внутрішнього балансу та психологічного здоров'я. Наші статті та провідні експерти покажуть вам, як почати та удосконалити свою практику.
+            </p>
+
+            <p>Оптимізуйте своє здоров'я</p>
+              
+            <p>
+              Здоров'я — це більше, ніж відсутність хвороб. Це спосіб життя. Слідкуйте за останніми дослідженнями, рекомендаціями лікарів та способами покращення загального стану організму.
+            </p>
+
+            <p>Все про велнес та стиль життя</p>
+              
+            <p>Велнес поглядає на здоров'я комплексно. Ми ділимося простими та ефективними способами створити звички, що підвищують життєву енергію та гармонію.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapp">
+      <div class="footer__divider">
+        <svg width='1280' height='8'>
+          <use href='img/sprite/sprite.svg#full-line'></use>
+        </svg>
+      </div>
+
+      <div class="footer__socials">
+        <span class="footer__socials-heading">Слідкуй за нами також</span>
+
+        <ul class="socials">
+          <li>
+            <a href="#">
+              <svg width='48' height='48'>
+                <use href='img/sprite/sprite.svg#telegram'></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg width='48' height='48'>
+                <use href='img/sprite/sprite.svg#instagram'></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg width='48' height='48'>
+                <use href='img/sprite/sprite.svg#youtube'></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg width='48' height='48'>
+                <use href='img/sprite/sprite.svg#facebook'></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__divider">
+        <svg width='1280' height='8'>
+          <use href='img/sprite/sprite.svg#full-line'></use>
+        </svg>
+      </div>
+
+      <a href="/" class="footer__logo logo">
+        <svg class="light-logo" width='1280' height='142'>
+          <use href='img/sprite/sprite.svg#full-medicine-dark'></use>
+        </svg>
+        <svg class="dark-logo" width='1280' height='142'>
+          <use href='img/sprite/sprite.svg#full-medicine-white'></use>
+        </svg>
+      </a>
+
+      <div class="footer__navs" data-default="1" data-single='true' data-accordion-init>
+        <div class="footer__navs-left">
+          <div class="footer__nav">
+            <button data-id='1'>
+              Турбота про себе
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#arrow-down'></use>
+              </svg>
+            </button>
+
+            <ul data-content='1'>
+              <li>
+                <a href="#">Краса</a>
+              </li>
+              <li>
+                <a href="#">Фітнес</a>
+              </li>
+              <li>
+                <a href="#">Схуднення та дієти</a>
+              </li>
+              <li>
+                <a href="#">Емоційна стабільність</a>
+              </li>
+              <li>
+                <a href="#">Саморозвиток</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__nav">
+            <button data-id='2'>
+              Новини
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#arrow-down'></use>
+              </svg>
+            </button>
+
+            <ul data-content='2'>
+              <li>
+                <a href="#">Дослідження</a>
+              </li>
+              <li>
+                <a href="#">Новини з експертами</a>
+              </li>
+              <li>
+                <a href="#">Новини пов’язані з темами проєкту</a>
+              </li>
+              <li>
+                <a href="#">Новини світу каннабісу</a>
+              </li>
+              <li>
+                <a href="#">Тренди</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__nav">
+          <button data-id='3'>
+            Психологія
+            <svg width='24' height='24'>
+              <use href='img/sprite/sprite.svg#arrow-down'></use>
+            </svg>
+          </button>
+
+          <ul data-content='3'>
+            <li>
+              <a href="#">Психологія відносин</a>
+            </li>
+            <li>
+              <a href="#">Секс</a>
+            </li>
+            <li>
+              <a href="#">Арт-терапія та мантричні практики</a>
+            </li>
+            <li>
+              <a href="#">Реальні історії людей</a>
+            </li>
+            <li>
+              <a href="#">Психологія змін</a>
+            </li>
+            <li>
+              <a href="#">Вікова психологія</a>
+            </li>
+            <li>
+              <a href="#">Психологія в роботі</a>
+            </li>
+            <li>
+              <a href="#">Робота зі стресом</a>
+            </li>
+            <li>
+              <a href="#">Самооцінка та прийняття себе</a>
+            </li>
+            <li>
+              <a href="#">Емоційний інтелект</a>
+            </li>
+            <li>
+              <a href="#">Ментальне здоров’я</a>
+            </li>
+            <li>
+              <a href="#">ПТСР та психологія травми</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__nav">
+          <button data-id='4'>
+            Здоров’я
+            <svg width='24' height='24'>
+              <use href='img/sprite/sprite.svg#arrow-down'></use>
+            </svg>
+          </button>
+
+          <ul data-content='4'>
+            <li>
+              <a href="#">Сезонні хвороби та їх лікування</a>
+            </li>
+            <li>
+              <a href="#">Психоделіки</a>
+            </li>
+            <li>
+              <a href="#">Словник основних Хвороб</a>
+            </li>
+            <li>
+              <a href="#">Медичний канабіс, CBD</a>
+            </li>
+            <li>
+              <a href="#">Ментальне здоров’я</a>
+            </li>
+            <li>
+              <a href="#">Жіноче здоров’я</a>
+            </li>
+            <li>
+              <a href="#">Правильне харчування</a>
+            </li>
+            <li>
+              <a href="#">Чоловіче здоров’я</a>
+            </li>
+            <li>
+              <a href="#">Схуднення</a>
+            </li>
+            <li>
+              <a href="#">Пластична хірургія</a>
+            </li>
+            <li>
+              <a href="#">Альтернативна медицина</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__nav">
+          <button data-id='5'>
+            Стиль життя
+            <svg width='24' height='24'>
+              <use href='img/sprite/sprite.svg#arrow-down'></use>
+            </svg>
+          </button>
+
+          <ul data-content='5'>
+            <li>
+              <a href="#">Свята та традиції</a>
+            </li>
+            <li>
+              <a href="#">Технології та стиль життя</a>
+            </li>
+            <li>
+              <a href="#">Надихаючі історії</a>
+            </li>
+            <li>
+              <a href="#">Подорожі</a>
+            </li>
+            <li>
+              <a href="#">Культура і натхнення</a>
+            </li>
+            <li>
+              <a href="#">Підприємство та лідерство</a>
+            </li>
+            <li>
+              <a href="#">Лайф-ворк баланс</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__nav">
+          <button data-id='6'>
+            Зелена медицина
+
+            <svg width='24' height='24'>
+              <use href='img/sprite/sprite.svg#arrow-down'></use>
+            </svg>
+          </button>
+
+          <ul data-content='6'>
+            <li>
+              <a href="#">Дослідження</a>
+            </li>
+            <li>
+              <a href="#">Історії успіху людей із галузі</a>
+            </li>
+            <li>
+              <a href="#">Аналітика</a>
+            </li>
+            <li>
+              <a href="#">Законодавчі зміни</a>
+            </li>
+            <li>
+              <a href="#">Медичний лайфстайл</a>
+            </li>
+            <li>
+              <a href="#">Маркетинг та бізнес</a>
+            </li>
+            <li>
+              <a href="#">Про використання психоделіків в інших країнах</a>
+            </li>
+            <li>
+              <a href="#">Новини фармації та медицини</a>
+            </li>
+            <li>
+              <a href="#">Медичний канабіс</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__divider">
+        <svg width='1280' height='8'>
+          <use href='img/sprite/sprite.svg#full-line'></use>
+        </svg>
+      </div>
+
+      <div class="footer__bottom">
+        <ul class="footer__info">
+          <li>
+            <a href="/privacy-policy.html">Політика приватності</a>
+          </li>
+          <li>
+            <a href="/rules-policy.html">Правила використання</a>
+          </li>
+          <li>
+            <a href="/public-offer.html">Публічна оферта</a>
+          </li>
+          <li>
+            <a href="/edditorial-policy.html">Редакційна політика</a>
+          </li>
+        </ul>
+        
+        <button class="footer__contacts" data-btn-modal="contact">
+          <svg width='20' height='20'>
+            <use href='img/sprite/sprite.svg#mail'></use>
+          </svg>
+          Написати нам
+        </button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="starting-popup" data-btn-modal="snake-alert"></button>
+
+<div class="cookies">
+  <div class="container">
+    <div class="cookies__wrapp">
+        <div class="cookies__text">
+          Ми використовуємо файли cookie щоб зробити ваше користування веб-сайтом зручнішим.  Продовжуючи користуватися цим сайтом, ви погоджуєтесь із використанням файлів cookies. Дізнайтеся більше про використання cookie на сторінці
+        </div>
+
+        <div class="cookies__controls" data-single='true' data-accordion-init>
+          <div class="cookies__controls-btns">
+            <button class="cookies__apply">Прийняти</button>
+            <button class="cookies__cancel">Відхилити</button>
+  
+            <button class="cookies__btn" data-id='1'>
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#settings'></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="cookies__settings" data-content='1'>
+            <ul>
+              <li>
+                <p>Аналітика</p>
+                <label>
+                  <input type="checkbox" name="analytics">
+                  <span></span>
+                </label>
+              </li>
+              <li>
+                <p>Уподобання</p>
+                <label>
+                  <input type="checkbox" name="preferences">
+                  <span></span>
+                </label>
+              </li>
+              <li>
+                <p>Маркетинг</p>
+                <label>
+                  <input type="checkbox" name="marketing">
+                  <span></span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+  <div class="overlay fixed-block" data-overlay>
+    <div class="modal modal--contact" data-popup="contact">
+        <div class="modal__box">
+          <div class="modal__top">
+            <div class="modal__title">Є питання? Напишіть нам</div>
+  
+            <button class="modal__close close">
+              <svg width='24' height='24'>
+                  <use href='img/sprite/sprite.svg#burger-close'></use>
+              </svg>
+            </button>
+          </div>
+
+          <form class="form">
+            <div class="form__box">
+                <label class="form__label">
+                    <input class="form__input" type="email" name="email" placeholder="Введіть e-mail">
+                </label>
+                <label>
+                    <textarea class="form__textarea" name="textarea" placeholder="Текст повідомлення"></textarea>
+                </label>
+
+                <button class="form__submit" data-btn-inner="success">Надіслати</button>
+            </div>
+          </form>
+        </div>
+    </div>
+
+    <div class="modal modal--success" data-popup="success">
+      <div class="modal__box">
+        <div class="modal__top">
+          <div class="modal__title">
+            Дякуємо! Повідомлення надіслано успішно!
+          </div>
+
+          <button class="modal__close close">
+            <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#burger-close'></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="modal__text">Ми обов’язково з вами звʼяжемось!</div>
+      </div>
+    </div>
+
+    <div class="modal modal--share" data-popup="share">
+      <div class="modal__box">
+        <div class="modal__top">
+          <div class="modal__title">
+            Поділитись
+          </div>
+
+          <button class="modal__close close">
+            <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#burger-close'></use>
+            </svg>
+          </button>
+        </div>
+
+        <ul class="socials">
+          <li>
+            <a href="#">
+              <svg width='48' height='48'>
+                <use href='img/sprite/sprite.svg#telegram'></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg width='48' height='48'>
+                <use href='img/sprite/sprite.svg#instagram'></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg width='48' height='48'>
+                <use href='img/sprite/sprite.svg#facebook'></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <form class="share-form">
+          <label class="share-form__label">
+            <span class="share-form__link" data-value="https://zelenagazeta/">https://zelenagazeta/</span>
+          </label>
+          
+          <button class="share-form__btn copy">
+            <svg width='24' height='24'>
+              <use href='img/sprite/sprite.svg#copy'></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal modal--alert" data-popup="age-alert">
+      <div class="modal__box">
+        <div class="modal__title">
+          Вам вже виповнилось 18 років?
+        </div>
+
+        <div class="modal__icon">
+          <svg width='123' height='109'>
+            <use href='img/sprite/sprite.svg#paper-logo'></use>
+          </svg>
+        </div>
+
+        <div class="modal__btns">
+          <div class="btn-cancel">Ні</div>
+          <div class="btn-success close">Так</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal--alert" data-popup="snake-alert">
+      <div class="modal__box">
+        <div class="modal__title">
+          Ви лікар?
+        </div>
+
+        <div class="modal__icon">
+          <svg width='123' height='109'>
+            <use href='img/sprite/sprite.svg#snake'></use>
+          </svg>
+        </div>
+
+        <div class="modal__btns">
+          <div class="btn-cancel">Ні</div>
+          <div class="btn-success close">Так</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal--categories" data-popup="categories">
+      <div class="modal__cats">
+        <div class="modal__cats-top">
+          <a href="/" class="header__mobile-logo logo">
+            <img class="light-logo" width='1280' height='142' src="../img/index/gazeta-white.svg" alt="Зелена газета">
+            <img class="dark-logo" width='1280' height='142' src="../img/index/gazeta-black.svg" alt="Зелена газета">
+          </a>
+
+          <button class="modal__close close">
+            <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#burger-close'></use>
+            </svg>
+          </button>
+        </div>
+
+        <ul class="mobile__menu menu" data-single='true' data-accordion-init>
+          <li class="menu-item">
+            <a class="menu-link" href="#">
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#list'></use>
+              </svg>
+              Усі
+            </a>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-link" href="/listing-category.html">
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#heart'></use>
+              </svg>
+              Турбота про себе
+            </a>
+            <button class="menu-button" data-id='1'>
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#agile-right'></use>
+              </svg>
+            </button>
+    
+            <ul class="sub-menu" data-content='1'>
+              <li>
+                <a href="/listing-subcategory.html">Усі</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Психологія відносин</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Секс</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Реальні історії людей</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Психологія змін</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Вікова психологія</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Психологія в роботі</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Робота зі стресом</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Самооцінка та прийняття себе</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Емоційний інтелект</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Ментальне здоров’я</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">ПТСР та психологія травми</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-link" href="/listing-category.html">
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#leaf'></use>
+              </svg>
+              Психологія
+            </a>
+    
+            <button class="menu-button" data-id='2'>
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#agile-right'></use>
+              </svg>
+            </button>
+    
+            <ul class="sub-menu" data-content='2'>
+              <li>
+                <a href="/listing-subcategory.html">Усі</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Психологія відносин</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Секс</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Реальні історії людей</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-link" href="/listing-category.html">
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#doctor'></use>
+              </svg>
+              Здоров’я
+            </a>
+    
+            <button class="menu-button" data-id='3'>
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#agile-right'></use>
+              </svg>
+            </button>
+    
+            <ul class="sub-menu" data-content='3'>
+              <li>
+                <a href="/listing-subcategory.html">Усі</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Психологія відносин</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Секс</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Реальні історії людей</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Психологія змін</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Вікова психологія</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Психологія в роботі</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Робота зі стресом</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Самооцінка та прийняття себе</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Емоційний інтелект</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-link" href="/listing-category.html">
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#style'></use>
+              </svg>
+              Стиль життя
+            </a>
+    
+            <button class="menu-button" data-id='4'>
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#agile-right'></use>
+              </svg>
+            </button>
+    
+            <ul class="sub-menu" data-content='4'>
+              <li>
+                <a href="/listing-subcategory.html">Усі</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Психологія відносин</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Секс</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Робота зі стресом</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Самооцінка та прийняття себе</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Емоційний інтелект</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Ментальне здоров’я</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">ПТСР та психологія травми</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-link" href="/listing-category.html">
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#bulb'></use>
+              </svg>
+              Зелена медицина
+            </a>
+    
+            <button class="menu-button" data-id='5'>
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#agile-right'></use>
+              </svg>
+            </button>
+    
+            <ul class="sub-menu" data-content='5'>
+              <li>
+                <a href="/listing-subcategory.html">Усі</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Психологія відносин</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Секс</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Реальні історії людей</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Психологія змін</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Вікова психологія</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Психологія в роботі</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Робота зі стресом</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Самооцінка та прийняття себе</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Емоційний інтелект</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Ментальне здоров’я</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">ПТСР та психологія травми</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#news'></use>
+              </svg>
+              Новини
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="modal modal--podcasts" data-popup="podcasts">
+      <div class="modal__box">
+        <div class="modal__title">
+          "Зелений подкаст" вже чекає на YouTube!
+        </div>
+
+        <div class="modal__descr">
+          Дізнавайся про здоров'я та надихайся на саморозвиток разом з нами
+        </div>
+
+        <div class="modal__icon">
+            <img class="icon-white" width='276' height='161' src='img/podcasts/podcasts-white.svg' alt=''>
+            <img class="icon-black" width='276' height='161' src='img/podcasts/podcasts-black.svg' alt=''>
+        </div>
+
+        <div class="modal__btns">
+          <div class="btn-cancel close">Не зараз</div>
+          <a href="/listing-podcasts.html" class="btn-success close">До подкастів</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+  <script defer src="js/main.js"></script>
+</body>
+
+
+</html>

@@ -1,13 +1,1958 @@
-<!DOCTYPE html><html lang="Ua"><head><script>(function () {
+<!DOCTYPE html>
+<html lang="Ua">
+<head>
+  <script>
+  (function () {
     try {
       const theme = localStorage.getItem('color-theme');
       if (theme) {
         document.documentElement.setAttribute('data-theme', theme);
       }
     } catch (e) {}
-  })();</script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="Description" content="Зелена Газета"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Зелена Газета</title><link rel="preload" href="fonts/e-Ukraine-Light.woff" as="font" crossorigin="anonymous"><link rel="preload" href="fonts/e-Ukraine-Regular.woff" as="font" crossorigin="anonymous"><link rel="preload" href="fonts/e-Ukraine-Medium.woff" as="font" crossorigin="anonymous"><link rel="preload" href="fonts/e-Ukraine-Bold.woff" as="font" crossorigin="anonymous"><link rel="stylesheet" href="css/style.css"></head><body><header class="header fixed-block"><div class="container"><div class="header__wrapp"><div class="header__top"><div class="header__top-left"><button class="burger"><svg class="burger__open" width="32" height="32"><use href="img/sprite/sprite.svg#burger-open"></use></svg> <svg class="burger__close" width="32" height="32"><use href="img/sprite/sprite.svg#burger-close"></use></svg></button><div class="theme-switcher"><label class="dark-theme"><input type="radio" name="color-theme" value="dark"> <span><svg class="dark-theme" width="32" height="32"><use href="img/sprite/sprite.svg#dark"></use></svg></span></label> <label class="light-theme"><input type="radio" name="color-theme" value="light" checked="checked"> <span><svg class="light-theme" width="32" height="32"><use href="img/sprite/sprite.svg#light"></use></svg></span></label></div><div class="header__logo-sticky logo"><img class="light-logo" width="341" height="38" src="../img/index/gazeta-white.svg" alt="Зелена газета"> <img class="dark-logo" width="341" height="38" src="../img/index/gazeta-black.svg" alt="Зелена газета"></div></div><div class="header__controls"><div class="search"><div class="search__trigger"><svg width="32" height="32"><use href="img/sprite/sprite.svg#search"></use></svg></div></div><a class="header__link" href="/medicine.html"><svg width="22" height="22"><use href="img/sprite/sprite.svg#medicine"></use></svg> Зелена медицина</a><div class="lang select" data-select><div class="select__header"><input type="hidden" class="select__input" id="lang" name="lang" value="1"> <span class="select__current" data-id="1">UA </span><svg width="24" height="24"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></div><div class="select__body"><ul class="select__list"><li class="select__option" data-id="1" data-type="option">UA</li><li class="select__option" data-id="2" data-type="option">EN</li><li class="select__option" data-id="3" data-type="option">RU</li></ul></div></div></div></div><div class="header__box"><a href="/" class="header__logo logo"><img class="light-logo" width="1280" height="142" src="../img/index/gazeta-white.svg" alt="Зелена газета"> <img class="dark-logo" width="1280" height="142" src="../img/index/gazeta-black.svg" alt="Зелена газета"></a><div class="header__divider"><svg width="1280" height="8"><use href="img/sprite/sprite.svg#full-line"></use></svg></div></div><nav class="header__nav"><ul class="menu"><li class="menu-item menu-item-has-children"><a class="menu-link" href="#">Новини <svg width="16" height="16"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></a><ul class="sub-menu"><li><a href="#">Психологія відносин</a></li><li><a href="#">Секс</a></li><li><a href="#">Арт-терапія та мантричні практики</a></li><li><a href="#">Реальні історії людей</a></li><li><a href="#">Психологія змін</a></li><li><a href="#">Вікова психологія</a></li><li><a href="#">Психологія в роботі</a></li><li><a href="#">Робота зі стресом</a></li><li><a href="#">Самооцінка та прийняття себе</a></li><li><a href="#">Емоційний інтелект</a></li><li><a href="#">Ментальне здоров’я</a></li><li><a href="#">ПТСР та психологія травми</a></li></ul></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="#">Медичне <svg width="16" height="16"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></a><ul class="sub-menu"><li><a href="#">Психологія відносин</a></li><li><a href="#">Секс</a></li><li><a href="#">Арт-терапія та мантричні практики</a></li><li><a href="#">Реальні історії людей</a></li><li><a href="#">Психологія змін</a></li><li><a href="#">Вікова психологія</a></li><li><a href="#">Психологія в роботі</a></li><li><a href="#">Робота зі стресом</a></li><li><a href="#">Самооцінка та прийняття себе</a></li><li><a href="#">Емоційний інтелект</a></li><li><a href="#">Ментальне здоров’я</a></li><li><a href="#">ПТСР та психологія травми</a></li></ul></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="#">Життєве <svg width="16" height="16"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></a><ul class="sub-menu"><li><a href="#">Реальні історії людей</a></li><li><a href="#">Психологія змін</a></li><li><a href="#">Вікова психологія</a></li><li><a href="#">Психологія в роботі</a></li><li><a href="#">Робота зі стресом</a></li><li><a href="#">Самооцінка та прийняття себе</a></li><li><a href="#">Емоційний інтелект</a></li><li><a href="#">Ментальне здоров’я</a></li><li><a href="#">ПТСР та психологія травми</a></li></ul></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="#">Культурне <svg width="16" height="16"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></a><ul class="sub-menu"><li><a href="#">Психологія відносин</a></li><li><a href="#">Секс</a></li><li><a href="#">Арт-терапія та мантричні практики</a></li><li><a href="#">Реальні історії людей</a></li><li><a href="#">Психологія змін</a></li></ul></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="#">Законне <svg width="16" height="16"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></a><ul class="sub-menu"><li><a href="#">Психологія відносин</a></li><li><a href="#">Арт-терапія та мантричні практики</a></li><li><a href="#">Реальні історії людей</a></li><li><a href="#">Психологія змін</a></li><li><a href="#">Вікова психологія</a></li></ul></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="#">подкасти <svg width="16" height="16"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></a><ul class="sub-menu"><li><a href="#">Усі</a></li><li><a href="#">Зелений подкаст</a></li></ul></li></ul></nav></div></div><div class="header__mobile"><div class="container"><div class="header__mobile-box"><a href="/" class="header__mobile-logo logo"><img class="light-logo" width="225" height="28" src="../img/index/gazeta-white.svg" alt="Зелена газета"> <img class="dark-logo" width="225" height="28" src="../img/index/gazeta-black.svg" alt="Зелена газета"></a><div class="header__mobile-controls"><!-- replace for  --><div class="search"><div class="search__trigger"><svg width="32" height="32"><use href="img/sprite/sprite.svg#search"></use></svg></div></div><button class="burger"><svg class="burger__open" width="32" height="32"><use href="img/sprite/sprite.svg#burger-open"></use></svg> <svg class="burger__close" width="32" height="32"><use href="img/sprite/sprite.svg#burger-close"></use></svg></button></div></div></div><div class="header__mobile-divider"><svg width="768" height="5"><use href="img/sprite/sprite.svg#full-line"></use></svg></div></div></header><div class="mobile"><div class="mobile__box"><ul class="mobile__menu menu" data-single="true" data-accordion-init><li class="menu-item"><a class="menu-link" href="#"><svg width="24" height="24"><use href="img/sprite/sprite.svg#list"></use></svg> Усі</a></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="/listing-category.html"><svg width="24" height="24"><use href="img/sprite/sprite.svg#heart"></use></svg> Турбота про себе </a><button class="menu-button" data-id="1"><svg width="16" height="16"><use href="img/sprite/sprite.svg#agile-right"></use></svg></button><ul class="sub-menu" data-content="1"><li><a href="/listing-subcategory.html">Усі</a></li><li><a href="/listing-subcategory.html">Психологія відносин</a></li><li><a href="/listing-subcategory.html">Секс</a></li><li><a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a></li><li><a href="/listing-subcategory.html">Реальні історії людей</a></li><li><a href="/listing-subcategory.html">Психологія змін</a></li><li><a href="/listing-subcategory.html">Вікова психологія</a></li><li><a href="/listing-subcategory.html">Психологія в роботі</a></li><li><a href="/listing-subcategory.html">Робота зі стресом</a></li><li><a href="/listing-subcategory.html">Самооцінка та прийняття себе</a></li><li><a href="/listing-subcategory.html">Емоційний інтелект</a></li><li><a href="/listing-subcategory.html">Ментальне здоров’я</a></li><li><a href="/listing-subcategory.html">ПТСР та психологія травми</a></li></ul></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="/listing-category.html"><svg width="24" height="24"><use href="img/sprite/sprite.svg#leaf"></use></svg> Психологія </a><button class="menu-button" data-id="2"><svg width="16" height="16"><use href="img/sprite/sprite.svg#agile-right"></use></svg></button><ul class="sub-menu" data-content="2"><li><a href="/listing-subcategory.html">Усі</a></li><li><a href="/listing-subcategory.html">Психологія відносин</a></li><li><a href="/listing-subcategory.html">Секс</a></li><li><a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a></li><li><a href="/listing-subcategory.html">Реальні історії людей</a></li></ul></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="/listing-category.html"><svg width="24" height="24"><use href="img/sprite/sprite.svg#doctor"></use></svg> Здоров’я </a><button class="menu-button" data-id="3"><svg width="16" height="16"><use href="img/sprite/sprite.svg#agile-right"></use></svg></button><ul class="sub-menu" data-content="3"><li><a href="/listing-subcategory.html">Усі</a></li><li><a href="/listing-subcategory.html">Психологія відносин</a></li><li><a href="/listing-subcategory.html">Секс</a></li><li><a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a></li><li><a href="/listing-subcategory.html">Реальні історії людей</a></li><li><a href="/listing-subcategory.html">Психологія змін</a></li><li><a href="/listing-subcategory.html">Вікова психологія</a></li><li><a href="/listing-subcategory.html">Психологія в роботі</a></li><li><a href="/listing-subcategory.html">Робота зі стресом</a></li><li><a href="/listing-subcategory.html">Самооцінка та прийняття себе</a></li><li><a href="/listing-subcategory.html">Емоційний інтелект</a></li></ul></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="/listing-category.html"><svg width="24" height="24"><use href="img/sprite/sprite.svg#style"></use></svg> Стиль життя </a><button class="menu-button" data-id="4"><svg width="16" height="16"><use href="img/sprite/sprite.svg#agile-right"></use></svg></button><ul class="sub-menu" data-content="4"><li><a href="/listing-subcategory.html">Усі</a></li><li><a href="/listing-subcategory.html">Психологія відносин</a></li><li><a href="/listing-subcategory.html">Секс</a></li><li><a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a></li><li><a href="/listing-subcategory.html">Робота зі стресом</a></li><li><a href="/listing-subcategory.html">Самооцінка та прийняття себе</a></li><li><a href="/listing-subcategory.html">Емоційний інтелект</a></li><li><a href="/listing-subcategory.html">Ментальне здоров’я</a></li><li><a href="/listing-subcategory.html">ПТСР та психологія травми</a></li></ul></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="/listing-category.html"><svg width="24" height="24"><use href="img/sprite/sprite.svg#bulb"></use></svg> Зелена медицина </a><button class="menu-button" data-id="5"><svg width="16" height="16"><use href="img/sprite/sprite.svg#agile-right"></use></svg></button><ul class="sub-menu" data-content="5"><li><a href="/listing-subcategory.html">Усі</a></li><li><a href="/listing-subcategory.html">Психологія відносин</a></li><li><a href="/listing-subcategory.html">Секс</a></li><li><a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a></li><li><a href="/listing-subcategory.html">Реальні історії людей</a></li><li><a href="/listing-subcategory.html">Психологія змін</a></li><li><a href="/listing-subcategory.html">Вікова психологія</a></li><li><a href="/listing-subcategory.html">Психологія в роботі</a></li><li><a href="/listing-subcategory.html">Робота зі стресом</a></li><li><a href="/listing-subcategory.html">Самооцінка та прийняття себе</a></li><li><a href="/listing-subcategory.html">Емоційний інтелект</a></li><li><a href="/listing-subcategory.html">Ментальне здоров’я</a></li><li><a href="/listing-subcategory.html">ПТСР та психологія травми</a></li></ul></li><li class="menu-item"><a class="menu-link" href="#"><svg width="24" height="24"><use href="img/sprite/sprite.svg#news"></use></svg> Новини</a></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="/listing-podcasts.html"><svg width="24" height="24"><use href="img/sprite/sprite.svg#music"></use></svg> Подкасти </a><button class="menu-button" data-id="6"><svg width="16" height="16"><use href="img/sprite/sprite.svg#agile-right"></use></svg></button><ul class="sub-menu" data-content="6"><li><a href="/listing-subcategory.html">Усі</a></li><li><a href="/listing-subcategory.html">Зелений подкаст</a></li></ul></li><li class="menu-item menu-item-has-children label-new"><a class="menu-link" href="/listing-podcasts.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.6118 2.00953C12.0039 3.33723 10.9683 6.7526 9.12016 9.06584C8.89348 9.34971 5.81977 12.9976 6.00833 13.2815C6.64885 14.2434 11.5 10.4019 11.5 11.8149C11.5 13.0802 7.56601 20.5224 8.02145 20.979C8.23703 21.1942 9.17425 19.6854 9.30319 19.5126C10.099 18.45 11.0993 17.5311 12.049 16.5802C12.6112 16.0174 18.8272 9.25392 17.9073 8.33224C17.7811 8.20592 13.3169 9.90285 12.5987 9.61552C11.6317 9.22824 15.2273 1.69582 14.6118 2.00953Z" stroke-width="1.26" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg> Спецпроєкти </a><button class="menu-button" data-id="7"><svg width="16" height="16"><use href="img/sprite/sprite.svg#agile-right"></use></svg></button><ul class="sub-menu" data-content="7"><li><a href="/listing-subcategory.html">Усі</a></li><li><a href="/listing-subcategory.html">Спорт</a></li><li><a href="/listing-subcategory.html">Мистецтво</a></li><li><a href="/listing-subcategory.html">Медитації</a></li></ul></li></ul><div class="mobile__menu-details"><ul class="mobile__menu menu" data-single="true" data-accordion-init><li class="menu-item menu-item-has-children"><a class="menu-link" href="#">Про нас </a><button class="menu-button" data-id="1"><svg width="16" height="16"><use href="img/sprite/sprite.svg#agile-right"></use></svg></button><ul class="sub-menu" data-content="1"><li><a href="/privacy-policy.html">Політика приватності</a></li><li><a href="/rules-policy.html">Правила використання</a></li><li><a href="/public-offer.html">Публічна оферта</a></li><li><a href="/edditorial-policy.html">Редакційна політика</a></li></ul></li></ul><a href="/medicine.html" class="mobile__menu-page"><svg width="22" height="22"><use href="img/sprite/sprite.svg#medicine"></use></svg> Зелена медицина</a><div class="mobile__menu-bottom"><ul class="mobile__menu-lang"><li><a href="#" class="active">UA</a></li><li><a href="#">EN</a></li><li><a href="#">RU</a></li></ul><div class="theme-switcher"><label class="dark-theme"><input type="radio" name="color-theme" value="dark"> <span><svg class="dark-theme" width="32" height="32"><use href="img/sprite/sprite.svg#dark"></use></svg></span></label> <label class="light-theme"><input type="radio" name="color-theme" value="light" checked="checked"> <span><svg class="light-theme" width="32" height="32"><use href="img/sprite/sprite.svg#light"></use></svg></span></label></div></div></div></div></div><main><section class="breadcrumbs"><div class="container"><ul class="breadcrumbs__items"><li class="breadcrumbs__item home"><a href="/">Головна</a></li><li class="breadcrumbs__item current" aria-current="page"><span>Про нас</span></li></ul></div></section><section class="about-section"><div class="container"><div class="about-section__wrapp"><div class="about-section__bg"><svg class="pink-decor-desk" width="1217" height="248"><use href="img/sprite/sprite.svg#pink-decor"></use></svg></div><div class="about-section__info"><h2 class="about-section__title h2">Хто ми?</h2><p class="about-section__text">Ми – незалежне медіа про здоров’я, науку та свідомий спосіб життя. Пишемо про профілактику хвороб, медичні дослідження, правильне харчування та ментальне здоров’я. Окрема увага – доказовій інформації про лікувальний канабіс. Наш пріоритет – чесність, об’єктивність та користь для читачів.</p></div></div></div></section><section class="values-section"><div class="container"><div class="values-section__wrapp"><h2 class="values-section__title">Наші цінності</h2><ul class="values-section__items"><li><div class="value-card"><div class="value-card__box"><div class="value-card__image"><picture><source type="image/webp" srcset="img/index/value1.webp"><img width="100" height="100" src="img/index/value1.png" alt=""></picture></div><div class="value-card__text">Ми подаємо лише перевірену інформацію, яка ґрунтується на наукових дослідженнях, офіційних джерелах та думках експертів. Жодних припущень, маніпуляцій чи псевдонаукових теорій – лише факти.</div></div><div class="value-card__title">Чесність і доказовість</div></div></li><li><div class="value-card"><div class="value-card__box"><div class="value-card__image"><picture><source type="image/webp" srcset="img/index/value2.webp"><img width="100" height="100" src="img/index/value2.png" alt=""></picture></div><div class="value-card__text">Ми не поширюємо міфи, не піддаємося маніпуляціям і дбаємо про те, щоб наш контент відповідав найвищим стандартам якості та достовірності.</div></div><div class="value-card__title">Відповідальність</div></div></li><li><div class="value-card"><div class="value-card__box"><div class="value-card__image"><picture><source type="image/webp" srcset="img/index/value3.webp"><img width="100" height="100" src="img/index/value3.png" alt=""></picture></div><div class="value-card__text">Інформація про здоров’я має бути зрозумілою для всіх. Ми пояснюємо складні медичні теми простою мовою, без зайвої термінології, щоб кожен міг легко застосувати знання у повсякденному житті.</div></div><div class="value-card__title">Доступність</div></div></li></ul></div></div></section><section class="tags-section"><div class="container"><div class="tags-section__wrapp"><h2 class="tags-section__title">Що ми висвітлюємо</h2><ul class="tags-section__items"><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>тривожність</p></a></li><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>дослідження</p></a></li><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>лікування птср</p></a></li><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>сдвг</p></a></li><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>рецепти</p></a></li><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>особиста думка</p></a></li><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>історія</p></a></li><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>мистецтво</p></a></li><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>подорожі</p></a></li><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>новини</p></a></li><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>гаджети</p></a></li><li><a class="tag" href="#"><svg width="16" height="16"><use href="img/sprite/sprite.svg#tag"></use></svg><p>герої</p></a></li><li><span class="tag">...</span></li></ul></div></div></section><section class="mission-section"><div class="container"><div class="mission-section__wrapp"><h2 class="mission-section__title">Наша місія</h2><ul class="mission-section__items"><li><span>Об’єктивність</span><p>Подаємо лише перевірені факти без маніпуляцій, спираємося на наукові дослідження та експертні думки</p></li><li><span>Простота</span><p>Складні медичні теми пояснюємо зрозумілою мовою, щоб кожен міг приймати усвідомлені рішення про здоров’я.</p></li><li><span>Свідомий вибір</span><p>Допомагаємо читачам знаходити достовірну інформацію про профілактику, лікування та здоровий спосіб життя.</p></li><li><span>Освітня роль</span><p>Формуємо культуру відповідального ставлення до здоров’я, популяризуємо науковий підхід і доказову медицину.</p></li></ul></div></div></section><section class="team-section"><div class="container"><div class="team-section__wrapp"><ul class="team-section__items"><li><div class="team-section__box"><h2 class="team-section__title">Наша команда</h2><div class="team-section__text">Ми працюємо для того, щоб ви отримували лише перевірені факти та корисні поради, спираючись на наукові дослідження та експертні думки.</div></div></li><li><div class="team-card"><div class="team-card__avatar"><picture><source type="image/webp" srcset="img/team/stepan.webp"><img width="420" height="402" src="img/team/stepan.png" alt="Кіт Степан"></picture></div><div class="team-card__info"><div class="team-card__name">Кіт Степан</div><div class="team-card__role">Фахівець із зоотерапії</div></div></div></li><li><div class="team-card"><div class="team-card__avatar"><picture><source type="image/webp" srcset="img/team/stepan.webp"><img width="420" height="402" src="img/team/stepan.png" alt="Кіт Степан"></picture></div><div class="team-card__info"><div class="team-card__name">Кіт Степан</div><div class="team-card__role">Фахівець із зоотерапії</div></div></div></li><li><div class="team-card"><div class="team-card__avatar"><picture><source type="image/webp" srcset="img/team/stepan.webp"><img width="420" height="402" src="img/team/stepan.png" alt="Кіт Степан"></picture></div><div class="team-card__info"><div class="team-card__name">Кіт Степан</div><div class="team-card__role">Фахівець із зоотерапії</div></div></div></li><li><div class="team-card"><div class="team-card__avatar"><picture><source type="image/webp" srcset="img/team/stepan.webp"><img width="420" height="402" src="img/team/stepan.png" alt="Кіт Степан"></picture></div><div class="team-card__info"><div class="team-card__name">Кіт Степан</div><div class="team-card__role">Фахівець із зоотерапії</div></div></div></li><li><div class="team-card"><div class="team-card__avatar"><picture><source type="image/webp" srcset="img/team/stepan.webp"><img width="420" height="402" src="img/team/stepan.png" alt="Кіт Степан"></picture></div><div class="team-card__info"><div class="team-card__name">Кіт Степан</div><div class="team-card__role">Фахівець із зоотерапії</div></div></div></li></ul><button class="team-section__btn">Дізнатись більше <svg width="24" height="24"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></button></div></div></section><section class="subscribe-section"><div class="container"><div class="subscribe-section__wrapp"><div class="subscribe-section__bg"><svg class="pink-decor-desk" width="1217" height="248"><use href="img/sprite/sprite.svg#pink-decor"></use></svg></div><form class="form"><div class="form__top"><div class="form__title h2">Є питання? Напишіть нам</div></div><div class="form__box questions"><label class="form__label"><input class="form__input" type="email" name="email" placeholder="Введіть e-mail"></label> <label><textarea class="form__textarea" name="textarea" placeholder="Текст повідомлення"></textarea></label> <button class="form__submit" data-btn-inner="success">Надіслати</button></div></form><!-- thanks block start--><!-- <div class="thanks">
+  })();
+</script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="Description" content="Зелена Газета">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Зелена Газета</title>
+ 
+  <link rel="preload" href="fonts/e-Ukraine-Light.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/e-Ukraine-Regular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/e-Ukraine-Medium.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/e-Ukraine-Bold.woff" as="font" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+  <header class="header fixed-block">
+  <div class="container">
+    <div class="header__wrapp">
+      <div class="header__top">
+        <div class="header__top-left">
+          <button class="burger">
+            <svg class="burger__open" width='32' height='32'>
+              <use href='img/sprite/sprite.svg#burger-open'></use>
+            </svg>
+    
+            <svg class="burger__close" width='32' height='32'>
+              <use href='img/sprite/sprite.svg#burger-close'></use>
+            </svg>
+          </button>
+
+          <div class="theme-switcher">
+            <label class="dark-theme">
+              <input type="radio" name="color-theme" value="dark" />
+
+              <span>
+                <svg class="dark-theme" width="32" height="32">
+                  <use href="img/sprite/sprite.svg#dark"></use>
+                </svg>
+              </span>
+            </label>
+
+            <label class="light-theme">
+              <input type="radio" name="color-theme" value="light" checked />
+
+              <span>
+                <svg class="light-theme" width="32" height="32">
+                  <use href="img/sprite/sprite.svg#light"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+
+          <div class="header__logo-sticky logo">
+            <img class="light-logo" width='341' height='38' src="../img/index/gazeta-white.svg" alt="Зелена газета">
+            <img class="dark-logo" width='341' height='38' src="../img/index/gazeta-black.svg" alt="Зелена газета">
+          </div>
+        </div>
+
+        <div class="header__controls">
+          <div class="search">
+            <div class="search__trigger">
+              <svg width='32' height='32'>
+                <use href='img/sprite/sprite.svg#search'></use>
+              </svg>
+            </div>
+          </div>
+
+          <a class="header__link" href="/medicine.html">
+            <svg width='22' height='22'>
+              <use href='img/sprite/sprite.svg#medicine'></use>
+            </svg>
+            Зелена медицина
+          </a>
+
+          <div class="lang select" data-select>
+            <div class="select__header">
+              <input type="hidden" class="select__input" id="lang" name="lang" value="1">
+              <span class="select__current" data-id="1">
+                UA
+              </span>
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#arrow-down'></use>
+              </svg>
+
+            </div>
+
+            <div class="select__body">
+              <ul class="select__list">
+                <li class="select__option" data-id="1" data-type="option">
+                  UA
+                </li>
+                <li class="select__option" data-id="2" data-type="option">
+                  EN
+                </li>
+                <li class="select__option" data-id="3" data-type="option">
+                  RU
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__box">
+        <a href="/" class="header__logo logo">
+          <img class="light-logo" width='1280' height='142' src="../img/index/gazeta-white.svg" alt="Зелена газета">
+          <img class="dark-logo" width='1280' height='142' src="../img/index/gazeta-black.svg" alt="Зелена газета">
+        </a>
+
+        <div class="header__divider">
+          <svg width='1280' height='8'>
+            <use href='img/sprite/sprite.svg#full-line'></use>
+          </svg>
+        </div>
+      </div>
+
+      <nav class="header__nav">
+        <ul class="menu">
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-link" href="#">
+              Новини 
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#arrow-down'></use>
+              </svg>
+            </a>
+
+            <ul class="sub-menu">
+              <li>
+                <a href="#">Психологія відносин</a>
+              </li>
+              <li>
+                <a href="#">Секс</a>
+              </li>
+              <li>
+                <a href="#">Арт-терапія та мантричні практики</a>
+              </li>
+              <li>
+                <a href="#">Реальні історії людей</a>
+              </li>
+              <li>
+                <a href="#">Психологія змін</a>
+              </li>
+              <li>
+                <a href="#">Вікова психологія</a>
+              </li>
+              <li>
+                <a href="#">Психологія в роботі</a>
+              </li>
+              <li>
+                <a href="#">Робота зі стресом</a>
+              </li>
+              <li>
+                <a href="#">Самооцінка та прийняття себе</a>
+              </li>
+              <li>
+                <a href="#">Емоційний інтелект</a>
+              </li>
+              <li>
+                <a href="#">Ментальне здоров’я</a>
+              </li>
+              <li>
+                <a href="#">ПТСР та психологія травми</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-link" href="#">
+              Медичне
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#arrow-down'></use>
+              </svg>
+            </a>
+
+            <ul class="sub-menu">
+              <li>
+                <a href="#">Психологія відносин</a>
+              </li>
+              <li>
+                <a href="#">Секс</a>
+              </li>
+              <li>
+                <a href="#">Арт-терапія та мантричні практики</a>
+              </li>
+              <li>
+                <a href="#">Реальні історії людей</a>
+              </li>
+              <li>
+                <a href="#">Психологія змін</a>
+              </li>
+              <li>
+                <a href="#">Вікова психологія</a>
+              </li>
+              <li>
+                <a href="#">Психологія в роботі</a>
+              </li>
+              <li>
+                <a href="#">Робота зі стресом</a>
+              </li>
+              <li>
+                <a href="#">Самооцінка та прийняття себе</a>
+              </li>
+              <li>
+                <a href="#">Емоційний інтелект</a>
+              </li>
+              <li>
+                <a href="#">Ментальне здоров’я</a>
+              </li>
+              <li>
+                <a href="#">ПТСР та психологія травми</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-link" href="#">
+              Життєве
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#arrow-down'></use>
+              </svg>
+            </a>
+
+            <ul class="sub-menu">
+              <li>
+                <a href="#">Реальні історії людей</a>
+              </li>
+              <li>
+                <a href="#">Психологія змін</a>
+              </li>
+              <li>
+                <a href="#">Вікова психологія</a>
+              </li>
+              <li>
+                <a href="#">Психологія в роботі</a>
+              </li>
+              <li>
+                <a href="#">Робота зі стресом</a>
+              </li>
+              <li>
+                <a href="#">Самооцінка та прийняття себе</a>
+              </li>
+              <li>
+                <a href="#">Емоційний інтелект</a>
+              </li>
+              <li>
+                <a href="#">Ментальне здоров’я</a>
+              </li>
+              <li>
+                <a href="#">ПТСР та психологія травми</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-link" href="#">
+              Культурне
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#arrow-down'></use>
+              </svg>
+            </a>
+
+            <ul class="sub-menu">
+              <li>
+                <a href="#">Психологія відносин</a>
+              </li>
+              <li>
+                <a href="#">Секс</a>
+              </li>
+              <li>
+                <a href="#">Арт-терапія та мантричні практики</a>
+              </li>
+              <li>
+                <a href="#">Реальні історії людей</a>
+              </li>
+              <li>
+                <a href="#">Психологія змін</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-link" href="#">
+              Законне
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#arrow-down'></use>
+              </svg>
+            </a>
+
+            <ul class="sub-menu">
+              <li>
+                <a href="#">Психологія відносин</a>
+              </li>
+              <li>
+                <a href="#">Арт-терапія та мантричні практики</a>
+              </li>
+              <li>
+                <a href="#">Реальні історії людей</a>
+              </li>
+              <li>
+                <a href="#">Психологія змін</a>
+              </li>
+              <li>
+                <a href="#">Вікова психологія</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-link" href="#">
+              подкасти
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#arrow-down'></use>
+              </svg>
+            </a>
+
+            <ul class="sub-menu">
+              <li>
+                <a href="#">Усі</a>
+              </li>
+              <li>
+                <a href="#">Зелений подкаст</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="header__mobile">
+    <div class="container">
+      <div class="header__mobile-box">
+        <a href="/" class="header__mobile-logo logo">
+          <img class="light-logo" width='225' height='28' src="../img/index/gazeta-white.svg" alt="Зелена газета">
+          <img class="dark-logo" width='225' height='28' src="../img/index/gazeta-black.svg" alt="Зелена газета">
+        </a>
+
+        <div class="header__mobile-controls">
+          <!-- replace for  -->
+          <div class="search">
+            <div class="search__trigger">
+              <svg width='32' height='32'>
+                <use href='img/sprite/sprite.svg#search'></use>
+              </svg>
+            </div>
+          </div>
+
+          <button class="burger">
+            <svg class="burger__open" width='32' height='32'>
+              <use href='img/sprite/sprite.svg#burger-open'></use>
+            </svg>
+    
+            <svg class="burger__close" width='32' height='32'>
+              <use href='img/sprite/sprite.svg#burger-close'></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="header__mobile-divider">
+      <svg width='768' height='5'>
+        <use href='img/sprite/sprite.svg#full-line'></use>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<div class="mobile">
+  <div class="mobile__box">
+    <ul class="mobile__menu menu" data-single='true' data-accordion-init>
+      <li class="menu-item">
+        <a class="menu-link" href="#">
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#list'></use>
+          </svg>
+          Усі
+        </a>
+      </li>
+      <li class="menu-item menu-item-has-children">
+        <a class="menu-link" href="/listing-category.html">
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#heart'></use>
+          </svg>
+          Турбота про себе
+        </a>
+        <button class="menu-button" data-id='1'>
+          <svg width='16' height='16'>
+            <use href='img/sprite/sprite.svg#agile-right'></use>
+          </svg>
+        </button>
+
+        <ul class="sub-menu" data-content='1'>
+          <li>
+            <a href="/listing-subcategory.html">Усі</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Психологія відносин</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Секс</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Реальні історії людей</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Психологія змін</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Вікова психологія</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Психологія в роботі</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Робота зі стресом</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Самооцінка та прийняття себе</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Емоційний інтелект</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Ментальне здоров’я</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">ПТСР та психологія травми</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item menu-item-has-children">
+        <a class="menu-link" href="/listing-category.html">
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#leaf'></use>
+          </svg>
+          Психологія
+        </a>
+
+        <button class="menu-button" data-id='2'>
+          <svg width='16' height='16'>
+            <use href='img/sprite/sprite.svg#agile-right'></use>
+          </svg>
+        </button>
+
+        <ul class="sub-menu" data-content='2'>
+          <li>
+            <a href="/listing-subcategory.html">Усі</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Психологія відносин</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Секс</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Реальні історії людей</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item menu-item-has-children">
+        <a class="menu-link" href="/listing-category.html">
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#doctor'></use>
+          </svg>
+          Здоров’я
+        </a>
+
+        <button class="menu-button" data-id='3'>
+          <svg width='16' height='16'>
+            <use href='img/sprite/sprite.svg#agile-right'></use>
+          </svg>
+        </button>
+
+        <ul class="sub-menu" data-content='3'>
+          <li>
+            <a href="/listing-subcategory.html">Усі</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Психологія відносин</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Секс</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Реальні історії людей</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Психологія змін</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Вікова психологія</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Психологія в роботі</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Робота зі стресом</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Самооцінка та прийняття себе</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Емоційний інтелект</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item menu-item-has-children">
+        <a class="menu-link" href="/listing-category.html">
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#style'></use>
+          </svg>
+          Стиль життя
+        </a>
+
+        <button class="menu-button" data-id='4'>
+          <svg width='16' height='16'>
+            <use href='img/sprite/sprite.svg#agile-right'></use>
+          </svg>
+        </button>
+
+        <ul class="sub-menu" data-content='4'>
+          <li>
+            <a href="/listing-subcategory.html">Усі</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Психологія відносин</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Секс</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Робота зі стресом</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Самооцінка та прийняття себе</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Емоційний інтелект</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Ментальне здоров’я</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">ПТСР та психологія травми</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item menu-item-has-children">
+        <a class="menu-link" href="/listing-category.html">
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#bulb'></use>
+          </svg>
+          Зелена медицина
+        </a>
+
+        <button class="menu-button" data-id='5'>
+          <svg width='16' height='16'>
+            <use href='img/sprite/sprite.svg#agile-right'></use>
+          </svg>
+        </button>
+
+        <ul class="sub-menu" data-content='5'>
+          <li>
+            <a href="/listing-subcategory.html">Усі</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Психологія відносин</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Секс</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Реальні історії людей</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Психологія змін</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Вікова психологія</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Психологія в роботі</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Робота зі стресом</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Самооцінка та прийняття себе</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Емоційний інтелект</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Ментальне здоров’я</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">ПТСР та психологія травми</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link" href="#">
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#news'></use>
+          </svg>
+          Новини
+        </a>
+      </li>
+      <li class="menu-item menu-item-has-children">
+        <a class="menu-link" href="/listing-podcasts.html">
+          <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#music'></use>
+          </svg>
+          Подкасти
+        </a>
+
+        <button class="menu-button" data-id='6'>
+          <svg width='16' height='16'>
+            <use href='img/sprite/sprite.svg#agile-right'></use>
+          </svg>
+        </button>
+
+        <ul class="sub-menu" data-content='6'>
+          <li>
+            <a href="/listing-subcategory.html">Усі</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Зелений подкаст</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item menu-item-has-children label-new">
+        <a class="menu-link" href="/listing-podcasts.html">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.6118 2.00953C12.0039 3.33723 10.9683 6.7526 9.12016 9.06584C8.89348 9.34971 5.81977 12.9976 6.00833 13.2815C6.64885 14.2434 11.5 10.4019 11.5 11.8149C11.5 13.0802 7.56601 20.5224 8.02145 20.979C8.23703 21.1942 9.17425 19.6854 9.30319 19.5126C10.099 18.45 11.0993 17.5311 12.049 16.5802C12.6112 16.0174 18.8272 9.25392 17.9073 8.33224C17.7811 8.20592 13.3169 9.90285 12.5987 9.61552C11.6317 9.22824 15.2273 1.69582 14.6118 2.00953Z" stroke-width="1.26" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+          Спецпроєкти
+        </a>
+
+        <button class="menu-button" data-id='7'>
+          <svg width='16' height='16'>
+            <use href='img/sprite/sprite.svg#agile-right'></use>
+          </svg>
+        </button>
+
+        <ul class="sub-menu" data-content='7'>
+          <li>
+            <a href="/listing-subcategory.html">Усі</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Спорт</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Мистецтво</a>
+          </li>
+          <li>
+            <a href="/listing-subcategory.html">Медитації</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="mobile__menu-details">
+      <ul class="mobile__menu menu" data-single='true' data-accordion-init>
+        <li class="menu-item menu-item-has-children">
+          <a class="menu-link" href="#">
+            Про нас
+          </a>
+          <button class="menu-button" data-id='1'>
+            <svg width='16' height='16'>
+              <use href='img/sprite/sprite.svg#agile-right'></use>
+            </svg>
+          </button>
+  
+          <ul class="sub-menu" data-content='1'>
+            <li>
+              <a href="/privacy-policy.html">Політика приватності</a>
+            </li>
+            <li>
+              <a href="/rules-policy.html">Правила використання</a>
+            </li>
+            <li>
+              <a href="/public-offer.html">Публічна оферта</a>
+            </li>
+            <li>
+              <a href="/edditorial-policy.html">Редакційна політика</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <a href="/medicine.html" class="mobile__menu-page">
+        <svg width='22' height='22'>
+          <use href='img/sprite/sprite.svg#medicine'></use>
+        </svg>
+        Зелена медицина
+      </a>
+
+      <div class="mobile__menu-bottom">
+        <ul class="mobile__menu-lang">
+          <li>
+            <a href="#" class="active">UA</a>
+          </li>
+          <li>
+            <a href="#">EN</a>
+          </li>
+          <li>
+            <a href="#">RU</a>
+          </li>
+        </ul>
+
+        <div class="theme-switcher">
+          <label class="dark-theme">
+            <input type="radio" name="color-theme" value="dark" />
+
+            <span>
+              <svg class="dark-theme" width="32" height="32">
+                <use href="img/sprite/sprite.svg#dark"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="light-theme">
+            <input type="radio" name="color-theme" value="light" checked />
+
+            <span>
+              <svg class="light-theme" width="32" height="32">
+                <use href="img/sprite/sprite.svg#light"></use>
+              </svg>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <main>
+    <section class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs__items">
+                <li class="breadcrumbs__item home">
+                    <a href="/">Головна</a>
+                </li>
+
+                <li class="breadcrumbs__item current" aria-current="page">
+                    <span>Про нас</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-section__wrapp">
+                <div class="about-section__bg">
+                    <svg class="pink-decor-desk" width='1217' height='248'>
+                        <use href='img/sprite/sprite.svg#pink-decor'></use>
+                    </svg>
+                </div>
+
+                <div class="about-section__info">
+                    <h2 class="about-section__title h2">Хто ми?</h2>
+      
+                    <p class="about-section__text">
+                        Ми – незалежне медіа про здоров’я, науку та свідомий спосіб життя. Пишемо про профілактику хвороб, медичні дослідження, правильне харчування та ментальне здоров’я. Окрема увага – доказовій інформації про лікувальний канабіс. Наш пріоритет – чесність, об’єктивність та користь для читачів.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="values-section">
+        <div class="container">
+            <div class="values-section__wrapp">
+                <h2 class="values-section__title">Наші цінності</h2>
+
+                <ul class="values-section__items">
+                    <li>
+                        <div class="value-card">
+                            <div class="value-card__box">
+                                <div class="value-card__image">
+                                    <picture>
+                                      <source type='image/webp' srcset='img/index/value1.webp'>
+                                      <img width='100' height='100' src='img/index/value1.png' alt=''>
+                                    </picture>
+                                </div>
+                                <div class="value-card__text">
+                                    Ми подаємо лише перевірену інформацію, яка ґрунтується на наукових дослідженнях, офіційних джерелах та думках експертів. Жодних припущень, маніпуляцій чи псевдонаукових теорій – лише факти.
+                                </div>
+                            </div>
+
+                            <div class="value-card__title">Чесність і доказовість</div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="value-card">
+                            <div class="value-card__box">
+                                <div class="value-card__image">
+                                    <picture>
+                                      <source type='image/webp' srcset='img/index/value2.webp'>
+                                      <img width='100' height='100' src='img/index/value2.png' alt=''>
+                                    </picture>
+                                </div>
+                                <div class="value-card__text">
+                                    Ми не поширюємо міфи, не піддаємося маніпуляціям і дбаємо про те, щоб наш контент відповідав найвищим стандартам якості та достовірності.
+                                </div>
+                            </div>
+
+                            <div class="value-card__title">Відповідальність</div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="value-card">
+                            <div class="value-card__box">
+                                <div class="value-card__image">
+                                    <picture>
+                                      <source type='image/webp' srcset='img/index/value3.webp'>
+                                      <img width='100' height='100' src='img/index/value3.png' alt=''>
+                                    </picture>
+                                </div>
+                                <div class="value-card__text">
+                                    Інформація про здоров’я має бути зрозумілою для всіх. Ми пояснюємо складні медичні теми простою мовою, без зайвої термінології, щоб кожен міг легко застосувати знання у повсякденному житті.
+                                </div>
+                            </div>
+
+                            <div class="value-card__title">Доступність</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="tags-section">
+        <div class="container">
+            <div class="tags-section__wrapp">
+                <h2 class="tags-section__title">Що ми висвітлюємо</h2>
+
+                <ul class="tags-section__items">
+                    <li>
+                        <a class="tag" href="#">
+                        <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#tag'></use>
+                        </svg>
+                        <p>тривожність</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tag" href="#">
+                        <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#tag'></use>
+                        </svg>
+                        <p>дослідження</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tag" href="#">
+                        <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#tag'></use>
+                        </svg>
+                        <p>лікування птср</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tag" href="#">
+                        <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#tag'></use>
+                        </svg>
+                        <p>сдвг</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tag" href="#">
+                        <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#tag'></use>
+                        </svg>
+                        <p>рецепти</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tag" href="#">
+                        <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#tag'></use>
+                        </svg>
+                        <p>особиста думка</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tag" href="#">
+                        <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#tag'></use>
+                        </svg>
+                        <p>історія</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tag" href="#">
+                        <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#tag'></use>
+                        </svg>
+                        <p>мистецтво</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tag" href="#">
+                        <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#tag'></use>
+                        </svg>
+                        <p>подорожі</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tag" href="#">
+                        <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#tag'></use>
+                        </svg>
+                        <p>новини</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tag" href="#">
+                        <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#tag'></use>
+                        </svg>
+                        <p>гаджети</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tag" href="#">
+                        <svg width='16' height='16'>
+                            <use href='img/sprite/sprite.svg#tag'></use>
+                        </svg>
+                        <p>герої</p>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="tag">...</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="mission-section">
+        <div class="container">
+            <div class="mission-section__wrapp">
+                <h2 class="mission-section__title">Наша місія</h2>
+
+                <ul class="mission-section__items">
+                    <li>
+                        <span>Об’єктивність </span>
+                        <p>Подаємо лише перевірені факти без маніпуляцій, спираємося на наукові дослідження та експертні думки</p>
+                    </li>
+
+                    <li>
+                        <span>Простота</span>
+                        <p>Складні медичні теми пояснюємо зрозумілою мовою, щоб кожен міг приймати усвідомлені рішення про здоров’я.</p>
+                    </li>
+
+                    <li>
+                        <span>Свідомий вибір</span>
+                        <p>Допомагаємо читачам знаходити достовірну інформацію про профілактику, лікування та здоровий спосіб життя.</p>
+                    </li>
+
+                    <li>
+                        <span>Освітня роль</span>
+                        <p>Формуємо культуру відповідального ставлення до здоров’я, популяризуємо науковий підхід і доказову медицину.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <div class="container">
+            <div class="team-section__wrapp">
+                <ul class="team-section__items">
+                    <li>
+                        <div class="team-section__box">
+                            <h2 class="team-section__title">Наша команда</h2>
+
+                            <div class="team-section__text">
+                                Ми працюємо для того, щоб ви отримували лише перевірені факти та корисні поради, спираючись на наукові дослідження та експертні думки.
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="team-card">
+                            <div class="team-card__avatar">
+                                <picture>
+                                <source type='image/webp' srcset='img/team/stepan.webp'>
+                                <img width='420' height='402' src='img/team/stepan.png' alt='Кіт Степан'>
+                                </picture>
+                            </div>
+
+                            <div class="team-card__info">
+                                <div class="team-card__name">Кіт Степан</div>
+                                <div class="team-card__role">Фахівець із зоотерапії</div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="team-card">
+                            <div class="team-card__avatar">
+                                <picture>
+                                <source type='image/webp' srcset='img/team/stepan.webp'>
+                                <img width='420' height='402' src='img/team/stepan.png' alt='Кіт Степан'>
+                                </picture>
+                            </div>
+
+                            <div class="team-card__info">
+                                <div class="team-card__name">Кіт Степан</div>
+                                <div class="team-card__role">Фахівець із зоотерапії</div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="team-card">
+                            <div class="team-card__avatar">
+                                <picture>
+                                <source type='image/webp' srcset='img/team/stepan.webp'>
+                                <img width='420' height='402' src='img/team/stepan.png' alt='Кіт Степан'>
+                                </picture>
+                            </div>
+
+                            <div class="team-card__info">
+                                <div class="team-card__name">Кіт Степан</div>
+                                <div class="team-card__role">Фахівець із зоотерапії</div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="team-card">
+                            <div class="team-card__avatar">
+                                <picture>
+                                <source type='image/webp' srcset='img/team/stepan.webp'>
+                                <img width='420' height='402' src='img/team/stepan.png' alt='Кіт Степан'>
+                                </picture>
+                            </div>
+
+                            <div class="team-card__info">
+                                <div class="team-card__name">Кіт Степан</div>
+                                <div class="team-card__role">Фахівець із зоотерапії</div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="team-card">
+                            <div class="team-card__avatar">
+                                <picture>
+                                <source type='image/webp' srcset='img/team/stepan.webp'>
+                                <img width='420' height='402' src='img/team/stepan.png' alt='Кіт Степан'>
+                                </picture>
+                            </div>
+
+                            <div class="team-card__info">
+                                <div class="team-card__name">Кіт Степан</div>
+                                <div class="team-card__role">Фахівець із зоотерапії</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <button class="team-section__btn">
+                    Дізнатись більше
+                    <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#arrow-down'></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe-section">
+        <div class="container">
+          <div class="subscribe-section__wrapp">
+            <div class="subscribe-section__bg">
+              <svg class="pink-decor-desk" width='1217' height='248'>
+                <use href='img/sprite/sprite.svg#pink-decor'></use>
+              </svg>
+            </div>
+
+            <form class="form">
+                <div class="form__top">
+                    <div class="form__title h2">Є питання? Напишіть нам</div>
+                </div>
+
+                <div class="form__box questions">
+                    <label class="form__label">
+                        <input class="form__input" type="email" name="email" placeholder="Введіть e-mail">
+                    </label>
+                    <label>
+                        <textarea class="form__textarea" name="textarea" placeholder="Текст повідомлення"></textarea>
+                    </label>
+    
+                    <button class="form__submit" data-btn-inner="success">Надіслати</button>
+                </div>
+            </form>
+
+            <!-- thanks block start-->
+            <!-- <div class="thanks">
                 <div class="form__top">
                     <div class="form__title h2">Дякуємо! Повідомлення надіслано успішно!</div>
                     <p class="form__text">Ми обов’язково з вами звʼяжемось!</p>
                 </div>
-            </div> --><!-- thanks block end--></div></div></section></main><footer class="footer"><div class="container"><div class="footer__wrapp"><div class="footer__divider"><svg width="1280" height="8"><use href="img/sprite/sprite.svg#full-line"></use></svg></div><div class="footer__socials"><span class="footer__socials-heading">Слідкуй за нами також</span><ul class="socials"><li><a href="#"><svg width="48" height="48"><use href="img/sprite/sprite.svg#telegram"></use></svg></a></li><li><a href="#"><svg width="48" height="48"><use href="img/sprite/sprite.svg#instagram"></use></svg></a></li><li><a href="#"><svg width="48" height="48"><use href="img/sprite/sprite.svg#youtube"></use></svg></a></li><li><a href="#"><svg width="48" height="48"><use href="img/sprite/sprite.svg#facebook"></use></svg></a></li></ul></div><div class="footer__divider"><svg width="1280" height="8"><use href="img/sprite/sprite.svg#full-line"></use></svg></div><a href="/" class="footer__logo logo"><img class="light-logo" width="1280" height="142" src="../img/index/gazeta-white.svg" alt="Зелена газета"> <img class="dark-logo" width="1280" height="142" src="../img/index/gazeta-black.svg" alt="Зелена газета"></a><div class="footer__navs" data-default="1" data-single="true" data-accordion-init><div class="footer__navs-left"><div class="footer__nav"><button data-id="1">Турбота про себе <svg width="24" height="24"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></button><ul data-content="1"><li><a href="#">Краса</a></li><li><a href="#">Фітнес</a></li><li><a href="#">Схуднення та дієти</a></li><li><a href="#">Емоційна стабільність</a></li><li><a href="#">Саморозвиток</a></li></ul></div><div class="footer__nav"><button data-id="2">Новини <svg width="24" height="24"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></button><ul data-content="2"><li><a href="#">Дослідження</a></li><li><a href="#">Новини з експертами</a></li><li><a href="#">Новини пов’язані з темами проєкту</a></li><li><a href="#">Новини світу каннабісу</a></li><li><a href="#">Тренди</a></li></ul></div></div><div class="footer__nav"><button data-id="3">Психологія <svg width="24" height="24"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></button><ul data-content="3"><li><a href="#">Психологія відносин</a></li><li><a href="#">Секс</a></li><li><a href="#">Арт-терапія та мантричні практики</a></li><li><a href="#">Реальні історії людей</a></li><li><a href="#">Психологія змін</a></li><li><a href="#">Вікова психологія</a></li><li><a href="#">Психологія в роботі</a></li><li><a href="#">Робота зі стресом</a></li><li><a href="#">Самооцінка та прийняття себе</a></li><li><a href="#">Емоційний інтелект</a></li><li><a href="#">Ментальне здоров’я</a></li><li><a href="#">ПТСР та психологія травми</a></li></ul></div><div class="footer__nav"><button data-id="4">Здоров’я <svg width="24" height="24"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></button><ul data-content="4"><li><a href="#">Сезонні хвороби та їх лікування</a></li><li><a href="#">Психоделіки</a></li><li><a href="#">Словник основних Хвороб</a></li><li><a href="#">Медичний канабіс, CBD</a></li><li><a href="#">Ментальне здоров’я</a></li><li><a href="#">Жіноче здоров’я</a></li><li><a href="#">Правильне харчування</a></li><li><a href="#">Чоловіче здоров’я</a></li><li><a href="#">Схуднення</a></li><li><a href="#">Пластична хірургія</a></li><li><a href="#">Альтернативна медицина</a></li></ul></div><div class="footer__nav"><button data-id="5">Стиль життя <svg width="24" height="24"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></button><ul data-content="5"><li><a href="#">Свята та традиції</a></li><li><a href="#">Технології та стиль життя</a></li><li><a href="#">Надихаючі історії</a></li><li><a href="#">Подорожі</a></li><li><a href="#">Культура і натхнення</a></li><li><a href="#">Підприємство та лідерство</a></li><li><a href="#">Лайф-ворк баланс</a></li></ul></div><div class="footer__nav"><button data-id="6">Зелена медицина <svg width="24" height="24"><use href="img/sprite/sprite.svg#arrow-down"></use></svg></button><ul data-content="6"><li><a href="#">Дослідження</a></li><li><a href="#">Історії успіху людей із галузі</a></li><li><a href="#">Аналітика</a></li><li><a href="#">Законодавчі зміни</a></li><li><a href="#">Медичний лайфстайл</a></li><li><a href="#">Маркетинг та бізнес</a></li><li><a href="#">Про використання психоделіків в інших країнах</a></li><li><a href="#">Новини фармації та медицини</a></li><li><a href="#">Медичний канабіс</a></li></ul></div></div><div class="footer__divider"><svg width="1280" height="8"><use href="img/sprite/sprite.svg#full-line"></use></svg></div><div class="footer__bottom"><ul class="footer__info"><li><a href="/privacy-policy.html">Політика приватності</a></li><li><a href="/rules-policy.html">Правила використання</a></li><li><a href="/public-offer.html">Публічна оферта</a></li><li><a href="/edditorial-policy.html">Редакційна політика</a></li><li><a href="/redaction-team.html">Наша редакція</a></li><li><a href="/contacts.html">Контакти</a></li></ul><button class="footer__contacts" data-btn-modal="contact"><svg width="20" height="20"><use href="img/sprite/sprite.svg#mail"></use></svg> Написати нам</button></div></div></div></footer><button class="starting-popup" data-btn-modal="age-alert"></button><!-- <button class="starting-podcasts" data-btn-modal="podcasts"></button> --><div class="cookies visible"><div class="container"><div class="cookies__wrapp"><div class="cookies__text">Ми використовуємо файли cookie щоб зробити ваше користування веб-сайтом зручнішим. Продовжуючи користуватися цим сайтом, ви погоджуєтесь із використанням файлів cookies. Дізнайтеся більше про використання cookie на сторінці</div><div class="cookies__controls" data-single="true" data-accordion-init><div class="cookies__controls-btns"><button class="cookies__apply">Прийняти</button> <button class="cookies__cancel">Відхилити</button> <button class="cookies__btn" data-id="1"><svg width="24" height="24"><use href="img/sprite/sprite.svg#settings"></use></svg></button></div><div class="cookies__settings" data-content="1"><ul><li><p>Аналітика</p><label><input type="checkbox" name="analytics"> <span></span></label></li><li><p>Уподобання</p><label><input type="checkbox" name="preferences"> <span></span></label></li><li><p>Маркетинг</p><label><input type="checkbox" name="marketing"> <span></span></label></li></ul></div></div></div></div></div><div class="overlay fixed-block" data-overlay><div class="modal modal--contact" data-popup="contact"><div class="modal__box"><div class="modal__top"><div class="modal__title">Є питання? Напишіть нам</div><button class="modal__close close"><svg width="24" height="24"><use href="img/sprite/sprite.svg#burger-close"></use></svg></button></div><form class="form"><div class="form__box"><label class="form__label"><input class="form__input" type="email" name="email" placeholder="Введіть e-mail"></label> <label><textarea class="form__textarea" name="textarea" placeholder="Текст повідомлення"></textarea></label> <button class="form__submit" data-btn-inner="success">Надіслати</button></div></form></div></div><div class="modal modal--success" data-popup="success"><div class="modal__box"><div class="modal__top"><div class="modal__title">Дякуємо! Повідомлення надіслано успішно!</div><button class="modal__close close"><svg width="24" height="24"><use href="img/sprite/sprite.svg#burger-close"></use></svg></button></div><div class="modal__text">Ми обов’язково з вами звʼяжемось!</div></div></div><div class="modal modal--share" data-popup="share"><div class="modal__box"><div class="modal__top"><div class="modal__title">Поділитись</div><button class="modal__close close"><svg width="24" height="24"><use href="img/sprite/sprite.svg#burger-close"></use></svg></button></div><ul class="socials"><li><a href="#"><svg width="48" height="48"><use href="img/sprite/sprite.svg#telegram"></use></svg></a></li><li><a href="#"><svg width="48" height="48"><use href="img/sprite/sprite.svg#instagram"></use></svg></a></li><li><a href="#"><svg width="48" height="48"><use href="img/sprite/sprite.svg#facebook"></use></svg></a></li></ul><form class="share-form"><label class="share-form__label"><span class="share-form__link" data-value="https://zelenagazeta/">https://zelenagazeta/</span></label> <button class="share-form__btn copy"><svg width="24" height="24"><use href="img/sprite/sprite.svg#copy"></use></svg></button></form></div></div><div class="modal modal--alert" data-popup="age-alert"><div class="modal__box"><div class="modal__title">Вам вже виповнилось 18 років?</div><div class="modal__icon"><svg width="123" height="109"><use href="img/sprite/sprite.svg#paper-logo"></use></svg></div><div class="modal__btns"><div class="btn-cancel">Ні</div><div class="btn-success close">Так</div></div></div></div><div class="modal modal--alert" data-popup="snake-alert"><div class="modal__box"><div class="modal__title">Ви лікар?</div><div class="modal__icon"><svg width="123" height="109"><use href="img/sprite/sprite.svg#snake"></use></svg></div><div class="modal__btns"><div class="btn-cancel">Ні</div><div class="btn-success close">Так</div></div></div></div><div class="modal modal--categories" data-popup="categories"><div class="modal__cats"><div class="modal__cats-top"><a href="/" class="header__mobile-logo logo"><img class="light-logo" width="1280" height="142" src="../img/index/gazeta-white.svg" alt="Зелена газета"> <img class="dark-logo" width="1280" height="142" src="../img/index/gazeta-black.svg" alt="Зелена газета"> </a><button class="modal__close close"><svg width="24" height="24"><use href="img/sprite/sprite.svg#burger-close"></use></svg></button></div><ul class="mobile__menu menu" data-single="true" data-accordion-init><li class="menu-item"><a class="menu-link" href="#"><svg width="24" height="24"><use href="img/sprite/sprite.svg#list"></use></svg> Усі</a></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="/listing-category.html"><svg width="24" height="24"><use href="img/sprite/sprite.svg#heart"></use></svg> Турбота про себе </a><button class="menu-button" data-id="1"><svg width="16" height="16"><use href="img/sprite/sprite.svg#agile-right"></use></svg></button><ul class="sub-menu" data-content="1"><li><a href="/listing-subcategory.html">Усі</a></li><li><a href="/listing-subcategory.html">Психологія відносин</a></li><li><a href="/listing-subcategory.html">Секс</a></li><li><a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a></li><li><a href="/listing-subcategory.html">Реальні історії людей</a></li><li><a href="/listing-subcategory.html">Психологія змін</a></li><li><a href="/listing-subcategory.html">Вікова психологія</a></li><li><a href="/listing-subcategory.html">Психологія в роботі</a></li><li><a href="/listing-subcategory.html">Робота зі стресом</a></li><li><a href="/listing-subcategory.html">Самооцінка та прийняття себе</a></li><li><a href="/listing-subcategory.html">Емоційний інтелект</a></li><li><a href="/listing-subcategory.html">Ментальне здоров’я</a></li><li><a href="/listing-subcategory.html">ПТСР та психологія травми</a></li></ul></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="/listing-category.html"><svg width="24" height="24"><use href="img/sprite/sprite.svg#leaf"></use></svg> Психологія </a><button class="menu-button" data-id="2"><svg width="16" height="16"><use href="img/sprite/sprite.svg#agile-right"></use></svg></button><ul class="sub-menu" data-content="2"><li><a href="/listing-subcategory.html">Усі</a></li><li><a href="/listing-subcategory.html">Психологія відносин</a></li><li><a href="/listing-subcategory.html">Секс</a></li><li><a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a></li><li><a href="/listing-subcategory.html">Реальні історії людей</a></li></ul></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="/listing-category.html"><svg width="24" height="24"><use href="img/sprite/sprite.svg#doctor"></use></svg> Здоров’я </a><button class="menu-button" data-id="3"><svg width="16" height="16"><use href="img/sprite/sprite.svg#agile-right"></use></svg></button><ul class="sub-menu" data-content="3"><li><a href="/listing-subcategory.html">Усі</a></li><li><a href="/listing-subcategory.html">Психологія відносин</a></li><li><a href="/listing-subcategory.html">Секс</a></li><li><a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a></li><li><a href="/listing-subcategory.html">Реальні історії людей</a></li><li><a href="/listing-subcategory.html">Психологія змін</a></li><li><a href="/listing-subcategory.html">Вікова психологія</a></li><li><a href="/listing-subcategory.html">Психологія в роботі</a></li><li><a href="/listing-subcategory.html">Робота зі стресом</a></li><li><a href="/listing-subcategory.html">Самооцінка та прийняття себе</a></li><li><a href="/listing-subcategory.html">Емоційний інтелект</a></li></ul></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="/listing-category.html"><svg width="24" height="24"><use href="img/sprite/sprite.svg#style"></use></svg> Стиль життя </a><button class="menu-button" data-id="4"><svg width="16" height="16"><use href="img/sprite/sprite.svg#agile-right"></use></svg></button><ul class="sub-menu" data-content="4"><li><a href="/listing-subcategory.html">Усі</a></li><li><a href="/listing-subcategory.html">Психологія відносин</a></li><li><a href="/listing-subcategory.html">Секс</a></li><li><a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a></li><li><a href="/listing-subcategory.html">Робота зі стресом</a></li><li><a href="/listing-subcategory.html">Самооцінка та прийняття себе</a></li><li><a href="/listing-subcategory.html">Емоційний інтелект</a></li><li><a href="/listing-subcategory.html">Ментальне здоров’я</a></li><li><a href="/listing-subcategory.html">ПТСР та психологія травми</a></li></ul></li><li class="menu-item menu-item-has-children"><a class="menu-link" href="/listing-category.html"><svg width="24" height="24"><use href="img/sprite/sprite.svg#bulb"></use></svg> Зелена медицина </a><button class="menu-button" data-id="5"><svg width="16" height="16"><use href="img/sprite/sprite.svg#agile-right"></use></svg></button><ul class="sub-menu" data-content="5"><li><a href="/listing-subcategory.html">Усі</a></li><li><a href="/listing-subcategory.html">Психологія відносин</a></li><li><a href="/listing-subcategory.html">Секс</a></li><li><a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a></li><li><a href="/listing-subcategory.html">Реальні історії людей</a></li><li><a href="/listing-subcategory.html">Психологія змін</a></li><li><a href="/listing-subcategory.html">Вікова психологія</a></li><li><a href="/listing-subcategory.html">Психологія в роботі</a></li><li><a href="/listing-subcategory.html">Робота зі стресом</a></li><li><a href="/listing-subcategory.html">Самооцінка та прийняття себе</a></li><li><a href="/listing-subcategory.html">Емоційний інтелект</a></li><li><a href="/listing-subcategory.html">Ментальне здоров’я</a></li><li><a href="/listing-subcategory.html">ПТСР та психологія травми</a></li></ul></li><li class="menu-item"><a class="menu-link" href="#"><svg width="24" height="24"><use href="img/sprite/sprite.svg#news"></use></svg> Новини</a></li></ul></div></div><div class="modal modal--podcasts" data-popup="podcasts"><div class="modal__box"><div class="modal__title">"Зелений подкаст" вже чекає на YouTube!</div><div class="modal__descr">Дізнавайся про здоров'я та надихайся на саморозвиток разом з нами</div><div class="modal__icon"><img class="icon-white" width="276" height="161" src="img/podcasts/podcasts-white.svg" alt=""> <img class="icon-black" width="276" height="161" src="img/podcasts/podcasts-black.svg" alt=""></div><div class="modal__btns"><div class="btn-cancel close">Не зараз</div><a href="/listing-podcasts.html" class="btn-success close">До подкастів</a></div></div></div></div><script defer="defer" src="js/main.js"></script></body></html>
+            </div> -->
+            <!-- thanks block end-->
+          </div>
+        </div>
+      </section>
+  </main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapp">
+      <div class="footer__divider">
+        <svg width='1280' height='8'>
+          <use href='img/sprite/sprite.svg#full-line'></use>
+        </svg>
+      </div>
+
+      <div class="footer__socials">
+        <span class="footer__socials-heading">Слідкуй за нами також</span>
+
+        <ul class="socials">
+          <li>
+            <a href="#">
+              <svg width='48' height='48'>
+                <use href='img/sprite/sprite.svg#telegram'></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg width='48' height='48'>
+                <use href='img/sprite/sprite.svg#instagram'></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg width='48' height='48'>
+                <use href='img/sprite/sprite.svg#youtube'></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg width='48' height='48'>
+                <use href='img/sprite/sprite.svg#facebook'></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__divider">
+        <svg width='1280' height='8'>
+          <use href='img/sprite/sprite.svg#full-line'></use>
+        </svg>
+      </div>
+
+      <a href="/" class="footer__logo logo">
+        <img class="light-logo" width='1280' height='142' src="../img/index/gazeta-white.svg" alt="Зелена газета">
+        <img class="dark-logo" width='1280' height='142' src="../img/index/gazeta-black.svg" alt="Зелена газета">
+      </a>
+
+      <div class="footer__navs" data-default="1" data-single='true' data-accordion-init>
+        <div class="footer__navs-left">
+          <div class="footer__nav">
+            <button data-id='1'>
+              Турбота про себе
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#arrow-down'></use>
+              </svg>
+            </button>
+
+            <ul data-content='1'>
+              <li>
+                <a href="#">Краса</a>
+              </li>
+              <li>
+                <a href="#">Фітнес</a>
+              </li>
+              <li>
+                <a href="#">Схуднення та дієти</a>
+              </li>
+              <li>
+                <a href="#">Емоційна стабільність</a>
+              </li>
+              <li>
+                <a href="#">Саморозвиток</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__nav">
+            <button data-id='2'>
+              Новини
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#arrow-down'></use>
+              </svg>
+            </button>
+
+            <ul data-content='2'>
+              <li>
+                <a href="#">Дослідження</a>
+              </li>
+              <li>
+                <a href="#">Новини з експертами</a>
+              </li>
+              <li>
+                <a href="#">Новини пов’язані з темами проєкту</a>
+              </li>
+              <li>
+                <a href="#">Новини світу каннабісу</a>
+              </li>
+              <li>
+                <a href="#">Тренди</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__nav">
+          <button data-id='3'>
+            Психологія
+            <svg width='24' height='24'>
+              <use href='img/sprite/sprite.svg#arrow-down'></use>
+            </svg>
+          </button>
+
+          <ul data-content='3'>
+            <li>
+              <a href="#">Психологія відносин</a>
+            </li>
+            <li>
+              <a href="#">Секс</a>
+            </li>
+            <li>
+              <a href="#">Арт-терапія та мантричні практики</a>
+            </li>
+            <li>
+              <a href="#">Реальні історії людей</a>
+            </li>
+            <li>
+              <a href="#">Психологія змін</a>
+            </li>
+            <li>
+              <a href="#">Вікова психологія</a>
+            </li>
+            <li>
+              <a href="#">Психологія в роботі</a>
+            </li>
+            <li>
+              <a href="#">Робота зі стресом</a>
+            </li>
+            <li>
+              <a href="#">Самооцінка та прийняття себе</a>
+            </li>
+            <li>
+              <a href="#">Емоційний інтелект</a>
+            </li>
+            <li>
+              <a href="#">Ментальне здоров’я</a>
+            </li>
+            <li>
+              <a href="#">ПТСР та психологія травми</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__nav">
+          <button data-id='4'>
+            Здоров’я
+            <svg width='24' height='24'>
+              <use href='img/sprite/sprite.svg#arrow-down'></use>
+            </svg>
+          </button>
+
+          <ul data-content='4'>
+            <li>
+              <a href="#">Сезонні хвороби та їх лікування</a>
+            </li>
+            <li>
+              <a href="#">Психоделіки</a>
+            </li>
+            <li>
+              <a href="#">Словник основних Хвороб</a>
+            </li>
+            <li>
+              <a href="#">Медичний канабіс, CBD</a>
+            </li>
+            <li>
+              <a href="#">Ментальне здоров’я</a>
+            </li>
+            <li>
+              <a href="#">Жіноче здоров’я</a>
+            </li>
+            <li>
+              <a href="#">Правильне харчування</a>
+            </li>
+            <li>
+              <a href="#">Чоловіче здоров’я</a>
+            </li>
+            <li>
+              <a href="#">Схуднення</a>
+            </li>
+            <li>
+              <a href="#">Пластична хірургія</a>
+            </li>
+            <li>
+              <a href="#">Альтернативна медицина</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__nav">
+          <button data-id='5'>
+            Стиль життя
+            <svg width='24' height='24'>
+              <use href='img/sprite/sprite.svg#arrow-down'></use>
+            </svg>
+          </button>
+
+          <ul data-content='5'>
+            <li>
+              <a href="#">Свята та традиції</a>
+            </li>
+            <li>
+              <a href="#">Технології та стиль життя</a>
+            </li>
+            <li>
+              <a href="#">Надихаючі історії</a>
+            </li>
+            <li>
+              <a href="#">Подорожі</a>
+            </li>
+            <li>
+              <a href="#">Культура і натхнення</a>
+            </li>
+            <li>
+              <a href="#">Підприємство та лідерство</a>
+            </li>
+            <li>
+              <a href="#">Лайф-ворк баланс</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__nav">
+          <button data-id='6'>
+            Зелена медицина
+
+            <svg width='24' height='24'>
+              <use href='img/sprite/sprite.svg#arrow-down'></use>
+            </svg>
+          </button>
+
+          <ul data-content='6'>
+            <li>
+              <a href="#">Дослідження</a>
+            </li>
+            <li>
+              <a href="#">Історії успіху людей із галузі</a>
+            </li>
+            <li>
+              <a href="#">Аналітика</a>
+            </li>
+            <li>
+              <a href="#">Законодавчі зміни</a>
+            </li>
+            <li>
+              <a href="#">Медичний лайфстайл</a>
+            </li>
+            <li>
+              <a href="#">Маркетинг та бізнес</a>
+            </li>
+            <li>
+              <a href="#">Про використання психоделіків в інших країнах</a>
+            </li>
+            <li>
+              <a href="#">Новини фармації та медицини</a>
+            </li>
+            <li>
+              <a href="#">Медичний канабіс</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__divider">
+        <svg width='1280' height='8'>
+          <use href='img/sprite/sprite.svg#full-line'></use>
+        </svg>
+      </div>
+
+      <div class="footer__bottom">
+        <ul class="footer__info">
+          <li>
+            <a href="/privacy-policy.html">Політика приватності</a>
+          </li>
+          <li>
+            <a href="/rules-policy.html">Правила використання</a>
+          </li>
+          <li>
+            <a href="/public-offer.html">Публічна оферта</a>
+          </li>
+          <li>
+            <a href="/edditorial-policy.html">Редакційна політика</a>
+          </li>
+          <li>
+            <a href="/redaction-team.html">Наша редакція</a>
+          </li>
+          <li>
+            <a href="/contacts.html">Контакти</a>
+          </li>
+        </ul>
+        
+        <button class="footer__contacts" data-btn-modal="contact">
+          <svg width='20' height='20'>
+            <use href='img/sprite/sprite.svg#mail'></use>
+          </svg>
+          Написати нам
+        </button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="starting-popup" data-btn-modal="age-alert"></button>
+
+<!-- <button class="starting-podcasts" data-btn-modal="podcasts"></button> -->
+
+<div class="cookies visible">
+  <div class="container">
+    <div class="cookies__wrapp">
+        <div class="cookies__text">
+          Ми використовуємо файли cookie щоб зробити ваше користування веб-сайтом зручнішим.  Продовжуючи користуватися цим сайтом, ви погоджуєтесь із використанням файлів cookies. Дізнайтеся більше про використання cookie на сторінці
+        </div>
+
+        <div class="cookies__controls" data-single='true' data-accordion-init>
+          <div class="cookies__controls-btns">
+            <button class="cookies__apply">Прийняти</button>
+            <button class="cookies__cancel">Відхилити</button>
+  
+            <button class="cookies__btn" data-id='1'>
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#settings'></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="cookies__settings" data-content='1'>
+            <ul>
+              <li>
+                <p>Аналітика</p>
+                <label>
+                  <input type="checkbox" name="analytics">
+                  <span></span>
+                </label>
+              </li>
+              <li>
+                <p>Уподобання</p>
+                <label>
+                  <input type="checkbox" name="preferences">
+                  <span></span>
+                </label>
+              </li>
+              <li>
+                <p>Маркетинг</p>
+                <label>
+                  <input type="checkbox" name="marketing">
+                  <span></span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+  <div class="overlay fixed-block" data-overlay>
+    <div class="modal modal--contact" data-popup="contact">
+        <div class="modal__box">
+          <div class="modal__top">
+            <div class="modal__title">Є питання? Напишіть нам</div>
+  
+            <button class="modal__close close">
+              <svg width='24' height='24'>
+                  <use href='img/sprite/sprite.svg#burger-close'></use>
+              </svg>
+            </button>
+          </div>
+
+          <form class="form">
+            <div class="form__box">
+                <label class="form__label">
+                    <input class="form__input" type="email" name="email" placeholder="Введіть e-mail">
+                </label>
+                <label>
+                    <textarea class="form__textarea" name="textarea" placeholder="Текст повідомлення"></textarea>
+                </label>
+
+                <button class="form__submit" data-btn-inner="success">Надіслати</button>
+            </div>
+          </form>
+        </div>
+    </div>
+
+    <div class="modal modal--success" data-popup="success">
+      <div class="modal__box">
+        <div class="modal__top">
+          <div class="modal__title">
+            Дякуємо! Повідомлення надіслано успішно!
+          </div>
+
+          <button class="modal__close close">
+            <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#burger-close'></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="modal__text">Ми обов’язково з вами звʼяжемось!</div>
+      </div>
+    </div>
+
+    <div class="modal modal--share" data-popup="share">
+      <div class="modal__box">
+        <div class="modal__top">
+          <div class="modal__title">
+            Поділитись
+          </div>
+
+          <button class="modal__close close">
+            <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#burger-close'></use>
+            </svg>
+          </button>
+        </div>
+
+        <ul class="socials">
+          <li>
+            <a href="#">
+              <svg width='48' height='48'>
+                <use href='img/sprite/sprite.svg#telegram'></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg width='48' height='48'>
+                <use href='img/sprite/sprite.svg#instagram'></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg width='48' height='48'>
+                <use href='img/sprite/sprite.svg#facebook'></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <form class="share-form">
+          <label class="share-form__label">
+            <span class="share-form__link" data-value="https://zelenagazeta/">https://zelenagazeta/</span>
+          </label>
+          
+          <button class="share-form__btn copy">
+            <svg width='24' height='24'>
+              <use href='img/sprite/sprite.svg#copy'></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal modal--alert" data-popup="age-alert">
+      <div class="modal__box">
+        <div class="modal__title">
+          Вам вже виповнилось 18 років?
+        </div>
+
+        <div class="modal__icon">
+          <svg width='123' height='109'>
+            <use href='img/sprite/sprite.svg#paper-logo'></use>
+          </svg>
+        </div>
+
+        <div class="modal__btns">
+          <div class="btn-cancel">Ні</div>
+          <div class="btn-success close">Так</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal--alert" data-popup="snake-alert">
+      <div class="modal__box">
+        <div class="modal__title">
+          Ви лікар?
+        </div>
+
+        <div class="modal__icon">
+          <svg width='123' height='109'>
+            <use href='img/sprite/sprite.svg#snake'></use>
+          </svg>
+        </div>
+
+        <div class="modal__btns">
+          <div class="btn-cancel">Ні</div>
+          <div class="btn-success close">Так</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal--categories" data-popup="categories">
+      <div class="modal__cats">
+        <div class="modal__cats-top">
+          <a href="/" class="header__mobile-logo logo">
+            <img class="light-logo" width='1280' height='142' src="../img/index/gazeta-white.svg" alt="Зелена газета">
+            <img class="dark-logo" width='1280' height='142' src="../img/index/gazeta-black.svg" alt="Зелена газета">
+          </a>
+
+          <button class="modal__close close">
+            <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#burger-close'></use>
+            </svg>
+          </button>
+        </div>
+
+        <ul class="mobile__menu menu" data-single='true' data-accordion-init>
+          <li class="menu-item">
+            <a class="menu-link" href="#">
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#list'></use>
+              </svg>
+              Усі
+            </a>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-link" href="/listing-category.html">
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#heart'></use>
+              </svg>
+              Турбота про себе
+            </a>
+            <button class="menu-button" data-id='1'>
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#agile-right'></use>
+              </svg>
+            </button>
+    
+            <ul class="sub-menu" data-content='1'>
+              <li>
+                <a href="/listing-subcategory.html">Усі</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Психологія відносин</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Секс</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Реальні історії людей</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Психологія змін</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Вікова психологія</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Психологія в роботі</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Робота зі стресом</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Самооцінка та прийняття себе</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Емоційний інтелект</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Ментальне здоров’я</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">ПТСР та психологія травми</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-link" href="/listing-category.html">
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#leaf'></use>
+              </svg>
+              Психологія
+            </a>
+    
+            <button class="menu-button" data-id='2'>
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#agile-right'></use>
+              </svg>
+            </button>
+    
+            <ul class="sub-menu" data-content='2'>
+              <li>
+                <a href="/listing-subcategory.html">Усі</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Психологія відносин</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Секс</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Реальні історії людей</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-link" href="/listing-category.html">
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#doctor'></use>
+              </svg>
+              Здоров’я
+            </a>
+    
+            <button class="menu-button" data-id='3'>
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#agile-right'></use>
+              </svg>
+            </button>
+    
+            <ul class="sub-menu" data-content='3'>
+              <li>
+                <a href="/listing-subcategory.html">Усі</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Психологія відносин</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Секс</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Реальні історії людей</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Психологія змін</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Вікова психологія</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Психологія в роботі</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Робота зі стресом</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Самооцінка та прийняття себе</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Емоційний інтелект</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-link" href="/listing-category.html">
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#style'></use>
+              </svg>
+              Стиль життя
+            </a>
+    
+            <button class="menu-button" data-id='4'>
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#agile-right'></use>
+              </svg>
+            </button>
+    
+            <ul class="sub-menu" data-content='4'>
+              <li>
+                <a href="/listing-subcategory.html">Усі</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Психологія відносин</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Секс</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Робота зі стресом</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Самооцінка та прийняття себе</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Емоційний інтелект</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Ментальне здоров’я</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">ПТСР та психологія травми</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-link" href="/listing-category.html">
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#bulb'></use>
+              </svg>
+              Зелена медицина
+            </a>
+    
+            <button class="menu-button" data-id='5'>
+              <svg width='16' height='16'>
+                <use href='img/sprite/sprite.svg#agile-right'></use>
+              </svg>
+            </button>
+    
+            <ul class="sub-menu" data-content='5'>
+              <li>
+                <a href="/listing-subcategory.html">Усі</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Психологія відносин</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Секс</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Арт-терапія та мантричні практики</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Реальні історії людей</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Психологія змін</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Вікова психологія</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Психологія в роботі</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Робота зі стресом</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Самооцінка та прийняття себе</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Емоційний інтелект</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">Ментальне здоров’я</a>
+              </li>
+              <li>
+                <a href="/listing-subcategory.html">ПТСР та психологія травми</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#news'></use>
+              </svg>
+              Новини
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="modal modal--podcasts" data-popup="podcasts">
+      <div class="modal__box">
+        <div class="modal__title">
+          "Зелений подкаст" вже чекає на YouTube!
+        </div>
+
+        <div class="modal__descr">
+          Дізнавайся про здоров'я та надихайся на саморозвиток разом з нами
+        </div>
+
+        <div class="modal__icon">
+            <img class="icon-white" width='276' height='161' src='img/podcasts/podcasts-white.svg' alt=''>
+            <img class="icon-black" width='276' height='161' src='img/podcasts/podcasts-black.svg' alt=''>
+        </div>
+
+        <div class="modal__btns">
+          <div class="btn-cancel close">Не зараз</div>
+          <a href="/listing-podcasts.html" class="btn-success close">До подкастів</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+  <script defer src="js/main.js"></script>
+</body>
+
+
+</html>
